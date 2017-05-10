@@ -15,7 +15,7 @@
 - **1st Week** ; May 8 - 12
 
 	> * Let's talk about Computer
-	> * [Git](https://github.com/fimuxd/iOS_Campus/commit/b03d2d98d234846012af3bbbafffd2e2af879a49)
+	> * [Git](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170509)
 	> * Object Oriented Programming
 
 
