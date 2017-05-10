@@ -16,10 +16,10 @@
 
 	> * Let's talk about Computer
 	> * [Git](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170509)
-	> * MarkDown
-	> * Object Oriented Programming
-	> * Xcode ShotCut
-	> * Variable and Function
+	> * [MarkDown](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170510/MarkDown)
+	> * [Object Oriented Programming](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170510/ObjectOrientedProgramming)
+	> * [Xcode ShotCut](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170510/XcodeShotCut)
+	> * [Variable and Function](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170511/FuncAndVar)
 
 
 ### B. Project
