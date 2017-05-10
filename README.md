@@ -15,7 +15,7 @@
 - **1st Week** ; May 8 - 12
 
 	> * Let's talk about Computer
-	> * Git
+	> * [Git](/Users/B.Park/iOS_Campus/A_LectureSummary/170509/ReadMe.md)
 	> * Object Oriented Programming
 
 
