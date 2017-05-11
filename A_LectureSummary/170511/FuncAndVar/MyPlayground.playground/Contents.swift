@@ -5,6 +5,22 @@
 
 //변수 가지고 놀기
 
+var intro:(name:String, age:Int) = ("Bo-Young", 31)
+print("이름 : " + intro.name)
+print("나이 : \(intro.1)")
+
+
+func fName(agumentName paramName:Int) -> Int
+{
+    return paramName + 3
+}
+
+fName(agumentName: 10)
+print(fName(agumentName: 10))
+
+
+
+
 var list:String = "No.1: String 변수"
 print(list)
 
@@ -126,4 +142,13 @@ func getNumber(firstNum num1:Int, secondNum num2:Int) -> Int
     return num1 + num2
 }
 
-getNu
+func defaultParam(number num1:Int = 10, number num2:Int = 20) -> Int
+{
+    return num1 + num2
+}
+
+defaultParam()
+defaultParam(number: 11)
+defaultParam(number: 12, number: 13)
+
+
