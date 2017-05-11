@@ -1,6 +1,6 @@
 # 변수 & 함수
 
-## 1. 개념
+## 개념
 - 객체지향에서는 함수를 method라고 부른다. 
 - method와 함수도 사실 서로 구분되지만, 일단 지금 시점에는 함수와 method를 구분하기 힘들다. 나중에는 구분이 가능할 것. 한동안은 **‘함수’**라는 단어로 그 의미를 통일한다.
 - 객체는 메모리에 저장된다. 
@@ -28,21 +28,22 @@ class: 객체를 만들기위한 도면, 여기에 변수와 함수가 들어간
 var name:String = value
 ``` 
 
-이라는 의미
-
 `name` 이라는 것은 변수 `var`이고 `string`이라는 타입이구나.
 `value`는 저러한 이름과 타입을 가지는(그러한 성격의) 변수로 인식 (최초값)
 이 후 `name = "BB"`라 명명하면, 이 값은 변수라 선언했으므로 BB로 변경된다. *`let`*이였을 경우, 상수라 선언했으므로 변경을 할 수 없고, 컴파일러 error가 난다.
+
+## 1. 변수
 
 ### 변수명
 
 - swift언어만 변수명을 한글로 설정 가능 (하지만 비추)
 - 이름이 길어지는 것을 고민하지 말고, 표현을 잘 하는 방법을 고민할 것. (예. 길어지는 것을 방지하기 위해 image대신 img라 명명하기도 한다. 하지만 내 옆에 있는 사람이 내가 짠 코드를 읽고 이해할 수 있을까를 고민해야한다.)
+- 변수를 설정할 때 가장 어려운 것 > 변수 이름 짓기 (같은 맥락에서 함수 이름 짓기도 어렵다)
 
 
-## 2. 변수 타입
+### 변수 타입
 
-### 기본형 (값타입)
+#### 기본형 (값타입)
 - 정수 `Int`
 	- `Int`
 	- `Uint`: U는 Unsigned의 약자. 부호가 없다. 절대값
@@ -75,4 +76,74 @@ var name:String = value
 > 튜플과 삽입에 대해 이해할 것
 
 
-### 참조형(참조타입) 
+#### 참조형(참조타입)_별도로 공부할 것 
+- `ClassName`: 클래스 객체를 다른 곳에서 사용할 경우
+
+```swift
+let customView:UIView
+let timer:Timer
+```
+	
+> 이스케이프 시퀀스(escape sequence): 문자열 내부에 특수문자(명령어 문자) 입력할 때. - 별도 공부할 것
+
+
+### 캐스팅(형변환)
+변환하고자하는 타입을 입력하고 괄호 안에 변환하고자하는 변수명을 입력
+
+```swift
+var total:Int = 107
+var average:Double
+average = total/5
+
+이렇게 하면 에러가 나므로, 
+
+average = Double(total)/5
+
+```
+
+
+## 2. 함수
+
+누구나 멘붕이 오는 부분
+
+- parameter: 매개변수(x)
+
+```swift
+func fName(agumentName paramName:Int) -> Int
+{
+
+	Return paramName + 3
+
+}
+
+fName(agumentName: 10) ------------ 함수 호출
+
+```
+이 때 `paramName` = 3, 출력값은 13
+
+//한번 함수로 자기소개를 작성해보자 > playground
+
+### Default Parameter Values
+
+> 이해 못했음...ㅠㅠ 있다가 공부할 것
+
+
+### In-OUt Parameter Keyword
+
+- Parameter(매개변수) 타입 앞에 `inout` 입력
+- 의미: 함수에 들어온 매개변수는 기본적으로 무조건 상수이다.
+- 이 것을 변수로 변환해주는 것
+- 보통 많이 쓰진 않는다. 왜냐하면 매개변수는 보통 외부에서 입력되기 때문에 이 값을 변형한다는 것은 논리상 맞지 않는 경우가 많다.
+> - inout 변수가 지정된 함수의 인수앞에서는 &가 붙어야 한다. > 몬말?
+
+```swift
+
+func addInt(num1 firstNum:inout Int, num2 secondNum:Int) -> Int
+{
+
+	firstNum = furstNum * 2 ----------- inout 없이는 불가능(상수이므로)
+
+}
+
+```
+
