@@ -121,4 +121,9 @@ func getNumber() -> Int
 
 getNumber()
 
+func getNumber(firstNum num1:Int, secondNum num2:Int) -> Int
+{
+    return num1 + num2
+}
 
+getNu
