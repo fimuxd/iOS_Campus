@@ -230,7 +230,7 @@ pointCal(grade: "good")
 
 print("\n")
 
-//7. 점수를 포인터로 변환하기
+//7. 점수를 포인터로 변환하기 > function으로 다시할 것
 pointCal(grade: gradeCal(score: 92))
 
 print("\n")
@@ -324,3 +324,19 @@ func calCalendar(year:Int) -> String
 }
 
 calCalendar(year: 64)
+
+
+
+func sumNumber(num:Int) -> Int
+{
+    let num1:Int = num
+    let num2:Int = num2 + 1
+
+    return num + num1 + num2 + 3
+}
+
+print(sumNumber(num: 15))
+
+
+
+
