@@ -87,50 +87,71 @@ class ViewController: UIViewController {
     
     @IBAction func ClickBtn0(_ sender: UIButton) {
         print("0")
+        self.displayLabel.text = "0"
     }
     
     @IBAction func ClickBtn00(_ sender: UIButton) {
         print("00")
+        self.displayLabel.text = "0"
     }
     
     @IBAction func ClickBtnDO(_ sender: UIButton) {
         print(".")
+        self.displayLabel.text = "."
     }
     
     @IBAction func ClickBtn1(_ sender: UIButton) {
         print("1")
+        let displayingText: String = self.displayLabel.text!
+        self.displayLabel.text = displayingText + "1"
     }
     
     @IBAction func ClickBtn2(_ sender: UIButton) {
         print("2")
+        let displayingText: String = self.displayLabel.text!
+        self.displayLabel.text = displayingText + "2"
     }
     
     @IBAction func ClickBtn3(_ sender: UIButton) {
         print("3")
+        let displayingText: String = self.displayLabel.text!
+        self.displayLabel.text = displayingText + "3"
     }
     
     @IBAction func ClickBtn4(_ sender: UIButton) {
         print("4")
+        let displayingText: String = self.displayLabel.text!
+        self.displayLabel.text = displayingText + "4"
     }
     
     @IBAction func ClickBtn5(_ sender: UIButton) {
         print("5")
+        let displayingText = self.displayLabel.text!
+        self.displayLabel.text = displayingText + "5"
     }
     
     @IBAction func ClickBtn6(_ sender: UIButton) {
         print("6")
+        let displayingText = self.displayLabel.text!
+        self.displayLabel.text = displayingText + "6"
     }
     
     @IBAction func ClickBtn7(_ sender: UIButton) {
         print("7")
+        let displayingText = self.displayLabel.text!
+        self.displayLabel.text = displayingText + "7"
     }
     
     @IBAction func ClickBtn8(_ sender: UIButton) {
         print("8")
+        let displayingText = self.displayLabel.text!
+        self.displayLabel.text = displayingText + "8"
     }
 
     @IBAction func ClickBtn9(_ sender: UIButton) {
         print("9")
+        let displayingText = self.displayLabel.text!
+        self.displayLabel.text = displayingText + "9"
     }
     
     override func viewDidLoad() {
