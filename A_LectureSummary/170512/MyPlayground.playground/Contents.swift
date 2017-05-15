@@ -316,27 +316,11 @@ func calCalendar(year:Int) -> String
 {
     let yearType:String = "윤년입니다"
     
-    if (!(year%4 == 0) || !(year%400 == 0)) && (year%100 == 0)
+    if year%4 != 0 || year%400 != 0 && year%100 == 0
     {
         print("평년입니다")
     }
     return yearType
 }
 
-calCalendar(year: 64)
-
-
-
-func sumNumber(num:Int) -> Int
-{
-    let num1:Int = num
-    let num2:Int = num2 + 1
-
-    return num + num1 + num2 + 3
-}
-
-print(sumNumber(num: 15))
-
-
-
-
+calCalendar(year: 4)

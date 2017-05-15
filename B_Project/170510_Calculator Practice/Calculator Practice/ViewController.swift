@@ -12,6 +12,8 @@ class ViewController: UIViewController {
 
     @IBOutlet var displayLabel: UILabel!
     
+    var tempFirstNum:Int = 0
+    var tempOperation:String = ""
     
     @IBAction func ClickBtn(_ sender: UIButton) {
         print("GT")
@@ -61,9 +63,17 @@ class ViewController: UIViewController {
         print("ㅡ")
     }
     
+    //더하기(+) 버튼 액션
     @IBAction func ClickBtnPL(_ sender: UIButton) {
         print("+")
     }
+    
+    //더하기 함수
+    func plus(firstNum:Int, secondNum:Int) -> Int
+    {
+        return firstNum + secondNum
+    }
+    
     
     @IBAction func ClickBtnEQ(_ sender: UIButton) {
         print("=")
@@ -153,6 +163,7 @@ class ViewController: UIViewController {
         let displayingText = self.displayLabel.text!
         self.displayLabel.text = displayingText + "9"
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

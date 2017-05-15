@@ -21,14 +21,17 @@
 	> * [Xcode ShotCut](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170510/XcodeShotCut)
 	> * [Variable and Function](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170511/FuncAndVar)
 	> * [Function Control Flow - if](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170512)
-	> * [Function Control Flow - switch]()
+
+- **2nd Week** ; May 15 - 19
+	> * [Function Control Flow - switch](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170515)
 
 
 ### B. Project
-- **Calculator** ; May 10 -
+- [**Calculator**](https://github.com/fimuxd/iOS_Campus/tree/master/B_Project/170510_Calculator%20Practice) ; May 10 -
 
 
 ### C. Task & Study
+
 
 
 
