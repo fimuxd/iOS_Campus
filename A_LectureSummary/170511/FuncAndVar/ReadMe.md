@@ -9,7 +9,7 @@
 ### 2. 함수(func)
 - 객체지향에서는 함수를 method라고 부른다. 
 - method와 함수도 사실 서로 구분되지만, 일단 지금 시점에는 함수와 method를 구분하기 힘들다. ~나중에는 구분이 가능할 것~ 
-- 한동안은 **‘함수’**라는 단어로 그 의미를 통일한다.
+- 한동안은 **함수**라는 단어로 그 의미를 통일한다.
 - 객체는 메모리에 저장된다. 
 - 변수와 변수를 연산하는 행위는 함수가 처리하며 이 것은 CPU에서 처리하게 된다. 
 
@@ -121,7 +121,7 @@
 	var intro:(name:String, age:Int, address:String) = ("Bo-Young", "31", "Seoul")
 	print("이름 : " + intro.name)
 	print("나이 : \(intro.1)")
-	print("주소 : \(intro.adree)")
+	print("주소 : \(intro.address)")
 	```
 
 - 그 외
@@ -144,9 +144,9 @@
 
 이렇게 하면 에러가 나므로, 
 
-	```swift
-	average = Double(total)/5
-	```
+```swift
+average = Double(total)/5
+```
 
 
 #### 참조형(참조타입)_별도로 공부할 것 
