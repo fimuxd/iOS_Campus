@@ -20,6 +20,8 @@
 	> * [Object Oriented Programming](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170510/ObjectOrientedProgramming)
 	> * [Xcode ShotCut](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170510/XcodeShotCut)
 	> * [Variable and Function](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170511/FuncAndVar)
+	> * [Function Control Flow - if](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170512)
+	> * [Function Control Flow - switch]()
 
 
 ### B. Project
