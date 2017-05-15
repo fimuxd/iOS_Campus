@@ -31,6 +31,9 @@
 
 
 ### C. Task & Study
+> - [Object Oriented Programming](https://github.com/fimuxd/iOS_Campus/blob/master/C_Task/객체지향형%20프로그래밍_170510/Task_170510)
+> - [Function Practice: Size and Volume](https://github.com/fimuxd/iOS_Campus/blob/master/C_Task/함수연습_170512/ShapePractice.playground/Contents.swift)
+> - [Function Practice: Unit Convert](https://github.com/fimuxd/iOS_Campus/blob/master/C_Task/함수연습_170512/Toolbox.playground/Contents.swift)
 
 
 
