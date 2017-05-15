@@ -105,6 +105,8 @@
 - 불리언 `Bool`
 	- Boolean의 준말
 	- 들어가는 값은 두가지. true(1) or false(0)
+	- yes/no 의 문제라면 bool 값을 쓰는 것이 좋다.
+		- 예. 윤년인가 아닌가? 홀짝?
 	
 	```swift
 	var haveACar:Bool = true
@@ -128,7 +130,8 @@
 	- `nil` 아무 것도 없음
 
 
-> 튜플과 삽입에 대해 이해할 것
+> - 튜플과 삽입에 대해 이해할 것
+> - 관용적인 건데, func에서 is(예.isEven)로 물어보면 보통 return값은 bool이다. return 값을 String으로 하고 싶었다면, printEvenOrOdd라 명명하는 것이 자연스럽다. 
 
 - 캐스팅(형변환)
 	- 변환하고자하는 타입을 입력하고 괄호 안에 변환하고자하는 변수명을 입력
