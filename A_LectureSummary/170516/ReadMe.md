@@ -210,11 +210,12 @@
 	```swift
 	//기본형태
 	var someInts:[String:Int] = [String:Int]()
-var someInts:Dictionary<String,Int> = [:]
+	var someInts:Dictionary<String,Int> = [:]
 
 	//dictionary의 리터널 문법의 예
 	var airports:[String:String] = ["ICH': "인천공항", "CJU": "제주공항"]
 	```
+	
 - Array가 index를 통해 값을 가져오듯, Dictionary는 key값을 통해 값을 가져온다.
 
 	```swift
