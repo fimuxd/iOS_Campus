@@ -102,6 +102,7 @@
    >     var mammals:[String] = ["🐶", "🐯", "🐷", "🐰", "🐵"]
    >     print(mammals) //print ["🐶", "🐯", "🐷", "🐰", "🐵"]
    >     
+   >     print(mammals.contains("🐶")) // print값: true
    >     mammals.append("🐸")
    >     print(mammals) //print ["🐶", "🐯", "🐷", "🐰", "🐵", "🐸"]
    >     
@@ -171,30 +172,30 @@
         print(oddDigits.sorted())
 	```
  
- > 혼자 해보는 복습
- >
- > ```swift
- > var haveWings:Set = ["bird", "butterfly", "bet"]
- > var mammal:Set = ["bet", "tiger", "pig"]
- > var bugs:Set = ["butterfly", "ant", "spider"]
- > 
- > print(haveWings.intersection(mammal))
- > 
- > // 순서 없이 나열      
- > print(mammal.union(bugs))
- > 
- > // sorted()를 이용해서 abc순으로 정렬      
- > print(mammal.union(bugs).sorted()) 
- > 
- > // 순서 없이 나열      
- > print(bugs.symmetricDifference(haveWings))
- >
- > // sorted()를 이용해서 abc순으로 정렬
- > print(bugs.symmetricDifference(haveWings).sorted())
- > 
- > // subtract는 리턴 값이 없음      
- > print(bugs.subtract(mammal)) 
- > ```     
+	> 혼자 해보는 복습
+	>
+	> ```swift
+	> var haveWings:Set = ["bird", "butterfly", "bet"]
+	> var mammal:Set = ["bet", "tiger", "pig"]
+	> var bugs:Set = ["butterfly", "ant", "spider"]
+	> 
+	> print(haveWings.intersection(mammal))
+	> 
+	> // 순서 없이 나열      
+	> print(mammal.union(bugs))
+	> 
+	> // sorted()를 이용해서 abc순으로 정렬      
+	> print(mammal.union(bugs).sorted()) 
+	> 
+	> // 순서 없이 나열      
+	> print(bugs.symmetricDifference(haveWings))
+	>
+	> // sorted()를 이용해서 abc순으로 정렬
+	> print(bugs.symmetricDifference(haveWings).sorted())
+	> 
+	> // subtract는 리턴 값이 없음      
+	> print(bugs.subtract(mammal)) 
+	> ```     
 
 ### 3. Dictionary
 
@@ -225,25 +226,6 @@
 	print("\(airports["ICH"])")
 	```
 
-- 혼자 해보는 복습
-
-```swift
- // 혼자 해보는 복습
-        var worldMap:Dictionary<String,String> = ["Korea":"Asia", "USA":"America", "Spain":"Europe"]
-            // 같은 의미, var worldmap:[String:String] = ["Korea":"Asia", "USA":"America", "Spain":"Europe"]
-        
-        print(worldMap.count) // print값: 3
-        
-        worldMap["Korea"] = "EastAsia"
-        print(worldMap) // print값: ["Korea":"EastAsia", "USA":"America", "Spain":"Europe"]
-        
-        print(worldMap["USA"]) // print값: "America"
-        
-        worldMap["Egypt"] = "Africa"
-        printworldMap // print값: ["Korea":"Asia", "Egypt":"Africa", "Spain":"Europe", "USA":"America"]
-        
-```
-
 #### 2) 추가 기능
 
 - swift에서 `command(⌘)` + `shift(⇪)` + `o`
@@ -269,6 +251,26 @@
         print(iOSStudent)
    ```
 
+	> 혼자 해보는 복습
+	
+	> ```swift
+	> var worldMap:Dictionary<String,String> = ["Korea":"Asia", "USA":"America", "Spain":"Europe"]
+	> 	// 같은 의미, var worldmap:[String:String] = ["Korea":"Asia", "USA":"America", "Spain":"Europe"]
+	>        
+	> print(worldMap.count) // print값: 3
+	>        
+	> worldMap["Korea"] = "EastAsia"
+	> print(worldMap) 
+	> // print값: ["Korea":"EastAsia", "USA":"America", "Spain":"Europe"]
+	>        
+	> print(worldMap["USA"])
+	> // print값: "America"
+	>        
+	> worldMap["Egypt"] = "Africa"
+	> print(worldMap)
+	> // print값: ["Korea":"Asia", "Egypt":"Africa", "Spain":"Europe", "USA":"America"]       
+	> ```
+	
 ## B. 반복문
 
 ### 개념
@@ -305,20 +307,34 @@ index += 1
 
 - 구구단 만들어보기
 
-```swift
-//구구단 만들기
+	```swift
+	func multipicationTable(level:Int) {
         
-        func multificationTable(level:Int)
-        {
+            // 2. 곱(step)을 의미하는 변수 설정
             var step:Int = 1
-            while step <= 9{
+            
+            // 3. 곱이 1...9 반복할 while문 설정
+            while step <= 9 {
                 print("\(level) * \(step) = \(level*step)")
+            
+                // 4. 무한 loop 되지 않도록 반복할 때마다 곱이 증가하도록 설정
                 step += 1
             }
         }
         
-        multificationTable(level: 14)
-```
+    multipicationTable(level: 26)
+        /* print값:
+             26 * 1 = 26
+             26 * 2 = 52
+             26 * 3 = 78
+             26 * 4 = 104
+             26 * 5 = 130
+             26 * 6 = 156
+             26 * 7 = 182
+             26 * 8 = 208
+             26 * 9 = 234
+        */
+	```
 
 #### 2. for-in 문
 
@@ -328,10 +344,77 @@ index += 1
 - for-in 문에서 일정 범위를 설정하고 싶으면 범위연산자를 이용하면 된다. (예. `1...5` 는 곧 `[1,2,3,4,5]`)
 - 또는 숫자의 범위에 상관없이, 횟수만 설정하고 싶으면 index 부분에 와일드카드(_)를 사용한다.
 
-    
+- 그럼 다시 한번 for-in문 이용하여 구구단 만들어보기
 
+	```swift
+	func forInMultipicationTable(level:Int) {
+	            
+	            // 2. for-in의 경우, 별도의 변수타입 설정을 해주지 않아도 되므로 
+	            //    step을 그대로 사용함
+	            for step in 1...9 {
+	                print("\(level) * \(step) = \(level*step)")
+	            }
+	        }
+	        
+	forInMultipicationTable(level: 19)
+	        /* print값:
+	             19 * 1 = 19
+	             19 * 2 = 38
+	             19 * 3 = 57
+	             19 * 4 = 76
+	             19 * 5 = 95
+	             19 * 6 = 114
+	             19 * 7 = 133
+	             19 * 8 = 152
+	             19 * 9 = 171
+	         */
+	```
 
+### 연습예제
+
+#### 1. 로또 숫자 출력하기 (elements 값 중복 허용)
+
+	```swift
+	func tellMeLotto() -> [Int] {
+	            
+	            // 2. 로또번호 6개의 Array 값 명명
+	            var lottoNumber:[Int] = [] // or = [Int]()
+	            
+	            // 3. arc4random을 이용. unifrom(n) = 0 ~ n-1 사이의 값 랜덤으로 출력
+	            let randomNumber:UInt32 = arc4random_uniform(46)
+	            
+	            // 4. 6번 반복하는 for-in 문 생성
+	            for _ in 1...6 {
+	                
+	                // 5. arc4random이 0을 포함하는데 로또번호에는 0이 없으므로, 0을 제외하고 array에 넣어주는 if 문 생성
+	                if randomNumber != 0 {
+	                    lottoNumber.append(Int(randomNumber))
+	                }
+	            }
+	            return lottoNumber
+	        }
+	        
+	        tellMeLotto()
+	```
+
+#### 2. 로또 숫자 출력하기 (elements 값 중복 불가)
+
+	```swift
+	func tellMeLotto1() -> [Int] {
+	            var lottoNumber:[Int] = []
+	            
+	            while lottoNumber.count < 6 {
+	                let randomNumber:UInt32 = arc4random_uniform(46)
 	
-
+	                if randomNumber != 0 && !lottoNumber.contains(Int(randomNumber)) {
+	                    lottoNumber.append(Int(randomNumber))
+	                }
+	            }
+	            return lottoNumber
+	        }
+	        
+	        // 로또 넘버가 123 순서로 출력된다.
+	        print(tellMeLotto1().sorted)
+	```
 
 

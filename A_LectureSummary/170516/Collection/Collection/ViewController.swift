@@ -43,6 +43,8 @@ class ViewController: UIViewController {
         var mammals:[String] = ["🐶", "🐯", "🐷", "🐰", "🐵"]
         print(mammals) //print ["🐶", "🐯", "🐷", "🐰", "🐵"]
         
+        print(mammals.contains("🐶")) //print값: true
+    
         mammals.append("🐸")
         print(mammals) //print ["🐶", "🐯", "🐷", "🐰", "🐵", "🐸"]
         
@@ -140,6 +142,7 @@ class ViewController: UIViewController {
         print(iOSStudent)
         
         
+        
         // 혼자 해보는 복습
         var worldMap:Dictionary<String,String> = ["Korea":"Asia", "USA":"America", "Spain":"Europe"]
             // 같은 의미, var worldmap:[String:String] = ["Korea":"Asia", "USA":"America", "Spain":"Europe"]
@@ -152,47 +155,106 @@ class ViewController: UIViewController {
         print(worldMap["USA"]) // print값: "America"
         
         worldMap["Egypt"] = "Africa"
-        printworldMap // print값: ["Korea":"Asia", "Egypt":"Africa", "Spain":"Europe", "USA":"America"]
+        print(worldMap) // print값: ["Korea":"Asia", "Egypt":"Africa", "Spain":"Europe", "USA":"America"]
         
         // 4. 반복문 - while 문
         //구구단 만들기
+        // 1. 구구단(multipicationTable) 함수 생성
+        func multipicationTable(level:Int) {
         
-        func multificationTable(level:Int) {
+            // 2. 곱(step)을 의미하는 변수 설정
             var step:Int = 1
-            while step <= 9{
+            
+            // 3. 곱이 1...9 반복할 while문 설정
+            while step <= 9 {
                 print("\(level) * \(step) = \(level*step)")
+            
+                // 4. 무한 loop 되지 않도록 반복할 때마다 곱이 증가하도록 설정
                 step += 1
             }
         }
         
-        multificationTable(level: 14)
-        
-        
+        multipicationTable(level: 26)
+        /* print값:
+             26 * 1 = 26
+             26 * 2 = 52
+             26 * 3 = 78
+             26 * 4 = 104
+             26 * 5 = 130
+             26 * 6 = 156
+             26 * 7 = 182
+             26 * 8 = 208
+             26 * 9 = 234
+        */
+ 
+ 
         // 5. 반복문 - for-in 문
         //구구단 만들기 > 나중에 해볼 것
         
-        
-        //lotto 숫자 출력하기
-        //1...45, 숫자 6개 뽑기 (중복을 허용하는 함수 & 중복을 허용하지 않는 함수)
-        
-        
-        //중복허용하지 않는 로또
-        func findLotto() -> [Int] {
+        // 1. for-in문을 이용한 구구단 함수 생성
+        func forInMultipicationTable(level:Int) {
             
-            var lottoNumbers:[Int] = []
-        
-            while lottoNumbers.count < 6 {
-                let randomNumber:UInt32 = arc4random_uniform(45)
-                
-                if randomNumber != 0 && !lottoNumbers.contains(Int(randomNumber)) {
-                    lottoNumbers.append(Int(randomNumber))
-                }
+            // 2. for-in의 경우, 별도의 변수타입 설정을 해주지 않아도 되므로 step을 그대로 사용함
+            for step in 1...9 {
+                print("\(level) * \(step) = \(level*step)")
             }
-            return lottoNumbers
         }
         
-        print(findLotto().sorted())
+        forInMultipicationTable(level: 19)
+        /* print값:
+             19 * 1 = 19
+             19 * 2 = 38
+             19 * 3 = 57
+             19 * 4 = 76
+             19 * 5 = 95
+             19 * 6 = 114
+             19 * 7 = 133
+             19 * 8 = 152
+             19 * 9 = 171
+         */
         
+        //lotto 숫자 출력하기
+        //1...45, 숫자 6개 뽑기 (중복을 허용하는 함수)
+        
+        // 1. 로또번호 6개의 Array 값을 출력해주는 함수를 생성
+        func tellMeLotto() -> [Int] {
+            
+            // 2. 로또번호 6개의 Array 값 명명
+            var lottoNumber:[Int] = [] // or = [Int]()
+        
+            
+            // 3. 6번 반복하는 for-in 문 생성
+            for _ in 1...6 {
+                
+                // 4. arc4random을 이용. unifrom(n) = 0 ~ n-1 사이의 값 랜덤으로 출력
+                let randomNumber:UInt32 = arc4random_uniform(46)
+                // 5. arc4random이 0을 포함하는데 로또번호에는 0이 없으므로, 0을 제외하고 array에 넣어주는 if 문 생성
+                if randomNumber != 0 {
+                    lottoNumber.append(Int(randomNumber))
+                }
+            }
+            return lottoNumber
+        }
+        
+        print(tellMeLotto())
+        
+        //중복허용하지 않는 로또
+        
+        func tellMeLotto1() -> [Int] {
+            var lottoNumber:[Int] = []
+            
+            while lottoNumber.count < 6 {
+                let randomNumber:UInt32 = arc4random_uniform(46)
+
+                if randomNumber != 0 && !lottoNumber.contains(Int(randomNumber)) {
+                    lottoNumber.append(Int(randomNumber))
+                }
+            }
+            return lottoNumber
+        }
+        
+        // 로또 넘버가 123 순서로 출력된다.
+        print(tellMeLotto1().sorted)
         
         // 약수 구하기
         func findDivisor(inputNumber:Int) -> [Int] {
