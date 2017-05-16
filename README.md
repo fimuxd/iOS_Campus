@@ -24,10 +24,11 @@
 
 - **2nd Week** ; May 15 - 19
 	> * [Function Control Flow - switch](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170515)
+	> * [Collection & Control Flow(Loops)](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170516)
 
 
 ### B. Project
-- [**Calculator**](https://github.com/fimuxd/iOS_Campus/tree/master/B_Project/170510_Calculator%20Practice) ; May 10 -
+- [Calculator](https://github.com/fimuxd/iOS_Campus/tree/master/B_Project/170510_Calculator%20Practice) ; May 10 -
 
 
 ### C. Task & Study
