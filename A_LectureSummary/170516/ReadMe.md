@@ -374,47 +374,99 @@ index += 1
 
 #### 1. 로또 숫자 출력하기 (elements 값 중복 허용)
 
-	```swift
-	func tellMeLotto() -> [Int] {
-	            
-	            // 2. 로또번호 6개의 Array 값 명명
-	            var lottoNumber:[Int] = [] // or = [Int]()
-	            
-	            // 3. arc4random을 이용. unifrom(n) = 0 ~ n-1 사이의 값 랜덤으로 출력
-	            let randomNumber:UInt32 = arc4random_uniform(46)
-	            
-	            // 4. 6번 반복하는 for-in 문 생성
-	            for _ in 1...6 {
-	                
-	                // 5. arc4random이 0을 포함하는데 로또번호에는 0이 없으므로, 0을 제외하고 array에 넣어주는 if 문 생성
-	                if randomNumber != 0 {
-	                    lottoNumber.append(Int(randomNumber))
-	                }
-	            }
-	            return lottoNumber
-	        }
-	        
-	        tellMeLotto()
-	```
+```swift
+func tellMeLotto() -> [Int] {
+            
+            // 2. 로또번호 6개의 Array 값 명명
+            var lottoNumber:[Int] = [] // or = [Int]()
+            
+            // 3. arc4random을 이용. unifrom(n) = 0 ~ n-1 사이의 값 
+            //    랜덤으로 출력
+            let randomNumber:UInt32 = arc4random_uniform(46)
+            
+            // 4. 6번 반복하는 for-in 문 생성
+            for _ in 1...6 {
+                
+                // 5. arc4random이 0을 포함하는데 로또번호에는 0이 없으므로, 
+                //    0을 제외하고 array에 넣어주는 if 문 생성
+                if randomNumber != 0 {
+                    lottoNumber.append(Int(randomNumber))
+                }
+            }
+            return lottoNumber
+        }
+        
+tellMeLotto()
+```
 
 #### 2. 로또 숫자 출력하기 (elements 값 중복 불가)
 
-	```swift
-	func tellMeLotto1() -> [Int] {
-	            var lottoNumber:[Int] = []
-	            
-	            while lottoNumber.count < 6 {
-	                let randomNumber:UInt32 = arc4random_uniform(46)
+```swift
+func tellMeLotto1() -> [Int] {
+            var lottoNumber:[Int] = []
+            
+            while lottoNumber.count < 6 {
+                let randomNumber:UInt32 = arc4random_uniform(46)
 	
-	                if randomNumber != 0 && !lottoNumber.contains(Int(randomNumber)) {
-	                    lottoNumber.append(Int(randomNumber))
+                if randomNumber != 0 && !lottoNumber.contains(Int(randomNumber)) {
+                    lottoNumber.append(Int(randomNumber))
+                }
+            }
+            return lottoNumber
+        }
+        
+        // 로또 넘버가 123 순서로 출력된다.
+        print(tellMeLotto1().sorted)
+```
+
+#### 3. 약수 구하기
+
+- 약수: 나누어 떨어지게 해주는 수
+
+	```swift
+	func findDivisor(inputNumber:Int) -> [Int]{
+	            var divisor:[Int] = []
+	            
+	            for number in 1...inputNumber {
+	                if inputNumber%number == 0 {
+	                    divisor.append(number)
 	                }
 	            }
-	            return lottoNumber
+	            return divisor
 	        }
 	        
-	        // 로또 넘버가 123 순서로 출력된다.
-	        print(tellMeLotto1().sorted)
+	print(findDivisor(inputNumber: 20))
+	//print값: [1, 2, 4, 5, 10, 20]
+	        
 	```
 
+#### 4. 소수 판별기
 
+- 소수: 약수가 1 또는 자기자신밖에 없는 수
+	- 예. 13
+- 어떤 수가 소수라는 것은, 방금 상단에 만든 약수구하기의 약수 array에 element수(count)가 2라는 것을 의미한다.
+
+	```swift
+	func isDecimal(inputNumber:Int) -> Bool {
+	            var divisor:[Int] = []
+	            
+	            for number in 1...inputNumber {
+	                if inputNumber%number == 0 {
+	                    divisor.append(number)
+	                }
+	            }
+	            
+	            if divisor.count <= 2 {
+	                print("\(inputNumber)은(는) 소수입니다.")
+	                return true
+	            }
+	            print("\(inputNumber)은(는) 소수가 아니며, \(divisor)와 같은 약수를 가집니다.")
+	            return false
+	        }
+	        
+	        isDecimal(inputNumber: 13)
+	        //print값: 13은(는) 소수입니다.
+	        
+	        isDecimal(inputNumber: 20)
+	        //print값: 20d은(는) 소수가 아니며, [1, 2, 4, 5, 10, 20]와 같은 약수를 가집니다.
+	```

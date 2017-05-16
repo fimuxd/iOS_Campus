@@ -257,41 +257,44 @@ class ViewController: UIViewController {
         print(tellMeLotto1().sorted)
         
         // 약수 구하기
-        func findDivisor(inputNumber:Int) -> [Int] {
+        func findDivisor(inputNumber:Int) -> [Int]{
+            var divisor:[Int] = []
+            
+            for number in 1...inputNumber {
+                if inputNumber%number == 0 {
+                    divisor.append(number)
+                }
+            }
+            return divisor
+        }
         
-            var divisiorList:[Int] = []
-            
-            for i in 1...inputNumber {
-            if inputNumber%i == 0 {
-                divisiorList.append(i)
-            }
-            }
-            return divisiorList
-            }
-            
-        print(findDivisor(inputNumber: 12))
+        print(findDivisor(inputNumber: 20))
         
         
         
         // 소수 판별기
         func isDecimal(inputNumber:Int) -> Bool {
+            var divisor:[Int] = []
             
-            var divisiorList:[Int] = []
-            
-            for i in 1...inputNumber {
-                if inputNumber%i == 0 {
-                    divisiorList.append(i)
+            for number in 1...inputNumber {
+                if inputNumber%number == 0 {
+                    divisor.append(number)
                 }
             }
-                if divisiorList.count <= 2 {
-                    print("소수")
-                    return true
+            
+            if divisor.count <= 2 {
+                print("\(inputNumber)은(는) 소수입니다.")
+                return true
             }
-            print("소수가 아님")
-                return false
+            print("\(inputNumber)은(는) 소수가 아니며, \(divisor)와 같은 약수를 가집니다.")
+            return false
         }
         
-            isDecimal(inputNumber: 30)
+        isDecimal(inputNumber: 13)
+        //print값: 13은(는) 소수입니다.
+        
+        isDecimal(inputNumber: 20)
+        //print값: 20d은(는) 소수가 아니며, [1, 2, 4, 5, 10, 20]와 같은 약수를 가집니다.
     
         
         
