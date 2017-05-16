@@ -131,7 +131,7 @@ class ViewController: UIViewController {
         // 새로운 elements 추가
         iOSStudent["조선미"] = "여성"
         
-        // 기존 elements의 값 추가
+        // 기존 elements의 값 변경
         iOSStudent["박보영"] = "여성"
         print(iOSStudent)
         
@@ -140,7 +140,19 @@ class ViewController: UIViewController {
         print(iOSStudent)
         
         
+        // 혼자 해보는 복습
+        var worldMap:Dictionary<String,String> = ["Korea":"Asia", "USA":"America", "Spain":"Europe"]
+            // 같은 의미, var worldmap:[String:String] = ["Korea":"Asia", "USA":"America", "Spain":"Europe"]
         
+        print(worldMap.count) // print값: 3
+        
+        worldMap["Korea"] = "EastAsia"
+        print(worldMap) // print값: ["Korea":"EastAsia", "USA":"America", "Spain":"Europe"]
+        
+        print(worldMap["USA"]) // print값: "America"
+        
+        worldMap["Egypt"] = "Africa"
+        printworldMap // print값: ["Korea":"Asia", "Egypt":"Africa", "Spain":"Europe", "USA":"America"]
         
         // 4. 반복문 - while 문
         //구구단 만들기

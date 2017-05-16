@@ -96,28 +96,27 @@
         print(list3)
 	```
 	
-	- 혼자 해보는 Array 연습
+	>  혼자 해보는 Array 연습
 	
-	```swift
-	// 혼자 해보는 복습
-        var mammals:[String] = ["🐶", "🐯", "🐷", "🐰", "🐵"]
-        print(mammals) //print ["🐶", "🐯", "🐷", "🐰", "🐵"]
-        
-        mammals.append("🐸")
-        print(mammals) //print ["🐶", "🐯", "🐷", "🐰", "🐵", "🐸"]
-        
-        mammals.remove(at: 2)
-        print(mammals) // print ["🐶", "🐯", "🐰", "🐵", "🐸"]
-        
-        print(mammals.count) // print 5
-        
-        if !mammals.isEmpty {
-            print("이 Array의 Element 수는 \(mammals.count)개 입니다.")
-        }
-        else{
-            print("이 Array는 비어있습니다")
-        }
-	``` 
+	> ```swift
+   >     var mammals:[String] = ["🐶", "🐯", "🐷", "🐰", "🐵"]
+   >     print(mammals) //print ["🐶", "🐯", "🐷", "🐰", "🐵"]
+   >     
+   >     mammals.append("🐸")
+   >     print(mammals) //print ["🐶", "🐯", "🐷", "🐰", "🐵", "🐸"]
+   >     
+   >     mammals.remove(at: 2)
+   >     print(mammals) // print ["🐶", "🐯", "🐰", "🐵", "🐸"]
+   >     
+   >     print(mammals.count) // print 5
+   >     
+   >     if !mammals.isEmpty {
+   >         print("이 Array의 Element 수는 \(mammals.count)개 입니다.")
+   >     }
+   >     else{
+   >         print("이 Array는 비어있습니다")
+   >     }
+	> ``` 
 	
 ### 2. Set
 
@@ -172,27 +171,30 @@
         print(oddDigits.sorted())
 	```
  
- - 혼자 해보는 복습
- 
- ```swift
- // 혼자 해보는 복습
-        var haveWings:Set = ["bird", "butterfly", "bet"]
-        var mammal:Set = ["bet", "tiger", "pig"]
-        var bugs:Set = ["butterfly", "ant", "spider"]
-        
-        print(haveWings.intersection(mammal))
-        
-        print(mammal.union(bugs)) // 순서 없이 나열
-        
-        print(mammal.union(bugs).sorted()) // sorted()를 이용해서 abc순으로 정렬
-        
-        print(bugs.symmetricDifference(haveWings)) // 순서 없이 나열
-        
-        print(bugs.symmetricDifference(haveWings).sorted()) // sorted()를 이용해서 abc순으로 정렬
-        
-        print(bugs.subtract(mammal)) // subtract는 리턴 값이 없음
-        
- ```     
+ > 혼자 해보는 복습
+ >
+ > ```swift
+ > var haveWings:Set = ["bird", "butterfly", "bet"]
+ > var mammal:Set = ["bet", "tiger", "pig"]
+ > var bugs:Set = ["butterfly", "ant", "spider"]
+ > 
+ > print(haveWings.intersection(mammal))
+ > 
+ > // 순서 없이 나열      
+ > print(mammal.union(bugs))
+ > 
+ > // sorted()를 이용해서 abc순으로 정렬      
+ > print(mammal.union(bugs).sorted()) 
+ > 
+ > // 순서 없이 나열      
+ > print(bugs.symmetricDifference(haveWings))
+ >
+ > // sorted()를 이용해서 abc순으로 정렬
+ > print(bugs.symmetricDifference(haveWings).sorted())
+ > 
+ > // subtract는 리턴 값이 없음      
+ > print(bugs.subtract(mammal)) 
+ > ```     
 
 ### 3. Dictionary
 
@@ -222,6 +224,25 @@
 	//상기 Dicationary 문법에서, "인천공항"을 가져오려면, 
 	print("\(airports["ICH"])")
 	```
+
+- 혼자 해보는 복습
+
+```swift
+ // 혼자 해보는 복습
+        var worldMap:Dictionary<String,String> = ["Korea":"Asia", "USA":"America", "Spain":"Europe"]
+            // 같은 의미, var worldmap:[String:String] = ["Korea":"Asia", "USA":"America", "Spain":"Europe"]
+        
+        print(worldMap.count) // print값: 3
+        
+        worldMap["Korea"] = "EastAsia"
+        print(worldMap) // print값: ["Korea":"EastAsia", "USA":"America", "Spain":"Europe"]
+        
+        print(worldMap["USA"]) // print값: "America"
+        
+        worldMap["Egypt"] = "Africa"
+        printworldMap // print값: ["Korea":"Asia", "Egypt":"Africa", "Spain":"Europe", "USA":"America"]
+        
+```
 
 #### 2) 추가 기능
 
