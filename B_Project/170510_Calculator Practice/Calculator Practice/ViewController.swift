@@ -20,7 +20,36 @@ class ViewController: UIViewController {
     // 외부 디스플레이에 보이는 변수 설정 (실제 계산과 디스플레이를 분리)
     var displayNumber:String = "0"
     
-    ////////////////////////View Life Cycle////////////////////////
+    
+    // 170516_func + switch 함수이용해서 display에 0이 있을 때는 입력한 숫자만 표시, 그렇지 않을 땐 입력한 숫자를 앞 숫자에 붙이는 함수 만들기
+    //git Test
+    func addDisplayNumber(numberString:String) {
+        switch displayNumber {
+        case "0":
+            displayNumber = numberString
+        default:
+            displayNumber += numberString
+        }
+    }
+    
+    //170516_func + if 함수 이용해서 입력한 숫자가 첫번째 숫자인지, 두번째 숫자인지 판단해 각각에 저장하는 함수 operation(기호)이 empty 상태면 첫번째 숫자에, 있으면 두번째 숫자에 넣기
+    func addFirstSecondNumber() {
+        if tempOperation.isEmpty {
+            tempFirstNum = Int(displayNumber)!
+        }
+        else {
+            tempSecondNum = Int(displayNumber)!
+        }
+        displayLabel.text = displayNumber
+    }
+    
+    ///기호를 넣어주고 기호 라벨을 업데이트 합니다.
+    func updateTempOperation(_ operation:String) {
+        tempOperation = operation
+        displayNumber = "0"
+    }
+    
+////////////////////////View Life Cycle////////////////////////
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +61,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    ////////////////////////View Action////////////////////////
+////////////////////////View Action////////////////////////
     
     @IBAction func ClickBtn(_ sender: UIButton) {
         print("GT")
@@ -94,55 +123,38 @@ class ViewController: UIViewController {
     }
     
     
-    // 나누기 버튼 액션
-    @IBAction func ClickBtnDV(_ sender: UIButton) {
-        print("÷")
-        
-        tempOperation = "/"
+    // 사칙연산 버튼 액션
+    @IBAction func touchedOperationButton(_ sender: UIButton) {
+        print("사착연산 기호를 클릭하였습니다.")
+        updateTempOperation(sender.currentTitle!)
         displayNumber = "0"
     }
-        //나누기 함수
-        func devide(firstNum:Int, secondNum:Int) -> Int
-        {
-            return firstNum / secondNum
-        }
     
-    // 곱하기 버튼 액션
-    @IBAction func ClickBtnBy(_ sender: UIButton) {
-        print("X")
-        tempOperation = "*"
-        displayNumber = "0"
-    }
-        //곱하기 함수
-        func by(firstNum:Int, secondNum:Int) -> Int
-        {
-            return firstNum * secondNum
-        }
     
-    //빼기 버튼 액션
-    @IBAction func ClickBtnMN(_ sender: UIButton) {
-        print("ㅡ")
-        tempOperation = "-"
-        displayNumber = "0"
+    //사칙연산 함수
+    //나누기 함수
+    func devide(firstNum:Int, secondNum:Int) -> Int
+    {
+        return firstNum / secondNum
     }
-        //빼기 함수
-        func minus(firstNum:Int, secondNum:Int) -> Int
-        {
-            return firstNum - secondNum
-        }
+    
+    //곱하기 함수
+    func by(firstNum:Int, secondNum:Int) -> Int
+    {
+        return firstNum * secondNum
+    }
 
-    //더하기(+) 버튼 액션
-    @IBAction func ClickBtnPL(_ sender: UIButton) {
-        print("+")
-        tempOperation = "+"
-        displayNumber = "0"
+    //빼기 함수
+    func minus(firstNum:Int, secondNum:Int) -> Int
+    {
+        return firstNum - secondNum
     }
-        //더하기 함수
-        func plus(firstNum:Int, secondNum:Int) -> Int
-        {
-            return firstNum + secondNum
-        }
     
+    //더하기 함수
+    func plus(firstNum:Int, secondNum:Int) -> Int
+    {
+        return firstNum + secondNum
+    }
     
     //Equal 버튼 액션
     @IBAction func ClickBtnEQ(_ sender: UIButton) {
@@ -197,25 +209,18 @@ class ViewController: UIViewController {
         print("ON")
     }
     
-    @IBAction func ClickBtn0(_ sender: UIButton) {
-        print("0")
-        if displayNumber == "0"
-        {
-            displayNumber = "0"
-        }
-        else
-        {
-            displayNumber += "0"
-        }
+    @IBAction func touchedNumberButton(_ sender: UIButton) {
+        print("0...9 숫자버튼이 클릭되었습니다")
         
+        addDisplayNumber(numberString:sender.currentTitle!)
         
-        if tempOperation.isEmpty {
-            tempFirstNum = Int(displayNumber)!
-        } else
-        {
-            tempSecondNum = Int(displayNumber)!
-        }
-        displayLabel.text = displayNumber
+        // 또는 옵셔널을 이용해서 addDisplayNumber(sender.titleLabe?.text!)!)
+        // 의미: 숫자버튼에 입력되어 있는 숫자자체도 String이다. 이걸 그대로 표시하라는 뜻
+       
+        addFirstSecondNumber()
+        
+        self.displayLabel.text = displayNumber
+        
     }
     
     
@@ -246,200 +251,6 @@ class ViewController: UIViewController {
         displayLabel.text = "."
     }
     
-    @IBAction func ClickBtn1(_ sender: UIButton) {
-        print("1")
-        
-        //버튼클릭시 디스플레이 변경
-        if displayNumber == "0"
-        {
-            displayNumber = "1"
-        }
-        else
-        {
-            displayNumber += "1"
-        }
-        
-        if tempOperation.isEmpty {
-            //아직 첫번째 숫자
-            tempFirstNum = Int(displayNumber)!
-        } else
-        {//두번째 숫자
-            tempSecondNum = Int(displayNumber)!
-        }
-        //디스플레이 변경
-
-        displayLabel.text = displayNumber
-    }
     
-    @IBAction func ClickBtn2(_ sender: UIButton) {
-        print("2")
-        
-        if displayNumber == "0"
-        {
-            displayNumber = "2"
-        }
-        else
-        {
-            displayNumber += "2"
-        }
-        
-        
-        if tempOperation.isEmpty {
-            tempFirstNum = Int(displayNumber)!
-        } else
-        {
-            tempSecondNum = Int(displayNumber)!
-        }
-        displayLabel.text = displayNumber
-    }
-    
-    @IBAction func ClickBtn3(_ sender: UIButton) {
-        print("3")
-        if displayNumber == "0"
-        {
-            displayNumber = "3"
-        }
-        else
-        {
-            displayNumber += "3"
-        }
-        
-        
-        if tempOperation.isEmpty {
-            tempFirstNum = Int(displayNumber)!
-        } else
-        {
-            tempSecondNum = Int(displayNumber)!
-        }
-        displayLabel.text = displayNumber
-    }
-    
-    @IBAction func ClickBtn4(_ sender: UIButton) {
-        print("4")
-        if displayNumber == "0"
-        {
-            displayNumber = "4"
-        }
-        else
-        {
-            displayNumber += "4"
-        }
-        
-        
-        if tempOperation.isEmpty {
-            tempFirstNum = Int(displayNumber)!
-        } else
-        {
-            tempSecondNum = Int(displayNumber)!
-        }
-        displayLabel.text = displayNumber
-    }
-    
-    @IBAction func ClickBtn5(_ sender: UIButton) {
-        print("5")
-        if displayNumber == "0"
-        {
-            displayNumber = "5"
-        }
-        else
-        {
-            displayNumber += "5"
-        }
-        
-        
-        if tempOperation.isEmpty {
-            tempFirstNum = Int(displayNumber)!
-        } else
-        {
-            tempSecondNum = Int(displayNumber)!
-        }
-        displayLabel.text = displayNumber
-    }
-    
-    @IBAction func ClickBtn6(_ sender: UIButton) {
-        print("6")
-        if displayNumber == "0"
-        {
-            displayNumber = "6"
-        }
-        else
-        {
-            displayNumber += "6"
-        }
-        
-        
-        if tempOperation.isEmpty {
-            tempFirstNum = Int(displayNumber)!
-        } else
-        {
-            tempSecondNum = Int(displayNumber)!
-        }
-        displayLabel.text = displayNumber
-    }
-    
-    @IBAction func ClickBtn7(_ sender: UIButton) {
-        print("7")
-        if displayNumber == "0"
-        {
-            displayNumber = "7"
-        }
-        else
-        {
-            displayNumber += "7"
-        }
-        
-        
-        if tempOperation.isEmpty {
-            tempFirstNum = Int(displayNumber)!
-        } else
-        {
-            tempSecondNum = Int(displayNumber)!
-        }
-        displayLabel.text = displayNumber
-    }
-    
-    @IBAction func ClickBtn8(_ sender: UIButton) {
-        print("8")
-        if displayNumber == "0"
-        {
-            displayNumber = "8"
-        }
-        else
-        {
-            displayNumber += "8"
-        }
-        
-        
-        if tempOperation.isEmpty {
-            tempFirstNum = Int(displayNumber)!
-        } else
-        {
-            tempSecondNum = Int(displayNumber)!
-        }
-        displayLabel.text = displayNumber
-    }
-
-    @IBAction func ClickBtn9(_ sender: UIButton) {
-        print("9")
-        if displayNumber == "0"
-        {
-            displayNumber = "9"
-        }
-        else
-        {
-            displayNumber += "9"
-        }
-        
-        
-        if tempOperation.isEmpty {
-            tempFirstNum = Int(displayNumber)!
-        } else
-        {
-            tempSecondNum = Int(displayNumber)!
-        }
-        displayLabel.text = displayNumber
-    }
-
-
 }
 
