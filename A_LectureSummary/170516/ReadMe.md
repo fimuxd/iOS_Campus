@@ -20,7 +20,7 @@
 
 - 예. String형 Array를 만들거야라고 한다면, Array내의 모든 값은 String 형태가 된다.
 - 데이터의 관리는 Index로 한다.
-- Index순서는 정해져 잇다
+- Index순서는 정해져 있다.
 
 	#### 1) Array 문법
 	
@@ -61,7 +61,7 @@
 	
 	#### 2) 추가 기능
 	- swift에서 `command(⌘)` + `shift(⇪)` + `o`
-	
+
 	```swift
 	// array 생성
         var list:[Int] = [1,2,3,4,5,6,7,8]
@@ -90,22 +90,222 @@
         let list2:[Int] = [12,13]
         let list3 = list + list + list2
         print(list3)
-   ```
-
+	```
+	
+	- 혼자 해보는 Array 연습
+	
+	```swift
+	// 혼자 해보는 복습
+        var mammals:[String] = ["🐶", "🐯", "🐷", "🐰", "🐵"]
+        print(mammals) //print ["🐶", "🐯", "🐷", "🐰", "🐵"]
+        
+        mammals.append("🐸")
+        print(mammals) //print ["🐶", "🐯", "🐷", "🐰", "🐵", "🐸"]
+        
+        mammals.remove(at: 2)
+        print(mammals) // print ["🐶", "🐯", "🐰", "🐵", "🐸"]
+        
+        print(mammals.count) // print 5
+        
+        if !mammals.isEmpty {
+            print("이 Array의 Element 수는 \(mammals.count)개 입니다.")
+        }
+        else{
+            print("이 Array는 비어있습니다")
+        }
+	``` 
 	
 ### 2. Set
 
+#### 1) Set 문법
+
 - 순서 없는 데이터들이 널려져 있다.
 - 그러한 데이터들을 집합의 형태로 쓸 수 있다.
+- swift는 타입 추론을 하므로, set이라 명시하지 않으면 array로 인식하기 때문에 반드시 set이라 명기해주어야 한다.
+- 순서가 없으므로 *for-in* 구문을 통해서 데이터를 가져와야 한다.
+- 중복을 허용하지 않는다. (Array는 허용함)
+- set을 쓰는 이유
+	- 순서가 중요치 않거나 한번만 표시해야 하는 경우
+	- 집합의 성질을 띄고 있으므로, 집합 단위의 연산이 필요한 경우 set을 쓸 수 있다.
+
+	```swift
+	var someInts:set<Int> = [1,2,3,4]
+	someInts = []
+
+	//아래와 같이 set이라 명기해주어야 타입추론(array) 방지할 수 있다.
+	var someStrings:Set = ["joo","young"]
+	```
+
+#### 2) 추가 기능
+- 집합의 개념들을 이해할 것
+	
+	```swift
+	 // 홀수의 모임
+        var oddDigits:Set = [1,3,5,7,9]
+        
+    // 짝수의 모임
+        let evenDigits:Set = [2,4,6,8]
+        
+    // 소수의 모임
+        let primeDigits:Set = [2,3,5,7]
+        
+    //홀수와 짝수의 교집합(Intersection) 만들기
+        print(oddDigits.intersection(evenDigits))
+        
+	//홀수와 소수의 교집합을 제외한 수(symmetricDifference)
+        print(oddDigits.symmetricDifference(primeDigits))
+        
+    //홀수와 짝수의 합집합(union)
+        print(oddDigits.union(evenDigits).sorted())
+        
+    //홀수이면서 소수가 아닌 집합(subtracting) > 단 리턴값이 없어서 아무것도 출력되지 않음
+        oddDigits.subtract(primeDigits)
+        
+    //여기까지 적용하고 oddDigits를 확인하면 [9,1] set가 나온다
+        print(oddDigits)
+        
+    //이것을 sorted() 하면, Array의 형태로 정렬해서 [1,9] 출력된다
+        print(oddDigits.sorted())
+	```
+ 
+ - 혼자 해보는 복습
+ 
+ ```swift
+ // 혼자 해보는 복습
+        var haveWings:Set = ["bird", "butterfly", "bet"]
+        var mammal:Set = ["bet", "tiger", "pig"]
+        var bugs:Set = ["butterfly", "ant", "spider"]
+        
+        print(haveWings.intersection(mammal))
+        
+        print(mammal.union(bugs)) // 순서 없이 나열
+        
+        print(mammal.union(bugs).sorted()) // sorted()를 이용해서 abc순으로 정렬
+        
+        print(bugs.symmetricDifference(haveWings)) // 순서 없이 나열
+        
+        print(bugs.symmetricDifference(haveWings).sorted()) // sorted()를 이용해서 abc순으로 정렬
+        
+        print(bugs.subtract(mammal)) // subtract는 리턴 값이 없음
+        
+ ```     
 
 ### 3. Dictionary
+
+#### 1) Dictionary 문법
 
 - key라는 것이 있어서, Array형의 Index처럼 값을 key와 연결할 수 있다.
 - 다만, Index 같은 순서를 가지진 않는다.
 - 가장 많이 쓰는 형태. key를 통해 이 값이 어떤 것을 의미하는지 이해할 수 있다. 
 	- 특히 networking을 할 때 dictionary를 많이 사용한다. 
-- 
+- key와 value는 1:1 매칭 된다.
+- key는 중복될 수 없다.
+- 축약문법: `[key:value]`
+- 리터널 분법: `[:]`
+	
+	```swift
+	//기본형태
+	var someInts:[String:Int] = [String:Int]()
+var someInts:Dictionary<String,Int> = [:]
 
+	//dictionary의 리터널 문법의 예
+	var airports:[String:String] = ["ICH': "인천공항", "CJU": "제주공항"]
+	```
+- Array가 index를 통해 값을 가져오듯, Dictionary는 key값을 통해 값을 가져온다.
+
+	```swift
+	//상기 Dicationary 문법에서, "인천공항"을 가져오려면, 
+	print("\(airports["ICH"])")
+	```
+
+#### 2) 추가 기능
+
+- swift에서 `command(⌘)` + `shift(⇪)` + `o`
+	
+	```swift
+	// Dictionary 만들기
+        var iOSStudent:Dictionary<String,String> = ["박보영":"남성", "박종훈":"남성"]
+    // 불러오기
+        print("\(iOSStudent["박보영"])")
+        
+    // 몇 개의 elements를 가지고 있는지
+        print(iOSStudent.count)
+        
+    // 새로운 elements 추가
+        iOSStudent["조선미"] = "여성"
+        
+    // 기존 elements의 값 추가
+        iOSStudent["박보영"] = "여성"
+        print(iOSStudent)
+        
+    // 기존의 key:value 쌍을 dictionary에서 삭제
+        iOSStudent.removeValue(forKey: "박종훈")
+        print(iOSStudent)
+   ```
+
+## B. 반복문
+
+### 개념
+
+- 반복해야 할 코드가 있으면, 반복하도록 설정하는 것
+- `while` `for-in` `repeatWhile`이 있다.
+	- `while`은 시작점부터 `repeatWhile` 은 특정점부터 반복하게 하는 것인데 우리는 `while`만
+
+### 종류
+
+#### 1. While 문
+
+- 조건이 참일 경우 반복 실행
+- 횟수에 상관없이 내가 원하는 결과를 얻을 때까지 쓰는 것
+
+```swift
+//기본 형태
+while 조건
+{
+//구문 실행
+}
+
+//10번 반복하는 while문 예제
+var index = 0
+
+while index < 10
+{
+print("현재 횟수는 \(index)입니다.")
+index += 1
+}
+
+//여기서 index += 1 라는 조건을 넣지 않으면 무한 loop의 늪에 빠진다...
+```
+
+- 구구단 만들어보기
+
+```swift
+//구구단 만들기
+        
+        func multificationTable(level:Int)
+        {
+            var step:Int = 1
+            while step <= 9{
+                print("\(level) * \(step) = \(level*step)")
+                step += 1
+            }
+        }
+        
+        multificationTable(level: 14)
+```
+
+#### 2. for-in 문
+
+- 우리가 배운 collection;Array, Set, Dictionary 에 대해서 값을 가져오는 역할을 한다.
+- 가져온 collection 내의 값을 다 소진할 때까지 반복하고, 소진한 후에는 끝난다.
+- 별도의 변수 선언이 필요없다. collection에서 이미 타입선정이나 선언이 끝났으므로
+- for-in 문에서 일정 범위를 설정하고 싶으면 범위연산자를 이용하면 된다. (예. `1...5` 는 곧 `[1,2,3,4,5]`)
+- 또는 숫자의 범위에 상관없이, 횟수만 설정하고 싶으면 index 부분에 와일드카드(_)를 사용한다.
+
+    
+
+
+	
 
 
 
