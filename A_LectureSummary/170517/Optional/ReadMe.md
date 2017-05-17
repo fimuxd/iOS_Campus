@@ -11,6 +11,8 @@
 - 숫자(Label), 버튼(Button), 결과 (Label)을 생성한다
 - 해당 UI들을 코드에다 연결하는데 이 값들은 변수이므로 viewDidLoad 바깥, Class의 안쪽에 위차하도록 연결한다.
 
+> [실습한 proj Xcode 파일 바로가기]()
+
 # Optional
 
 ## A. nil
@@ -104,6 +106,18 @@
 	- 매우 번거롭
 - 매번 nil 검사를 한 후 nil이 아니면 통과하도록 한 뒤 또 !라 명명해주는 것
 
+	```swift
+	func checkFuc(inputStr:String?) {
+		
+		if inputStr != nil {
+			//의미: 만약 개발자가 String type이라 확신(!)한 inputStr이 nil이 아니라면,
+			 
+		let unwrapStr:String = inputStr!
+			//의미: inputStr을 무조건(!) String Type의 unwrapStr 상수에 넣어라
+		}
+	}
+	```
+
 #### 2) Optional Unwrapping
 
 - nil인지 확인한 후에도 또 !를 붙여야 하는 forced unwrapping의 번거로움을 조금이라도 줄이기 위해 만들어진 방법
@@ -111,12 +125,41 @@
 	- 단 if 문 내부에서만 써야 함 (guard문과 차이)
 - Swift에서는 forced보다는 optional을 많이 쓰고 선호함
 
+	```swift
+	//상기와 같은 checkFuc 함수를 optional unwrapping 해보자
+	func checkFuc(inputStr:String?) {
+		
+		if let unwrapStr:String = inputStr {
+			//의미: inputStr이 String type의 unwrapStr 이라면,
+			
+			print(unwrapStr)
+				//if문이 조건을 만족하지 않으면 자동적으로 함수가 실행되지 않는 특성 이용
+		}
+	}	
+	```
+
 #### 3) Ealrt Exit
 - nil이 들어오면 아예 함수 자체를 돌리지 말고 차단(guard) 하자는 의미
 - Guard 문: if문의 반대 (false면 실행, true면 건너 뜀) 
 	- guard 문의 조건에 거짓이면 실행, 참이면 그냥 else 없이 건너뜀
 	- optional unwrapping과 같은데, 가드만 통과하면 그 후 함수 내부 전체를 쓸 수 있다는 것 (말그대로 방어막 같은 느낌)
 	- 전체적으로 code를 보기에 간결하다는 이점이 있다.
+
+	```swift
+	//상기와 같은 checkFuc 함수를 Early Exit(Guard문) 해보자
+	func checkFuc(inputStr:String?) {
+	
+		guard let unwrapStr:String = inputStr {
+		return
+		}
+			//inputStr이 String type의 unwrapStr이 아니라면 (거짓이라면), 함수 전체 return
+	
+		print(unwrapStr)
+	}
+	```
+
+	
+## B. 실습 : 친구리스트 만들기
 
 
 
