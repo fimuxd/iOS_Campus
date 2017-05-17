@@ -25,8 +25,8 @@
 - **2nd Week** ; May 15 - 19
 	> * [Function Control Flow - switch](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170515)
 	> * [Collection & Control Flow(Loops)](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170516)
-	> * [Optional](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170517)
-	> * [Class & Object](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170517/Class%20and%20Variable)
+	> * [Optional](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170517/Optional)
+	> * [Class & Object](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170517/Class%20and%20Object)
 
 
 ### B. Project

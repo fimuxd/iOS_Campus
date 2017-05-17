@@ -226,4 +226,4 @@ class Calculation {
     }
 ```
 
-> [학점계산기 proj Xcode 바로가기]()
+> [학점계산기 proj Xcode 바로가기](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170517/Class%20and%20Object/ClassPracticeMyself/ClassPracticeMyself)
