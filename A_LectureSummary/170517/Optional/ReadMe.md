@@ -11,7 +11,7 @@
 - 숫자(Label), 버튼(Button), 결과 (Label)을 생성한다
 - 해당 UI들을 코드에다 연결하는데 이 값들은 변수이므로 viewDidLoad 바깥, Class의 안쪽에 위차하도록 연결한다.
 
-> [실습한 proj Xcode 파일 바로가기]()
+> [실습한 proj Xcode 파일 바로가기](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170517/PracticeSwift/PracticeSwift/ViewController.swift)
 
 # Optional
 
@@ -161,6 +161,7 @@
 	
 ## B. 실습 : 친구리스트 만들기
 
+> [실습한 친구리스트 proj Xcode 바로가기](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170517/Optional/OptionalPractice/OptionalPractice/ViewController.swift)
 
 
 
