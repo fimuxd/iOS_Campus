@@ -8,28 +8,25 @@
 
 import Foundation
 
-class Pikachu {
-    var name:String
-    var hp:Int = 110
-    var type:String = "전기"
-    var skills:[[String:Any]] = [["name":"전기충격","demage":10],["name":"몸통박치기","demage":20]]
+class Pikachu:PocketMon {
     
     init() {
-        
-        name = "피카츄"
+        super.init(name: "피카츄", type: "전기", exp: 0, hp: 100)
+        skills = [["Skill Name":"전기충격", "Damage":10, "Skill Exp": 5],["Skill Name":"몸통박치기","Damage":5, "Skill Exp": 10]]
     }
     
-    func attck(toMoster monster:Pikachu, skill skillNum:Int)
-    {
+    override init(name: String, type: String, exp: Int, hp: Int) {
+        super.init(name: name, type: type, exp: exp, hp: hp)
+    }
+
+    
+    func winkToMyTrainer() {
+        guard let owner:Trainer = ownerTrainer else {
+            return
+        }
         
-        let skill:[String:Any] = skills[skillNum]
-        let skillName:String = skill["name"] as! String
-        
-        /* as : 다운 케스팅*/
-        print("\(self.name)이 \(monster)에게 \(skillName)으로 공격합니다.")
-        
-        let skillDemage:Int = skill["demage"] as! Int
-        monster.hp -= skillDemage
-        
+        print("\(owner.name)에게 윙크했습니다.")
+        hp += 10
+        owner.exp += 20
     }
 }

@@ -27,12 +27,13 @@
 	> * [Collection & Control Flow(Loops)](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170516)
 	> * [Optional](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170517/Optional)
 	> * [Class & Object](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170517/Class%20and%20Object)
-	> * [Inheritance]()
+	> * [Inheritance](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170518)
 
 
 ### B. Project
-- [Calculator](https://github.com/fimuxd/iOS_Campus/tree/master/B_Project/170510_Calculator%20Practice) ; May 10 -
 
+> * [Calculator](https://github.com/fimuxd/iOS_Campus/tree/master/B_Project/170510_Calculator%20Practice) ; May 10 - 
+> * [PocketMonster]()
 
 ### C. Task & Study
 > - [Object Oriented Programming](https://github.com/fimuxd/iOS_Campus/blob/master/C_Task/객체지향형%20프로그래밍_170510/Task_170510)

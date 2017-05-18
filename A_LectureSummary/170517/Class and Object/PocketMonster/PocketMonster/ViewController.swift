@@ -13,6 +13,47 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let pika:Pikachu = Pikachu()
+        let rai:Raichu = Raichu()
+        let bb:Trainer = Trainer(name: "보영", exp: 100)
+        let fightGround:FightSystem = FightSystem()
+        
+        rai.attack(Monster: pika, skill: 0)
+        
+        fightGround.vsOneByOne(firstMonster: pika, secondMonster: rai)
+        
+        
+        
+//        rai.attack(Monster: pika, skill: 1)
+//        rai.attack(Monster: pika, skill: 0)
+//        rai.attack(Monster: pika, skill: 1)
+//        rai.attack(Monster: pika, skill: 1)
+//        rai.attack(Monster: pika, skill: 1)
+//        rai.attack(Monster: pika, skill: 1)
+//        rai.attack(Monster: pika, skill: 1)
+//        pika.attack(Monster: rai, skill: 0)
+//        pika.attack(Monster: rai, skill: 1)
+//        pika.attack(Monster: rai, skill: 1)
+//        
+//        pika.terminate(monster: pika)
+//        pika.terminate(monster: rai)
+//        
+//        print(pika.exp)
+//        print(rai.exp)
+//        
+//        
+//        rai.attack(Monster: pika, skill: 1)
+//        rai.attack(Monster: pika, skill: 1)
+//         
+//        print(pika.hp)
+//        
+//        
+//        bb.intoPocketBall(monster: pika, trainer: bb)
+//        
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
