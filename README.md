@@ -1,15 +1,23 @@
 # Bo-Young PARK 
 
 
-## Content
+## Contents
 
+- About Me
 - iOS School
 - Contact Me
 
+## About Me
+
+- **Travellover** | *38 cities of  15 countries*
+- **3 yrs in UAE** | *Trading(Abu Dhabi) & Consulate General(Dubai)*
+- **8 mths in Hong Kong** | *Android POS Proj.*
+- **Pursue Diversity | Anarchist | Equalityist | Liberal** 
 
 
 
-## 1. iOS School
+
+## iOS School
 
 ### A. Lecture Summary
 - **1st Week** ; May 8 - 12
@@ -33,17 +41,18 @@
 ### B. Project
 
 > * [Calculator](https://github.com/fimuxd/iOS_Campus/tree/master/B_Project/170510_Calculator%20Practice) ; May 10 - 
-> * [PocketMonster](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170517/Class%20and%20Object/PocketMonster/PocketMonster)
+
 
 ### C. Task & Study
 > - [Object Oriented Programming](https://github.com/fimuxd/iOS_Campus/blob/master/C_Task/객체지향형%20프로그래밍_170510/Task_170510)
 > - [Function Practice: Size and Volume](https://github.com/fimuxd/iOS_Campus/blob/master/C_Task/함수연습_170512/ShapePractice.playground/Contents.swift)
 > - [Function Practice: Unit Convert](https://github.com/fimuxd/iOS_Campus/blob/master/C_Task/함수연습_170512/Toolbox.playground/Contents.swift)
+> * [PocketMonster](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170517/Class%20and%20Object/PocketMonster/PocketMonster)
 
 
 
 
-## 2. Contact Me
+## Contact Me
 - 📱+82 10.3316.1609
 - 📧 fimuxd@gmail.com
 
