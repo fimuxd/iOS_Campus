@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A111DF81ECE7F32001304EB /* Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A111DF71ECE7F32001304EB /* Ball.swift */; };
 		6AA92D0B1ECC3C23002C4971 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92D0A1ECC3C23002C4971 /* AppDelegate.swift */; };
 		6AA92D0D1ECC3C23002C4971 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92D0C1ECC3C23002C4971 /* ViewController.swift */; };
 		6AA92D101ECC3C23002C4971 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92D0E1ECC3C23002C4971 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A111DF71ECE7F32001304EB /* Ball.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ball.swift; sourceTree = "<group>"; };
 		6AA92D071ECC3C23002C4971 /* PocketMonster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketMonster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AA92D0A1ECC3C23002C4971 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AA92D0C1ECC3C23002C4971 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,10 +69,11 @@
 				6AA92D0A1ECC3C23002C4971 /* AppDelegate.swift */,
 				6AA92D0C1ECC3C23002C4971 /* ViewController.swift */,
 				6AB4725B1ECD71B200DEB845 /* PocketMon.swift */,
-				6AB472611ECDCD6700DEB845 /* FightSystem.swift */,
+				6A111DF71ECE7F32001304EB /* Ball.swift */,
 				6AB4725D1ECD80A600DEB845 /* Trainer.swift */,
 				6AA92D1C1ECC3E33002C4971 /* Pikachu.swift */,
 				6AB472571ECD712700DEB845 /* Raichu.swift */,
+				6AB472611ECDCD6700DEB845 /* FightSystem.swift */,
 				6AA92D0E1ECC3C23002C4971 /* Main.storyboard */,
 				6AA92D111ECC3C23002C4971 /* Assets.xcassets */,
 				6AA92D131ECC3C23002C4971 /* LaunchScreen.storyboard */,
@@ -152,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A111DF81ECE7F32001304EB /* Ball.swift in Sources */,
 				6AA92D0D1ECC3C23002C4971 /* ViewController.swift in Sources */,
 				6AB4725C1ECD71B200DEB845 /* PocketMon.swift in Sources */,
 				6AB4725E1ECD80A600DEB845 /* Trainer.swift in Sources */,

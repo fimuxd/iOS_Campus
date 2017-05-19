@@ -16,10 +16,15 @@ class ViewController: UIViewController {
         
         let pika:Pikachu = Pikachu()
         let rai:Raichu = Raichu()
-        let bb:Trainer = Trainer(name: "보영", exp: 100)
+        let b1:Ball = Ball()
+        let bb:Trainer = Trainer(name: "보영", exp: 100, ballTray: [b1])
         let fightGround:FightSystem = FightSystem()
         
         rai.attack(Monster: pika, skill: 0)
+        
+        bb.intoMyPocketBall(monster: pika)
+        print(bb.ballTray)
+        
         
         fightGround.vsOneByOne(firstMonster: pika, secondMonster: rai)
         

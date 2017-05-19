@@ -9,12 +9,12 @@
 
 ## About Me
 
+> **iOS Dev.Std.** | *May 8, 2017 ~ Current*
+
 - **Travellover** | *38 cities of  15 countries*
 - **3 yrs in UAE** | *Trading(Abu Dhabi) & Consulate General(Dubai)*
 - **8 mths in Hong Kong** | *Android POS Proj.*
 - **Pursue Diversity | Anarchist | Equalityist | Liberal** 
-
-
 
 
 ## iOS School
@@ -40,13 +40,14 @@
 
 ### B. Project
 
-> * [Calculator](https://github.com/fimuxd/iOS_Campus/tree/master/B_Project/170510_Calculator%20Practice) ; May 10 - 
+> * [Calculator](https://github.com/fimuxd/iOS_Campus/tree/master/B_Project/170510_Calculator%20Practice) ; May 10 - Current, 2017
+> * [Vending Machine](); May 19, 2017
 
 
 ### C. Task & Study
-> - [Object Oriented Programming](https://github.com/fimuxd/iOS_Campus/blob/master/C_Task/객체지향형%20프로그래밍_170510/Task_170510)
-> - [Function Practice: Size and Volume](https://github.com/fimuxd/iOS_Campus/blob/master/C_Task/함수연습_170512/ShapePractice.playground/Contents.swift)
-> - [Function Practice: Unit Convert](https://github.com/fimuxd/iOS_Campus/blob/master/C_Task/함수연습_170512/Toolbox.playground/Contents.swift)
+> * [Object Oriented Programming](https://github.com/fimuxd/iOS_Campus/blob/master/C_Task/객체지향형%20프로그래밍_170510/Task_170510)
+> * [Function Practice: Size and Volume](https://github.com/fimuxd/iOS_Campus/blob/master/C_Task/함수연습_170512/ShapePractice.playground/Contents.swift)
+> * [Function Practice: Unit Convert](https://github.com/fimuxd/iOS_Campus/blob/master/C_Task/함수연습_170512/Toolbox.playground/Contents.swift)
 > * [PocketMonster](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170517/Class%20and%20Object/PocketMonster/PocketMonster)
 
 
