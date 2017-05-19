@@ -41,7 +41,7 @@
 ### B. Project
 
 > * [Calculator](https://github.com/fimuxd/iOS_Campus/tree/master/B_Project/170510_Calculator%20Practice) ; May 10 - Current, 2017
-> * [Vending Machine](); May 19, 2017
+> * [Vending Machine](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170517/Class%20and%20Object/VendingMachine/VendingMachine/ViewController.swift); May 19, 2017
 
 
 ### C. Task & Study
