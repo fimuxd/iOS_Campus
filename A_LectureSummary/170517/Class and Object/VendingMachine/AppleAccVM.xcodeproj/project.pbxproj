@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		6A0144961ECEE0BB00F73F68 /* White.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A0144951ECEE0BB00F73F68 /* White.png */; };
+		6A01DC921ED0222600BEC6C9 /* VMIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A01DC911ED0222600BEC6C9 /* VMIcon.png */; };
+		6A01DC971ED0353D00BEC6C9 /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A01DC961ED0353D00BEC6C9 /* AppIcon.png */; };
 		6A4278C31ECE8E5100D02EB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4278C21ECE8E5100D02EB5 /* AppDelegate.swift */; };
 		6A4278C51ECE8E5100D02EB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4278C41ECE8E5100D02EB5 /* ViewController.swift */; };
 		6A4278C81ECE8E5100D02EB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A4278C61ECE8E5100D02EB5 /* Main.storyboard */; };
-		6A4278CA1ECE8E5100D02EB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A4278C91ECE8E5100D02EB5 /* Assets.xcassets */; };
 		6A4278CD1ECE8E5100D02EB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A4278CB1ECE8E5100D02EB5 /* LaunchScreen.storyboard */; };
 		6A4278D51ECE910900D02EB5 /* USDollar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4278D41ECE910900D02EB5 /* USDollar.swift */; };
 		6A4278D71ECE911800D02EB5 /* VMTray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4278D61ECE911800D02EB5 /* VMTray.swift */; };
@@ -27,15 +28,17 @@
 		6A4278EB1ECE9B4B00D02EB5 /* DarkGrey.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6A4278EA1ECE9B4B00D02EB5 /* DarkGrey.jpeg */; };
 		6A4278ED1ECEB83500D02EB5 /* Red Circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A4278EC1ECEB83500D02EB5 /* Red Circle.png */; };
 		6A4278EF1ECEC40F00D02EB5 /* Change.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A4278EE1ECEC40F00D02EB5 /* Change.png */; };
+		6A6D1A1B1ED03B4D00E29FC2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A6D1A1A1ED03B4D00E29FC2 /* Images.xcassets */; };
+		6A6D1A241ED052A300E29FC2 /* LaunchBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6A6D1A231ED052A300E29FC2 /* LaunchBackground.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6A0144951ECEE0BB00F73F68 /* White.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = White.png; sourceTree = "<group>"; };
-		6A4278BF1ECE8E5100D02EB5 /* VendingMachine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VendingMachine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A01DC911ED0222600BEC6C9 /* VMIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VMIcon.png; sourceTree = "<group>"; };
+		6A01DC961ED0353D00BEC6C9 /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon.png; sourceTree = "<group>"; };
 		6A4278C21ECE8E5100D02EB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A4278C41ECE8E5100D02EB5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6A4278C71ECE8E5100D02EB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6A4278C91ECE8E5100D02EB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A4278CC1ECE8E5100D02EB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A4278CE1ECE8E5100D02EB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A4278D41ECE910900D02EB5 /* USDollar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = USDollar.swift; sourceTree = "<group>"; };
@@ -52,6 +55,9 @@
 		6A4278EA1ECE9B4B00D02EB5 /* DarkGrey.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DarkGrey.jpeg; sourceTree = "<group>"; };
 		6A4278EC1ECEB83500D02EB5 /* Red Circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red Circle.png"; sourceTree = "<group>"; };
 		6A4278EE1ECEC40F00D02EB5 /* Change.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Change.png; sourceTree = "<group>"; };
+		6A577AD01ED0388F001CEAE9 /* AppleAccVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleAccVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A6D1A1A1ED03B4D00E29FC2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6A6D1A231ED052A300E29FC2 /* LaunchBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LaunchBackground.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,21 +75,13 @@
 			isa = PBXGroup;
 			children = (
 				6A4278C11ECE8E5100D02EB5 /* VendingMachine */,
-				6A4278C01ECE8E5100D02EB5 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		6A4278C01ECE8E5100D02EB5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				6A4278BF1ECE8E5100D02EB5 /* VendingMachine.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		6A4278C11ECE8E5100D02EB5 /* VendingMachine */ = {
 			isa = PBXGroup;
 			children = (
+				6A6D1A1A1ED03B4D00E29FC2 /* Images.xcassets */,
 				6A4278C21ECE8E5100D02EB5 /* AppDelegate.swift */,
 				6A4278C41ECE8E5100D02EB5 /* ViewController.swift */,
 				6A4278D41ECE910900D02EB5 /* USDollar.swift */,
@@ -102,19 +100,31 @@
 				6A4278EC1ECEB83500D02EB5 /* Red Circle.png */,
 				6A4278EE1ECEC40F00D02EB5 /* Change.png */,
 				6A0144951ECEE0BB00F73F68 /* White.png */,
-				6A4278C91ECE8E5100D02EB5 /* Assets.xcassets */,
+				6A01DC911ED0222600BEC6C9 /* VMIcon.png */,
+				6A01DC961ED0353D00BEC6C9 /* AppIcon.png */,
+				6A6D1A231ED052A300E29FC2 /* LaunchBackground.jpg */,
 				6A4278CB1ECE8E5100D02EB5 /* LaunchScreen.storyboard */,
 				6A4278CE1ECE8E5100D02EB5 /* Info.plist */,
+				6A6D1A181ED03AD900E29FC2 /* Products */,
 			);
 			path = VendingMachine;
+			sourceTree = "<group>";
+		};
+		6A6D1A181ED03AD900E29FC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A577AD01ED0388F001CEAE9 /* AppleAccVM.app */,
+			);
+			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6A4278BE1ECE8E5100D02EB5 /* VendingMachine */ = {
+		6A4278BE1ECE8E5100D02EB5 /* AppleAccVM */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6A4278D11ECE8E5100D02EB5 /* Build configuration list for PBXNativeTarget "VendingMachine" */;
+			buildConfigurationList = 6A4278D11ECE8E5100D02EB5 /* Build configuration list for PBXNativeTarget "AppleAccVM" */;
 			buildPhases = (
 				6A4278BB1ECE8E5100D02EB5 /* Sources */,
 				6A4278BC1ECE8E5100D02EB5 /* Frameworks */,
@@ -124,9 +134,9 @@
 			);
 			dependencies = (
 			);
-			name = VendingMachine;
+			name = AppleAccVM;
 			productName = VendingMachine;
-			productReference = 6A4278BF1ECE8E5100D02EB5 /* VendingMachine.app */;
+			productReference = 6A577AD01ED0388F001CEAE9 /* AppleAccVM.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -146,7 +156,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6A4278BA1ECE8E5100D02EB5 /* Build configuration list for PBXProject "VendingMachine" */;
+			buildConfigurationList = 6A4278BA1ECE8E5100D02EB5 /* Build configuration list for PBXProject "AppleAccVM" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -155,11 +165,11 @@
 				Base,
 			);
 			mainGroup = 6A4278B61ECE8E5100D02EB5;
-			productRefGroup = 6A4278C01ECE8E5100D02EB5 /* Products */;
+			productRefGroup = 6A4278B61ECE8E5100D02EB5;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6A4278BE1ECE8E5100D02EB5 /* VendingMachine */,
+				6A4278BE1ECE8E5100D02EB5 /* AppleAccVM */,
 			);
 		};
 /* End PBXProject section */
@@ -171,6 +181,7 @@
 			files = (
 				6A4278E71ECE9AC600D02EB5 /* USD50.jpeg in Resources */,
 				6A0144961ECEE0BB00F73F68 /* White.png in Resources */,
+				6A01DC921ED0222600BEC6C9 /* VMIcon.png in Resources */,
 				6A4278ED1ECEB83500D02EB5 /* Red Circle.png in Resources */,
 				6A4278EF1ECEC40F00D02EB5 /* Change.png in Resources */,
 				6A4278CD1ECE8E5100D02EB5 /* LaunchScreen.storyboard in Resources */,
@@ -178,11 +189,13 @@
 				6A4278E01ECE978100D02EB5 /* World Charger 45.jpeg in Resources */,
 				6A4278E81ECE9AC600D02EB5 /* USD10.jpeg in Resources */,
 				6A4278EB1ECE9B4B00D02EB5 /* DarkGrey.jpeg in Resources */,
-				6A4278CA1ECE8E5100D02EB5 /* Assets.xcassets in Resources */,
 				6A4278C81ECE8E5100D02EB5 /* Main.storyboard in Resources */,
+				6A6D1A1B1ED03B4D00E29FC2 /* Images.xcassets in Resources */,
+				6A01DC971ED0353D00BEC6C9 /* AppIcon.png in Resources */,
 				6A4278E11ECE978100D02EB5 /* AirPods 159.jpeg in Resources */,
 				6A4278E91ECE9AC600D02EB5 /* USD100.jpeg in Resources */,
 				6A4278E31ECE978100D02EB5 /* Magic Trackpad 2 129.jpeg in Resources */,
+				6A6D1A241ED052A300E29FC2 /* LaunchBackground.jpg in Resources */,
 				6A4278E21ECE978100D02EB5 /* Magic Keyboard 99.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,6 +334,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 2DHMJ6Z3L3;
 				INFOPLIST_FILE = VendingMachine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -334,6 +348,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 2DHMJ6Z3L3;
 				INFOPLIST_FILE = VendingMachine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -346,7 +361,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6A4278BA1ECE8E5100D02EB5 /* Build configuration list for PBXProject "VendingMachine" */ = {
+		6A4278BA1ECE8E5100D02EB5 /* Build configuration list for PBXProject "AppleAccVM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6A4278CF1ECE8E5100D02EB5 /* Debug */,
@@ -355,7 +370,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6A4278D11ECE8E5100D02EB5 /* Build configuration list for PBXNativeTarget "VendingMachine" */ = {
+		6A4278D11ECE8E5100D02EB5 /* Build configuration list for PBXNativeTarget "AppleAccVM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6A4278D21ECE8E5100D02EB5 /* Debug */,
