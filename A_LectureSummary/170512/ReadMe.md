@@ -223,7 +223,7 @@ func wherePoint(point:(Int, Int))
 > 산술, 비교, 논리연산자는 확실히 이해할 것
 
 
-[playground 실습파일](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170512)
+[Project 실습파일](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170512/FunctionPractice/FunctionPractice/ViewController.swift)
 
 
 
