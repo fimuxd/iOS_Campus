@@ -34,9 +34,7 @@ class ViewController: UIViewController {
     // 입력-잔돈 라벨
     
     @IBOutlet weak var insertLabel: UILabel!
-    
     @IBOutlet weak var changeLabel: UILabel!
-    
     @IBOutlet weak var noticeLabel: UILabel!
     
     // 상품 갯수 라벨
@@ -49,12 +47,11 @@ class ViewController: UIViewController {
     // 상품 나오는 곳 이미지
     @IBOutlet weak var ResultImageLabel: UIImageView!
     
-    
- 
-    
+
     // 거스름돈 버튼 액션
     
     @IBAction func touchChangeBtn(_ sender: UIButton) {
+        
         if self.currentInputValue >= 0 {
             self.changeLabel.text = "0"
             self.noticeLabel.text = "USD \(self.currentInputValue + Int(self.changeLabel.text!)!) for change"

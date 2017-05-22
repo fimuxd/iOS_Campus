@@ -13,5 +13,6 @@ class USDollar {
 
     init(value:Int) {
        self.value = value
+        
     }
 }

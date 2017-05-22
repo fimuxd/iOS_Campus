@@ -10,6 +10,7 @@ import Foundation
 
 class VMTray {
     var tray:[AppleAcc]
+
     
     init(tray:[AppleAcc]) {
         self.tray = tray
