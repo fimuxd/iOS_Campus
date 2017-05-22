@@ -54,7 +54,7 @@ public enum UIViewAnimationCurve : Int {
 
 ## B. UI Class Hierarchy
 
-![hierarchy](/Users/B.Park/iOS_Campus/A_LectureSummary/170520/0522-23.tiff)
+![hierarchy](0522-23.tiff)
 
 ### 1. UIResponder
 
@@ -192,7 +192,7 @@ public enum UIViewAnimationCurve : Int {
 > 
 > - 결과 이미지
 > 
-> ![이미지](/Users/B.Park/iOS_Campus/A_LectureSummary/170520/viewByCode.png)
+> ![이미지](viewByCode.png)
 
 > - 좀 더 응용해 보자
 > 
@@ -237,7 +237,7 @@ public enum UIViewAnimationCurve : Int {
 > 
 > - 결과 이미지
 > 
-> ![이미지](/Users/B.Park/iOS_Campus/A_LectureSummary/170520/viewAndLabelByCode.png)
+> ![이미지](viewAndLabelByCode.png)
 
 ### 3. UIImageView
 
@@ -263,10 +263,15 @@ public enum UIViewAnimationCurve : Int {
 >        self.view.addSubview(image3)
 > ```
 > 
-> - 삽입한 원본 ![이미지](/Users/B.Park/iOS_Campus/A_LectureSummary/170520/hardwell.jpg)
+> - 삽입한 원본 ![이미지](hardwell.jpg)
 > 
 > - 결과 이미지
 > 
-> ![이미지](/Users/B.Park/iOS_Campus/A_LectureSummary/170520/imageByCode.png)
+> ![이미지](imageByCode.png)
 
 ## C. Assets
+
+- 각각의 device 별로 resolution이 다르다.
+	- 예. 3S:normal, Retina:2x, Plus:3x
+- 각각의 이미지를 모두 별도로 저장해주어야 하는데 그러면 관리가 용이하지 않다.
+- 이를 위해 만든 개념이 Assets
