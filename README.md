@@ -37,6 +37,9 @@
 	> * [Class & Object](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170517/Class%20and%20Object)
 	> * [Inheritance](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170518)
 
+- **3rd Week** ; May 22 - 26
+	> * [UI Class](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170520)
+
 
 ### B. Project
 
