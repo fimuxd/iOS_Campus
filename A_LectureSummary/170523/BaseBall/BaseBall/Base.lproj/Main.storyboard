@@ -21,141 +21,152 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTK-RN-Dyh" userLabel="UnderLabel">
+                                <rect key="frame" x="-18" y="586" width="403" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.059421066190000003" green="0.17215038839999999" blue="0.40794733170000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FvE-bw-O9w">
-                                <rect key="frame" x="57" y="340" width="82" height="82"/>
+                                <rect key="frame" x="56" y="316" width="82" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.20010708269999999" green="0.2001078278" blue="0.20010943710000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="30"/>
                                 <color key="tintColor" red="0.11278684596794178" green="0.18369669266258382" blue="0.31565738341968907" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="1">
-                                    <color key="titleColor" red="0.31565738341968907" green="0.31565738341968907" blue="0.31565738341968907" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="0.66349579010621762" green="0.66349579010621762" blue="0.66349579010621762" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <action selector="numberBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OzV-PN-2g4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JpH-10-Y1a">
-                                <rect key="frame" x="147" y="340" width="82" height="82"/>
+                                <rect key="frame" x="146" y="316" width="82" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.20010708269999999" green="0.2001078278" blue="0.20010943710000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="30"/>
                                 <color key="tintColor" red="0.11278684596794178" green="0.18369669266258382" blue="0.31565738341968907" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="2">
-                                    <color key="titleColor" red="0.31565738341968907" green="0.31565738341968907" blue="0.31565738341968907" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="0.66349579010621762" green="0.66349579010621762" blue="0.66349579010621762" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <action selector="numberBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ijo-PO-2wK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rb7-me-jhA">
-                                <rect key="frame" x="238" y="340" width="82" height="82"/>
+                                <rect key="frame" x="237" y="316" width="82" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.20010708269999999" green="0.2001078278" blue="0.20010943710000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="30"/>
                                 <color key="tintColor" red="0.11278684596794178" green="0.18369669266258382" blue="0.31565738341968907" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="3">
-                                    <color key="titleColor" red="0.31565738341968907" green="0.31565738341968907" blue="0.31565738341968907" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="0.66349579010621762" green="0.66349579010621762" blue="0.66349579010621762" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <action selector="numberBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4AZ-jh-d1a"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bE-Ej-k7x">
-                                <rect key="frame" x="57" y="430" width="82" height="82"/>
+                                <rect key="frame" x="56" y="406" width="82" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.20010708269999999" green="0.2001078278" blue="0.20010943710000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="30"/>
                                 <color key="tintColor" red="0.11278684596794178" green="0.18369669266258382" blue="0.31565738341968907" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="4">
-                                    <color key="titleColor" red="0.31565738341968907" green="0.31565738341968907" blue="0.31565738341968907" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="0.66349579010621762" green="0.66349579010621762" blue="0.66349579010621762" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <action selector="numberBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kT8-h4-JdY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UlQ-NJ-oQy">
-                                <rect key="frame" x="57" y="520" width="82" height="82"/>
+                                <rect key="frame" x="56" y="496" width="82" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.20010708269999999" green="0.2001078278" blue="0.20010943710000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="30"/>
                                 <color key="tintColor" red="0.11278684596794178" green="0.18369669266258382" blue="0.31565738341968907" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="7">
-                                    <color key="titleColor" red="0.31565738341968907" green="0.31565738341968907" blue="0.31565738341968907" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="0.66349579010621762" green="0.66349579010621762" blue="0.66349579010621762" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <action selector="numberBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BZA-mT-FNQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81X-1m-cEE">
-                                <rect key="frame" x="147" y="430" width="82" height="82"/>
+                                <rect key="frame" x="146" y="406" width="82" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.20010708269999999" green="0.2001078278" blue="0.20010943710000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="30"/>
                                 <color key="tintColor" red="0.11278684596794178" green="0.18369669266258382" blue="0.31565738341968907" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="5">
-                                    <color key="titleColor" red="0.31565738341968907" green="0.31565738341968907" blue="0.31565738341968907" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="0.66349579010621762" green="0.66349579010621762" blue="0.66349579010621762" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <action selector="numberBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xLx-MQ-9LC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EeD-cP-rC4">
-                                <rect key="frame" x="148" y="520" width="82" height="82"/>
+                                <rect key="frame" x="147" y="496" width="82" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.20010708269999999" green="0.2001078278" blue="0.20010943710000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="30"/>
                                 <color key="tintColor" red="0.11278684596794178" green="0.18369669266258382" blue="0.31565738341968907" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="8">
-                                    <color key="titleColor" red="0.31565738341968907" green="0.31565738341968907" blue="0.31565738341968907" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="0.66349579010621762" green="0.66349579010621762" blue="0.66349579010621762" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <action selector="numberBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u8g-5G-EfZ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KwI-g1-MOg">
-                                <rect key="frame" x="238" y="430" width="82" height="82"/>
+                                <rect key="frame" x="237" y="406" width="82" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.20010708269999999" green="0.2001078278" blue="0.20010943710000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="30"/>
                                 <color key="tintColor" red="0.11278684596794178" green="0.18369669266258382" blue="0.31565738341968907" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="6">
-                                    <color key="titleColor" red="0.31565738341968907" green="0.31565738341968907" blue="0.31565738341968907" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="0.66349579010621762" green="0.66349579010621762" blue="0.66349579010621762" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <action selector="numberBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1nS-bt-BsK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MRz-4y-WOW">
-                                <rect key="frame" x="238" y="520" width="82" height="82"/>
+                                <rect key="frame" x="237" y="496" width="82" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.20010708269999999" green="0.2001078278" blue="0.20010943710000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="30"/>
                                 <color key="tintColor" red="0.11278684596794178" green="0.18369669266258382" blue="0.31565738341968907" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="9">
-                                    <color key="titleColor" red="0.31565738341968907" green="0.31565738341968907" blue="0.31565738341968907" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="0.66349579010621762" green="0.66349579010621762" blue="0.66349579010621762" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <action selector="numberBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CGN-Ny-dgM"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eb7-Xk-XY2">
-                                <rect key="frame" x="55" y="610" width="111" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eb7-Xk-XY2">
+                                <rect key="frame" x="70" y="585" width="65" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="GAME START"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                </accessibility>
+                                <state key="normal" image="actflyingball.png"/>
                                 <connections>
                                     <action selector="startBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tfe-95-ReB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWw-23-fuC">
-                                <rect key="frame" x="189" y="610" width="150" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWw-23-fuC">
+                                <rect key="frame" x="233" y="591" width="55" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="RESET"/>
+                                <state key="normal" image="actreseat.png"/>
                                 <connections>
                                     <action selector="resetBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PNm-dz-F4g"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WMx-AD-CXo">
-                                <rect key="frame" x="0.0" y="20" width="375" height="71"/>
+                                <rect key="frame" x="-7" y="27" width="388" height="112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.05942106619477272" green="0.1721503883600235" blue="0.40794733166694641" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -163,63 +174,77 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ziA-NE-8gW">
-                                <rect key="frame" x="71" y="268" width="43" height="58"/>
+                                <rect key="frame" x="70" y="244" width="43" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="baseballLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="jHG-hl-yv2">
-                                <rect key="frame" x="-18" y="0.0" width="228" height="135"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="board.png" translatesAutoresizingMaskIntoConstraints="NO" id="2f4-Go-AqD">
-                                <rect key="frame" x="154" y="254" width="71" height="78"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="board.png" translatesAutoresizingMaskIntoConstraints="NO" id="CgZ-ed-mOO">
-                                <rect key="frame" x="250" y="254" width="71" height="78"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="board.png" translatesAutoresizingMaskIntoConstraints="NO" id="i7n-tM-bTn">
-                                <rect key="frame" x="57" y="254" width="71" height="78"/>
+                                <rect key="frame" x="56" y="230" width="71" height="78"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mov-cI-lNb">
-                                <rect key="frame" x="169" y="274" width="42" height="47"/>
+                                <rect key="frame" x="167" y="244" width="43" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter 3 Numbers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Clq-rO-gnM">
-                                <rect key="frame" x="67" y="161" width="242" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="board.png" translatesAutoresizingMaskIntoConstraints="NO" id="2f4-Go-AqD">
+                                <rect key="frame" x="153" y="230" width="71" height="78"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.86336220850000001" green="0.86336220850000001" blue="0.86336220850000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YqY-w3-hua">
-                                <rect key="frame" x="66" y="132" width="242" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.86336220850000001" green="0.86336220850000001" blue="0.86336220850000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oxS-0V-RY2">
-                                <rect key="frame" x="265" y="274" width="42" height="47"/>
+                                <rect key="frame" x="263" y="244" width="43" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="board.png" translatesAutoresizingMaskIntoConstraints="NO" id="CgZ-ed-mOO">
+                                <rect key="frame" x="249" y="230" width="71" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ENTER 3 NUMBERS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Clq-rO-gnM">
+                                <rect key="frame" x="0.0" y="182" width="375" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.86336220850000001" green="0.86336220850000001" blue="0.86336220850000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WELCOME TO BASEBALL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YqY-w3-hua">
+                                <rect key="frame" x="0.0" y="155" width="375" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.86336220850000001" green="0.86336220850000001" blue="0.86336220850000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GAME START" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lBN-d6-dwb">
+                                <rect key="frame" x="67" y="645" width="72" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.93725448846817017" green="0.93725734949111938" blue="0.9372636079788208" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RESET" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v81-AB-waj">
+                                <rect key="frame" x="224" y="645" width="72" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.93725448846817017" green="0.93725734949111938" blue="0.9372636079788208" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="baseballLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="jHG-hl-yv2">
+                                <rect key="frame" x="-18" y="18" width="228" height="135"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BASEBALL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="407-dL-ro5">
-                                <rect key="frame" x="124" y="56" width="202" height="21"/>
+                                <rect key="frame" x="124" y="82" width="202" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="26"/>
                                 <color key="textColor" red="0.98526860869999999" green="0.98895145650000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -242,6 +267,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="actflyingball.png" width="574" height="574"/>
+        <image name="actreseat.png" width="614" height="614"/>
         <image name="baseballLogo.png" width="569" height="569"/>
         <image name="board.png" width="579" height="579"/>
     </resources>

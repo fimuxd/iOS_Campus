@@ -14,6 +14,11 @@
 		6A4658471ED3C3A100C2D99D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A4658451ED3C3A100C2D99D /* LaunchScreen.storyboard */; };
 		6A4658531ED3F5A200C2D99D /* baseballLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A4658521ED3F5A200C2D99D /* baseballLogo.png */; };
 		6A4658551ED3F7FB00C2D99D /* board.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A4658541ED3F7FB00C2D99D /* board.png */; };
+		6AE9EED01ED43CAB00CA31DF /* flyingball.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AE9EECF1ED43CAB00CA31DF /* flyingball.png */; };
+		6AE9EED21ED43CBA00CA31DF /* actflyingball.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AE9EED11ED43CBA00CA31DF /* actflyingball.png */; };
+		6AE9EED81ED43E6800CA31DF /* reseat.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AE9EED71ED43E6800CA31DF /* reseat.png */; };
+		6AE9EEDA1ED4410600CA31DF /* actreseat.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AE9EED91ED4410600CA31DF /* actreseat.png */; };
+		6AE9EEDC1ED44C5900CA31DF /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AE9EEDB1ED44C5900CA31DF /* icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		6A4658481ED3C3A100C2D99D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A4658521ED3F5A200C2D99D /* baseballLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baseballLogo.png; sourceTree = "<group>"; };
 		6A4658541ED3F7FB00C2D99D /* board.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = board.png; sourceTree = "<group>"; };
+		6AE9EECF1ED43CAB00CA31DF /* flyingball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flyingball.png; sourceTree = "<group>"; };
+		6AE9EED11ED43CBA00CA31DF /* actflyingball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = actflyingball.png; sourceTree = "<group>"; };
+		6AE9EED71ED43E6800CA31DF /* reseat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reseat.png; sourceTree = "<group>"; };
+		6AE9EED91ED4410600CA31DF /* actreseat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = actreseat.png; sourceTree = "<group>"; };
+		6AE9EEDB1ED44C5900CA31DF /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +76,11 @@
 				6A4658481ED3C3A100C2D99D /* Info.plist */,
 				6A4658521ED3F5A200C2D99D /* baseballLogo.png */,
 				6A4658541ED3F7FB00C2D99D /* board.png */,
+				6AE9EECF1ED43CAB00CA31DF /* flyingball.png */,
+				6AE9EED91ED4410600CA31DF /* actreseat.png */,
+				6AE9EED11ED43CBA00CA31DF /* actflyingball.png */,
+				6AE9EED71ED43E6800CA31DF /* reseat.png */,
+				6AE9EEDB1ED44C5900CA31DF /* icon.png */,
 			);
 			path = BaseBall;
 			sourceTree = "<group>";
@@ -131,9 +146,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A4658471ED3C3A100C2D99D /* LaunchScreen.storyboard in Resources */,
+				6AE9EEDA1ED4410600CA31DF /* actreseat.png in Resources */,
+				6AE9EED81ED43E6800CA31DF /* reseat.png in Resources */,
 				6A4658531ED3F5A200C2D99D /* baseballLogo.png in Resources */,
+				6AE9EED01ED43CAB00CA31DF /* flyingball.png in Resources */,
 				6A4658441ED3C3A100C2D99D /* Assets.xcassets in Resources */,
+				6AE9EEDC1ED44C5900CA31DF /* icon.png in Resources */,
 				6A4658421ED3C3A100C2D99D /* Main.storyboard in Resources */,
+				6AE9EED21ED43CBA00CA31DF /* actflyingball.png in Resources */,
 				6A4658551ED3F7FB00C2D99D /* board.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +289,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 2DHMJ6Z3L3;
 				INFOPLIST_FILE = BaseBall/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -282,6 +303,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 2DHMJ6Z3L3;
 				INFOPLIST_FILE = BaseBall/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -310,6 +332,7 @@
 				6A46584D1ED3C3A100C2D99D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

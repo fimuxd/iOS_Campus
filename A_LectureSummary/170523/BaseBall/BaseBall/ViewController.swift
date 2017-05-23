@@ -37,30 +37,41 @@ class ViewController: UIViewController {
     
     //실행횟수 
     var tryCount:Int = 0
+    
     //게임 시작
     @IBAction func startBtn(_ sender: UIButton) {
         var strikeCount:Int = 0
         var ballCount:Int = 0
         var outCount:Int = 0
         
-        for index in 0...2 {
-            if answerNumbers[index] == inputNumbers[index] {
-                strikeCount += 1
+        
+        if self.thirdLabel.text != "" {
+            for index in 0...2 {
+                if answerNumbers[index] == inputNumbers[index] {
+                    strikeCount += 1
+                }
+                else if answerNumbers.contains(inputNumbers[index]) {
+                    ballCount += 1
+                }
+                else {
+                    outCount += 1
+                }
             }
-            else if answerNumbers.contains(inputNumbers[index]) {
-                ballCount += 1
-            }
-            else {
-                outCount += 1
-            }
+            self.tryCount += 1
+            self.tryLabel.text = "TRY \(self.tryCount)"
+            self.statusLabel.text = "Strike: \(strikeCount) | Ball: \(ballCount) | Out: \(outCount)"
+            self.inputNumbers = []
+            self.firstLabel.text = ""
+            self.secondLabel.text = ""
+            self.thirdLabel.text = ""
         }
-        self.tryCount += 1
-        self.tryLabel.text = "\(self.tryCount) 번째 시도!"
-        self.statusLabel.text = "Strike: \(strikeCount) | Ball: \(ballCount) | Out: \(outCount)"
-        self.inputNumbers = []
-        self.firstLabel.text = ""
-        self.secondLabel.text = ""
-        self.thirdLabel.text = ""
+        else if self.thirdLabel.text == "" || self.secondLabel.text == "" {
+            inputNumbers = []
+            firstLabel.text = ""
+            secondLabel.text = ""
+            self.statusLabel.text = "ENTER 3 NUMBERS"
+        }
+        
     }
     
     //게임 리셋
@@ -73,7 +84,7 @@ class ViewController: UIViewController {
         self.firstLabel.text = ""
         self.secondLabel.text = ""
         self.thirdLabel.text = ""
-        self.statusLabel.text = "Enter 3 Numbers"
+        self.statusLabel.text = "ENTER 3 NUMBERS"
         self.tryLabel.text = ""
     }
 
@@ -84,16 +95,26 @@ class ViewController: UIViewController {
             inputNumbers.insert(Int(firstLabel.text!)!, at: 0)
         }
         else if self.secondLabel.text == "" {
+            if inputNumbers.contains(sender.tag) {
+                self.statusLabel.text = "DUPLICATED NUMBER"
+            }
+            else {
             self.secondLabel.text = String(sender.tag)
             inputNumbers.insert(Int(secondLabel.text!)!, at: 1)
+            }
         }
         else if self.thirdLabel.text == "" {
+            if inputNumbers.contains(sender.tag) {
+                self.statusLabel.text = "DUPLICATED NUMBER"
+            }
+            else {
             self.thirdLabel.text = String(sender.tag)
             inputNumbers.insert(Int(thirdLabel.text!)!, at: 2)
             print(inputNumbers)
+            }
         }
         else {
-            self.statusLabel.text = "Game Start 해주세요"
+            self.statusLabel.text = "PLEASE PUSH GAME START"
         }
     }
     
