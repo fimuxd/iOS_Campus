@@ -19,7 +19,7 @@
 
 ## iOS School
 
-### A. Lecture Summary
+### A. Lecture Summary 
 - **1st Week** ; May 8 - 12
 
 	> * Let's talk about Computer
@@ -45,20 +45,18 @@
 	
 
 
-### B. Project
+### B. Programming Practice
 
-> * [Calculator](https://github.com/fimuxd/iOS_Campus/tree/master/B_Project/170510_Calculator%20Practice) ; May 10 - 19, 2017
+- **Practice by Xcode Project**
+
+	> * [Function Practice: Size and Volume](https://github.com/fimuxd/iOS_Campus/blob/master/C_Task/함수연습_170512/ShapePractice.playground/Contents.swift)
+	> * [Function Practice: Unit Convert](https://github.com/fimuxd/iOS_Campus/blob/master/C_Task/함수연습_170512/Toolbox.playground/Contents.swift)
+	> * [PocketMonster](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170517/Class%20and%20Object/PocketMonster/PocketMonster)
+
+- **Small Apps**
+> * [Calculator](https://github.com/fimuxd/iOS_Campus/tree/master/B_Project/170510_Calculator%20Practice) ; May 10 - 24, 2017
 > * [Vending Machine](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170517/Class%20and%20Object/VendingMachine/VendingMachine/ViewController.swift); May 19, 2017
 > * [Baseball Game](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170523/BaseBall); May 23, 2017
-
-
-### C. Task & Study
-> * [Object Oriented Programming](https://github.com/fimuxd/iOS_Campus/blob/master/C_Task/객체지향형%20프로그래밍_170510/Task_170510)
-> * [Function Practice: Size and Volume](https://github.com/fimuxd/iOS_Campus/blob/master/C_Task/함수연습_170512/ShapePractice.playground/Contents.swift)
-> * [Function Practice: Unit Convert](https://github.com/fimuxd/iOS_Campus/blob/master/C_Task/함수연습_170512/Toolbox.playground/Contents.swift)
-> * [PocketMonster](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170517/Class%20and%20Object/PocketMonster/PocketMonster)
-
-
 
 
 ## Contact Me
