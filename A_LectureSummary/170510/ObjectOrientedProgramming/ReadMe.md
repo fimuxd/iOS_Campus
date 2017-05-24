@@ -61,4 +61,4 @@
 - 속성과 행위가 있을 떄, 행위를 함수라고 하고 속성을 변수라고 한다. 
 - 다형성의 개념은 이후에 다시 설명을 하도록 한다.
 
-> [과제 & 스터디 한 것 정리](https://github.com/fimuxd/iOS_Campus/blob/master/C_Task/객체지향형%20프로그래밍_170510/Task_170510)
+> [과제 & 스터디 한 것 정리](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170510/ObjectOrientedProgramming/객체지향형%20프로그래밍_170510/Task_170510)
