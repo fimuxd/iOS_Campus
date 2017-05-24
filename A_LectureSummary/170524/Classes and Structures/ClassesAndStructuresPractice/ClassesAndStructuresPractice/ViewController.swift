@@ -18,7 +18,7 @@ class FirstVCViewController: UIViewController {
         b2.name = "Class"
         
         print(b1.name)
-        print(b2.name)
+        print(b2.name) //ㅇ
         
         let bas1:BookStore = BookStore(computerBooks: [], name: "신사점", address: "신사동")
         let bas2 = bas1

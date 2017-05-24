@@ -41,7 +41,7 @@
 	> * [UI Class](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170520)
 	> * [Application Life Cycle & Access Control](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170523)
 	> * [Recursion](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170524/Recursion)
-	> * Classes & Structures
+	> * [Classes & Structures](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170524/Classes%20and%20Structures)
 	
 
 
