@@ -26,10 +26,10 @@ class BookStore {
         self.address = address
     }
     
-        func addBook(name:String, cost:Int) {
-            let book:Book = Book(name: "스위프트 마스터", cost: 50000, isbn: UInt(computerBooks.count + 1))
-            self.computerBooks.append(book)
-        }
+//        func addBook(name:String, cost:Int) {
+//            let book:Book = Book(name: "스위프트 마스터", cost: 50000, isbn: UInt(computerBooks.count + 1))
+//            self.computerBooks.append(book)
+//        }
     
 }
 

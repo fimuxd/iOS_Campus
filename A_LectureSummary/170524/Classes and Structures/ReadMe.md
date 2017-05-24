@@ -83,17 +83,21 @@ class BookStore {
 
 #### 1) Memory의 구조
 
-![이미지]()
+![이미지](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170523/Memory.png?raw=true)
 	
 #### 2) 각 영역별 사용범위
 	
-> class와 struct는 구조상 stack과 heap에서 차이가 난다.
+> class와 struct는 구조상 Stack과 Heap에서 차이가 난다.
 	
-- Stack: 지역변수나 매개변수가 저장
+- **Stack**: 지역변수나 매개변수가 저장되는 영역
 	- 지역변수: 함수에서 쓰이는 함수, 클래스 안에서 쓰이는 변수(property)
 	- 매개변수
-- Heap: 인스턴스. class가 타입으로 선언되었을 때 class의 인스턴스는 heap영역으로 가게되고, 그 주소값(참조값; reference)은 stack영역으로 가게 된다.
-- Data: static
-	- 전역변수: static이라는 키워드를 쓰면 인스턴스를 만들지 않아도 바로 프로그램에서 쓸 수 있음
-	- 정적변수
-- Code: code 그 자체
+
+- **Heap**: Instance. class가 타입으로 선언되었을 때 class의 instance는 Heap영역으로 가게되고, 그 주소값(참조값; reference)은 Stack영역으로 가게 된다. 이 것이 곧 `pointer`의 개념 
+	- Pointer
+	
+
+- **Data**: static이라는 키워드를 쓰면 인스턴스를 만들지 않아도 바로 프로그램에서 쓸 수 있음. static 키워드를 썼을 때 Data 영역에 저장
+
+- **Code**: 입력한 code 그 자체
+
