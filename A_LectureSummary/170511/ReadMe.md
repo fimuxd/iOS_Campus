@@ -199,7 +199,7 @@ print(fName(agumentName: 10))
 - 이 때 `paramName`(x값) = 10
 - 함수 실행 이후 출력값은 13
 
-> 한번 함수로 자기소개를 작성해보자 [playground 바로가기](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170511/FuncAndVar/MyPlayground.playground)
+> 한번 함수로 자기소개를 작성해보자 [playground 바로가기](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170511/MyPlayground.playground/Contents.swift)
 > 
 > ```swift
 > //함수로 자기소개 해보기
