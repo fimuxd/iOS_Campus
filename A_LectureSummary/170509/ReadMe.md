@@ -93,4 +93,6 @@
 - Github의 로그가 중요
 
 ###8. Git Ignore
-내가 만들지 않았는데 원치 않게 git에 포함되는 폴더가 있는경우 git commit시, tracking자체를 하지 않고 commit 하게 해주는 것. ***[gitignore.io](https://www.gitignore.io) search `xcode``swift`***
+
+- 내가 만들지 않았는데 원치 않게 git에 포함되는 폴더가 있는경우 git commit시, tracking자체를 하지 않고 commit 하게 해주는 것. 
+- ***[gitignore.io](https://www.gitignore.io)*** 에서 `xcode` `swift` Search 해 볼 것
