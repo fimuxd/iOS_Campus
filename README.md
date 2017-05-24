@@ -39,6 +39,8 @@
 
 - **3rd Week** ; May 22 - 26
 	> * [UI Class](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170520)
+	> * Application Life Cycle & Access Control
+	> * Re
 
 
 ### B. Project
