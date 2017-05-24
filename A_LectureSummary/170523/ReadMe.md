@@ -10,13 +10,13 @@
 
 ## Event에 대한 처리
 
-![이미지]()
+![이미지](https://raw.githubusercontent.com/fimuxd/iOS_Campus/master/A_LectureSummary/170523/Event.tiff)
 
 ## Step of After Launch
 
 - App Delegate: application이라는 객체가 만들어지고 이 것은 OS가 관리한다. core. 가장 먼저 만들어지는 객체. app이라는 객체가 app delegate의 method 를 통해 움직이고 작동한다.
 
-[실습]()
+> [App이 실행되는 flow 실습](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170523/AppDelegateTezt/AppDelegateTezt/ViewController.swift)
 
 # 접근 제어
 
