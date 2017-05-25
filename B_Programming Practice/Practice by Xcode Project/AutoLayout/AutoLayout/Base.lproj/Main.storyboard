@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -21,15 +21,15 @@
                         <viewControllerLayoutGuide type="bottom" id="k25-qZ-Kji"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Bpq-YU-4Tj">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1pr-nW-U4S">
-                                <rect key="frame" x="10" y="30" width="128" height="696"/>
+                                <rect key="frame" x="10" y="30" width="115" height="627"/>
                                 <color key="backgroundColor" red="0.86336220850000001" green="0.86336220850000001" blue="0.86336220850000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aFn-iV-PcN">
-                                <rect key="frame" x="148" y="30" width="256" height="696"/>
+                                <rect key="frame" x="135" y="30" width="230" height="627"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
@@ -61,18 +61,18 @@
                         <viewControllerLayoutGuide type="bottom" id="APo-FI-qCW"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="h7Y-W8-XFd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hpd-xI-Ahq">
-                                <rect key="frame" x="30" y="30" width="354" height="60"/>
+                                <rect key="frame" x="26" y="30" width="323" height="60"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="7GG-3d-oL2"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UwD-cE-Ft1">
-                                <rect key="frame" x="30.000000000000014" y="100" width="212.33333333333337" height="60"/>
+                                <rect key="frame" x="26" y="100" width="193.5" height="60"/>
                                 <color key="backgroundColor" red="0.26676395539999997" green="0.2667648494" blue="0.26676693559999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="dU1-Yu-j2D"/>
@@ -104,74 +104,74 @@
                         <viewControllerLayoutGuide type="bottom" id="Qny-1e-Bpt"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="s2p-cQ-HN3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="partyfavor.png" translatesAutoresizingMaskIntoConstraints="NO" id="440-M8-adX">
-                                <rect key="frame" x="30" y="30" width="122.66666666666666" height="122.66666666666666"/>
+                                <rect key="frame" x="26" y="30" width="111" height="111"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="440-M8-adX" secondAttribute="height" multiplier="1:1" id="15n-V4-xo1"/>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QRz-Li-NID">
-                                <rect key="frame" x="30" y="162.66666666666663" width="354" height="509"/>
+                                <rect key="frame" x="26" y="151" width="323" height="455"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51E-7I-AXP">
-                                <rect key="frame" x="162.66666666666666" y="30" width="39" height="37.333333333333329"/>
+                                <rect key="frame" x="147" y="30" width="39" height="33.5"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="18"/>
                                 <color key="textColor" red="0.63022182640000002" green="0.0" blue="0.01253605141" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Middle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfh-k9-8jh">
-                                <rect key="frame" x="162.66666666666666" y="73.333333333333329" width="56" height="37.333333333333343"/>
+                                <rect key="frame" x="147" y="69.5" width="56" height="33.5"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="18"/>
                                 <color key="textColor" red="0.63022182640000002" green="0.0" blue="0.01253605141" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fn5-Mo-sHf">
-                                <rect key="frame" x="162.66666666666666" y="115.66666666666666" width="35" height="36.999999999999972"/>
+                                <rect key="frame" x="147" y="108" width="35" height="33"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="18"/>
                                 <color key="textColor" red="0.63022182640000002" green="0.0" blue="0.01253605141" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N3U-aC-up6">
-                                <rect key="frame" x="228.66666666666663" y="30" width="155.33333333333337" height="37.333333333333329"/>
+                                <rect key="frame" x="213" y="30" width="136" height="33.5"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jvd-YK-Rr8">
-                                <rect key="frame" x="228.66666666666663" y="73.333333333333329" width="155.33333333333337" height="37.333333333333343"/>
+                                <rect key="frame" x="213" y="69.5" width="136" height="33.5"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ieb-A6-Eqd">
-                                <rect key="frame" x="228.66666666666663" y="115.66666666666666" width="155.33333333333337" height="36.999999999999972"/>
+                                <rect key="frame" x="213" y="108" width="136" height="33"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BvQ-8v-bWe">
-                                <rect key="frame" x="62" y="681.66666666666663" width="83" height="35"/>
+                                <rect key="frame" x="56.5" y="616" width="75" height="35"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="19"/>
                                 <state key="normal" title="Save">
                                     <color key="titleColor" red="0.26676395539999997" green="0.2667648494" blue="0.26676693559999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkE-dx-UvF">
-                                <rect key="frame" x="165.66666666666666" y="681.66666666666663" width="82.666666666666686" height="35"/>
+                                <rect key="frame" x="150" y="616" width="75" height="35"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="19"/>
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" red="0.26676395539999997" green="0.2667648494" blue="0.26676693559999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wF8-1Q-SUp">
-                                <rect key="frame" x="269" y="681.66666666666663" width="83" height="35"/>
+                                <rect key="frame" x="244" y="616" width="75" height="35"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="19"/>
                                 <state key="normal" title="Clear">
                                     <color key="titleColor" red="0.26676395539999997" green="0.2667648494" blue="0.26676693559999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -234,11 +234,11 @@
                         <viewControllerLayoutGuide type="bottom" id="FcA-4j-vVN"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="VrU-JJ-FZD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3zD-Pt-8GW">
-                                <rect key="frame" x="192" y="107.66666666666666" width="30" height="29.999999999999972"/>
+                                <rect key="frame" x="172.5" y="96" width="30" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="BcM-X0-IC4"/>
@@ -246,7 +246,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1x1-7Y-Tny">
-                                <rect key="frame" x="88.666666666666671" y="107.66666666666666" width="30" height="29.999999999999972"/>
+                                <rect key="frame" x="79" y="96" width="30" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="1x1-7Y-Tny" secondAttribute="height" multiplier="1:1" id="bVM-T0-LPt"/>
@@ -254,7 +254,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Omn-KR-DME">
-                                <rect key="frame" x="295.66666666666669" y="107.66666666666666" width="30" height="29.999999999999972"/>
+                                <rect key="frame" x="266.5" y="96" width="30" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="6Ss-sE-npm"/>

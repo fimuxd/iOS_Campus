@@ -38,7 +38,7 @@
 	> * [Inheritance](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170518)
 
 - **3rd Week** ; May 22 - 26
-	> * [UI Class](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170520)
+	> * [UI Class](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170522)
 	> * [Application Life Cycle & Access Control](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170523)
 	> * [Recursion](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170524/Recursion)
 	> * [Classes & Structures](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170524/Classes%20and%20Structures)
