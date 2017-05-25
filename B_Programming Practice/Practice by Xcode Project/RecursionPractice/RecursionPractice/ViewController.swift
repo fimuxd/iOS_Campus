@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     
     
     // 피보나치 수열 구하기
-    func fibonacci(n:recFibonacci) -> array {
+    func fibonacci(n:recFibonacci) -> Array {
         let lastIndex = inputNumber - 1
         
         if lastIndex == 1 {
