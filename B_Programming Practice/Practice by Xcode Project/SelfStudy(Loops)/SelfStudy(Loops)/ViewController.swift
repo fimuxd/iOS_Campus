@@ -16,42 +16,40 @@ class ViewController: UIViewController {
     
     //1. 팩토리얼 by for-in
     
-    func factorialByForIn(input:Int) -> Int {
-        var result:Int = 1
+    func factorialForIn(input:Int) -> Int {
+        var number:Int = input
         
-        for i in 1...input {
-            result *= i
+        for index in 1..<input {
+            number *= index
         }
-        return result
+        return number
     }
     
     //2. 팩토리얼 by while
     
-    func factorialByWhile(input:Int) -> Int {
-        var result:Int = input
+    func factorialWhile(input:Int) -> Int {
+        var number:Int = input
         var index:Int = 1
         
         while index < input {
-            result *= index
+            number *= index
             index += 1
         }
-        return result
+        return number
     }
     
     //3. 팩토리얼 by recursion
     
-    func factorialByRecursion(input:Int) -> Int {
-        var number:Int = input
-        
+    func factorialRecursion(input:Int) -> Int {
         if input == 1 {
             return 1
         }
         else {
-            number *= factorialByRecursion(input: input - 1)
+            return input * factorialRecursion(input: input - 1)
         }
-        return number
     }
-
+    
+    
     
     
     /****************************************************************************************/
@@ -61,15 +59,15 @@ class ViewController: UIViewController {
     
     //1. 콜라츠상수 by while
     
-    func cCByWhile(input:Int) -> Int {
+    func cCWhile(input:Int) -> Int {
         var number:Int = input
-        var count:Int = 1
+        var count:Int = 0
         
-        while number > 1 {
+        while number != 1 {
             if number%2 == 0 {
-                number = number/2
+                number = number / 2
             }
-            else if number%2 != 0 {
+            else {
                 number = number * 3 + 1
             }
             count += 1
@@ -77,24 +75,24 @@ class ViewController: UIViewController {
         return count
     }
     
-    //2. 콜라츠상수 by recursion
     
-    func cCByRecursion(input:Int) -> Int {
-        
+    //2. 콜라츠상수 by recursion
+   
+    func cCRecursion(input:Int) -> Int {
         if input == 1 {
-            return 1
+            return 0
         }
         else {
             if input%2 == 0 {
-                return 1 + cCByRecursion(input: input/2)
+                return 1 + cCRecursion(input: input / 2)
             }
             else {
-                return 1 + cCByRecursion(input: input * 3 + 1)
+                return 1 + cCRecursion(input: input * 3 + 1)
             }
         }
-        
-    }
     
+    }
+     
     /****************************************************************************************/
     //                          재귀함수를 이용한 Fibonacci 수열 함수만들기                          //
     /****************************************************************************************/
@@ -152,13 +150,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        print(factorialByForIn(input: 5))
-        print(factorialByWhile(input: 5))
-        print(factorialByRecursion(input: 5))
+        print(factorialForIn(input: 5))
+        print(factorialWhile(input: 5))
+        print(factorialRecursion(input: 5))
         print("----")
-        print(cCByWhile(input: 6))
-        print(cCByRecursion(input: 6))
+        print(cCWhile(input: 6))
+        print(cCRecursion(input: 6))
         print("----")
         print(getFibonacciNumber(count: 3))
         print(getFibonacciNumber(count: 7))
