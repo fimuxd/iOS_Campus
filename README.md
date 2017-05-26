@@ -42,6 +42,10 @@
 	> * [Application Life Cycle & Access Control](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170523)
 	> * [Recursion](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170524/Recursion)
 	> * [Classes & Structures](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170524/Classes%20and%20Structures)
+	> * [Delegate & Protocol](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170526)
+
+- **4th Week** ; May 29 - June 2
+	> * 
 	
 
 
