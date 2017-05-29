@@ -46,7 +46,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     
     
-    
+    // Login Btn 누르면
     @IBAction func LogInBtn(_ sender: UIButton) {
         
         if iDTextField.isEditing {
