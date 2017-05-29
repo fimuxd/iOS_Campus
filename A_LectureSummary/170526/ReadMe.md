@@ -83,3 +83,6 @@ public protocol UITextFieldDelegate : NSObjectProtocol {
 }
 
 ```
+
+> - Delegate의 개념이 어렵다. 따라서 사용법에 일단 익숙해져야 한다.
+> - 이후에 delegate를 스스로 만들어서 custom한 view를 직접 만들어 볼 것임

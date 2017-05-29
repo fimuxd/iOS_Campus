@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LogInCoverPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="LPO-eL-amQ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9G0-Ak-Iej">
+                                <rect key="frame" x="41" y="294" width="332" height="148"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="dachè ID*" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BgY-c6-QzK">
+                                        <rect key="frame" x="0.0" y="30" width="332" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="5wF-nN-ayU"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password*" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Ln-Zg-Xmk">
+                                        <rect key="frame" x="0.0" y="86" width="332" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Ibd-xD-klB"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="0Ln-Zg-Xmk" firstAttribute="centerX" secondItem="9G0-Ak-Iej" secondAttribute="centerX" id="Cpi-OS-Pd3"/>
+                                    <constraint firstItem="BgY-c6-QzK" firstAttribute="width" secondItem="9G0-Ak-Iej" secondAttribute="width" id="Oe0-oz-fUp"/>
+                                    <constraint firstItem="BgY-c6-QzK" firstAttribute="centerX" secondItem="9G0-Ak-Iej" secondAttribute="centerX" id="kzg-AA-sVZ"/>
+                                    <constraint firstItem="0Ln-Zg-Xmk" firstAttribute="centerY" secondItem="9G0-Ak-Iej" secondAttribute="centerY" multiplier="1.5" id="t5B-A7-Ic4"/>
+                                    <constraint firstItem="BgY-c6-QzK" firstAttribute="centerY" secondItem="9G0-Ak-Iej" secondAttribute="centerY" multiplier="0.75" id="vgc-2n-M3t"/>
+                                    <constraint firstItem="0Ln-Zg-Xmk" firstAttribute="width" secondItem="9G0-Ak-Iej" secondAttribute="width" id="w1l-Yo-Agn"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="350" id="zEE-WA-rZa"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dacheLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="cXg-OT-75Q">
+                                <rect key="frame" x="167" y="164" width="80" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="80" id="R5O-wm-4UC"/>
+                                    <constraint firstAttribute="height" constant="120" id="srJ-WR-GlJ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOE-yc-wnl">
+                                <rect key="frame" x="41" y="452" width="332" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jhy-EL-fqN">
+                                <rect key="frame" x="98" y="512" width="218" height="26"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have a dachè ID?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0TB-GI-6Ct">
+                                        <rect key="frame" x="0.0" y="0.0" width="127" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="127" id="bxE-us-0oa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                        <color key="textColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NX9-Xt-QvG">
+                                        <rect key="frame" x="128" y="0.0" width="90" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="bzq-rS-NWz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                        <state key="normal" title="Create one now.">
+                                            <color key="titleColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="0TB-GI-6Ct" firstAttribute="top" secondItem="Jhy-EL-fqN" secondAttribute="top" id="bEC-K7-pS2"/>
+                                    <constraint firstItem="0TB-GI-6Ct" firstAttribute="leading" secondItem="Jhy-EL-fqN" secondAttribute="leading" id="ccj-lt-8ZP"/>
+                                    <constraint firstItem="NX9-Xt-QvG" firstAttribute="top" secondItem="Jhy-EL-fqN" secondAttribute="top" id="dzb-O8-Vay"/>
+                                    <constraint firstAttribute="trailing" secondItem="NX9-Xt-QvG" secondAttribute="trailing" id="nUZ-t2-a9L"/>
+                                    <constraint firstAttribute="height" constant="26" id="vla-K2-KDo"/>
+                                    <constraint firstAttribute="bottom" secondItem="0TB-GI-6Ct" secondAttribute="bottom" id="xB3-ta-hNf"/>
+                                    <constraint firstItem="NX9-Xt-QvG" firstAttribute="leading" secondItem="0TB-GI-6Ct" secondAttribute="trailing" constant="1" id="xYh-9h-po2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Jhy-EL-fqN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5TF-o0-Gqo"/>
+                            <constraint firstItem="FOE-yc-wnl" firstAttribute="top" secondItem="9G0-Ak-Iej" secondAttribute="bottom" constant="10" id="67Q-UM-eGf"/>
+                            <constraint firstItem="FOE-yc-wnl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Ya-TL-z5r"/>
+                            <constraint firstItem="cXg-OT-75Q" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.25" priority="750" id="IXn-wG-DId"/>
+                            <constraint firstItem="9G0-Ak-Iej" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" priority="750" id="MV3-bI-MRz"/>
+                            <constraint firstItem="FOE-yc-wnl" firstAttribute="width" secondItem="0Ln-Zg-Xmk" secondAttribute="width" id="Qeu-Oj-lxV"/>
+                            <constraint firstItem="Jhy-EL-fqN" firstAttribute="top" secondItem="FOE-yc-wnl" secondAttribute="bottom" constant="10" id="RMU-ud-yfw"/>
+                            <constraint firstItem="9G0-Ak-Iej" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TP1-6i-qAp"/>
+                            <constraint firstItem="LPO-eL-amQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fby-lB-Rum"/>
+                            <constraint firstItem="LPO-eL-amQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fv9-32-e7H"/>
+                            <constraint firstItem="cXg-OT-75Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fzW-Ld-Rmv"/>
+                            <constraint firstItem="LPO-eL-amQ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="gPj-Vb-WUw"/>
+                            <constraint firstItem="9G0-Ak-Iej" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="i0s-y7-Z2j"/>
+                            <constraint firstItem="LPO-eL-amQ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="jb4-Pi-jsZ"/>
+                            <constraint firstItem="FOE-yc-wnl" firstAttribute="height" secondItem="0Ln-Zg-Xmk" secondAttribute="height" id="nyN-G8-xl8"/>
+                            <constraint firstItem="9G0-Ak-Iej" firstAttribute="top" secondItem="cXg-OT-75Q" secondAttribute="bottom" constant="10" id="pKc-5A-sW4"/>
+                            <constraint firstItem="9G0-Ak-Iej" firstAttribute="height" secondItem="LPO-eL-amQ" secondAttribute="height" multiplier="0.2" id="uDa-TF-V1d"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31.884057971014496" y="37.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background.jpg" width="2140" height="2673"/>
+        <image name="dacheLogo.png" width="2064" height="1800"/>
+    </resources>
+</document>

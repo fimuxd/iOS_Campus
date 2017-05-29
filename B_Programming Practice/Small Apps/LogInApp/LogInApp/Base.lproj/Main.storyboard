@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,28 +22,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="colorful.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ZCR-fx-FW7">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="colorful.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ZCR-fx-FW7" customClass="CoverViewController">
                                 <rect key="frame" x="0.0" y="-20" width="375" height="687"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dacheLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="jkB-NQ-OoD">
                                 <rect key="frame" x="128" y="92" width="119" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45B-pq-y3E">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45B-pq-y3E">
                                 <rect key="frame" x="78" y="264" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="WDZ-Kp-5E7"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nki-y5-bMN">
-                                <rect key="frame" x="78" y="323" width="86" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nki-y5-bMN">
+                                <rect key="frame" x="78" y="323" width="74" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rNh-az-Du5">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rNh-az-Du5">
                                 <rect key="frame" x="189" y="264" width="128" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -76,10 +79,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="45B-pq-y3E" firstAttribute="leading" secondItem="6ie-qj-Arj" secondAttribute="leadingMargin" constant="62" id="7ip-Vc-ZsQ"/>
                             <constraint firstItem="BMA-tE-JQz" firstAttribute="top" secondItem="ZCR-fx-FW7" secondAttribute="bottom" id="Ibs-2a-efw"/>
                             <constraint firstAttribute="trailing" secondItem="ZCR-fx-FW7" secondAttribute="trailing" id="NWT-pu-9cZ"/>
+                            <constraint firstItem="45B-pq-y3E" firstAttribute="top" secondItem="yRL-R9-cZu" secondAttribute="bottom" constant="244" id="WmR-V9-zaU"/>
+                            <constraint firstItem="nki-y5-bMN" firstAttribute="top" secondItem="45B-pq-y3E" secondAttribute="bottom" constant="38" id="g2z-ZA-A3n"/>
                             <constraint firstItem="ZCR-fx-FW7" firstAttribute="leading" secondItem="6ie-qj-Arj" secondAttribute="leading" id="k6g-dX-QQ1"/>
                             <constraint firstItem="nki-y5-bMN" firstAttribute="leading" secondItem="45B-pq-y3E" secondAttribute="leading" id="nLD-Ox-2n8"/>
+                            <constraint firstItem="rNh-az-Du5" firstAttribute="leading" secondItem="45B-pq-y3E" secondAttribute="trailing" constant="69" id="p2V-23-FqE"/>
+                            <constraint firstItem="45B-pq-y3E" firstAttribute="top" secondItem="rNh-az-Du5" secondAttribute="top" id="pq2-Mp-Zgt"/>
                             <constraint firstItem="ZCR-fx-FW7" firstAttribute="top" secondItem="6ie-qj-Arj" secondAttribute="top" constant="-20" id="x01-1l-4gD"/>
                         </constraints>
                     </view>
