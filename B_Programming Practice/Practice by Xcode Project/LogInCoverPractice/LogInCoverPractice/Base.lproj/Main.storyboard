@@ -26,21 +26,21 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9G0-Ak-Iej">
-                                <rect key="frame" x="41" y="294" width="332" height="148"/>
+                                <rect key="frame" x="41.333333333333371" y="308" width="331.33333333333337" height="120"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="dachè ID*" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BgY-c6-QzK">
-                                        <rect key="frame" x="0.0" y="30" width="332" height="50"/>
+                                    <textField opaque="NO" clipsSubviews="YES" alpha="0.90000000000000002" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BgY-c6-QzK">
+                                        <rect key="frame" x="0.0" y="5" width="331.33333333333337" height="50.666666666666686"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="5wF-nN-ayU"/>
+                                            <constraint firstAttribute="height" priority="750" constant="50" id="5wF-nN-ayU"/>
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password*" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Ln-Zg-Xmk">
-                                        <rect key="frame" x="0.0" y="86" width="332" height="50"/>
+                                    <textField opaque="NO" clipsSubviews="YES" alpha="0.90000000000000002" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Ln-Zg-Xmk">
+                                        <rect key="frame" x="0.0" y="65.666666666666686" width="331.33333333333337" height="50"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="Ibd-xD-klB"/>
+                                            <constraint firstAttribute="height" priority="750" constant="50" id="Ibd-xD-klB"/>
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -49,31 +49,31 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="0Ln-Zg-Xmk" firstAttribute="centerX" secondItem="9G0-Ak-Iej" secondAttribute="centerX" id="Cpi-OS-Pd3"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="200" id="HbS-qZ-BJd"/>
+                                    <constraint firstItem="0Ln-Zg-Xmk" firstAttribute="top" secondItem="BgY-c6-QzK" secondAttribute="bottom" priority="750" constant="10" id="Jse-Rd-Bzk"/>
                                     <constraint firstItem="BgY-c6-QzK" firstAttribute="width" secondItem="9G0-Ak-Iej" secondAttribute="width" id="Oe0-oz-fUp"/>
+                                    <constraint firstItem="0Ln-Zg-Xmk" firstAttribute="height" secondItem="BgY-c6-QzK" secondAttribute="height" id="SGB-I4-f5a"/>
+                                    <constraint firstItem="0Ln-Zg-Xmk" firstAttribute="top" relation="greaterThanOrEqual" secondItem="BgY-c6-QzK" secondAttribute="bottom" constant="5" id="Wqq-YD-gou"/>
                                     <constraint firstItem="BgY-c6-QzK" firstAttribute="centerX" secondItem="9G0-Ak-Iej" secondAttribute="centerX" id="kzg-AA-sVZ"/>
                                     <constraint firstItem="0Ln-Zg-Xmk" firstAttribute="centerY" secondItem="9G0-Ak-Iej" secondAttribute="centerY" multiplier="1.5" id="t5B-A7-Ic4"/>
-                                    <constraint firstItem="BgY-c6-QzK" firstAttribute="centerY" secondItem="9G0-Ak-Iej" secondAttribute="centerY" multiplier="0.75" id="vgc-2n-M3t"/>
+                                    <constraint firstItem="BgY-c6-QzK" firstAttribute="centerY" secondItem="9G0-Ak-Iej" secondAttribute="centerY" multiplier="0.5" id="vgc-2n-M3t"/>
                                     <constraint firstItem="0Ln-Zg-Xmk" firstAttribute="width" secondItem="9G0-Ak-Iej" secondAttribute="width" id="w1l-Yo-Agn"/>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="350" id="zEE-WA-rZa"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dacheLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="cXg-OT-75Q">
-                                <rect key="frame" x="167" y="164" width="80" height="120"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="80" id="R5O-wm-4UC"/>
-                                    <constraint firstAttribute="height" constant="120" id="srJ-WR-GlJ"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOE-yc-wnl">
-                                <rect key="frame" x="41" y="452" width="332" height="50"/>
+                                <rect key="frame" x="41.333333333333371" y="438" width="331.33333333333337" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="LogInBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JzA-uO-sci"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jhy-EL-fqN">
-                                <rect key="frame" x="98" y="512" width="218" height="26"/>
+                                <rect key="frame" x="98" y="498" width="218" height="26"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have a dachè ID?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0TB-GI-6Ct">
                                         <rect key="frame" x="0.0" y="0.0" width="127" height="26"/>
@@ -105,6 +105,13 @@
                                     <constraint firstItem="NX9-Xt-QvG" firstAttribute="leading" secondItem="0TB-GI-6Ct" secondAttribute="trailing" constant="1" id="xYh-9h-po2"/>
                                 </constraints>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dacheLogo2.png" translatesAutoresizingMaskIntoConstraints="NO" id="cXg-OT-75Q">
+                                <rect key="frame" x="167" y="226" width="80" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="80" id="R5O-wm-4UC"/>
+                                    <constraint firstAttribute="height" constant="75" id="srJ-WR-GlJ"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -123,18 +130,22 @@
                             <constraint firstItem="9G0-Ak-Iej" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="i0s-y7-Z2j"/>
                             <constraint firstItem="LPO-eL-amQ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="jb4-Pi-jsZ"/>
                             <constraint firstItem="FOE-yc-wnl" firstAttribute="height" secondItem="0Ln-Zg-Xmk" secondAttribute="height" id="nyN-G8-xl8"/>
-                            <constraint firstItem="9G0-Ak-Iej" firstAttribute="top" secondItem="cXg-OT-75Q" secondAttribute="bottom" constant="10" id="pKc-5A-sW4"/>
-                            <constraint firstItem="9G0-Ak-Iej" firstAttribute="height" secondItem="LPO-eL-amQ" secondAttribute="height" multiplier="0.2" id="uDa-TF-V1d"/>
+                            <constraint firstItem="9G0-Ak-Iej" firstAttribute="top" secondItem="cXg-OT-75Q" secondAttribute="bottom" constant="7" id="pKc-5A-sW4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="iDTextField" destination="BgY-c6-QzK" id="RGS-Jn-Mzc"/>
+                        <outlet property="newAccBtn" destination="NX9-Xt-QvG" id="2Bw-Q7-zrn"/>
+                        <outlet property="pWTextField" destination="0Ln-Zg-Xmk" id="shU-mM-XXX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="31.884057971014496" y="37.5"/>
+            <point key="canvasLocation" x="31.199999999999999" y="37.331334332833585"/>
         </scene>
     </scenes>
     <resources>
         <image name="background.jpg" width="2140" height="2673"/>
-        <image name="dacheLogo.png" width="2064" height="1800"/>
+        <image name="dacheLogo2.png" width="1714" height="801"/>
     </resources>
 </document>

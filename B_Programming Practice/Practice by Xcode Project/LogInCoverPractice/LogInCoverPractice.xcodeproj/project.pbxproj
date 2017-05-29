@@ -13,7 +13,7 @@
 		6A5FA24C1EDBB631002E5BAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A5FA24B1EDBB631002E5BAC /* Assets.xcassets */; };
 		6A5FA24F1EDBB631002E5BAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A5FA24D1EDBB631002E5BAC /* LaunchScreen.storyboard */; };
 		6A5FA2571EDBB650002E5BAC /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6A5FA2561EDBB650002E5BAC /* background.jpg */; };
-		6A5FA2591EDBB65F002E5BAC /* dacheLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A5FA2581EDBB65F002E5BAC /* dacheLogo.png */; };
+		6AFBA57F1EDC333A0062B7EB /* dacheLogo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AFBA57E1EDC333A0062B7EB /* dacheLogo2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		6A5FA24E1EDBB631002E5BAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A5FA2501EDBB631002E5BAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A5FA2561EDBB650002E5BAC /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
-		6A5FA2581EDBB65F002E5BAC /* dacheLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dacheLogo.png; sourceTree = "<group>"; };
+		6AFBA57E1EDC333A0062B7EB /* dacheLogo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dacheLogo2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +62,8 @@
 				6A5FA2461EDBB631002E5BAC /* ViewController.swift */,
 				6A5FA2481EDBB631002E5BAC /* Main.storyboard */,
 				6A5FA24B1EDBB631002E5BAC /* Assets.xcassets */,
+				6AFBA57E1EDC333A0062B7EB /* dacheLogo2.png */,
 				6A5FA2561EDBB650002E5BAC /* background.jpg */,
-				6A5FA2581EDBB65F002E5BAC /* dacheLogo.png */,
 				6A5FA24D1EDBB631002E5BAC /* LaunchScreen.storyboard */,
 				6A5FA2501EDBB631002E5BAC /* Info.plist */,
 			);
@@ -130,10 +130,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A5FA2591EDBB65F002E5BAC /* dacheLogo.png in Resources */,
 				6A5FA24F1EDBB631002E5BAC /* LaunchScreen.storyboard in Resources */,
 				6A5FA24C1EDBB631002E5BAC /* Assets.xcassets in Resources */,
 				6A5FA2571EDBB650002E5BAC /* background.jpg in Resources */,
+				6AFBA57F1EDC333A0062B7EB /* dacheLogo2.png in Resources */,
 				6A5FA24A1EDBB631002E5BAC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,6 +310,7 @@
 				6A5FA2551EDBB631002E5BAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

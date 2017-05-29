@@ -22,8 +22,7 @@
 	        let scrollView:UIScrollView = UIScrollView(frame: self.view.bounds)
 	        
 	        //viewControl
-	        scrollView.contentSize = CGSize(width: self.view.bounds.width * 3, 
-	        height: self.view.bounds.height)
+	        scrollView.contentSize = CGSize(width: self.view.bounds.width * 3, height: self.view.bounds.height)
 	        self.view.addSubview(scrollView)
 	        
 	        //페이지 단위별로 끊어지게 하는 명령 (50% 이하로 넘어가면 원래 페이지, 50% 이상 넘어가면 다음 페이지로 보여주는 것)
@@ -48,20 +47,17 @@
 	        
 	        
 	        //상기에 만든 ScrollView를 확인하기 위한 View를 만들어보자. 하단의 UIColor도 타입 추론을 통해 생략할 수 있다.
-	        let view1:UIView = UIView(frame: CGRect(x: 0, y: 0, width: scrollView.bounds.size.width, 
-	        height: scrollView.bounds.size.height))
+	        let view1:UIView = UIView(frame: CGRect(x: 0, y: 0, width: scrollView.bounds.size.width, height: scrollView.bounds.size.height))
 	        view1.backgroundColor = UIColor.yellow
 	        //contentsView에 추가해야 하는데, contentsView는 선택할 수 없다. 따라서 상위에 있는 scrollview에 바로 addSubview를 한다.
 	        scrollView.addSubview(view1)
 	        
 	        
-	        let view2:UIView = UIView(frame: CGRect(x: self.view.bounds.size.width, y: 0, width: scrollView.bounds.size.width, 
-	        height: scrollView.bounds.size.height))
+	        let view2:UIView = UIView(frame: CGRect(x: self.view.bounds.size.width, y: 0, width: scrollView.bounds.size.width, height: scrollView.bounds.size.height))
 	        view2.backgroundColor = UIColor.red
 	        scrollView.addSubview(view2)
 	        
-	        let view3:UIView = UIView(frame: CGRect(x: self.view.bounds.size.width * 2, y: 0, width: scrollView.bounds.size.width, 
-	        height: scrollView.bounds.size.height))
+	        let view3:UIView = UIView(frame: CGRect(x: self.view.bounds.size.width * 2, y: 0, width: scrollView.bounds.size.width, height: scrollView.bounds.size.height))
 	        view3.backgroundColor = UIColor.blue
 	        scrollView.addSubview(view3)
 	```
@@ -69,4 +65,34 @@
 실행하면, 다음과 같다.
 
 ![실행이미지](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170529/UIScrollView/UIScrollView.gif?raw=true)
+
+
+## C. storyboard에서 scrollView 만들기
+
+### 1. TextView의 내용에 관계없이 fixed height 상태의 ScrollView 만들기
+
+- 1. ViewController의 size를 freeform으로 한 후 길이를 길게 set
+- 2. ScrollView를 올리고 margin을 0으로 둔다
+- 3. 그 위에 view를 올린다. - 사실상 contents view 역할을 하는 아이
+- 4. contentsView의 width를 scrollview의 width와 같게 설정한다
+- 5. 길이는 강제로 설정한다 (예.1000)
+- 6. contentsView위에 만들고자 하는 화면을 구현한다
+
+### 2. TextView의 내용에 맞도록 flexible height 상태의 ScrollView 만들기
+
+- 상기 내용과 모두 같다. 다만, 
+- contentsView내의 contents들의 height를 설정하지 말고, leading/tailing/space만 설정한다.
+- 이렇게하면 내용에 따라 유기적으로 크기가 조정된다.
+
+
+## D. TextDelegate와 UIScrollView 이용한 응용
+
+- textfield를 눌렀을 때 키보드에 의해 tf가 가려지는 현상을 해결할 수 있다.
+
+- 1. 이미 만들어 놓은 로그인 view가 있다면, 
+- 2. 키보드가 올라왔을 때, 이동할 view를 선택 > Editor > Embed In > ScrollView 선택
+- 3. 
+
+
+
 
