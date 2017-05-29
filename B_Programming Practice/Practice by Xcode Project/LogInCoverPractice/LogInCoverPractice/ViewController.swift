@@ -8,13 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class ViewController: UIViewController, UITextFieldDelegate, UIScrollViewDelegate {
 
     @IBOutlet weak var iDTextField: UITextField!
 
     @IBOutlet weak var pWTextField: UITextField!
 
-    
+    @IBOutlet weak var textFieldsScroll: UIScrollView!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +30,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         //delegate
         iDTextField.delegate = self
         pWTextField.delegate = self
+        textFieldsScroll.delegate = self
     
     
     }
@@ -44,7 +46,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
-    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        textFieldsScroll.setContentOffset(CGPoint(x: 0, y: 50), animated: true)
+    }
     
     // Login Btn 누르면
     @IBAction func LogInBtn(_ sender: UIButton) {
