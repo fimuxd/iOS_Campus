@@ -1,5 +1,7 @@
 # Bo-Young PARK 
 
+***
+
 
 ## Contents
 
@@ -46,8 +48,8 @@
 
 - **4th Week** ; May 29 - June 2
 	> * [UIScrollView](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170529/UIScrollView)
-	> * UserDefault
-	> * UIViewController & UI AlertController
+	> * [UserDefault](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170530/UserDefault)
+	> * [UIViewController & UI AlertController](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170530/UIViewController%20and%20UIAlertControl)
 	 
 	
 
@@ -71,7 +73,9 @@
 
 
 ## Contact Me
-- 📱+82 10.3316.1609
+- 📱 +82 10.3316.1609
 - 📧 fimuxd@gmail.com
 
-	*Life is a game. Play it :)* 
+
+***
+***Life is a game. Play it :)***

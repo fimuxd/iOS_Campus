@@ -2,7 +2,7 @@
 
 ## A. 기본 개념
 
-![image](MVC Model.tiff)
+![image](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170530/UIViewController%20and%20UIAlertControl/MVC%20Model.png?raw=true)
 
 - Apple의 App은 MVC Pattern을 사용한다.
 - ViewController는 View를 관리하며, View와 Model 사이에서 중추적인 역할을 한다.
