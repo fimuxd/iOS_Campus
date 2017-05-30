@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        
           // 2-2. 새로 만든 MainViewController라는 놈을 첫 화면으로 띄우려면?
         let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let mainViewController:MainViewController = storyboard.instantiateViewController(withIdentifier: "MainViewController") as! ViewController
+        let mainViewController:MainViewController = storyboard.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
 
 //
 //        // 3-1. 2번에서 생성한 viewController라는 VC를 창의 rootView로 설정한다.
