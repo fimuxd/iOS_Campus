@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5iq-eR-wmZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,23 +22,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="정보표시 Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jyO-Tf-QCu">
-                                <rect key="frame" x="0.0" y="147" width="375" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="이름과 나이를 입력하세요" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jyO-Tf-QCu">
+                                <rect key="frame" x="-27" y="142" width="375" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="aKj-Z3-Bt2">
+                                <rect key="frame" x="16" y="229" width="288" height="110"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="성 | Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hs5-7Z-7ND">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이름 | First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UOC-eb-9EV">
+                                        <rect key="frame" x="0.0" y="40" width="288" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="나이 | Age" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ASz-8j-Xbo">
+                                        <rect key="frame" x="0.0" y="80" width="288" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cY-dn-Qm7">
+                                <rect key="frame" x="123" y="377" width="74" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="입력 | Input"/>
+                                <connections>
+                                    <action selector="inputBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9fe-W3-Q1q"/>
+                                    <segue destination="5iq-eR-wmZ" kind="presentation" id="ITr-BC-bJ2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aKj-Z3-Bt2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Pol-FJ-9Vx"/>
+                            <constraint firstItem="aKj-Z3-Bt2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="h7T-cc-zCP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aKj-Z3-Bt2" secondAttribute="trailing" id="hnb-BJ-9Xz"/>
+                            <constraint firstItem="aKj-Z3-Bt2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tzW-vB-phQ"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="nameResultLabel" destination="jyO-Tf-QCu" id="nAC-gU-Ksw"/>
+                        <outlet property="ageTextField" destination="ASz-8j-Xbo" id="tDG-QO-iMS"/>
+                        <outlet property="fNTextField" destination="UOC-eb-9EV" id="CkQ-CI-j9w"/>
+                        <outlet property="lNTextField" destination="Hs5-7Z-7ND" id="bZc-xa-pSi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-249" y="223"/>
+            <point key="canvasLocation" x="43" y="138"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="IWn-fd-Vj9">
@@ -51,10 +92,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MainViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mT2-ig-Tvp">
-                                <rect key="frame" x="86" y="222" width="149" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mT2-ig-Tvp">
+                                <rect key="frame" x="0.0" y="222" width="320" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -63,7 +104,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Segue | Second VC"/>
                                 <connections>
-                                    <segue destination="7ni-Cd-eB6" kind="presentation" id="b3K-SL-Jkd"/>
+                                    <segue destination="7ni-Cd-eB6" kind="presentation" id="GmX-I9-sPb"/>
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fhb-Ru-iNU">
@@ -79,11 +120,12 @@
                     </view>
                     <connections>
                         <outlet property="segueOnOff" destination="fhb-Ru-iNU" id="ryQ-4q-bKw"/>
+                        <outlet property="wecomeLabel" destination="mT2-ig-Tvp" id="I8e-Mk-rhk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Lk-dB-sXe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="833" y="139"/>
+            <point key="canvasLocation" x="841.875" y="136.26760563380282"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="Mfd-6a-bfP">
@@ -105,6 +147,14 @@
                                     <segue destination="KAb-6R-EEk" kind="unwind" unwindAction="unwindSegueWithUnwindSegue:" id="dOf-Gc-Lar"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CGf-ly-ve9">
+                                <rect key="frame" x="113" y="307" width="94" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Segue | LogIn"/>
+                                <connections>
+                                    <segue destination="KAb-6R-EEk" kind="unwind" unwindAction="rewindSegueWithBackToVC:" id="r9k-zH-2C7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -112,7 +162,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PkQ-8V-aFl" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="KAb-6R-EEk" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1559" y="139"/>
+            <point key="canvasLocation" x="1643" y="136"/>
         </scene>
     </scenes>
 </document>
