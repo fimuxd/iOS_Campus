@@ -1,15 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="GuR-Kv-ORM">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="Xgl-cV-0nE">
+            <objects>
+                <viewController id="GuR-Kv-ORM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8rb-Ki-fKE"/>
+                        <viewControllerLayoutGuide type="bottom" id="I6Z-Vr-cZM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zP8-u7-M0R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iYO-0w-xmD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ji2-Am-lhZ" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1684"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bpE-1Q-xrM">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="1684"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UMF Top1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Kg4-Vj-M9E">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="281.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="Kg4-Vj-M9E" secondAttribute="height" multiplier="4:3" id="eMt-Hv-DE8"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NO7-Nt-7RQ" userLabel="Label Container">
+                                                        <rect key="frame" x="0.0" y="281.5" width="375" height="1121.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAl-gl-MS4">
+                                                                <rect key="frame" x="16" y="17" width="343" height="1089.5"/>
+                                                                <mutableString key="text">LOST AND FOUND:
+
+The Lost and Found is located at the Information Booth located in “Live Stage”. If you find an item, please bring it to the Information Booth or turn it into a security officer or an Ultra Korea staff person. You may also inquire about any lost items at the Lost and Found or contact info@umfkorea.com
+
+RESTROOMS:
+
+Restrooms are located throughout the festival grounds. In particular, there are large-scale restrooms at the entrance of Live Stage. We also provide female-only restrooms, and special restrooms for Premium GA ticket holders in the Premium GA Lounge.
+
+WOMEN-ONLY SECTION:
+
+For the comfort of our female attendees, Women-only powder rooms where women can freshen up or touch up their makeup are located near the Underground Stage.
+
+T MONEY CHARGE STATIONS:
+
+Credit debit cards and cash are accepted for the various vendors. You can also pay for food and drinks with the T MONEY card. For your convenience, T MONEY charge stations are located throughout the festival.
+
+COATROOMS:
+
+Coatrooms are located at the GA entrance and premium GA entrance. T MONEY and BC cards are accepted.
+
+OFFICIAL MERCHANDISE STORE:
+
+To commemorate your amazing experiences and memories from Ultra Korea, various official merchandise will be for sale. The number of merchandise is limited. Cash/debit/credit/T MONEY cards are all accepted.
+
+KOREAN FOOD STREET:
+
+Recharge after your day/night of heavy dancing with our specially selected food vendors! You can taste various Korean delicacies and the most famous street food around.
+
+LIVE ART ACTIVATIONS:
+
+We invited 8 world famous graffiti artists to visually captivate the audience with incredible live-painting performances at various life-scale installations throughout the festival grounds.
+
+SMOKING AREA:
+
+Smoking is strictly prohibited throughout the festival except within the designated smoking areas.
+
+Please note: the exact locations of the above can be found via the site map.</mutableString>
+                                                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="14"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstItem="wAl-gl-MS4" firstAttribute="top" secondItem="NO7-Nt-7RQ" secondAttribute="top" constant="16" id="Aen-Ja-ees"/>
+                                                            <constraint firstAttribute="height" secondItem="wAl-gl-MS4" secondAttribute="height" constant="32" id="I6J-kT-L39"/>
+                                                            <constraint firstItem="wAl-gl-MS4" firstAttribute="leading" secondItem="NO7-Nt-7RQ" secondAttribute="leading" constant="16" id="tvd-gN-irh"/>
+                                                            <constraint firstAttribute="trailing" secondItem="wAl-gl-MS4" secondAttribute="trailing" constant="16" id="y8Z-Nu-2la"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UMF Bot1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="nLe-pw-sAa">
+                                                        <rect key="frame" x="0.0" y="1403" width="375" height="281"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="nLe-pw-sAa" secondAttribute="height" multiplier="4:3" id="TD1-Af-gSR"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="bpE-1Q-xrM" firstAttribute="centerX" secondItem="Ji2-Am-lhZ" secondAttribute="centerX" id="B8S-Dm-zY8"/>
+                                            <constraint firstItem="bpE-1Q-xrM" firstAttribute="top" secondItem="Ji2-Am-lhZ" secondAttribute="top" id="ElX-tJ-Z93"/>
+                                            <constraint firstAttribute="height" secondItem="bpE-1Q-xrM" secondAttribute="height" id="Jb3-mm-zR5"/>
+                                            <constraint firstItem="bpE-1Q-xrM" firstAttribute="width" secondItem="Ji2-Am-lhZ" secondAttribute="width" id="UIq-QV-j0Y"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Ji2-Am-lhZ" firstAttribute="leading" secondItem="iYO-0w-xmD" secondAttribute="leading" id="3Vr-k6-Kne"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ji2-Am-lhZ" secondAttribute="bottom" id="WHj-WD-Xao"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ji2-Am-lhZ" secondAttribute="trailing" id="cHK-SM-R8H"/>
+                                    <constraint firstItem="Ji2-Am-lhZ" firstAttribute="top" secondItem="iYO-0w-xmD" secondAttribute="top" id="xaU-Ul-D0h"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iYO-0w-xmD" firstAttribute="top" secondItem="8rb-Ki-fKE" secondAttribute="bottom" constant="-20" id="0sl-37-Ka6"/>
+                            <constraint firstItem="iYO-0w-xmD" firstAttribute="centerX" secondItem="zP8-u7-M0R" secondAttribute="centerX" id="3yH-h6-Son"/>
+                            <constraint firstItem="iYO-0w-xmD" firstAttribute="centerY" secondItem="zP8-u7-M0R" secondAttribute="centerY" id="TrN-kB-Tde"/>
+                            <constraint firstItem="iYO-0w-xmD" firstAttribute="leading" secondItem="zP8-u7-M0R" secondAttribute="leading" id="WeY-Ff-wLz"/>
+                            <constraint firstItem="iYO-0w-xmD" firstAttribute="width" secondItem="zP8-u7-M0R" secondAttribute="width" id="bJm-0x-gTv"/>
+                            <constraint firstItem="iYO-0w-xmD" firstAttribute="height" secondItem="zP8-u7-M0R" secondAttribute="height" id="bLe-Qg-XYH"/>
+                            <constraint firstItem="iYO-0w-xmD" firstAttribute="leading" secondItem="zP8-u7-M0R" secondAttribute="leadingMargin" constant="-20" id="gd8-s8-FLy"/>
+                            <constraint firstItem="iYO-0w-xmD" firstAttribute="top" secondItem="zP8-u7-M0R" secondAttribute="top" id="miR-Gw-Bzz"/>
+                            <constraint firstItem="Ji2-Am-lhZ" firstAttribute="width" secondItem="zP8-u7-M0R" secondAttribute="width" id="zIN-yt-jmS"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KRt-Z9-Wjg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="646" y="18"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -19,14 +147,14 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="LPO-eL-amQ">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOE-yc-wnl">
-                                <rect key="frame" x="57" y="351.33333333333331" width="300" height="40"/>
+                                <rect key="frame" x="37.5" y="326.5" width="300" height="40"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" priority="750" constant="40" id="4H7-x1-wJc"/>
@@ -41,10 +169,10 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jhy-EL-fqN">
-                                <rect key="frame" x="98" y="401.33333333333331" width="218" height="26"/>
+                                <rect key="frame" x="78.5" y="376.5" width="218" height="26"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have a dachè ID?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0TB-GI-6Ct">
-                                        <rect key="frame" x="0.0" y="0.33333333333331439" width="127" height="26"/>
+                                        <rect key="frame" x="0.0" y="0.5" width="127" height="26"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="127" id="bxE-us-0oa"/>
                                         </constraints>
@@ -53,7 +181,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NX9-Xt-QvG">
-                                        <rect key="frame" x="128" y="0.33333333333331439" width="90" height="26"/>
+                                        <rect key="frame" x="128" y="0.5" width="90" height="26"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="90" id="bzq-rS-NWz"/>
                                         </constraints>
@@ -74,22 +202,22 @@
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yN7-jP-xXG">
-                                <rect key="frame" x="57" y="174.99999999999997" width="300" height="166.33333333333329"/>
+                                <rect key="frame" x="37.5" y="150" width="300" height="166.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tmS-iF-SNO" userLabel="ContentsView">
-                                        <rect key="frame" x="-0.33333333333334281" y="0.33333333333334281" width="300" height="166.33333333333331"/>
+                                        <rect key="frame" x="-0.5" y="0.5" width="300" height="166.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="zOA-Z9-8K8">
-                                                <rect key="frame" x="0.0" y="0.33333333333334281" width="300" height="167"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="167"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dacheLogo2.png" translatesAutoresizingMaskIntoConstraints="NO" id="DLj-A1-ueL">
-                                                        <rect key="frame" x="79.999999999999986" y="0.33333333333334281" width="140" height="75"/>
+                                                        <rect key="frame" x="80" y="0.0" width="140" height="75"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="75" id="PmT-3t-6Jl"/>
                                                         </constraints>
                                                     </imageView>
                                                     <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="dachè ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DKr-Pt-JyH">
-                                                        <rect key="frame" x="0.0" y="81.333333333333314" width="300" height="40"/>
+                                                        <rect key="frame" x="0.0" y="81" width="300" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="57G-vs-iGI"/>
                                                         </constraints>
@@ -98,19 +226,15 @@
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0nv-Q9-6Gv">
-                                                        <rect key="frame" x="0.0" y="127.33333333333337" width="300" height="40"/>
+                                                        <rect key="frame" x="0.0" y="127" width="300" height="40"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                     </textField>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstItem="DKr-Pt-JyH" firstAttribute="top" secondItem="DLj-A1-ueL" secondAttribute="bottom" constant="7" id="8s7-KK-t9q"/>
-                                                    <constraint firstItem="DKr-Pt-JyH" firstAttribute="top" secondItem="DLj-A1-ueL" secondAttribute="bottom" constant="6" id="Gfd-rl-1fm"/>
                                                     <constraint firstItem="DKr-Pt-JyH" firstAttribute="width" secondItem="zOA-Z9-8K8" secondAttribute="width" id="Gvi-6t-8UM"/>
                                                     <constraint firstAttribute="bottom" secondItem="0nv-Q9-6Gv" secondAttribute="bottom" constant="1.1368683772161603e-13" id="Ifp-TL-M8l"/>
-                                                    <constraint firstItem="DLj-A1-ueL" firstAttribute="leading" secondItem="zOA-Z9-8K8" secondAttribute="leading" constant="79.999999999999986" id="ceG-uV-qTE"/>
-                                                    <constraint firstItem="DLj-A1-ueL" firstAttribute="top" secondItem="zOA-Z9-8K8" secondAttribute="top" id="e9B-AJ-dGf"/>
                                                     <constraint firstItem="DKr-Pt-JyH" firstAttribute="width" secondItem="0nv-Q9-6Gv" secondAttribute="width" id="hU9-sI-XgQ"/>
                                                     <constraint firstItem="DKr-Pt-JyH" firstAttribute="height" secondItem="0nv-Q9-6Gv" secondAttribute="height" id="onV-Xo-M3f"/>
                                                     <constraint firstItem="DLj-A1-ueL" firstAttribute="centerX" secondItem="zOA-Z9-8K8" secondAttribute="centerX" id="qZg-qG-7ok"/>
@@ -154,6 +278,7 @@
                             <constraint firstItem="yN7-jP-xXG" firstAttribute="centerY" secondItem="LPO-eL-amQ" secondAttribute="centerY" multiplier="0.7" id="rBA-b7-ZkC"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="SNP-9J-ijf"/>
                     <connections>
                         <outlet property="iDTextField" destination="DKr-Pt-JyH" id="Vxg-p2-r0j"/>
                         <outlet property="newAccBtn" destination="NX9-Xt-QvG" id="2Bw-Q7-zrn"/>
@@ -163,10 +288,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="31.199999999999999" y="37.331334332833585"/>
+            <point key="canvasLocation" x="1844.9275362318842" y="36.684782608695656"/>
         </scene>
     </scenes>
     <resources>
+        <image name="UMF Bot1.jpg" width="900" height="595"/>
+        <image name="UMF Top1.jpg" width="1200" height="630"/>
         <image name="background.jpg" width="2140" height="2673"/>
         <image name="dacheLogo2.png" width="1714" height="801"/>
     </resources>

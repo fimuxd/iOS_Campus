@@ -143,56 +143,7 @@
                     <view key="view" contentMode="scaleToFill" id="x2l-sq-6Tf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uyG-Dy-1Xd">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="trL-RR-rS7">
-                                        <rect key="frame" x="10" y="32" width="2665" height="310.5"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XcM-rE-ZaW">
-                                                <rect key="frame" x="1212.5" y="0.0" width="240" height="128"/>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14q-3k-cbt">
-                                                <rect key="frame" x="10" y="133" width="2645" height="142.5"/>
-                                                <mutableString key="text">문 대통령은 "지금의 논란은 준비과정을 거칠 여유가 없었던 데서 비롯된 것이라는 점에서 야당 의원들과 국민께 양해를 당부드린다"면서 "이미 발생한 논란은 국회의 인사청문회에서 개별적으로 판단할 수밖에 없는 일이지만, 앞으로 인사를 위해 국정 기획자문위와 인사·민정수석실의 협의를 통해 국민 눈높이에 맞게 원칙을 지킬 수 있는 구체적인 인사기준을 빠른 시일 내에 마련해 주길 바란다"고 말했다.
-
-문 대통령이 이른바 인사원칙 위배논란과 관련해 직접 입장을 밝힌 것은 이번이 처음이다.
-
-문 대통령은 대선 후보 때 병역 면탈, 부동산 투기, 세금 탈루, 위장 전입, 논문 표절 문제가 있는 사람은 고위 공직자로 임용하지 않겠다는 5대 인사원칙을 밝혔다.
-
-그러나 이낙연 국무총리 후보자를 비롯한 3명의 공직 후보자에게서 위장 전입 등의 문제가 나오자 임종석 대통령 비서실장은 지난 25일 유감의 뜻을 밝혔다</mutableString>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PhB-aH-q9a">
-                                                <rect key="frame" x="1309.5" y="280.5" width="46" height="30"/>
-                                                <state key="normal" title="Button"/>
-                                            </button>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="PhB-aH-q9a" firstAttribute="top" secondItem="14q-3k-cbt" secondAttribute="bottom" constant="5" id="6nc-kH-xEk"/>
-                                            <constraint firstItem="14q-3k-cbt" firstAttribute="leading" secondItem="trL-RR-rS7" secondAttribute="leading" constant="10" id="9KK-Wj-gBJ"/>
-                                            <constraint firstAttribute="trailing" secondItem="14q-3k-cbt" secondAttribute="trailing" constant="10" id="Ta6-2f-Rz6"/>
-                                            <constraint firstItem="14q-3k-cbt" firstAttribute="top" secondItem="XcM-rE-ZaW" secondAttribute="bottom" constant="5" id="ryE-d5-unP"/>
-                                        </constraints>
-                                    </stackView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="trL-RR-rS7" secondAttribute="trailing" constant="10" id="Jv9-CR-kiO"/>
-                                    <constraint firstItem="trL-RR-rS7" firstAttribute="top" secondItem="uyG-Dy-1Xd" secondAttribute="top" constant="32" id="Uwk-28-hGX"/>
-                                    <constraint firstItem="trL-RR-rS7" firstAttribute="leading" secondItem="uyG-Dy-1Xd" secondAttribute="leading" constant="10" id="bdu-eu-rJC"/>
-                                </constraints>
-                            </scrollView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="uyG-Dy-1Xd" firstAttribute="centerY" secondItem="x2l-sq-6Tf" secondAttribute="centerY" id="XWo-bG-Vai"/>
-                            <constraint firstItem="uyG-Dy-1Xd" firstAttribute="centerX" secondItem="x2l-sq-6Tf" secondAttribute="centerX" id="feV-SZ-sYb"/>
-                            <constraint firstItem="uyG-Dy-1Xd" firstAttribute="height" secondItem="x2l-sq-6Tf" secondAttribute="height" id="jCr-z2-7bf"/>
-                            <constraint firstItem="uyG-Dy-1Xd" firstAttribute="width" secondItem="x2l-sq-6Tf" secondAttribute="width" id="yF8-EG-usS"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ysd-G3-b28"/>
                 </viewController>

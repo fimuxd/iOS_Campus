@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A1828101EDD027600A39980 /* UMF Top1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6A18280F1EDD027600A39980 /* UMF Top1.jpg */; };
+		6A1828121EDD058100A39980 /* UMF Bot1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6A1828111EDD058100A39980 /* UMF Bot1.jpg */; };
 		6A5FA2451EDBB631002E5BAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5FA2441EDBB631002E5BAC /* AppDelegate.swift */; };
 		6A5FA2471EDBB631002E5BAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5FA2461EDBB631002E5BAC /* ViewController.swift */; };
 		6A5FA24A1EDBB631002E5BAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A5FA2481EDBB631002E5BAC /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A18280F1EDD027600A39980 /* UMF Top1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "UMF Top1.jpg"; sourceTree = "<group>"; };
+		6A1828111EDD058100A39980 /* UMF Bot1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "UMF Bot1.jpg"; sourceTree = "<group>"; };
 		6A5FA2411EDBB631002E5BAC /* LogInCoverPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogInCoverPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A5FA2441EDBB631002E5BAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A5FA2461EDBB631002E5BAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +69,8 @@
 				6AFBA57E1EDC333A0062B7EB /* dacheLogo2.png */,
 				6A5FA2561EDBB650002E5BAC /* background.jpg */,
 				6A5FA24D1EDBB631002E5BAC /* LaunchScreen.storyboard */,
+				6A18280F1EDD027600A39980 /* UMF Top1.jpg */,
+				6A1828111EDD058100A39980 /* UMF Bot1.jpg */,
 				6A5FA2501EDBB631002E5BAC /* Info.plist */,
 			);
 			path = LogInCoverPractice;
@@ -130,7 +136,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A1828101EDD027600A39980 /* UMF Top1.jpg in Resources */,
 				6A5FA24F1EDBB631002E5BAC /* LaunchScreen.storyboard in Resources */,
+				6A1828121EDD058100A39980 /* UMF Bot1.jpg in Resources */,
 				6A5FA24C1EDBB631002E5BAC /* Assets.xcassets in Resources */,
 				6A5FA2571EDBB650002E5BAC /* background.jpg in Resources */,
 				6AFBA57F1EDC333A0062B7EB /* dacheLogo2.png in Resources */,
