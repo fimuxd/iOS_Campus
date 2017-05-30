@@ -35,6 +35,11 @@ class MainViewController: UIViewController {
         let secondVC:SecondViewController = segue.destination as! SecondViewController
         secondVC.data = "Bo-Young"
     }
+    
+    @IBAction func unwindSegue(unwindSegue:UIStoryboardSegue) {
+        
+    }
+    
 
     /*
     // MARK: - Navigation

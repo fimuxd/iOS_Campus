@@ -15,30 +15,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
-        // ViewController를 Code로 불러와서 띄운다. 왜냐하면 AppDelegate의 didFinishLaunchingWithOptions가 App이 런칭만 되면 실행되는 놈이기 때문에
-        
-        // 1. window를 하나 만들어준다
-            self.window = UIWindow(frame: UIScreen.main.bounds)
-
-//        // 2-1. storyboard를 만들어 연결시켜준다. 여기서 withIdentifier에 입력해준 값이 storyboard의 ID값이 되므로, 해당 값(여기서는 ViewController)를 Main.storyboard로 가서 동일한 ID값을 입력시켜 주어야 한다.
-//        let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-//        let viewController:ViewController = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
 //        
-          // 2-2. 새로 만든 MainViewController라는 놈을 첫 화면으로 띄우려면?
-        let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let mainViewController:MainViewController = storyboard.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
-
+//        // ViewController를 Code로 불러와서 띄운다. 왜냐하면 AppDelegate의 didFinishLaunchingWithOptions가 App이 런칭만 되면 실행되는 놈이기 때문에
+//        
+//        // 1. window를 하나 만들어준다
+//            self.window = UIWindow(frame: UIScreen.main.bounds)
 //
-//        // 3-1. 2번에서 생성한 viewController라는 VC를 창의 rootView로 설정한다.
-//        self.window?.rootViewController = viewController
+////        // 2-1. storyboard를 만들어 연결시켜준다. 여기서 withIdentifier에 입력해준 값이 storyboard의 ID값이 되므로, 해당 값(여기서는 ViewController)를 Main.storyboard로 가서 동일한 ID값을 입력시켜 주어야 한다.
+////        let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+////        let viewController:ViewController = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+////        
+//          // 2-2. 새로 만든 MainViewController라는 놈을 첫 화면으로 띄우려면?
+//        let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//        let mainViewController:MainViewController = storyboard.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
+//
+////
+////        // 3-1. 2번에서 생성한 viewController라는 VC를 창의 rootView로 설정한다.
+////        self.window?.rootViewController = viewController
+////        self.window?.makeKeyAndVisible()
+//        
+//        // 3-2. MainViewController 를 rootView로 설정한다
+//        self.window?.rootViewController = mainViewController
 //        self.window?.makeKeyAndVisible()
-        
-        // 3-2. MainViewController 를 rootView로 설정한다
-        self.window?.rootViewController = mainViewController
-        self.window?.makeKeyAndVisible()
-        
-       
+//        
+//       
         
         return true
     }

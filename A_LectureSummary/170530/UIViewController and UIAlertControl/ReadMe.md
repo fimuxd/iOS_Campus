@@ -37,50 +37,61 @@
 - 각 VC가 Root View를 가지고 있다.
 - Root View가 뭐냐에 따라서 바뀌는 것일 뿐
 
-	#### 1) Instance Load
-	 
-	- 구조를 이해하기 위해서 다음과 같은 상황을 가정해서 풀어보자
-		- 가정. storyboard상, initial view가 없는 상태에서, AppDelegate를 통해 View를 불러오자
-	
-			```swift
-			// ViewController를 Code로 불러와서 띄운다. 왜냐하면 AppDelegate의 didFinishLaunchingWithOptions가 App이 런칭만 되면 실행되는 놈이기 때문에
-			        
-			        // 1. window를 하나 만들어준다
-			            self.window = UIWindow(frame: UIScreen.main.bounds)
-			
-			        // 2-1. storyboard를 만들어 연결시켜준다. 여기서 withIdentifier에 입력해준 값이 storyboard의 ID값이 되므로, 해당 값(여기서는 ViewController)를 Main.storyboard로 가서 동일한 ID값을 입력시켜 주어야 한다.
-			        let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-			        let viewController:ViewController = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
-			        
-			          // 2-2. 새로 만든 MainViewController라는 놈을 첫 화면으로 띄우려면?
-			        let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-			        let mainViewController:MainViewController = storyboard.instantiateViewController(withIdentifier: "MainViewController") as! ViewController
-			
-			        
-			        // 3-1. 2번에서 생성한 viewController라는 VC를 창의 rootView로 설정한다.
-			        self.window?.rootViewController = viewController
-			        self.window?.makeKeyAndVisible()
-			        
-			        // 3-2. MainViewController 를 rootView로 설정한다
-			        self.window?.rootViewController = mainViewController
-			        self.window?.makeKeyAndVisible()
-			```
-	
-	#### 2) Present Modally
-	
-	- VC와 VC간의 전환
-		- cf) View와 ViewController를 구분하자. View간의 전환(Navigation 또는 ScrollView와는 다르다)
-	
-	##### Segue: Present Modally를 위해 필요한 개념
-	
-	- Segue도 인스턴스
-	
-	![segue](segue.png)
-	
-	- Segue를 ctrl 하려면, Segue의 Runtime내, 두개의 함수를 이해하고 써야 한다.
-		- 	`shouldPerformSegueWithIdentifier:sender:` : 다른 VC(Segue)로 전환할지 하지 않을지 설정 (default = yes)
-		-  `prepareForSegue:sender:` : 새로운 VC가 생성된 다음, 전달할 data에 대한 control이 필요할 때
-
-	
 ### 2. Container ViewController
 
+- View를 가지고 있지 않다.
+
+## D. 활용
+
+### 1. Instance Load
+	 
+- 구조를 이해하기 위해서 다음과 같은 상황을 가정해서 풀어보자
+	- 가정. storyboard상, initial view가 없는 상태에서, AppDelegate를 통해 View를 불러오자
+	
+		```swift
+		// ViewController를 Code로 불러와서 띄운다. 왜냐하면 AppDelegate의 didFinishLaunchingWithOptions가 App이 런칭만 되면 실행되는 놈이기 때문에
+		        
+		        // 1. window를 하나 만들어준다
+		            self.window = UIWindow(frame: UIScreen.main.bounds)
+		
+		        // 2-1. storyboard를 만들어 연결시켜준다. 여기서 withIdentifier에 입력해준 값이 storyboard의 ID값이 되므로, 해당 값(여기서는 ViewController)를 Main.storyboard로 가서 동일한 ID값을 입력시켜 주어야 한다.
+		        let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+		        let viewController:ViewController = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+		        
+		          // 2-2. 새로 만든 MainViewController라는 놈을 첫 화면으로 띄우려면?
+		        let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+		        let mainViewController:MainViewController = storyboard.instantiateViewController(withIdentifier: "MainViewController") as! ViewController
+		
+		        
+		        // 3-1. 2번에서 생성한 viewController라는 VC를 창의 rootView로 설정한다.
+		        self.window?.rootViewController = viewController
+		        self.window?.makeKeyAndVisible()
+		        
+		        // 3-2. MainViewController 를 rootView로 설정한다
+		        self.window?.rootViewController = mainViewController
+		        self.window?.makeKeyAndVisible()
+		```
+	
+### 2. Present Modally
+	
+- VC와 VC간의 전환
+	- cf) View와 ViewController를 구분하자. View간의 전환(Navigation 또는 ScrollView와는 다르다)
+	
+	#### Segue: Present Modally를 위해 필요한 개념
+		
+	##### i. Segue도 인스턴스
+		
+	![segue](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170530/UIViewController%20and%20UIAlertControl/Segue.png?raw=true)
+		
+	##### ii. Segue를 ctrl 하려면, Segue의 Runtime내, 두개의 함수를 이해하고 써야 한다.
+	
+	- `shouldPerformSegueWithIdentifier:sender:` : 다른 VC(Segue)로 전환할지 하지 않을지 설정 (default = yes)
+		-  `prepareForSegue:sender:` : 새로운 VC가 생성된 다음, 전달할 data에 대한 control이 필요할 때
+	
+	##### iii. Unwind Segue
+		
+	- 방법1: 되돌아갈 VC에 `@IBAction func a(b:UIStoryboardSegue) {}` 를 코딩 -> storyboard에서 되돌아갈 버튼과 해당 View의 Exit을 연결 -> 되돌아갈 함수 선택
+	
+	- 방법2: Manual 
+	
+		> unwind는 말 그대로 *되돌아가는* 개념이기 때문에 A에서부터 온 B가 사라진 후(exit하며) A를 다시 부르는 것이다. 따라서 A로 부터 온 B가 C를 호출한다고 해도 무시당한다(아무런 반응없음)
