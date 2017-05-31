@@ -1,6 +1,5 @@
 # Bo-Young PARK 
 
-***
 
 
 ## Contents
