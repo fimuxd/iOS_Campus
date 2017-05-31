@@ -34,6 +34,8 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         self.signUpRequest()
     }
     
+    
+    // MARK: - SignUp Btn에 들어갈 함수 설정
     func signUpRequest() {
         self.view.endEditing(true)
         
@@ -43,16 +45,13 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
             UserDefaults.standard.set(eMailTextField.text!, forKey: Authentification.email)
             UserDefaults.standard.set(nameTextField.text!, forKey: Authentification.name)
             UserDefaults.standard.set(pWTextField.text!, forKey: Authentification.password)
-        
-            // 2. 입력한 이 값들을 true(bool) 값으로 UserDefault 해줘
-            UserDefaults.standard.set(true, forKey:Authentification.authentificationBool)
             
-            // 3. 스스로를 UnwindSegue 하렴 (Main으로 가도록 함)
+            // 2. 스스로를 UnwindSegue 하렴 (Main으로 가도록 함)
             self.performSegue(withIdentifier: "UnwindSegue", sender: self)
             
         }else {
             
-            // 4. if 내 값을 입력을 하지 않았을 때 SubLabel에 입력하라고 표시해
+            // 3. if 내 값을 입력을 하지 않았을 때 SubLabel에 입력하라고 표시해
             self.subLabel.text = "fill blank"
         }
     }

@@ -69,7 +69,7 @@
 	> * [Vending Machine](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170517/Class%20and%20Object/VendingMachine/VendingMachine/ViewController.swift); May 19
 	> * [Baseball Game](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170523/BaseBall); May 23
 	> * [LogIn View by Stack, ScrollView, UITextField](https://github.com/fimuxd/iOS_Campus/blob/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/LogInCoverPractice/LogInCoverPractice/ViewController.swift); May 29
-	> * [LogIn & SignUp by Segue](); May 31
+	> * [LogIn & SignUp by Segue](https://github.com/fimuxd/iOS_Campus/tree/master/B_Programming%20Practice/Small%20Apps/LogInAndSignUpPractice); May 31
 	
 
 
