@@ -18,9 +18,14 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
     }
     @IBAction func signUpBtn(_ sender: UIButton) {
     
-        let viewController:SignUpViewController = self.storyboard!.instantiateViewController(withIdentifier: "SignUpViewController") as! SignUpViewController
+//        let viewController:SignUpViewController = self.storyboard!.instantiateViewController(withIdentifier: "SignUpViewController") as! SignUpViewController
+//        self.present(viewController, animated: true, completion: nil)
         
-        self.present(viewController, animated: true, completion: nil)
+        let signUpVC:SignUpViewController = self.storyboard?.instantiateViewController(withIdentifier: "SignUpViewController") as! SignUpViewController
+        
+        self.navigationController?.pushViewController(signUpVC, animated: true)
+
+
     
     }
     

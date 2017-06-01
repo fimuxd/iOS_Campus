@@ -41,8 +41,12 @@ class MainViewController: UIViewController {
     @IBAction func returnLogInBtn(_ sender: UIButton) {
         
         let alert:UIAlertController = UIAlertController(title: "LOGOUT", message: "정말 로그아웃하시겠어요?", preferredStyle: .alert)
-        let okBtn:UIAlertAction = UIAlertAction(title: "OK", style: .default, handler: {(alert:UIAlertAction) in self.isAuthentified = false; let viewController:LogInViewController = self.storyboard!.instantiateViewController(withIdentifier: "LogInViewController") as! LogInViewController;
+
+//        let okBtn:UIAlertAction = UIAlertAction(title: "OK", style: .default, handler: {(alert:UIAlertAction) in self.isAuthentified = false; let viewController:LogInViewController = self.storyboard!.instantiateViewController(withIdentifier: "LogInViewController") as! LogInViewController;
+//            self.present(viewController, animated: true, completion: nil)})
+        let okBtn:UIAlertAction = UIAlertAction(title: "OK", style: .default, handler: {(alert:UIAlertAction) in self.isAuthentified = false; let viewController:UINavigationController = self.storyboard?.instantiateViewController(withIdentifier: "NavigationController") as! UINavigationController;
             self.present(viewController, animated: true, completion: nil)})
+        
         
 //        self.performSegue(withIdentifier: "LoginViewSegue", sender: self)
         

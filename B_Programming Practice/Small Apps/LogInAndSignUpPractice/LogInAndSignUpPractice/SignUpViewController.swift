@@ -20,8 +20,8 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func dismissBtn(_ sender: UIButton) {
         
-        self.dismiss(animated: true, completion: nil)
-        
+//        self.dismiss(animated: true, completion: nil)
+            self.navigationController?.popViewController(animated: true)
     }
     
     @IBOutlet weak var eMailTextField: UITextField!
@@ -65,7 +65,9 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
 //            self.performSegue(withIdentifier: "UnwindSegue", sender: self)
             
             let viewController:MainViewController = self.storyboard!.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
-            self.present(viewController, animated: true, completion: nil)
+//            self.present(viewController, animated: true, completion: nil)
+
+            self.navigationController?.dismiss(animated: true, completion: nil)
             
         }else {
             
