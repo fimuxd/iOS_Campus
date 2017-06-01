@@ -16,6 +16,13 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
     @IBAction func logInBtn(_ sender: UIButton) {
         logInRequest()
     }
+    @IBAction func signUpBtn(_ sender: UIButton) {
+    
+        let viewController:SignUpViewController = self.storyboard!.instantiateViewController(withIdentifier: "SignUpViewController") as! SignUpViewController
+        
+        self.present(viewController, animated: true, completion: nil)
+    
+    }
     
     func logInRequest() {
         self.view.endEditing(true)
@@ -29,6 +36,13 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
                 
             } else {
                 print("로그인실패")
+                
+                let alert:UIAlertController = UIAlertController(title: "Alert!", message: "존재하지 않는 아이디 또는 잘못된 패스워드", preferredStyle: .alert)
+                
+                let okBtn:UIAlertAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+                
+                alert.addAction(okBtn)
+                self.present(alert, animated: true, completion: nil)
             }
             
         }

@@ -14,7 +14,7 @@
         <!--Log In View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LogInViewController" customModule="LogInAndSignUpPractice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LogInViewController" id="BYZ-38-t0r" customClass="LogInViewController" customModule="LogInAndSignUpPractice" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -113,7 +113,7 @@
                                                                     <color key="titleColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                                                 </state>
                                                                 <connections>
-                                                                    <segue destination="NBa-jD-pag" kind="presentation" modalTransitionStyle="flipHorizontal" id="FgX-pR-vNO"/>
+                                                                    <action selector="signUpBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kQg-5N-rcT"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -161,6 +161,7 @@
                             <constraint firstItem="rSw-NU-dqx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zOf-ek-ayj"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="ZZ7-vN-gCc"/>
                     <connections>
                         <outlet property="emailTextField" destination="4ff-ky-EE0" id="8ga-U6-9zT"/>
                         <outlet property="pWTextField" destination="kYe-v5-OJq" id="eCg-qO-Nbv"/>
@@ -169,12 +170,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116" y="139"/>
+            <point key="canvasLocation" x="896.79999999999995" y="138.98050974512745"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="37w-ew-nUb">
             <objects>
-                <viewController id="5RZ-NG-2tE" customClass="MainViewController" customModule="LogInAndSignUpPractice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="5RZ-NG-2tE" customClass="MainViewController" customModule="LogInAndSignUpPractice" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kIL-zo-mpZ"/>
                         <viewControllerLayoutGuide type="bottom" id="4qa-Yf-7Rb"/>
@@ -210,9 +211,6 @@
                             <constraint firstAttribute="trailing" secondItem="D8M-Gk-pya" secondAttribute="trailing" id="VFx-px-7GE"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="LoginViewSegue" id="rBL-70-Rdz"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gnM-ak-FoX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -221,7 +219,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="vqB-SO-bZq">
             <objects>
-                <viewController id="NBa-jD-pag" customClass="SignUpViewController" customModule="LogInAndSignUpPractice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpViewController" id="NBa-jD-pag" customClass="SignUpViewController" customModule="LogInAndSignUpPractice" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Muy-iZ-97Y"/>
                         <viewControllerLayoutGuide type="bottom" id="Gz4-UB-lMH"/>
@@ -391,13 +389,29 @@
                         <outlet property="pWTextField" destination="PHv-CO-aEb" id="Syc-1M-6Ua"/>
                         <outlet property="scrollView" destination="8fH-Hf-7u4" id="tMV-He-fxU"/>
                         <outlet property="subLabel" destination="vQX-WN-NQx" id="GPa-Hc-Ymf"/>
-                        <segue destination="la1-Q6-jLD" kind="unwind" identifier="UnwindSegue" unwindAction="unwindSegueWithSegue:" id="5sU-IF-a3E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9GV-JF-Cvt" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="la1-Q6-jLD" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="884" y="139"/>
+            <point key="canvasLocation" x="1606" y="139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xvg-iw-BdD">
+            <objects>
+                <navigationController storyboardIdentifier="NavigationController" automaticallyAdjustsScrollViewInsets="NO" id="IET-5M-8VU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dT0-1O-KYa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="W2c-Y5-tFT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UgS-Qb-CNS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="142" y="139"/>
         </scene>
     </scenes>
 </document>

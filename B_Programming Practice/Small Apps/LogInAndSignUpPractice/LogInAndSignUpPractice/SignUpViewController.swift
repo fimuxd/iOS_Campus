@@ -6,6 +6,12 @@
 //  Copyright © 2017 Bo-Young PARK. All rights reserved.
 //
 
+
+// 지금 현재는 유저를 1명만 둘 수 있다. 계속 덮어쓰기 하므로
+// 여러 유저를 쓸 수 있는 방법? > user라는 dictionary를 가지는 array를 만든다.
+
+
+
 import UIKit
 
 class SignUpViewController: UIViewController, UITextFieldDelegate {
@@ -31,7 +37,16 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     // MARK: - SingUp Btn Action
     
     @IBAction func signUpBtn(_ sender: UIButton) {
-        self.signUpRequest()
+        let alert:UIAlertController = UIAlertController(title: "Confirm SignUp", message: "입력한 내용이 맞습니까? \n ID: \(eMailTextField.text!), PW:\(pWTextField.text!)", preferredStyle: .actionSheet)
+        
+        let okBtn:UIAlertAction = UIAlertAction(title: "OK", style: .default, handler: {(alert:UIAlertAction) in self.signUpRequest() })
+        let cancleBtn:UIAlertAction = UIAlertAction(title: "Cancle", style: .cancel, handler: nil)
+        
+        alert.addAction(okBtn)
+        alert.addAction(cancleBtn)
+        
+        self.present(alert, animated: true, completion: nil)
+        
     }
     
     
@@ -47,7 +62,10 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
             UserDefaults.standard.set(pWTextField.text!, forKey: Authentification.password)
             
             // 2. 스스로를 UnwindSegue 하렴 (Main으로 가도록 함)
-            self.performSegue(withIdentifier: "UnwindSegue", sender: self)
+//            self.performSegue(withIdentifier: "UnwindSegue", sender: self)
+            
+            let viewController:MainViewController = self.storyboard!.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
+            self.present(viewController, animated: true, completion: nil)
             
         }else {
             

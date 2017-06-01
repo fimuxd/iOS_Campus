@@ -37,9 +37,6 @@
 - 각 VC가 Root View를 가지고 있다.
 - Root View가 뭐냐에 따라서 바뀌는 것일 뿐
 
-### 2. Container ViewController
-
-- View를 가지고 있지 않다.
 
 ## D. 활용
 
@@ -96,3 +93,15 @@
 	
 		> unwind는 말 그대로 *되돌아가는* 개념이기 때문에 A에서부터 온 B가 사라진 후(exit하며) A를 다시 부르는 것이다. 따라서 A로 부터 온 B가 C를 호출한다고 해도 무시당한다(아무런 반응없음)
 		
+### 2. Container ViewController
+
+- RootView를 가지고 있지 않다.
+- VC를 Sub VC로 가지고 있다
+
+#### 1) NavigationController
+
+- Stack 구조를 가진다.
+	- 스택: 가장 나중에 입력한 데이터를 맨 먼저 찾을 수 있도록 한 데이터 구조. *편의점 우유현상* (cf.큐: 선입선출)
+- present modally에서는, 이동하거나 dismiss되는 주체가 나자신(self) 였지만, navigation controller는 **부모가 주체**가 되어 부모(navigation controller)에 부탁하는 형태이다. 따라서 navigation controller에 연결되어 있지 않은 놈이 이것을 부른다면 당연히 값은 nil 이 된다.
+
+	

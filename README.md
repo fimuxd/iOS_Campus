@@ -47,7 +47,7 @@
 	> * [UIScrollView](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170529/UIScrollView)
 	> * [UserDefault](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170530/UserDefault)
 	> * [UIViewController & UI AlertController](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170530/UIViewController%20and%20UIAlertControl)
-	> * [UITableView]()
+	> * [UITableView](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170601)
 	 
 	
 
