@@ -46,8 +46,9 @@
 - **4th Week** ; May 29 - June 2
 	> * [UIScrollView](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170529/UIScrollView)
 	> * [UserDefault](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170530/UserDefault)
-	> * [UIViewController & UI AlertController](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170530/UIViewController%20and%20UIAlertControl)
-	> * [UITableView](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170601)
+	> * [UIViewController](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170530/UIViewController%20and%20UIAlertControl)
+	> * [UIAlertController](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170601)
+	> * [UITableView](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170602)
 	 
 	
 
