@@ -35,6 +35,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
         tableView.reloadData()
         if UserDefaults.standard.string(forKey: "Name") != "" {
         myFriends.append(UserDefaults.standard.string(forKey: "Name")!)
