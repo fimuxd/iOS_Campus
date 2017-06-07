@@ -48,6 +48,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="g3L-jq-smp" kind="show" identifier="TouchedCellSegue" id="slY-BJ-JAT"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -64,16 +67,25 @@
                             <constraint firstAttribute="trailing" secondItem="ka3-B7-uRj" secondAttribute="trailing" id="oi8-mn-Sww"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="aE6-0d-AB7"/>
+                    <navigationItem key="navigationItem" id="aE6-0d-AB7">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="123-pB-0GJ">
+                            <connections>
+                                <segue destination="g3L-jq-smp" kind="show" identifier="TouchedBtnSegue" id="SNc-bI-1pH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="ka3-B7-uRj" id="z0V-A5-gdR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Po-5Q-422" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="514" y="-197"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="5HU-6B-qDm">
             <objects>
-                <viewController id="g3L-jq-smp" sceneMemberID="viewController">
+                <viewController id="g3L-jq-smp" customClass="DetailViewController" customModule="TableViewPractice2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XLg-bS-vMl"/>
                         <viewControllerLayoutGuide type="bottom" id="oea-02-deL"/>
@@ -81,12 +93,33 @@
                     <view key="view" contentMode="scaleToFill" id="ITT-Rn-w5v">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yad-L7-Vox">
+                                <rect key="frame" x="139" y="191" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pam-wd-Y4E">
+                                <rect key="frame" x="164" y="255" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="SaveBtn:" destination="g3L-jq-smp" eventType="touchUpInside" id="Vu6-ar-c1A"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="NameTextLabel" destination="Yad-L7-Vox" id="Bez-ug-FvK"/>
+                        <outlet property="saveBtn" destination="Pam-wd-Y4E" id="Pth-rp-zNx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DCV-n5-Tf2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1231" y="-183"/>
+            <point key="canvasLocation" x="1293.5999999999999" y="-197.45127436281859"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9Bq-9u-xeD">
@@ -107,4 +140,7 @@
             <point key="canvasLocation" x="-207.19999999999999" y="-197.45127436281859"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="slY-BJ-JAT"/>
+    </inferredMetricsTieBreakers>
 </document>
