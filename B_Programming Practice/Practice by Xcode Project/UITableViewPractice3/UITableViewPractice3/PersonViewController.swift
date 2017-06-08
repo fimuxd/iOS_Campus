@@ -23,6 +23,8 @@ class PersonViewController: UIViewController {
     var company:String?
     var phone:String?
     var email:String?
+    
+    
         
     override func viewDidLoad() {
         super.viewDidLoad()

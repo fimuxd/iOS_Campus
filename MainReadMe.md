@@ -20,46 +20,47 @@
 
 - **1st Week** ; May 8 - 12
 
-	> | Lecture Summary | Programming Practice | Small Apps | Note |
-	> | :--- | :--- | :--- | :--- |
-	> | Let's talk about computer | - | - | - |
-	> | [Git](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170509) | - | - | Git의 기본적인 개념과 사용법
-	> | [MarkDown](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170510/MarkDown) | - | - | 마크다운 작성법
-	> | [Object Oriented Programming](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170510/ObjectOrientedProgramming) | - | - | [과제로 알아보기](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170510/ObjectOrientedProgramming/객체지향형%20프로그래밍_170510/Task_170510) | 
-	> | [Xcode ShotCut](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170510/XcodeShotCut) | - | - | 유용한 Xcode 단축키 |
-	> | [Variable and Function](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170511/FuncAndVar) | [Function Practice: Size and Volume](https://github.com/fimuxd/iOS_Campus/blob/master/C_Task/함수연습_170512/ShapePractice.playground/Contents.swift)<p>[Function Practice: Unit Convert](https://github.com/fimuxd/iOS_Campus/blob/master/C_Task/함수연습_170512/Toolbox.playground/Contents.swift) | - | 변수와 함수의 이해 |
-
-	> | [Function Control Flow - if](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170512) |
+	> | Lecture Summary | PPT | Programming Practice | Small Apps | Note |
+	> | :--- | :--- | :--- | :--- | :--- |
+	> | Let's talk about computer | [1](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170508/강의자료1_170508.pdf) | - | - | - |
+	> | [Git](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170509) | [2](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170509/강의자료2_170509.pdf) | - | - | Git의 기본적인 사용법
+	> | [MarkDown](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170510/MarkDown) | [3](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170510/MarkDown/MarkdownSample/markdown-wingman.pdf) | - | - | 마크다운 작성법
+	> | [Object Oriented Programming](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170510/ObjectOrientedProgramming) | [4](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170510/0510-12.pdf) | - | [Calculator](https://github.com/fimuxd/iOS_Campus/tree/master/B_Project/170510_Calculator%20Practice) | [과제로 알아보기](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170510/ObjectOrientedProgramming/객체지향형%20프로그래밍_170510/Task_170510) | 
+	> | [Xcode ShotCut](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170510/XcodeShotCut) | - |- | - | 유용한 Xcode 단축키 |
+	> | [Variable and Function](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170511) | [4](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170510/0510-12.pdf) | [playground](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170511/MyPlayground.playground/Contents.swift)<p>[Tuple](https://github.com/fimuxd/iOS_Campus/blob/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/Practice_170515.playground/Contents.swift)<p>[Size and Volume](https://github.com/fimuxd/iOS_Campus/blob/master/C_Task/함수연습_170512/ShapePractice.playground/Contents.swift)<p>[Unit Convert](https://github.com/fimuxd/iOS_Campus/blob/master/C_Task/함수연습_170512/Toolbox.playground/Contents.swift) | - | 변수와 함수의 이해 |
+	> | [Function Control Flow - if](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170512) | [4](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170510/0510-12.pdf) | [Practice](https://github.com/fimuxd/iOS_Campus/blob/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/FunctionPractice/FunctionPractice/ViewController.swift) | - | 조건문 if |
 
 - **2nd Week** ; May 15 - 19
 
-	> | Lecture Summary | Programming Practice | Small Apps | Note |
-	> | :--- | :---: | :---: | :---: |
-	> | [Function Control Flow - switch](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170515) |
-	> | [Collection & Control Flow(Loops)](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170516) |
-	> | [Optional](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170517/Optional) |
-	> | [Class & Object](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170517/Class%20and%20Object) |
-	> | [Inheritance](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170518) |
+	> | Lecture Summary | PPT | Programming Practice | Small Apps | Note |
+	> | :--- | :--- | :--- | :--- | :--- |
+	> | [Function Control Flow - switch](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170515) | [4](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170510/0510-12.pdf) | [Practice](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170515/MyPlayground.playground/Contents.swift)| - | 조건문 switch |
+	> | [Collection & Control Flow(Loops)](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170516) | [5](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170516/0516.pdf) | [Practice](https://github.com/fimuxd/iOS_Campus/blob/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/Collection/Collection/ViewController.swift)<p>[Loop](https://github.com/fimuxd/iOS_Campus/blob/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/SelfStudy(Loops)/SelfStudy(Loops)/ViewController.swift) | [CollatzConjecture](https://github.com/fimuxd/iOS_Campus/blob/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/CollatzConjecture/CollatzConjecture/ViewController.swift)<p>[Baseball Game](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170523/BaseBall) | 조합 |
+	> | [Optional](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170517/Optional) | [6](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170517/0517.pdf) | [Practice](https://github.com/fimuxd/iOS_Campus/blob/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/OptionalPractice/OptionalPractice/ViewController.swift) | - | 옵셔널 |
+	> | [Class & Object](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170517/Class%20and%20Object) | [6](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170517/0517.pdf) | - | [Vending Machine](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170517/Class%20and%20Object/VendingMachine/VendingMachine/ViewController.swift) | 클래스와 객체 |
+	> | [Inheritance](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170518) | [6](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170517/0517.pdf) | - | [PocketMonster](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170517/Class%20and%20Object/PocketMonster/PocketMonster) | 상속 |
 
 - **3rd Week** ; May 22 - 26
 
-	> | Lecture Summary | Programming Practice | Small Apps | Note |
-	> | :--- | :---: | :---: | :---: |
-	> | [UI Class](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170522) |
-	> | [Application Life Cycle & Access Control](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170523) |
-	> | [Recursion](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170524/Recursion) |
-	> | [Classes & Structures](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170524/Classes%20and%20Structures) |
-	> | [Delegate & Protocol](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170526) |
+	> | Lecture Summary | PPT | Programming Practice | Small Apps | Note |
+	> | :--- | :--- | :--- | :--- | :--- |
+	> | [UIClass](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170522) | [7](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170522/0522-23.pdf) | [Practice](https://stackoverflow.com/questions/27652227/text-view-placeholder-swift) | - | UI시작 |
+	> | [Application Life Cycle & Access Control](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170523) | [8](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170523/0522.pdf) | - | - | Lift Cycle |
+	> | [Recursion](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170524/Recursion) | - | [TowerOfHanoi](https://github.com/fimuxd/iOS_Campus/blob/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/RecursionPractice/RecursionPractice/ViewController.swift) | - | 재귀함수 | 
+	> | [Classes & Structures](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170524/Classes%20and%20Structures) | [9](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170524/0524.pdf) | [Practice](https://github.com/fimuxd/iOS_Campus/blob/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/ClassesAndStructuresPractice/ClassesAndStructuresPractice/ViewController.swift) | - | 클래스와 구조체 |
+	> | [AutoLayOut](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170525) | [10](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170525/0525-26.pdf) | [Practice](https://github.com/fimuxd/iOS_Campus/blob/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/AutoLayout/AutoLayout/ViewController.swift) | - | 오토레이아웃 |
+	> | [Delegate & Protocol](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170526) | [10](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170525/0525-26.pdf) | - | - | 델리게이트 |
 	
 - **4th Week** ; May 29 - June 2
 
-	> | Lecture Summary | Programming Practice | Small Apps | Note |
-	> | :--- | :---: | :---: | :---: |
-	> | [UIScrollView](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170529/UIScrollView) |
-	> | [UserDefault](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170530/UserDefault) |
-	> | [UIViewController](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170530/UIViewController%20and%20UIAlertControl) |
-	> | [UIAlertController](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170601) |
-	> | [UITableView](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170602) |
+	> | Lecture Summary | PPT | Programming Practice | Small Apps | Note |
+	> | :--- | :--- | :--- | :--- | :--- |
+	> | [UIScrollView](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170529/UIScrollView) | [11](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170529/0529-30.pdf)<p>[종스크롤](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170529/UIScrollView/종스크롤.pdf) | [Practice](https://github.com/fimuxd/iOS_Campus/blob/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/UIScrollViewPractice/UIScrollViewPractice/ViewController.swift) | - | - |
+	> | [UserDefault](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170530/UserDefault) | [11](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170529/0529-30.pdf) | [Practice](https://github.com/fimuxd/iOS_Campus/blob/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/UserDefaults/UserDefaults/ViewController.swift) | [LogIn View by Stack, ScrollView, UITextField](https://github.com/fimuxd/iOS_Campus/blob/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/LogInCoverPractice/LogInCoverPractice/ViewController.swift) | - |
+	> | [UIViewController](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170530/UIViewController%20and%20UIAlertControl) | [12](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170530/0530.pdf) | - | - | - |
+	> | [UIAlertController](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170601) | [11](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170529/0529-30.pdf) | - | - | - |
+	> | [UITableView](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170602) | [13](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170602/0531%20.pdf) | [Practice1](https://github.com/fimuxd/iOS_Campus/tree/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/UITableViewPractice/UITableViewPractice)<p>[Practice2](https://github.com/fimuxd/iOS_Campus/tree/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/TableViewPractice2/TableViewPractice2)<p>[Practice3](https://github.com/fimuxd/iOS_Campus/tree/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/UITableViewPractice3/UITableViewPractice3) | Memo | - |
+	
 
 - **5th Week** ; June 7 - 9
 

@@ -21,5 +21,9 @@
 
 > 전체적인 흐름을 이해한 후, 스킬로 들어가는 것
 
+- `NSObject` 의 NS는 NextStep 이라는 회사명의 줄임말. NSObject는 모든 Object를 일컫는다. 모든 Object는 NSObject를 상속받는다. 
+
+
 # UICustomView
 
+stack of flow

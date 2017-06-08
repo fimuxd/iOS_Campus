@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  ㅇㅇㅇ
+//  PairMemo
 //
-//  Created by Bo-Young PARK on 8/6/2017.
-//  Copyright © 2017 Bo-Young PARK. All rights reserved.
+//  Created by Hyoungsu Ham on 2017. 6. 8..
+//  Copyright © 2017년 Hyoungsu Ham. All rights reserved.
 //
 
 import UIKit
