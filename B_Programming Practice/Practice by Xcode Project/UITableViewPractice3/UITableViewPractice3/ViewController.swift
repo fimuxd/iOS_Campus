@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -18,7 +18,7 @@ class ViewController: UIViewController, UITableViewDataSource {
         
         //UserDefault 변수 설정
         friendList = UserDefaults.standard.array(forKey: "newFriendArray") as? [[String : String]] ?? []
-
+        
         tableView.reloadData()
         
         
@@ -60,6 +60,30 @@ class ViewController: UIViewController, UITableViewDataSource {
         return cell
     }
     
+    //기존 contact 정보 띄우도록 cell 선택했을 때 작동할 함수 설정
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        //Cell선택후 다시 되돌아 왔을 때 선택표시(회색) 없애는 것
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        var nextViewController:PersonViewController = self.storyboard?.instantiateViewController(withIdentifier: "PersonViewController") as! PersonViewController
+        
+        var personInfoDic:[String:String] = friendList[indexPath.row]
+        let lastName:String = personInfoDic["Lastname"]!
+        let firstName:String = personInfoDic["Firstname"]!
+        let company:String = personInfoDic["Company"]!
+        let phone:String = personInfoDic["Phone"]!
+        let email:String = personInfoDic["Email"]!
+        
+        nextViewController.lastName = lastName
+        nextViewController.firstName = firstName
+        nextViewController.company = company
+        nextViewController.phone = phone
+        nextViewController.email = email
+        
+        self.navigationController?.pushViewController(nextViewController, animated: true)
+        
+    }
    
     
     //New Contact에서 Unwind Segue목적

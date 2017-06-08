@@ -17,12 +17,29 @@ class PersonViewController: UIViewController {
     @IBOutlet weak var phoneLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
     
+    //data 받을 변수 설정
+    var lastName:String?
+    var firstName:String?
+    var company:String?
+    var phone:String?
+    var email:String?
         
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.title = 
         
+        let lastName = self.lastName ?? "No"
+        let firstName = self.firstName ?? "Name"
+        let company = self.company ?? ""
+        let phone = self.phone ?? ""
+        let email = self.email ?? ""
+        
+        self.lastNameLabel.text = lastName
+        self.firstNameLabel.text = firstName
+        self.companyLabel.text = company
+        self.phoneLabel.text = phone
+        self.emailLabel.text = email
+        
+        self.title = lastName + " " + firstName
     }
 
     override func didReceiveMemoryWarning() {
