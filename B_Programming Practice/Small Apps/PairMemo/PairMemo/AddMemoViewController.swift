@@ -8,12 +8,13 @@
 
 import UIKit
 
-class AddMemoViewController: UIViewController {
+class AddMemoViewController: UIViewController, UITextViewDelegate {
 
-    
+   
     @IBOutlet weak var titleTextField: UITextField!
-    @IBOutlet weak var contentTextField: UITextField!
+//    @IBOutlet weak var contentTextField: UITextField!
     
+    @IBOutlet weak var contentTextField: UITextView!
     
     //메모추가 페이지 백버튼
     @IBAction func AddPageBackButton(_ sender: Any) {
@@ -29,12 +30,26 @@ class AddMemoViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
+    @IBOutlet weak var priorityBtnOutlet: UIButton!
+    @IBAction func priorityBtn(_ sender: UIButton) {
+        
+        if sender.titleColor(for: .normal) == UIColor.yellow {
+            sender.setTitleColor(.lightGray, for: .normal)
+        } else {
+            sender.setTitleColor(.red, for: .normal)
+        }
+    }
     
     
     ////////////////////////////////////////////////
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        contentTextField.text = "새로운 메모를 입력하세요"
+        contentTextField.textColor = UIColor.lightGray
+        
+        
+        
         // Do any additional setup after loading the view.
     }
 
@@ -43,6 +58,12 @@ class AddMemoViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if contentTextField.textColor == UIColor.lightGray {
+            contentTextField.text = ""
+            contentTextField.textColor = UIColor.black
+        }
+    }
     
     func addMemo() {
 //        var memo: [String: Any] = [:]
@@ -51,7 +72,7 @@ class AddMemoViewController: UIViewController {
         let title:String = titleTextField.text!
         let contant:String = contentTextField.text!
         
-        var memo: [String:String] = ["title":title, "contant":contant]
+        let memo: [String:String] = ["title":title, "contant":contant]
 //        memo.updateValue(titleTextField.text, forKey: "title")
 //        memo.updateValue(contentTextField.text, forKey: "content")
         
@@ -60,7 +81,9 @@ class AddMemoViewController: UIViewController {
         if memolist == nil {
             memolist = [["title":title, "contant":contant]]
         }
-        else {
+        else if priorityBtnOutlet.titleColor(for: .normal) == .red {
+            memolist.insert(memo, at: 0)
+        }else {
             memolist.append(memo)
         }
         
@@ -68,4 +91,7 @@ class AddMemoViewController: UIViewController {
         
         
     }
+
+
+
 }

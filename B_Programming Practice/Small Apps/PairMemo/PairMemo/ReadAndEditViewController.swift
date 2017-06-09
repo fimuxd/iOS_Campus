@@ -8,17 +8,19 @@
 
 import UIKit
 
-class ReadAndEditViewController: UIViewController, UITextFieldDelegate {
+class ReadAndEditViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate {
     
     var texttitle: String?
     var contents: String?
-    var indexpath : Int?
+    var indexpath: Int?
     
     //이게 타이틀 제목입니다 제성합니당
     @IBOutlet weak var readAndContentcontentField: UITextField!
     //이게 내용이에여....
-    @IBOutlet weak var contentsTextField: UITextField!
-    //done버튼이고 하나는 히든시킬아울렛 하나는 저장할 액
+    @IBOutlet weak var contentsTextField: UITextView!
+//    @IBOutlet weak var contentsTextField: UITextField!
+    //done버튼이고 하나는 히든시킬아울렛 하나는 저장할 액션버튼
+    
     @IBOutlet weak var editDoneBtnOutlet: UIButton!
     
     @IBAction func EditDoneRealBtn(_ sender: UIButton) {
@@ -30,7 +32,7 @@ class ReadAndEditViewController: UIViewController, UITextFieldDelegate {
         let title:String = self.readAndContentcontentField.text!
         let contant:String = self.contentsTextField.text!
         
-        var memo: [String:String] = ["title":title, "contant":contant]
+        let memo: [String:String] = ["title":title, "contant":contant]
         
         editmemolist.remove(at: Int(indexPath))
         editmemolist.insert(memo, at: Int(indexPath))
@@ -41,9 +43,6 @@ class ReadAndEditViewController: UIViewController, UITextFieldDelegate {
     
     }
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        return true
-    }
     
 
     override func viewDidLoad() {
@@ -52,11 +51,11 @@ class ReadAndEditViewController: UIViewController, UITextFieldDelegate {
         let textTitle:String = texttitle!
         let content:String = contents!
         let indexPath:Int = indexpath!
+    
+//        print(indexPath) 
         
-        
-        print(indexPath)
-        self.readAndContentcontentField.text = textTitle ?? "No title"
-        self.contentsTextField.text = content ?? "No content"
+        self.readAndContentcontentField.text = textTitle
+        self.contentsTextField.text = content
         
         self.editDoneBtnOutlet.isHidden = true
         
@@ -69,6 +68,10 @@ class ReadAndEditViewController: UIViewController, UITextFieldDelegate {
     }
 
     func textFieldDidBeginEditing(_ textField: UITextField) {
+        self.editDoneBtnOutlet.isHidden = false
+    }
+    
+    func textViewDidBeginEditing(_ textView: UITextView) {
         self.editDoneBtnOutlet.isHidden = false
     }
 

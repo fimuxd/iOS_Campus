@@ -14,7 +14,6 @@
 		3763E8321EE9245800817073 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3763E8301EE9245800817073 /* LaunchScreen.storyboard */; };
 		3763E83A1EE924FB00817073 /* AddMemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3763E8391EE924FB00817073 /* AddMemoViewController.swift */; };
 		3763E83C1EE9250D00817073 /* ReadAndEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3763E83B1EE9250D00817073 /* ReadAndEditViewController.swift */; };
-		6AE486E91EE95BD40049A8A9 /* dfdfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE486E81EE95BD40049A8A9 /* dfdfViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 		3763E8331EE9245800817073 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3763E8391EE924FB00817073 /* AddMemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMemoViewController.swift; sourceTree = "<group>"; };
 		3763E83B1EE9250D00817073 /* ReadAndEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadAndEditViewController.swift; sourceTree = "<group>"; };
-		6AE486E81EE95BD40049A8A9 /* dfdfViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dfdfViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +61,6 @@
 				3763E82B1EE9245800817073 /* Main.storyboard */,
 				3763E8291EE9245800817073 /* ViewController.swift */,
 				3763E83B1EE9250D00817073 /* ReadAndEditViewController.swift */,
-				6AE486E81EE95BD40049A8A9 /* dfdfViewController.swift */,
 				3763E8391EE924FB00817073 /* AddMemoViewController.swift */,
 				3763E82E1EE9245800817073 /* Assets.xcassets */,
 				3763E8301EE9245800817073 /* LaunchScreen.storyboard */,
@@ -148,7 +145,6 @@
 				3763E83A1EE924FB00817073 /* AddMemoViewController.swift in Sources */,
 				3763E82A1EE9245800817073 /* ViewController.swift in Sources */,
 				3763E83C1EE9250D00817073 /* ReadAndEditViewController.swift in Sources */,
-				6AE486E91EE95BD40049A8A9 /* dfdfViewController.swift in Sources */,
 				3763E8281EE9245800817073 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,7 +307,6 @@
 				3763E8381EE9245800817073 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
