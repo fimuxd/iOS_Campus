@@ -66,7 +66,7 @@
 
 	> | Lecture Summary | PPT | Programming Practice | Small Apps | Note |
 	> | :--- | :--- | :--- | :--- | :--- |
-	> | [UICustomView]() |
+	> | [UICustomView](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170608) |
 
 ## Contact Me
 - 📱 +82 10.3316.1609
