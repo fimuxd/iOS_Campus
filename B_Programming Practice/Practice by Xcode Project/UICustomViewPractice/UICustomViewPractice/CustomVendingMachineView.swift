@@ -10,12 +10,21 @@ import UIKit
 
 class CustomVendingMachineView: UIView {
 
+   @IBOutlet var delegate:CustomVendingMachineViewDelegate?
+    
     @IBOutlet var productImage:UIImageView?
     @IBOutlet var titleLabel:UILabel?
     @IBOutlet var itemTappedBtn:UIButton?
     @IBAction func itemTappedBtn(_ sender: UIButton) {
-        print("초코우유")
+//        print("초코우유")
         showCurrentStatus()
+        delegate?.didSelectedItem(item: self)
+    }
+    
+    @IBAction func btnAction(_sender:UIButton) {
+        if delegate?.isAbleToTouch() ?? false {
+            delegate?.didSelectedItem(item: self)
+        }
     }
     
     override func awakeFromNib() {
@@ -40,4 +49,11 @@ class CustomVendingMachineView: UIView {
             self.backgroundColor = .white
         }
     }
+    
+}
+
+@objc protocol CustomVendingMachineViewDelegate:NSObjectProtocol {
+    func didSelectedItem(item:CustomVendingMachineView)
+
+    func isAbleToTouch() -> Bool
 }

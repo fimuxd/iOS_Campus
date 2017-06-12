@@ -8,17 +8,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    @IBOutlet var roundBtn1:RoundView!
-    @IBOutlet var roundBtn2:RoundView!
-
+class ViewController: UIViewController, CustomVendingMachineViewDelegate {
     
+    @IBOutlet weak var CustomVendingMachineView: CustomVendingMachineView!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        roundBtn1.setTitleText("첫번째")
-        roundBtn2.setTitleText("두번째")
+//        roundBtn1.setTitleText("첫번째")
+//        roundBtn2.setTitleText("두번째")
+        
+        self.CustomVendingMachineView.delegate = self
+        
         
     }
 
@@ -27,6 +28,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
+    func didSelectedItem(item: CustomVendingMachineView) {
+        print(item.titleLabel?.text)
+    }
+    
+    func isAbleToTouch() -> Bool {
+        return true
+    }
 
 }
 
