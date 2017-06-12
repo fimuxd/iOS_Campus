@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6A2C84C61EEE5B03004FFBD2 /* RoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2C84C51EEE5B03004FFBD2 /* RoundView.swift */; };
 		6A2C84C81EEE5E63004FFBD2 /* CustomVendingMachineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2C84C71EEE5E63004FFBD2 /* CustomVendingMachineView.swift */; };
+		6A2C84CC1EEE7BE5004FFBD2 /* CustomCountLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2C84CB1EEE7BE5004FFBD2 /* CustomCountLabel.swift */; };
 		6A8269CC1EEA84B7006AB9B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8269CB1EEA84B7006AB9B1 /* AppDelegate.swift */; };
 		6A8269CE1EEA84B7006AB9B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8269CD1EEA84B7006AB9B1 /* ViewController.swift */; };
 		6A8269D11EEA84B7006AB9B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A8269CF1EEA84B7006AB9B1 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		6A2C84C51EEE5B03004FFBD2 /* RoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundView.swift; sourceTree = "<group>"; };
 		6A2C84C71EEE5E63004FFBD2 /* CustomVendingMachineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomVendingMachineView.swift; sourceTree = "<group>"; };
+		6A2C84CB1EEE7BE5004FFBD2 /* CustomCountLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCountLabel.swift; sourceTree = "<group>"; };
 		6A8269C81EEA84B7006AB9B1 /* UICustomViewPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UICustomViewPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A8269CB1EEA84B7006AB9B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A8269CD1EEA84B7006AB9B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				6A8269CD1EEA84B7006AB9B1 /* ViewController.swift */,
 				6A2C84C51EEE5B03004FFBD2 /* RoundView.swift */,
 				6A2C84C71EEE5E63004FFBD2 /* CustomVendingMachineView.swift */,
+				6A2C84CB1EEE7BE5004FFBD2 /* CustomCountLabel.swift */,
 				6A8269CF1EEA84B7006AB9B1 /* Main.storyboard */,
 				6A8269D21EEA84B7006AB9B1 /* Assets.xcassets */,
 				6A8269D41EEA84B7006AB9B1 /* LaunchScreen.storyboard */,
@@ -147,6 +150,7 @@
 				6A8269CE1EEA84B7006AB9B1 /* ViewController.swift in Sources */,
 				6A8269CC1EEA84B7006AB9B1 /* AppDelegate.swift in Sources */,
 				6A2C84C81EEE5E63004FFBD2 /* CustomVendingMachineView.swift in Sources */,
+				6A2C84CC1EEE7BE5004FFBD2 /* CustomCountLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -66,15 +66,41 @@
                                     <outlet property="titleLabel" destination="cx3-Hi-yZY" id="36B-ha-Tn5"/>
                                 </connections>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FQq-my-Neg" customClass="CustomCountLabel" customModule="UICustomViewPractice" customModuleProvider="target">
+                                <rect key="frame" x="160.33333333333337" y="227.33333333333337" width="51.666666666666657" height="51.666666666666629"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8L-3K-nqB">
+                                        <rect key="frame" x="0.0" y="0.0" width="51.666666666666657" height="51.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="F8L-3K-nqB" firstAttribute="centerY" secondItem="FQq-my-Neg" secondAttribute="centerY" id="K5X-Uz-yLk"/>
+                                    <constraint firstItem="F8L-3K-nqB" firstAttribute="centerX" secondItem="FQq-my-Neg" secondAttribute="centerX" id="SRG-se-QsX"/>
+                                    <constraint firstAttribute="width" secondItem="FQq-my-Neg" secondAttribute="height" multiplier="1:1" id="Xr9-nb-Zfs"/>
+                                    <constraint firstItem="F8L-3K-nqB" firstAttribute="height" secondItem="FQq-my-Neg" secondAttribute="height" id="bx7-gw-fvR"/>
+                                    <constraint firstItem="F8L-3K-nqB" firstAttribute="width" secondItem="FQq-my-Neg" secondAttribute="width" id="w8y-qY-SMU"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="countLabel" destination="F8L-3K-nqB" id="ZFr-4d-D5f"/>
+                                </connections>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="JSr-sb-KT3" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1/2" id="B2R-jj-DPU"/>
                             <constraint firstItem="JSr-sb-KT3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Dd7-Re-xy5"/>
+                            <constraint firstItem="FQq-my-Neg" firstAttribute="width" secondItem="JSr-sb-KT3" secondAttribute="width" multiplier="1/4" id="FEX-zB-8Ki"/>
+                            <constraint firstItem="CKw-5Z-CHk" firstAttribute="top" secondItem="FQq-my-Neg" secondAttribute="bottom" constant="-14.333333333333314" id="aSQ-gf-CEZ"/>
                             <constraint firstItem="JSr-sb-KT3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1/2" constant="5" id="ofp-bu-D5W"/>
+                            <constraint firstItem="FQq-my-Neg" firstAttribute="trailing" secondItem="CKw-5Z-CHk" secondAttribute="trailing" id="uaB-IG-U9j"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="CustomCountLabelView" destination="FQq-my-Neg" id="GdI-fY-wbX"/>
                         <outlet property="CustomVendingMachineView" destination="JSr-sb-KT3" id="43G-Ck-Kxl"/>
                         <outlet property="view" destination="JSr-sb-KT3" id="p2Q-sr-OaF"/>
                     </connections>
