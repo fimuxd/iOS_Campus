@@ -10,11 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var roundBtn1:RoundView!
+    @IBOutlet var roundBtn2:RoundView!
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        roundBtn1.setTitleText("첫번째")
+        roundBtn2.setTitleText("두번째")
+        
     }
 
     override func didReceiveMemoryWarning() {
