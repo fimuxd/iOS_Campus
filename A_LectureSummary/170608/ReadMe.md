@@ -23,9 +23,6 @@
 
 - `NSObject` 의 NS는 NextStep 이라는 회사명의 줄임말. NSObject는 모든 Object를 일컫는다. 모든 Object는 NSObject를 상속받는다. 
 
-
-# UICustomView
-
 # UICustomView
 
 - 모든 View는 UIView를 상속 받는다.
@@ -34,7 +31,7 @@
 	```swift
 	//1. xCode에서 cocoa touch frame work를 통해, UIButton 속성을 갖는 class를 하나 만들어준다.
 	//2. storyBoard...(init 안해도 되는 이유)
-	//3. 대신 viewDidLoad와 비슷한 역하을 하는, awakeFromNib을 걸어준다
+	//3. 대신 viewDidLoad와 비슷한 역할을 하는, awakeFromNib을 걸어준다
 	
 		override func awakeFromNib() {
 			super.awakeFromLib()
