@@ -55,19 +55,25 @@
 
 	> | Lecture Summary | PPT | Programming Practice | Small Apps | Note |
 	> | :--- | :--- | :--- | :--- | :--- |
-	> | [UIScrollView](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170529/UIScrollView) | [11](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170529/0529-30.pdf)<p>[종스크롤](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170529/UIScrollView/종스크롤.pdf) | [Practice](https://github.com/fimuxd/iOS_Campus/blob/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/UIScrollViewPractice/UIScrollViewPractice/ViewController.swift) | - | - |
+	> | [UIScrollView](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170529/UIScrollView) | [11](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170529/0529-30.pdf)<p>[종스크롤](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170529/UIScrollView/종스크롤.pdf) | [Practice](https://github.com/fimuxd/iOS_Campus/blob/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/UIScrollViewPractice/UIScrollViewPractice/ViewController.swift) | - | 스크롤뷰 |
 	> | [UserDefault](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170530/UserDefault) | [11](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170529/0529-30.pdf) | [Practice](https://github.com/fimuxd/iOS_Campus/blob/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/UserDefaults/UserDefaults/ViewController.swift) | [LogInView](https://github.com/fimuxd/iOS_Campus/blob/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/LogInCoverPractice/LogInCoverPractice/ViewController.swift) | - |
 	> | [UIViewController](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170530/UIViewController%20and%20UIAlertControl) | [12](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170530/0530.pdf) | - | [LogIn&SignUp](https://github.com/fimuxd/iOS_Campus/tree/master/B_Programming%20Practice/Small%20Apps/LogInAndSignUpPractice) | - |
 	> | [UIAlertController](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170601) | [11](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170529/0529-30.pdf) | - | - | - |
-	> | [UITableView](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170602) | [13](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170602/0531%20.pdf) | [Practice1](https://github.com/fimuxd/iOS_Campus/tree/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/UITableViewPractice/UITableViewPractice)<p>[Practice2](https://github.com/fimuxd/iOS_Campus/tree/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/TableViewPractice2/TableViewPractice2)<p>[Practice3](https://github.com/fimuxd/iOS_Campus/tree/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/UITableViewPractice3/UITableViewPractice3) | [Memo](https://github.com/fimuxd/iOS_Campus/tree/master/B_Programming%20Practice/Small%20Apps/PairMemo)| - |
+	> | [UITableView](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170602) | [13](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170602/0531%20.pdf) | [Practice1](https://github.com/fimuxd/iOS_Campus/tree/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/UITableViewPractice/UITableViewPractice)<p>[Practice2](https://github.com/fimuxd/iOS_Campus/tree/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/TableViewPractice2/TableViewPractice2)<p>[Practice3](https://github.com/fimuxd/iOS_Campus/tree/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/UITableViewPractice3/UITableViewPractice3) | - | - |
 	
-
 - **5th Week** ; June 7 - 9
 
 	> | Lecture Summary | PPT | Programming Practice | Small Apps | Note |
 	> | :--- | :--- | :--- | :--- | :--- |
-	> | [UICustomView](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170608) |
+	> | [UICustomView](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170608) | - | - | [Memo by PairProgramming](https://github.com/fimuxd/iOS_Campus/tree/master/B_Programming%20Practice/Small%20Apps/PairMemo) | - |
 
+- **6th Week** ; June 12 - 16
+
+	> | Lecture Summary | PPT | Programming Practice | Small Apps | Note |
+	> | :--- | :--- | :--- | :--- | :--- |
+	> | [UICustomView](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170612) | - | [AlgorithmPractice](https://github.com/fimuxd/iOS_Campus/blob/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/FunctionPractice_170612/FunctionPractice_170612/ViewController.swift) | - | - |
+	
+	
 ## Contact Me
 - 📱 +82 10.3316.1609
 - 📧 fimuxd@gmail.com
