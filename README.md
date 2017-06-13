@@ -71,9 +71,7 @@
 
 	> | Lecture Summary | PPT | Programming Practice | Small Apps | Note |
 	> | :--- | :--- | :--- | :--- | :--- |
-	> | [UICustomView](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170612) | - | [AlgorithmPractice](https://github.com/fimuxd/iOS_Campus/blob/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/FunctionPractice_170612/FunctionPractice_170612/ViewController.swift) | - | - |
-	> | - | 
-	
+	> | [Property](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170613) | [14](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170613/0613.pdf) | [AlgorithmPractice(Hashad)](https://github.com/fimuxd/iOS_Campus/blob/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/FunctionPractice_170612/FunctionPractice_170612/ViewController.swift) | - | Swift 언어의 꽃 또는 넘어야 할 큰 산 |
 	
 ## Contact Me
 - 📱 +82 10.3316.1609
