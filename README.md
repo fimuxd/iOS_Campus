@@ -72,6 +72,7 @@
 	> | Lecture Summary | PPT | Programming Practice | Small Apps | Note |
 	> | :--- | :--- | :--- | :--- | :--- |
 	> | [UICustomView](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170612) | - | [AlgorithmPractice](https://github.com/fimuxd/iOS_Campus/blob/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/FunctionPractice_170612/FunctionPractice_170612/ViewController.swift) | - | - |
+	> | - | 
 	
 	
 ## Contact Me
