@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
     @IBAction func btn(_ sender: UIButton) {
         isHarshadNumber(num: Int(textField.text!)!)
+        textField.text = ""
     }
     
     
