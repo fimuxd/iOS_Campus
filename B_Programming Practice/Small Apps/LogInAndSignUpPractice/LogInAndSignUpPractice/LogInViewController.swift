@@ -8,25 +8,39 @@
 
 import UIKit
 
-class LogInViewController: UIViewController, UITextFieldDelegate {
 
+class LogInViewController: UIViewController, UITextFieldDelegate {
+    
+    /******************************************************************************/
+    //                                 IBOutlet                                   //
+    /******************************************************************************/
+    
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var pWTextField: UITextField!
     @IBAction func logInBtn(_ sender: UIButton) {
         logInRequest()
     }
-    @IBAction func signUpBtn(_ sender: UIButton) {
     
-//        let viewController:SignUpViewController = self.storyboard!.instantiateViewController(withIdentifier: "SignUpViewController") as! SignUpViewController
-//        self.present(viewController, animated: true, completion: nil)
+    
+    /******************************************************************************/
+    //                                 IBAction                                   //
+    /******************************************************************************/
+    
+    @IBAction func signUpBtn(_ sender: UIButton) {
         
         let signUpVC:SignUpViewController = self.storyboard?.instantiateViewController(withIdentifier: "SignUpViewController") as! SignUpViewController
         
         self.navigationController?.pushViewController(signUpVC, animated: true)
-
-
+    }
     
+    
+    /******************************************************************************/
+    //                                 함수 모음                                     //
+    /******************************************************************************/
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        scrollView.setContentOffset(CGPoint(x: 0, y: 100), animated: true)
     }
     
     func logInRequest() {
@@ -44,7 +58,7 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
                 
                 let alert:UIAlertController = UIAlertController(title: "Alert!", message: "존재하지 않는 아이디 또는 잘못된 패스워드", preferredStyle: .alert)
                 
-                let okBtn:UIAlertAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+                let okBtn:UIAlertAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                 
                 alert.addAction(okBtn)
                 self.present(alert, animated: true, completion: nil)
@@ -53,30 +67,20 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    
+    /******************************************************************************/
+    //                                 LifeCycle                                  //
+    /******************************************************************************/
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        scrollView.setContentOffset(CGPoint(x: 0, y: 100), animated: true)
+        
     }
     
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }

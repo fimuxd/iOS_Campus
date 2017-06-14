@@ -16,41 +16,36 @@ import UIKit
 
 class SignUpViewController: UIViewController, UITextFieldDelegate {
     
-    // MARK: - Button & Labels
-    
-    @IBAction func dismissBtn(_ sender: UIButton) {
-        
-//        self.dismiss(animated: true, completion: nil)
-            self.navigationController?.popViewController(animated: true)
-    }
+    /******************************************************************************/
+    //                                 IBOutlet                                   //
+    /******************************************************************************/
     
     @IBOutlet weak var eMailTextField: UITextField!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var pWTextField: UITextField!
     @IBOutlet weak var cPWTextField: UITextField!
-    
     @IBOutlet weak var subLabel: UILabel!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     
+    /******************************************************************************/
+    //                                 IBAction                                   //
+    /******************************************************************************/
     
-    
-    // MARK: - SingUp Btn Action
+    @IBAction func dismissBtn(_ sender: UIButton) {
+        
+        self.navigationController?.popViewController(animated: true)
+    }
     
     @IBAction func signUpBtn(_ sender: UIButton) {
-        let alert:UIAlertController = UIAlertController(title: "Confirm SignUp", message: "입력한 내용이 맞습니까? \n ID: \(eMailTextField.text!), PW:\(pWTextField.text!)", preferredStyle: .actionSheet)
-        
-        let okBtn:UIAlertAction = UIAlertAction(title: "OK", style: .default, handler: {(alert:UIAlertAction) in self.signUpRequest() })
-        let cancleBtn:UIAlertAction = UIAlertAction(title: "Cancle", style: .cancel, handler: nil)
-        
-        alert.addAction(okBtn)
-        alert.addAction(cancleBtn)
-        
-        self.present(alert, animated: true, completion: nil)
-        
+        setAlert()
     }
     
     
-    // MARK: - SignUp Btn에 들어갈 함수 설정
+    /******************************************************************************/
+    //                                 함수 모음                                     //
+    /******************************************************************************/
+    
     func signUpRequest() {
         self.view.endEditing(true)
         
@@ -62,11 +57,8 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
             UserDefaults.standard.set(pWTextField.text!, forKey: Authentification.password)
             
             // 2. 스스로를 UnwindSegue 하렴 (Main으로 가도록 함)
-//            self.performSegue(withIdentifier: "UnwindSegue", sender: self)
             
             let viewController:MainViewController = self.storyboard!.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
-//            self.present(viewController, animated: true, completion: nil)
-
             self.navigationController?.dismiss(animated: true, completion: nil)
             
         }else {
@@ -76,18 +68,25 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    // MARK: - TextField Return Action
+    func setAlert() {
+        let alert:UIAlertController = UIAlertController(title: "Confirm SignUp", message: "입력한 내용이 맞습니까? \n ID: \(eMailTextField.text!), PW:\(pWTextField.text!)", preferredStyle: .actionSheet)
+        
+        let okBtn:UIAlertAction = UIAlertAction(title: "OK", style: .default, handler: {(alert:UIAlertAction) in self.signUpRequest() })
+        let cancleBtn:UIAlertAction = UIAlertAction(title: "NO", style: .cancel, handler: nil)
+        
+        alert.addAction(okBtn)
+        alert.addAction(cancleBtn)
+        
+        self.present(alert, animated: true, completion: nil)
+        
+    }
     
-//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-//        if textField.tag = 1 {
-//            
-//        }
-//    }
     
-    @IBOutlet weak var scrollView: UIScrollView!
+    /******************************************************************************/
+    //                                 LifeCycle                                  //
+    /******************************************************************************/
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
     }
     
@@ -100,15 +99,5 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         scrollView.setContentOffset(CGPoint(x: 0, y: 180), animated: true)
     }
     
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
     
 }
