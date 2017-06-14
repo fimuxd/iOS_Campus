@@ -30,7 +30,15 @@ class MainViewController: UIViewController {
     //                                 IBAction                                   //
     /******************************************************************************/
     @IBAction func returnLogInBtn(_ sender: UIButton) {
-        
+        setAlert()
+    }
+    
+    
+    /******************************************************************************/
+    //                                 함수 모음                                     //
+    /******************************************************************************/
+    
+    func setAlert() {
         let alert:UIAlertController = UIAlertController(title: "LOGOUT", message: "정말 로그아웃하시겠어요?", preferredStyle: .alert)
         
         let okBtn:UIAlertAction = UIAlertAction(title: "OK", style: .default, handler: {(alert:UIAlertAction) in self.isAuthentified = false; let viewController:UINavigationController = self.storyboard?.instantiateViewController(withIdentifier: "NavigationController") as! UINavigationController;
@@ -44,6 +52,7 @@ class MainViewController: UIViewController {
         
         
         self.present(alert, animated: true, completion: nil)
+        
     }
     
     
@@ -63,7 +72,7 @@ class MainViewController: UIViewController {
         }
         
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

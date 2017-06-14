@@ -52,6 +52,9 @@ UITableView는 표시 가능한 row에 대해 Table View 셀을 캐시(고속으
 
 UITableView는 UIView의 `layoutSubviews()` 메서드를 재정 의하여 UITableView의 새 인스턴스를 만들거나 새 데이터 소스를 할당 할 때만 `reloadData()` 를 호출한다. Table View를 reload하면 현재 선택을 포함한 현재 상태가 지워진다. 그러나 `reloadData()`를 명시 적으로 호출하면 이 상태가 지워지고 이후에 직접 또는 간접적으로 `layoutSubviews()` 를 호출해도 reload 되지 않는다.
 
+**강사님 재설명: UIView에 있는 layoutSubviews()를 override reloadData()를 호출한다. reloadData()는 새로운 인스턴스를 만들거나 데이타 소스에 있는 데이터가 assign 될 때만 reloadData()가 호출된다. 
+이걸 하면 Table View에 있는 IndexPath등의 정보가 다 클리어 된다. reloadData를 하면 Data Source가 다 불리는 것이다. 근데 다시 reloadData를 부르면 방금 한 것처럼 다 클리어하긴 하는데, 그 이후에 직접적이든 간접적으로든 layoutSubviews()를 부르게되면 layoutSubviews() 안에 있는 reloadData()는 다시 불리지 않는다.**
+
 ***
 
 ###### *For information about basic view behaviors, see View Programming Guide for iOS.*

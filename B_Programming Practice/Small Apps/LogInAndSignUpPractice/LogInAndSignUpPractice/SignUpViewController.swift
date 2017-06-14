@@ -38,7 +38,8 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func signUpBtn(_ sender: UIButton) {
-        setAlert()
+     setAlert()
+        
     }
     
     

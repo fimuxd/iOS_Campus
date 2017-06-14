@@ -19,3 +19,15 @@ struct Authentification {
     static let name = "Name"
     static let authentificationBool = "Authentification"
 }
+
+
+/************************************************************************/
+//          상황에 따른 Alert 메세지를 enum을 응용하여 설정해놓았습니다.              //
+/************************************************************************/
+
+enum AlertSetting {
+    case logOutAtMainVC
+    case logInAtLogInVC
+    case signUnAtSignUpVC
+}
+

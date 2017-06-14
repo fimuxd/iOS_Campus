@@ -59,7 +59,7 @@
 	> | [UserDefault](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170530/UserDefault) | [11](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170529/0529-30.pdf) | [Practice](https://github.com/fimuxd/iOS_Campus/blob/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/UserDefaults/UserDefaults/ViewController.swift) | [LogInView](https://github.com/fimuxd/iOS_Campus/blob/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/LogInCoverPractice/LogInCoverPractice/ViewController.swift) | - |
 	> | [UIViewController](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170530/UIViewController%20and%20UIAlertControl) | [12](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170530/0530.pdf) | - | [LogIn&SignUp](https://github.com/fimuxd/iOS_Campus/tree/master/B_Programming%20Practice/Small%20Apps/LogInAndSignUpPractice) | - |
 	> | [UIAlertController](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170601) | [11](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170529/0529-30.pdf) | - | - | - |
-	> | [UITableView](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170602) | [13](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170602/0531%20.pdf) | [Practice1](https://github.com/fimuxd/iOS_Campus/tree/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/UITableViewPractice/UITableViewPractice)<p>[Practice2](https://github.com/fimuxd/iOS_Campus/tree/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/TableViewPractice2/TableViewPractice2)<p>[Practice3](https://github.com/fimuxd/iOS_Campus/tree/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/UITableViewPractice3/UITableViewPractice3) | - | - |
+	> | [UITableView](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170602) | [13](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170602/0531%20.pdf) | [Practice1](https://github.com/fimuxd/iOS_Campus/tree/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/UITableViewPractice/UITableViewPractice)<p>[Practice2](https://github.com/fimuxd/iOS_Campus/tree/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/TableViewPractice2/TableViewPractice2)<p>[Practice3](https://github.com/fimuxd/iOS_Campus/tree/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/UITableViewPractice3/UITableViewPractice3) | - | [과제로 알아보기](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170613/UITableView.md) |
 	
 - **5th Week** ; June 7 - 9
 
@@ -72,6 +72,8 @@
 	> | Lecture Summary | PPT | Programming Practice | Small Apps | Note |
 	> | :--- | :--- | :--- | :--- | :--- |
 	> | [Property](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170613) | [14](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170613/0613.pdf) | [AlgorithmPractice(Hashad)](https://github.com/fimuxd/iOS_Campus/blob/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/FunctionPractice_170612/FunctionPractice_170612/ViewController.swift)<p>[UICustomTableView](https://github.com/fimuxd/iOS_Campus/tree/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/UITableViewPractice4) | - | Swift 언어의 꽃 또는 넘어야 할 큰 산 |
+	> | Enumeration | [14](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170613/0613.pdf) | - | - | 열거형 |
+	
 	
 ## Contact Me
 - 📱 +82 10.3316.1609
