@@ -92,6 +92,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="차곡차곡" id="5nd-Nu-f0a"/>
+                    <connections>
+                        <outlet property="tableView" destination="dRf-oq-Hmd" id="oBI-lf-I9m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
