@@ -133,67 +133,70 @@ class ViewController: UIViewController, UITableViewDataSource, UITextViewDelegat
     //MARK: section별 row 개수
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        switch section {
-        case Month.January.rawValue:
-            return Month.January.monthCount()      //처음엔 그냥 31, 28, 30 등의 Int를 직접 입력함
-        case Month.February.rawValue:
-            return Month.February.monthCount()
-        case Month.March.rawValue:
-            return Month.March.monthCount()
-        case Month.April.rawValue:
-            return Month.April.monthCount()
-        case Month.May.rawValue:
-            return Month.May.monthCount()
-        case Month.June.rawValue:
-            return Month.June.monthCount()
-        case Month.July.rawValue:
-            return Month.July.monthCount()
-        case Month.August.rawValue:
-            return Month.August.monthCount()
-        case Month.September.rawValue:
-            return Month.September.monthCount()
-        case Month.October.rawValue:
-            return Month.October.monthCount()
-        case Month.November.rawValue:
-            return Month.November.monthCount()
-        case Month.December.rawValue:
-            return Month.December.monthCount()
-        default:
-            return 0
-        }
+        return Month(rawValue: section)!.monthCount()
+//        switch section {
+//        case Month.January.rawValue:
+//            return Month.January.monthCount()      //처음엔 그냥 31, 28, 30 등의 Int를 직접 입력함
+//        case Month.February.rawValue:
+//            return Month.February.monthCount()
+//        case Month.March.rawValue:
+//            return Month.March.monthCount()
+//        case Month.April.rawValue:
+//            return Month.April.monthCount()
+//        case Month.May.rawValue:
+//            return Month.May.monthCount()
+//        case Month.June.rawValue:
+//            return Month.June.monthCount()
+//        case Month.July.rawValue:
+//            return Month.July.monthCount()
+//        case Month.August.rawValue:
+//            return Month.August.monthCount()
+//        case Month.September.rawValue:
+//            return Month.September.monthCount()
+//        case Month.October.rawValue:
+//            return Month.October.monthCount()
+//        case Month.November.rawValue:
+//            return Month.November.monthCount()
+//        case Month.December.rawValue:
+//            return Month.December.monthCount()
+//        default:
+//            return 0
+//        }
     }
+    
     
     //MARK: section title header
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         
-        switch section {
-        case Month.January.rawValue:
-            return Month.January.monthName()
-        case Month.February.rawValue:
-            return Month.February.monthName()
-        case Month.March.rawValue:
-            return Month.March.monthName()
-        case Month.April.rawValue:
-            return Month.April.monthName()
-        case Month.May.rawValue:
-            return Month.May.monthName()
-        case Month.June.rawValue:
-            return Month.June.monthName()
-        case Month.July.rawValue:
-            return Month.July.monthName()
-        case Month.August.rawValue:
-            return Month.August.monthName()
-        case Month.September.rawValue:
-            return Month.September.monthName()
-        case Month.October.rawValue:
-            return Month.October.monthName()
-        case Month.November.rawValue:
-            return Month.November.monthName()
-        case Month.December.rawValue:
-            return Month.December.monthName()
-        default:
-            return ""
-        }
+        return Month(rawValue: section)!.monthName()
+//        switch section {
+//        case Month.January.rawValue:
+//            return Month.January.monthName()
+//        case Month.February.rawValue:
+//            return Month.February.monthName()
+//        case Month.March.rawValue:
+//            return Month.March.monthName()
+//        case Month.April.rawValue:
+//            return Month.April.monthName()
+//        case Month.May.rawValue:
+//            return Month.May.monthName()
+//        case Month.June.rawValue:
+//            return Month.June.monthName()
+//        case Month.July.rawValue:
+//            return Month.July.monthName()
+//        case Month.August.rawValue:
+//            return Month.August.monthName()
+//        case Month.September.rawValue:
+//            return Month.September.monthName()
+//        case Month.October.rawValue:
+//            return Month.October.monthName()
+//        case Month.November.rawValue:
+//            return Month.November.monthName()
+//        case Month.December.rawValue:
+//            return Month.December.monthName()
+//        default:
+//            return ""
+//        }
     }
     
     //MARK: Table View Cell 설정
