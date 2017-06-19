@@ -125,12 +125,13 @@
 		if let dict = NSDictionary(contentsOfFile: basePath) as? [String: AnyObject] {	// use swift dictionary as normal	}
 	
 	//5. write(쓰기) 작업을 하려면,
-	if let dict = NSDictionary(contentsOfFile: basePath) as? [String: Any] {	var loadData = dict	loadData.updateValue("addData", forKey: "key")	let nsDic:NSDictionary = NSDictionary(dictionary: loadData)	nsDic.write(toFile: basePath, atomically: true)	}
+	if let dict = NSDictionary(contentsOfFile: basePath) as? [String: Any] {		var loadData = dict		loadData.updateValue("addData", forKey: "key")		let nsDic:NSDictionary = NSDictionary(dictionary: loadData)	nsDic.write(toFile: basePath, atomically: true)	}
 			```
 
 - 상단 Bundle에서 만든 `FriendsList`를 이용하여 응용해보면,
 
 	```swift
+	
 	func writeFile() {
 		//1. Document File의 Path 설정
 		let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
@@ -143,9 +144,9 @@
 			if let bundlePath = Bundle.main.path(forResource: "FriendsList", ofType: "plist") {
 				do {
 					try fileManager.copyItem(atPath: bundlePath, toPath: realPath)
-				} catch {
-					return
-				}
+					} catch {
+						return
+					}
 			} else {
 				return
 			}
@@ -160,7 +161,7 @@
 		nsDic.write(toFile: realPath, atomically: true)
 	}
 		
-		```
+	```
 	
 ### E. Singleton 접목시키기
 
