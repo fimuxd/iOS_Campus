@@ -118,12 +118,14 @@
 	if !FileManager.default.fileExists(atPath: basePath) {
 		//여기는 파일이 없을 때 실행할 공간
 		//3. 만약에 파일이 없다면, Bundle에 있는 파일을 복사
-		if let fileUrl = Bundle.main.path(forResource: "fileName", ofType: "plist") {		do {			try FileManager.default.copyItem(atPath: fileUrl, toPath: basePath)		} catch {			print("fail")		}	}}//만약 Bundle에도 파일이 없다면 어떠한 행동을 하라는 error 처리를 해주어야 할 것
+		if let fileUrl = Bundle.main.path(forResource: "fileName", ofType: "plist") {		do {			try FileManager.default.copyItem(atPath: fileUrl, toPath: basePath)		} catch {			print("fail")		}	}}
+
+	//만약 Bundle에도 파일이 없다면 어떠한 행동을 하라는 error 처리를 해주어야 할 것
 		//4. Dictionary Instance 불러오기
-		if let dict = NSDictionary(contentsOfFile: basePath) as? [String: AnyObject] {	// use swift dictionary as normal}
+		if let dict = NSDictionary(contentsOfFile: basePath) as? [String: AnyObject] {	// use swift dictionary as normal	}
 	
 	//5. write(쓰기) 작업을 하려면,
-	if let dict = NSDictionary(contentsOfFile: basePath) as? [String: Any] {	var loadData = dict	loadData.updateValue("addData", forKey: "key")	let nsDic:NSDictionary = NSDictionary(dictionary: loadData)	nsDic.write(toFile: basePath, atomically: true)}```
+	if let dict = NSDictionary(contentsOfFile: basePath) as? [String: Any] {	var loadData = dict	loadData.updateValue("addData", forKey: "key")	let nsDic:NSDictionary = NSDictionary(dictionary: loadData)	nsDic.write(toFile: basePath, atomically: true)	}	```
 
 - 상단 Bundle에서 만든 `FriendsList`를 이용하여 응용해보면,
 
