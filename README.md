@@ -78,7 +78,7 @@
 - **7th Week** ; June 19 - 23
 	> | Lecture Summary | PPT | Programming Practice | Small Apps | Note |
 	> | :--- | :--- | :--- | :--- | :--- |
-	> | Data Saving | [14](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170613/0613.pdf) | - | - | pList 관리 |
+	> | Data Saving | [15](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170619/0619.pdf) | [Switch/Slider/AI Practice](https://github.com/fimuxd/iOS_Campus/blob/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/ActivityIndicatorPractice/ActivityIndicatorPractice/ViewController.swift) | - | pList 관리 |
 	
 	
 ## Contact Me
