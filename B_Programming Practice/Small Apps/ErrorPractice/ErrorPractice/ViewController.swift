@@ -10,6 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    func loadFIle(name:String) throws -> String {
+        throw file
+    }
+    
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

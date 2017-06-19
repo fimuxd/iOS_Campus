@@ -334,6 +334,7 @@
 				6AA466D21EF2924600FDD718 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

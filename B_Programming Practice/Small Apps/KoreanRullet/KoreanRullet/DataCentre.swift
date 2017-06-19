@@ -13,3 +13,5 @@ struct DataCentre {
     static var randomCounts:[Int] = []
     static var resultValues:[Int] = [0]
 }
+
+

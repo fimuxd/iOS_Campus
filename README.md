@@ -73,6 +73,12 @@
 	> | :--- | :--- | :--- | :--- | :--- |
 	> | [Property](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170613) | [14](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170613/0613.pdf) | [AlgorithmPractice(Hashad)](https://github.com/fimuxd/iOS_Campus/blob/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/FunctionPractice_170612/FunctionPractice_170612/ViewController.swift)<p>[UICustomTableView](https://github.com/fimuxd/iOS_Campus/tree/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/UITableViewPractice4) | - | Swift 언어의 꽃 또는 넘어야 할 큰 산 |
 	> | [Enumeration](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170614) | [14](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170613/0613.pdf) | - | [Haru200](https://github.com/fimuxd/iOS_Campus/tree/master/B_Programming%20Practice/Small%20Apps/Haru200) | 열거형 |
+	> | [Error Handling](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170616) | [14](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170613/0613.pdf) | - | - | 좀 더 보완할 것 |
+
+- **7th Week** ; June 19 - 23
+	> | Lecture Summary | PPT | Programming Practice | Small Apps | Note |
+	> | :--- | :--- | :--- | :--- | :--- |
+	> | Data Saving | [14](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170613/0613.pdf) | - | - | pList 관리 |
 	
 	
 ## Contact Me
