@@ -69,7 +69,7 @@
 	} //그런데 array나 dictionary에는 contentsOfFile이 없다. 따라서 해결 방법은 다음과 같다. 
 	
 	// NSDictionary를 이용한 뒤 다운캐스팅하는 방법
-	if let filePaht = mainBundle.path(forResource: "rName", ofType: "rType"),let dict = NSDictionary(contentsOfFile: filePaht) as? [String: AnyObject] {	// use swift dictionary as normal}
+	if let filePaht = mainBundle.path(forResource: "rName", ofType: "rType"),	let dict = NSDictionary(contentsOfFile: filePaht) as? [String: AnyObject] {	// use swift dictionary as normal}
 	```
 
 - `FrendsList` 라는 pList를 만들었다고 가정하고 이 리스트를 불러오려면,
