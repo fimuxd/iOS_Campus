@@ -111,7 +111,7 @@
 
 	```swift
 	//1. 이 건 외울 것. NSSearchPath 자동완성을 이용할 것
-	let path:[String] =NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask,true)let basePath = path[0] + "/fileName.plist"
+	let path:[String] = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask,true)let basePath = path[0] + "/fileName.plist"
 	
 	//2. Document 폴더에 파일이 있는지 확인
 	//FileManager 도 Singleton 이다.
