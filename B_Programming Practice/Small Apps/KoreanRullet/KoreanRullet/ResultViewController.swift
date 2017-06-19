@@ -35,11 +35,7 @@ class ResultViewController: UIViewController, UITableViewDataSource, UITableView
     
     
     
-    override func unwind(for unwindSegue: UIStoryboardSegue, towardsViewController subsequentVC: UIViewController) {
-        DataCentre.inputMemberNames = []
-        DataCentre.randomCounts = []
-        DataCentre.resultValues = [0]
-    }
+    
     
     //****************************************//
     //              LifeCycle                 //

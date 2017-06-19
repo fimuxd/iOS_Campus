@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ChagokTableViewCell: UITableViewCell {
+class ChagokTableViewCell: UITableViewCell{
     
     /*****************************************************************************/
     //                                IBOutlet                                    //
@@ -17,6 +17,7 @@ class ChagokTableViewCell: UITableViewCell {
     @IBOutlet weak var diaryTextView: UITextView!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var currentCharacterCount: UILabel!
+    
     
     /*****************************************************************************/
     //                                  Life Cycle                               //

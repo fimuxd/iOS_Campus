@@ -16,7 +16,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITextViewDelegat
     //                                IBOutlet 영역                               //
     /*****************************************************************************/
     
-    @IBOutlet weak var tableView: UITableView!
+     @IBOutlet weak var tableView: UITableView!
     
     
     /*****************************************************************************/

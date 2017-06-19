@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate {
+class MainViewController: UIViewController, UITableViewDataSource, MainTableViewCellDelegate{
     
     
     //****************************************//
@@ -26,13 +26,10 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBAction func LetsDoThisBtn(_ sender: UIButton) {
         
         if inputMoneyValueTextField.text != "" /* !DataCentre.inputMemberNames.contains("") */ {
-            
-            print(DataCentre.inputMemberNames)
             makeRandomArray()
             makeResultMoney()
             
         }else{
-            print(DataCentre.inputMemberNames)
             setAlert()
         }
         
@@ -43,19 +40,16 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         if DataCentre.inputMemberNames.count < 10 {
             DataCentre.inputMemberNames += adjustArray
+        }else{
         }
-        
         mainTableView.reloadData()
         print(DataCentre.inputMemberNames)
     }
     
     @IBAction func memberRemoveBtn(_ sender: UIButton) {
         
-        let mainCell:MainTableViewCell = mainTableView.dequeueReusableCell(withIdentifier: "mainCell") as! MainTableViewCell
-        
         if DataCentre.inputMemberNames.count > 2{
-            DataCentre.inputMemberNames.remove(at: DataCentre.inputMemberNames.count-1)
-            mainCell.inputMemberNameTextField.text = ""
+            DataCentre.inputMemberNames.removeLast()
         }
         mainTableView.reloadData()
         print(DataCentre.inputMemberNames)
@@ -69,45 +63,22 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     // TableView DataSource
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if DataCentre.inputMemberNames.count < 2 {
+            return 2
+        }else{
         return DataCentre.inputMemberNames.count
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let mainCell:MainTableViewCell = tableView.dequeueReusableCell(withIdentifier: "mainCell", for: indexPath) as! MainTableViewCell
         
-        let inputMemberNameTF:UITextField = mainCell.inputMemberNameTextField
-        
-//        textFieldDidEndEditing(inputMemberNameTF)
-            textFieldShouldEndEditing(inputMemberNameTF)
-
-            DataCentre.inputMemberNames[indexPath.row] = inputMemberNameTF.text!
-        
+        mainCell.delegate = self
         
         return mainCell
     }
     
-    
-    // TextField Delegate: 이 부분 모르겠습니다.
-    
-//    func textFieldDidEndEditing(_ textField: UITextField) {
-//        
-//        let testCell:MainTableViewCell = mainTableView.dequeueReusableCell(withIdentifier: "mainCell") as! MainTableViewCell
-//        let indexPath:IndexPath = mainTableView.indexPath(for: testCell)
-//        
-//        
-//        DataCentre.inputMemberNames[indexPath.row] = textField.text!
-//        
-//    }
-    
-    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
-        return true
-    }
-    
-    //    func isTextFieldEndEditing() -> Bool {
-    //        return true
-    //    }
-    
-    
+ 
     // 일반 함수
     
     func makeRandomArray() -> [Int] {
@@ -136,6 +107,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
                 DataCentre.resultValues.append(result)
             }
         }
+        print(DataCentre.resultValues)
         return DataCentre.resultValues
     }
     
@@ -149,11 +121,23 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         self.present(alert, animated: true, completion: nil)
     }
     
+    func didTextFieldOnCellEditing(inputNameText: String, tableViewCell: MainTableViewCell) {
+        
+        let indexPath = mainTableView.indexPath(for: tableViewCell)?.row
+        
+        DataCentre.inputMemberNames[indexPath!] = inputNameText
+        print(DataCentre.inputMemberNames)
+    }
+    
     
     //****************************************//
     //               LifeCycle                //
     //****************************************//
-    
+    override func viewWillAppear(_ animated: Bool) {
+
+
+    }
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         

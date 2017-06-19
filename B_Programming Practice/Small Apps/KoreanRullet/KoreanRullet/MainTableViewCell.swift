@@ -8,8 +8,16 @@
 
 import UIKit
 
-class MainTableViewCell: UITableViewCell {
+protocol MainTableViewCellDelegate {
+    func didTextFieldOnCellEditing(inputNameText:String, tableViewCell:MainTableViewCell)
+}
 
+
+class MainTableViewCell: UITableViewCell, UITextFieldDelegate {
+
+    var indexPath:IndexPath?
+    var delegate:MainTableViewCellDelegate?
+    
     //****************************************//
     //               IBOutlet                 //
     //****************************************//
@@ -18,11 +26,24 @@ class MainTableViewCell: UITableViewCell {
     
     
     //****************************************//
+    //          UITextField Delegate          //
+    //****************************************//
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        
+         delegate?.didTextFieldOnCellEditing(inputNameText: textField.text!, tableViewCell: self)
+    }
+    
+    
+    
+
+    //****************************************//
     //              LifeCycle                 //
     //****************************************//
     
     override func awakeFromNib() {
         super.awakeFromNib()
+
 
     }
 
