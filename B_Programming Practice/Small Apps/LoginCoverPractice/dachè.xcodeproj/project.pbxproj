@@ -22,7 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6A5FA2411EDBB631002E5BAC /* LogInCoverPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogInCoverPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A5FA2411EDBB631002E5BAC /* dachè.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dachè.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A5FA2441EDBB631002E5BAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A5FA2461EDBB631002E5BAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6A5FA2491EDBB631002E5BAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -52,7 +52,7 @@
 		6A5FA2381EDBB631002E5BAC = {
 			isa = PBXGroup;
 			children = (
-				6A5FA2431EDBB631002E5BAC /* LogInCoverPractice */,
+				6A5FA2431EDBB631002E5BAC /* dachè */,
 				6A5FA2421EDBB631002E5BAC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,12 +60,12 @@
 		6A5FA2421EDBB631002E5BAC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6A5FA2411EDBB631002E5BAC /* LogInCoverPractice.app */,
+				6A5FA2411EDBB631002E5BAC /* dachè.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6A5FA2431EDBB631002E5BAC /* LogInCoverPractice */ = {
+		6A5FA2431EDBB631002E5BAC /* dachè */ = {
 			isa = PBXGroup;
 			children = (
 				6AC8E0FC1EF94DEA00EF065D /* Storyboards */,
@@ -75,6 +75,7 @@
 				6A5FA24B1EDBB631002E5BAC /* Assets.xcassets */,
 				6A5FA2441EDBB631002E5BAC /* AppDelegate.swift */,
 			);
+			name = "dachè";
 			path = LogInCoverPractice;
 			sourceTree = "<group>";
 		};
@@ -120,9 +121,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6A5FA2401EDBB631002E5BAC /* LogInCoverPractice */ = {
+		6A5FA2401EDBB631002E5BAC /* dachè */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6A5FA2531EDBB631002E5BAC /* Build configuration list for PBXNativeTarget "LogInCoverPractice" */;
+			buildConfigurationList = 6A5FA2531EDBB631002E5BAC /* Build configuration list for PBXNativeTarget "dachè" */;
 			buildPhases = (
 				6A5FA23D1EDBB631002E5BAC /* Sources */,
 				6A5FA23E1EDBB631002E5BAC /* Frameworks */,
@@ -132,9 +133,9 @@
 			);
 			dependencies = (
 			);
-			name = LogInCoverPractice;
+			name = "dachè";
 			productName = LogInCoverPractice;
-			productReference = 6A5FA2411EDBB631002E5BAC /* LogInCoverPractice.app */;
+			productReference = 6A5FA2411EDBB631002E5BAC /* dachè.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -154,7 +155,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6A5FA23C1EDBB631002E5BAC /* Build configuration list for PBXProject "LogInCoverPractice" */;
+			buildConfigurationList = 6A5FA23C1EDBB631002E5BAC /* Build configuration list for PBXProject "dachè" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -167,7 +168,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6A5FA2401EDBB631002E5BAC /* LogInCoverPractice */,
+				6A5FA2401EDBB631002E5BAC /* dachè */,
 			);
 		};
 /* End PBXProject section */
@@ -324,7 +325,7 @@
 				DEVELOPMENT_TEAM = 2DHMJ6Z3L3;
 				INFOPLIST_FILE = LogInCoverPractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = iOSCampus.LogInCoverPractice;
+				PRODUCT_BUNDLE_IDENTIFIER = "iOSCampus.dache-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -337,7 +338,7 @@
 				DEVELOPMENT_TEAM = 2DHMJ6Z3L3;
 				INFOPLIST_FILE = LogInCoverPractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = iOSCampus.LogInCoverPractice;
+				PRODUCT_BUNDLE_IDENTIFIER = "iOSCampus.dache-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -346,7 +347,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6A5FA23C1EDBB631002E5BAC /* Build configuration list for PBXProject "LogInCoverPractice" */ = {
+		6A5FA23C1EDBB631002E5BAC /* Build configuration list for PBXProject "dachè" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6A5FA2511EDBB631002E5BAC /* Debug */,
@@ -355,7 +356,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6A5FA2531EDBB631002E5BAC /* Build configuration list for PBXNativeTarget "LogInCoverPractice" */ = {
+		6A5FA2531EDBB631002E5BAC /* Build configuration list for PBXNativeTarget "dachè" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6A5FA2541EDBB631002E5BAC /* Debug */,
