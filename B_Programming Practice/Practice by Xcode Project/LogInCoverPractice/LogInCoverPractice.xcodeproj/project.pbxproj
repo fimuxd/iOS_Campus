@@ -17,6 +17,8 @@
 		6AC8E0EF1EF8E9B900EF065D /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6AC8E0EE1EF8E9B900EF065D /* Settings.plist */; };
 		6AC8E0F11EF8EA8B00EF065D /* SettingSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC8E0F01EF8EA8B00EF065D /* SettingSwitchCell.swift */; };
 		6AC8E0F31EF8EF8100EF065D /* SettingCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC8E0F21EF8EF8100EF065D /* SettingCenter.swift */; };
+		6AC8E0F51EF93A1C00EF065D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC8E0F41EF93A1C00EF065D /* SignUpViewController.swift */; };
+		6AC8E0F71EF9451700EF065D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC8E0F61EF9451700EF065D /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		6AC8E0EE1EF8E9B900EF065D /* Settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
 		6AC8E0F01EF8EA8B00EF065D /* SettingSwitchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingSwitchCell.swift; sourceTree = "<group>"; };
 		6AC8E0F21EF8EF8100EF065D /* SettingCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCenter.swift; sourceTree = "<group>"; };
+		6AC8E0F41EF93A1C00EF065D /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		6AC8E0F61EF9451700EF065D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,19 +68,53 @@
 		6A5FA2431EDBB631002E5BAC /* LogInCoverPractice */ = {
 			isa = PBXGroup;
 			children = (
+				6AC8E0FC1EF94DEA00EF065D /* Storyboards */,
+				6AC8E0F81EF94D7800EF065D /* ViewControllers */,
+				6AC8E0FA1EF94DAD00EF065D /* Customs */,
+				6AC8E0F91EF94D9100EF065D /* DataControl */,
+				6A5FA24B1EDBB631002E5BAC /* Assets.xcassets */,
 				6A5FA2441EDBB631002E5BAC /* AppDelegate.swift */,
+			);
+			path = LogInCoverPractice;
+			sourceTree = "<group>";
+		};
+		6AC8E0F81EF94D7800EF065D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
 				6A5FA2461EDBB631002E5BAC /* ViewController.swift */,
+				6AC8E0F41EF93A1C00EF065D /* SignUpViewController.swift */,
 				6AC8E0EC1EF8E7DF00EF065D /* MainViewController.swift */,
 				6AC8E0EA1EF8E7CF00EF065D /* SettingViewController.swift */,
-				6AC8E0F01EF8EA8B00EF065D /* SettingSwitchCell.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6AC8E0F91EF94D9100EF065D /* DataControl */ = {
+			isa = PBXGroup;
+			children = (
+				6AC8E0F61EF9451700EF065D /* Constants.swift */,
 				6AC8E0F21EF8EF8100EF065D /* SettingCenter.swift */,
-				6A5FA2481EDBB631002E5BAC /* Main.storyboard */,
-				6A5FA24B1EDBB631002E5BAC /* Assets.xcassets */,
-				6A5FA24D1EDBB631002E5BAC /* LaunchScreen.storyboard */,
 				6A5FA2501EDBB631002E5BAC /* Info.plist */,
 				6AC8E0EE1EF8E9B900EF065D /* Settings.plist */,
 			);
-			path = LogInCoverPractice;
+			name = DataControl;
+			sourceTree = "<group>";
+		};
+		6AC8E0FA1EF94DAD00EF065D /* Customs */ = {
+			isa = PBXGroup;
+			children = (
+				6AC8E0F01EF8EA8B00EF065D /* SettingSwitchCell.swift */,
+			);
+			name = Customs;
+			sourceTree = "<group>";
+		};
+		6AC8E0FC1EF94DEA00EF065D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				6A5FA2481EDBB631002E5BAC /* Main.storyboard */,
+				6A5FA24D1EDBB631002E5BAC /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,11 +192,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A5FA2471EDBB631002E5BAC /* ViewController.swift in Sources */,
+				6AC8E0F51EF93A1C00EF065D /* SignUpViewController.swift in Sources */,
 				6A5FA2451EDBB631002E5BAC /* AppDelegate.swift in Sources */,
 				6AC8E0F11EF8EA8B00EF065D /* SettingSwitchCell.swift in Sources */,
 				6AC8E0EB1EF8E7CF00EF065D /* SettingViewController.swift in Sources */,
 				6AC8E0ED1EF8E7DF00EF065D /* MainViewController.swift in Sources */,
 				6AC8E0F31EF8EF8100EF065D /* SettingCenter.swift in Sources */,
+				6AC8E0F71EF9451700EF065D /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,7 +23,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIScrollViewDelegat
     //******************************************//
     //              IBAction/함수영역              //
     //******************************************//
-    //ID TextField 상에서 return 키 누르면 PW TextField로, PW TF에선 키보드가 내려가는 method
+    //---ID TextField 상에서 return 키 누르면 PW TextField로, PW TF에선 키보드가 내려가는 method
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
         if textField.tag == 1 {
@@ -38,7 +38,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIScrollViewDelegat
         textFieldsScroll.setContentOffset(CGPoint(x: 0, y: 50), animated: true)
     }
     
-    // Login Btn 누르면
+    //---Login Btn 누르면
     @IBAction func LogInBtn(_ sender: UIButton) {
         
         if iDTextField.isEditing {
@@ -48,23 +48,35 @@ class ViewController: UIViewController, UITextFieldDelegate, UIScrollViewDelegat
         }
         
     }
-
+    
+    //---PresentModally 돌아오는 함수
+    @IBAction func comeBackTo(loginViewController:UIStoryboardSegue) {
+        
+    }
+    
     
     
     //******************************************//
     //                 LiftCycle                //
     //******************************************//
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.isNavigationBarHidden = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        //textfield 설명란(기본 text. 클릭하면 사라짐)
+        //---textfield 설명란(기본 text. 클릭하면 사라짐)
         iDTextField.attributedPlaceholder = NSAttributedString(string: "dachè ID")
         pWTextField.attributedPlaceholder = NSAttributedString(string: "Password")
         
-        //비번치는 건 텍스트 안나오게
+        //---비번치는 건 텍스트 안나오게
         pWTextField.isSecureTextEntry = true
         
-        //delegate
+        //---delegate
         iDTextField.delegate = self
         pWTextField.delegate = self
         textFieldsScroll.delegate = self

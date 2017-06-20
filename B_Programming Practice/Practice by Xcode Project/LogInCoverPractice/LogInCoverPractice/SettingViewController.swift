@@ -62,12 +62,12 @@ class SettingViewController: UIViewController, UITableViewDataSource, UITableVie
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cellType = SettingCenter.sharedSetting.typeOfCellFor(rowAtIndexPath: indexPath)
         
-        
     }
     
     func switchCellValueChanged(_ cell: SettingSwitchCell, isOn: Bool) {
         print("valueChange : \(isOn)")
     }
+
     
     //******************************************//
     //                 LiftCycle                //
