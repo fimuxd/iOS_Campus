@@ -7,20 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6A1828101EDD027600A39980 /* UMF Top1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6A18280F1EDD027600A39980 /* UMF Top1.jpg */; };
-		6A1828121EDD058100A39980 /* UMF Bot1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6A1828111EDD058100A39980 /* UMF Bot1.jpg */; };
 		6A5FA2451EDBB631002E5BAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5FA2441EDBB631002E5BAC /* AppDelegate.swift */; };
 		6A5FA2471EDBB631002E5BAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5FA2461EDBB631002E5BAC /* ViewController.swift */; };
 		6A5FA24A1EDBB631002E5BAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A5FA2481EDBB631002E5BAC /* Main.storyboard */; };
 		6A5FA24C1EDBB631002E5BAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A5FA24B1EDBB631002E5BAC /* Assets.xcassets */; };
 		6A5FA24F1EDBB631002E5BAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A5FA24D1EDBB631002E5BAC /* LaunchScreen.storyboard */; };
-		6A5FA2571EDBB650002E5BAC /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6A5FA2561EDBB650002E5BAC /* background.jpg */; };
-		6AFBA57F1EDC333A0062B7EB /* dacheLogo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AFBA57E1EDC333A0062B7EB /* dacheLogo2.png */; };
+		6AC8E0EB1EF8E7CF00EF065D /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC8E0EA1EF8E7CF00EF065D /* SettingViewController.swift */; };
+		6AC8E0ED1EF8E7DF00EF065D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC8E0EC1EF8E7DF00EF065D /* MainViewController.swift */; };
+		6AC8E0EF1EF8E9B900EF065D /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6AC8E0EE1EF8E9B900EF065D /* Settings.plist */; };
+		6AC8E0F11EF8EA8B00EF065D /* SettingSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC8E0F01EF8EA8B00EF065D /* SettingSwitchCell.swift */; };
+		6AC8E0F31EF8EF8100EF065D /* SettingCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC8E0F21EF8EF8100EF065D /* SettingCenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6A18280F1EDD027600A39980 /* UMF Top1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "UMF Top1.jpg"; sourceTree = "<group>"; };
-		6A1828111EDD058100A39980 /* UMF Bot1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "UMF Bot1.jpg"; sourceTree = "<group>"; };
 		6A5FA2411EDBB631002E5BAC /* LogInCoverPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogInCoverPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A5FA2441EDBB631002E5BAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A5FA2461EDBB631002E5BAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,8 +27,11 @@
 		6A5FA24B1EDBB631002E5BAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A5FA24E1EDBB631002E5BAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A5FA2501EDBB631002E5BAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6A5FA2561EDBB650002E5BAC /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
-		6AFBA57E1EDC333A0062B7EB /* dacheLogo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dacheLogo2.png; sourceTree = "<group>"; };
+		6AC8E0EA1EF8E7CF00EF065D /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		6AC8E0EC1EF8E7DF00EF065D /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		6AC8E0EE1EF8E9B900EF065D /* Settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
+		6AC8E0F01EF8EA8B00EF065D /* SettingSwitchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingSwitchCell.swift; sourceTree = "<group>"; };
+		6AC8E0F21EF8EF8100EF065D /* SettingCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,14 +66,15 @@
 			children = (
 				6A5FA2441EDBB631002E5BAC /* AppDelegate.swift */,
 				6A5FA2461EDBB631002E5BAC /* ViewController.swift */,
+				6AC8E0EC1EF8E7DF00EF065D /* MainViewController.swift */,
+				6AC8E0EA1EF8E7CF00EF065D /* SettingViewController.swift */,
+				6AC8E0F01EF8EA8B00EF065D /* SettingSwitchCell.swift */,
+				6AC8E0F21EF8EF8100EF065D /* SettingCenter.swift */,
 				6A5FA2481EDBB631002E5BAC /* Main.storyboard */,
 				6A5FA24B1EDBB631002E5BAC /* Assets.xcassets */,
-				6AFBA57E1EDC333A0062B7EB /* dacheLogo2.png */,
-				6A5FA2561EDBB650002E5BAC /* background.jpg */,
 				6A5FA24D1EDBB631002E5BAC /* LaunchScreen.storyboard */,
-				6A18280F1EDD027600A39980 /* UMF Top1.jpg */,
-				6A1828111EDD058100A39980 /* UMF Bot1.jpg */,
 				6A5FA2501EDBB631002E5BAC /* Info.plist */,
+				6AC8E0EE1EF8E9B900EF065D /* Settings.plist */,
 			);
 			path = LogInCoverPractice;
 			sourceTree = "<group>";
@@ -136,12 +139,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A1828101EDD027600A39980 /* UMF Top1.jpg in Resources */,
+				6AC8E0EF1EF8E9B900EF065D /* Settings.plist in Resources */,
 				6A5FA24F1EDBB631002E5BAC /* LaunchScreen.storyboard in Resources */,
-				6A1828121EDD058100A39980 /* UMF Bot1.jpg in Resources */,
 				6A5FA24C1EDBB631002E5BAC /* Assets.xcassets in Resources */,
-				6A5FA2571EDBB650002E5BAC /* background.jpg in Resources */,
-				6AFBA57F1EDC333A0062B7EB /* dacheLogo2.png in Resources */,
 				6A5FA24A1EDBB631002E5BAC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -155,6 +155,10 @@
 			files = (
 				6A5FA2471EDBB631002E5BAC /* ViewController.swift in Sources */,
 				6A5FA2451EDBB631002E5BAC /* AppDelegate.swift in Sources */,
+				6AC8E0F11EF8EA8B00EF065D /* SettingSwitchCell.swift in Sources */,
+				6AC8E0EB1EF8E7CF00EF065D /* SettingViewController.swift in Sources */,
+				6AC8E0ED1EF8E7DF00EF065D /* MainViewController.swift in Sources */,
+				6AC8E0F31EF8EF8100EF065D /* SettingCenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

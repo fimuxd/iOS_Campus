@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>SectionTitle</key>
+		<string>계정</string>
+		<key>Data</key>
+		<array>
+			<dict>
+				<key>CellStyle</key>
+				<string>SettingDetailCell</string>
+				<key>Content</key>
+				<string>정보수정</string>
+			</dict>
+			<dict>
+				<key>CellStyle</key>
+				<string>SettingDetailCell</string>
+				<key>Content</key>
+				<string>비밀번호변경</string>
+			</dict>
+			<dict>
+				<key>CellStyle</key>
+				<string>SettingBasicCell</string>
+				<key>Content</key>
+				<string>로그아웃</string>
+			</dict>
+			<dict>
+				<key>CellStyle</key>
+				<string>SettingBasicCell</string>
+				<key>Content</key>
+				<string>회원탈퇴</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>SectionTitle</key>
+		<string>정보</string>
+		<key>Data</key>
+		<array>
+			<dict>
+				<key>CellStyle</key>
+				<string>SettingBasicCell</string>
+				<key>Content</key>
+				<string>버전정보</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>SectionTitle</key>
+		<string>서비스</string>
+		<key>Data</key>
+		<array>
+			<dict>
+				<key>CellStyle</key>
+				<string>SettingSwitchCell</string>
+				<key>Content</key>
+				<string>자동 로그인</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

@@ -37,5 +37,10 @@
 - 실행 스크린 샷 
 ![이미지](datePracticeScreenShot.png)
 
+> Date 설정시 주의할 점
+> 
+> 1. 시뮬레이션 돌릴 때 미국이 기준이라 시간이 다를 수 있다. 
+> 2. 이럴 때, 시뮬레이션 내의 설정(Setting)에 들어가서 지역 및 포멧을 설정해준다.
+
 # Notification
 
