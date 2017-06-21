@@ -78,8 +78,8 @@
 - **7th Week** ; June 19 - 23
 	> | Lecture Summary | PPT | Programming Practice | Small Apps | Note |
 	> | :--- | :--- | :--- | :--- | :--- |
-	> | [Data Saving](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170619) | [15](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170619/0619.pdf) | [Switch/Slider/AI Practice](https://github.com/fimuxd/iOS_Campus/blob/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/ActivityIndicatorPractice/ActivityIndicatorPractice/ViewController.swift)<p>[Practice](https://github.com/fimuxd/iOS_Campus/blob/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/pListPractice/pListPractice/ViewController.swift) | - | pList 관리 |
-	> | [Date](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170620) | - | Practice | - | Date, DateFormatter, UIDatePicker |
+	> | [Data Saving](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170619) | [15](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170619/0619.pdf) | [Switch/Slider/AI Practice](https://github.com/fimuxd/iOS_Campus/blob/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/ActivityIndicatorPractice/ActivityIndicatorPractice/ViewController.swift)<p>[Practice](https://github.com/fimuxd/iOS_Campus/blob/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/pListPractice/pListPractice/ViewController.swift) | [dachè](https://github.com/fimuxd/iOS_Campus/tree/master/B_Programming%20Practice/Small%20Apps/LoginCoverPractice) | pList 관리 |
+	> | [Date](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170620) | - | [Practice](https://github.com/fimuxd/iOS_Campus/blob/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/DatePractice/DatePractice/ViewController.swift) | - | Date, DateFormatter, UIDatePicker |
 	
 	
 	
