@@ -28,22 +28,22 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ji2-Am-lhZ" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1685"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1684.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bpE-1Q-xrM">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="1685"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="1684.5"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UMF Top1" translatesAutoresizingMaskIntoConstraints="NO" id="Kg4-Vj-M9E">
-                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="282"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="281.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="Kg4-Vj-M9E" secondAttribute="height" multiplier="4:3" id="eMt-Hv-DE8"/>
                                                         </constraints>
                                                     </imageView>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NO7-Nt-7RQ" userLabel="Label Container">
-                                                        <rect key="frame" x="0.0" y="282" width="375" height="1122"/>
+                                                        <rect key="frame" x="0.0" y="281.5" width="375" height="1122"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAl-gl-MS4">
-                                                                <rect key="frame" x="16" y="17" width="343" height="1090"/>
+                                                                <rect key="frame" x="16" y="16.5" width="343" height="1090"/>
                                                                 <string key="text">LOST AND FOUND:
 
 The Lost and Found is located at the Information Booth located in “Live Stage”. If you find an item, please bring it to the Information Booth or turn it into a security officer or an Ultra Korea staff person. You may also inquire about any lost items at the Lost and Found or contact info@umfkorea.com
@@ -95,7 +95,7 @@ Please note: the exact locations of the above can be found via the site map.</st
                                                         </constraints>
                                                     </view>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UMF Bot1" translatesAutoresizingMaskIntoConstraints="NO" id="nLe-pw-sAa">
-                                                        <rect key="frame" x="0.0" y="1404" width="375" height="281"/>
+                                                        <rect key="frame" x="0.0" y="1403.5" width="375" height="281"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="nLe-pw-sAa" secondAttribute="height" multiplier="4:3" id="TD1-Af-gSR"/>
                                                         </constraints>
@@ -141,7 +141,7 @@ Please note: the exact locations of the above can be found via the site map.</st
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LogInCoverPractice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="dache_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -173,7 +173,7 @@ Please note: the exact locations of the above can be found via the site map.</st
                                 <rect key="frame" x="79" y="377" width="218" height="26"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have a dachè ID?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0TB-GI-6Ct">
-                                        <rect key="frame" x="0.0" y="1" width="127" height="26"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="127" height="26"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="127" id="bxE-us-0oa"/>
                                         </constraints>
@@ -182,7 +182,7 @@ Please note: the exact locations of the above can be found via the site map.</st
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NX9-Xt-QvG">
-                                        <rect key="frame" x="128" y="1" width="90" height="26"/>
+                                        <rect key="frame" x="128" y="0.0" width="90" height="26"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="90" id="bzq-rS-NWz"/>
                                         </constraints>
@@ -209,19 +209,19 @@ Please note: the exact locations of the above can be found via the site map.</st
                                 <rect key="frame" x="38" y="150" width="300" height="167"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tmS-iF-SNO" userLabel="ContentsView">
-                                        <rect key="frame" x="-1" y="1" width="300" height="166"/>
+                                        <rect key="frame" x="0.0" y="0.5" width="300" height="167"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="zOA-Z9-8K8">
-                                                <rect key="frame" x="0.0" y="1" width="300" height="167"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="167"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dacheLogo2" translatesAutoresizingMaskIntoConstraints="NO" id="DLj-A1-ueL">
-                                                        <rect key="frame" x="80" y="1" width="140" height="75"/>
+                                                        <rect key="frame" x="80" y="0.0" width="140" height="75"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="75" id="PmT-3t-6Jl"/>
                                                         </constraints>
                                                     </imageView>
                                                     <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="dachè ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DKr-Pt-JyH">
-                                                        <rect key="frame" x="0.0" y="82" width="300" height="40"/>
+                                                        <rect key="frame" x="0.0" y="81" width="300" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="57G-vs-iGI"/>
                                                         </constraints>
@@ -230,7 +230,7 @@ Please note: the exact locations of the above can be found via the site map.</st
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0nv-Q9-6Gv">
-                                                        <rect key="frame" x="0.0" y="128" width="300" height="40"/>
+                                                        <rect key="frame" x="0.0" y="127" width="300" height="40"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -299,7 +299,7 @@ Please note: the exact locations of the above can be found via the site map.</st
         <!--Sign Up View Controller-->
         <scene sceneID="oYV-3z-9IH">
             <objects>
-                <viewController id="6DW-fo-Mv7" customClass="SignUpViewController" customModule="LogInCoverPractice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="6DW-fo-Mv7" customClass="SignUpViewController" customModule="dache_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HRK-Ve-fDy"/>
                         <viewControllerLayoutGuide type="bottom" id="IGE-1n-mPQ"/>
@@ -341,7 +341,7 @@ Please note: the exact locations of the above can be found via the site map.</st
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </view>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="dachè ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="62g-rv-8Y9">
-                                                        <rect key="frame" x="0.0" y="86" width="300" height="36"/>
+                                                        <rect key="frame" x="0.0" y="86" width="300" height="35.5"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -350,7 +350,7 @@ Please note: the exact locations of the above can be found via the site map.</st
                                                         </connections>
                                                     </textField>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fy1-1v-tA0">
-                                                        <rect key="frame" x="0.0" y="138" width="300" height="36"/>
+                                                        <rect key="frame" x="0.0" y="137.5" width="300" height="36"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -359,7 +359,7 @@ Please note: the exact locations of the above can be found via the site map.</st
                                                         </connections>
                                                     </textField>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QuA-S7-HN7">
-                                                        <rect key="frame" x="0.0" y="190" width="300" height="35"/>
+                                                        <rect key="frame" x="0.0" y="189.5" width="300" height="36"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -368,7 +368,7 @@ Please note: the exact locations of the above can be found via the site map.</st
                                                         </connections>
                                                     </textField>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="nickname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4t5-QZ-huV">
-                                                        <rect key="frame" x="0.0" y="241" width="300" height="36"/>
+                                                        <rect key="frame" x="0.0" y="241.5" width="300" height="36"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -377,7 +377,7 @@ Please note: the exact locations of the above can be found via the site map.</st
                                                         </connections>
                                                     </textField>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qec-eW-FRx">
-                                                        <rect key="frame" x="0.0" y="293" width="300" height="36"/>
+                                                        <rect key="frame" x="0.0" y="293.5" width="300" height="35.5"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -475,7 +475,7 @@ Please note: the exact locations of the above can be found via the site map.</st
         <!--Main-->
         <scene sceneID="4vt-yg-Ag1">
             <objects>
-                <viewController id="hgV-4N-5tu" customClass="MainViewController" customModule="LogInCoverPractice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hgV-4N-5tu" customClass="MainViewController" customModule="dache_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qJi-XT-bML"/>
                         <viewControllerLayoutGuide type="bottom" id="eFd-X2-J8C"/>
@@ -483,7 +483,19 @@ Please note: the exact locations of the above can be found via the site map.</st
                     <view key="view" contentMode="scaleToFill" id="Yo6-TB-hLt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hello stranger" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMd-hn-geo">
+                                <rect key="frame" x="117" y="321" width="141.5" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <color key="textColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZMd-hn-geo" firstAttribute="centerY" secondItem="Yo6-TB-hLt" secondAttribute="centerY" id="4zP-ob-ImS"/>
+                            <constraint firstItem="ZMd-hn-geo" firstAttribute="centerX" secondItem="Yo6-TB-hLt" secondAttribute="centerX" id="Qd1-ib-2kb"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Main" id="0yV-QK-ygg">
                         <barButtonItem key="leftBarButtonItem" style="plain" id="TwB-so-c5K">
@@ -517,7 +529,7 @@ Please note: the exact locations of the above can be found via the site map.</st
         <!--Setting View Controller-->
         <scene sceneID="h5x-XB-7TY">
             <objects>
-                <viewController id="377-Ix-ZUe" customClass="SettingViewController" customModule="LogInCoverPractice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="377-Ix-ZUe" customClass="SettingViewController" customModule="dache_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="R51-De-zb0"/>
                         <viewControllerLayoutGuide type="bottom" id="SXD-vk-PCR"/>
@@ -531,14 +543,14 @@ Please note: the exact locations of the above can be found via the site map.</st
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="SettingDetailCell" textLabel="yIc-wi-8S8" style="IBUITableViewCellStyleDefault" id="6Pp-8O-949">
-                                        <rect key="frame" x="0.0" y="56" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6Pp-8O-949" id="ALl-28-a6V">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yIc-wi-8S8">
-                                                    <rect key="frame" x="15" y="0.0" width="325" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -548,21 +560,21 @@ Please note: the exact locations of the above can be found via the site map.</st
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingBasicCell" textLabel="rW4-g9-g4t" detailTextLabel="laJ-ul-4w5" style="IBUITableViewCellStyleValue1" id="oQI-vm-cia">
-                                        <rect key="frame" x="0.0" y="100" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="99.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oQI-vm-cia" id="8FT-n6-1QF">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rW4-g9-g4t">
-                                                    <rect key="frame" x="15" y="11" width="34" height="21"/>
+                                                    <rect key="frame" x="15" y="12" width="33.5" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="laJ-ul-4w5">
-                                                    <rect key="frame" x="316" y="11" width="44" height="21"/>
+                                                    <rect key="frame" x="316" y="12" width="44" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -571,11 +583,11 @@ Please note: the exact locations of the above can be found via the site map.</st
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingSwitchCell" id="Hih-df-OHX" customClass="SettingSwitchCell" customModule="LogInCoverPractice" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="144" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingSwitchCell" id="Hih-df-OHX" customClass="SettingSwitchCell" customModule="dache_" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="143.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hih-df-OHX" id="gIl-La-mdY">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fq-Yd-fJJ">

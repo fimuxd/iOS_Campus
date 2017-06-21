@@ -8,6 +8,9 @@
 
 import UIKit
 
+
+//회원가입(SignUp) viewController 입니다.
+
 class SignUpViewController: UIViewController, UITextFieldDelegate {
 
     //******************************************//

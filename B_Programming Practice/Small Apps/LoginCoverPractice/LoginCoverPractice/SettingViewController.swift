@@ -9,7 +9,7 @@
 import UIKit
 
 
-//Setting TableView VC
+//설정창(Setting) TableView ViewController 입니다.
 
 class SettingViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, SettingSwitchCellDelegate {
     
@@ -24,18 +24,22 @@ class SettingViewController: UIViewController, UITableViewDataSource, UITableVie
     //******************************************//
     //MARK: TableViewDataSource / Delegate
     
+    //-----Section의 수 설정
     func numberOfSections(in tableView: UITableView) -> Int {
         return SettingCenter.sharedSetting.sectionCount
     }
     
+    //-----Section 별 Row 수 설정
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return SettingCenter.sharedSetting.rowCountFor(section)
     }
     
+    //-----Section 별 HeaderTitle 문구 설정
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return SettingCenter.sharedSetting.titleFor(section: section)
     }
     
+    //-----cell 설정
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellType = SettingCenter.sharedSetting.typeOfCellFor(rowAtIndexPath: indexPath)
         
@@ -48,7 +52,7 @@ class SettingViewController: UIViewController, UITableViewDataSource, UITableVie
         case .Detail:
             let cell = tableView.dequeueReusableCell(withIdentifier: cellType.rawValue, for: indexPath)
             cell.textLabel?.text = SettingCenter.sharedSetting.titleFor(rowAtIndexPath: indexPath)
-            cell.selectionStyle = .blue
+            cell.selectionStyle = .gray
             return cell
         case .Switch:
             let cell:SettingSwitchCell = tableView.dequeueReusableCell(withIdentifier: cellType.rawValue, for: indexPath) as! SettingSwitchCell
@@ -68,6 +72,15 @@ class SettingViewController: UIViewController, UITableViewDataSource, UITableVie
         print("valueChange : \(isOn)")
     }
 
+    //-----section header title text 색깔 바꾸기
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        if let headerTitle = view as? UITableViewHeaderFooterView {
+            headerTitle.textLabel?.textColor = UIColor(red: 1, green: 0.184, blue: 0.573, alpha: 1)
+        }
+    }
+    
+    
+    
     
     //******************************************//
     //                 LiftCycle                //

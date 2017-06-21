@@ -9,7 +9,7 @@
 import UIKit
 
 
-//최초 로그인하는 VC
+//최초 로그인 ViewController 입니다.
 
 class ViewController: UIViewController, UITextFieldDelegate, UIScrollViewDelegate {
     //******************************************//

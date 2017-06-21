@@ -27,12 +27,33 @@ class SettingCenter {
     static var sharedSetting:SettingCenter = SettingCenter()
     var settingMenuDataList:[Any]?
     
-    //섹션의 개수 알려주는 연산 프로퍼티
+    
+    //******************************************//
+    //            Private Properties            //
+    //******************************************//
+    //MARK: Private Properties
+    
+    //-----연산프로퍼티를 이용한 Singleton 패턴
+    private init() {
+        loadSettingData()
+    }
+    
+    //-----"Settings.plist 에서 데이터 불러오기"
+    func loadSettingData() {
+        guard let path = Bundle.main.path(forResource: "Settings", ofType: "plist"),
+            let settingMenuDataList = NSArray(contentsOfFile: path) as? [Any] else {
+                return
+        }
+        self.settingMenuDataList = settingMenuDataList
+    }
+    
+    
+    //------섹션의 개수 알려주는 연산 프로퍼티
     var sectionCount:Int {
         return settingMenuDataList?.count ?? 0
     }
     
-    //Row의 개수 알려주는 함수
+    //-----Row의 개수 알려주는 함수
     func rowCountFor(_ section:Int) -> Int {
         guard let sectionDatas = settingMenuDataList else {
             return 0
@@ -101,25 +122,5 @@ class SettingCenter {
         }
         
     }
-        
-    
-    //******************************************//
-    //            Private Properties            //
-    //******************************************//
-    //MARK: Private Properties
-    
-    private init() {
-        loadSettingData()
-    }
-    
-    //"Settings.plist 에서 데이터 불러오기"
-    func loadSettingData() {
-        guard let path = Bundle.main.path(forResource: "Settings", ofType: "plist"),
-            let settingMenuDataList = NSArray(contentsOfFile: path) as? [Any] else {
-                return
-        }
-        self.settingMenuDataList = settingMenuDataList
-    }
-    
     
 }
