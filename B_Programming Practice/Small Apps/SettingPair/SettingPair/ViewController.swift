@@ -12,6 +12,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     var settingCenter:SettingCenter = SettingCenter.init()
     
+    @IBOutlet weak var tableView: UITableView!
+    
     /*******************************************/
     //                TableView              //
     /*******************************************/
@@ -23,7 +25,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cellType = settingCenter.cellType(forRowAt: indexPath)
-        let cellTitle = settingCenter.cellTitle(forRowAt: indexPath)
      
         switch cellType {
         case .Basic:
@@ -40,7 +41,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             return cell
         case .Custom:
             let cell:CustomSwitchCell = tableView.dequeueReusableCell(withIdentifier: cellType.rawValue, for: indexPath) as! CustomSwitchCell
-            cell.titleLabel.text = cellTitle
+            cell.titleLabel.text = settingCenter.cellTitle(forRowAt: indexPath)
             return cell
         case .NoType:
             let cell = tableView.dequeueReusableCell(withIdentifier: cellType.rawValue, for: indexPath)

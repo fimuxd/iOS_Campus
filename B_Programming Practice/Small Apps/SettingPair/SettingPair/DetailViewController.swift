@@ -12,19 +12,15 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
     
     var settingCenter:SettingCenter = SettingCenter()
     
+    @IBOutlet weak var tableView: UITableView!
     
     /*******************************************/
     //                TableView              //
     /*******************************************/
     
-    //-----섹션개수
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
     //-----Row 개수
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return settingCenter.numberOfDetailRow(section)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -46,7 +42,7 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
             return cell
         case .Custom:
             let cell:CustomSwitchCell = tableView.dequeueReusableCell(withIdentifier: cellType.rawValue, for: indexPath) as! CustomSwitchCell
-            cell.titleLabel.text = settingCenter.cellTitle(forRowAt: indexPath)
+            cell.titleLabel.text = settingCenter.detailCellTitle(forRowAt: indexPath)
             return cell
         case .NoType:
             let cell = tableView.dequeueReusableCell(withIdentifier: cellType.rawValue, for: indexPath)
@@ -70,15 +66,12 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
+
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
     }
-    
-    
     
 }

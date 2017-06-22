@@ -102,31 +102,6 @@ class SettingCenter {
                                 self.carrierRowDataList.append(detailRowItem)
                             default:
                                 self.airplaneModeRowDataList.append(detailRowItem)
-                                
-                                
-                                
-                                /**********************************************************************/
-                                /**********************************************************************/
-                                /**********************************************************************/
-                                /**********************************************************************/
-                                /**********************************************************************/
-                                /**********************************************************************/
-                                /**********************************************************************/
-                                /**********************************************************************/
-                                /**********************************************************************/
-                                /**********************************************************************/
-                                //                  할       수           있           다               //
-                                /**********************************************************************/
-                                /**********************************************************************/
-                                /**********************************************************************/
-                                /**********************************************************************/
-                                /**********************************************************************/
-                                /**********************************************************************/
-                                /**********************************************************************/
-                                /**********************************************************************/
-                                
-                                
-                                
                             }
                         }
                         
@@ -141,7 +116,7 @@ class SettingCenter {
         hotSpotSectionDataList.append(detailDataList[4])
         carrierSectionDataList.append(detailDataList[5])
     }
-
+    
     
     
     /********************************************************/
@@ -159,10 +134,10 @@ class SettingCenter {
         return sectionDataList[section].footerTitle.rawValue
     }
     
-    //3. Number of Section
-    func numberOf(_section:Int) -> Int {
-        return sectionDataList.count
-    }
+//    //3. Number of Section
+//    func numberOfSection(in tableView:UITableView) -> Int {
+//        return sectionDataList.count
+//    }
     
     //4. Cell Title
     func cellTitle(forRowAt indexPath:IndexPath) -> String {
@@ -179,7 +154,7 @@ class SettingCenter {
         return rowDataList[indexPath.row].type
     }
     
-    //5. Number of Row in Section
+    //7. Number of Row in Section
     func numberOfRow(_ inSection:Int) -> Int {
         return rowDataList.count
     }
@@ -207,7 +182,7 @@ class SettingCenter {
         default:
             return ""
         }
-  
+        
     }
     
     //2. Section Footer Title
@@ -230,48 +205,108 @@ class SettingCenter {
         }
     }
     
-    //3. Number of Section
-    func detailNumberOf(_ section:Int) -> Int {
+//    //3. Number of Section
+//    func detailNumberOfSection(in tableView: UITableView) -> Int {
+//        
+//        switch tableView {
+//        case 0:
+//            return airplaneModeSectionDataList.count
+//        case 1:
+//            return wifiSectionDataList.count
+//        case 2:
+//            return bluetoothSectionDataList.count
+//        case 3:
+//            return cellularSectionDataList.count
+//        case 4:
+//            return hotSpotSectionDataList.count
+//        case 5:
+//            return cellularSectionDataList.count
+//        default:
+//            return 0
+//        }
+//    }
+    
+    //4. Cell Title
+    func detailCellTitle(forRowAt indexPath:IndexPath) -> String {
         
-        switch section {
+        switch indexPath.row {
         case 0:
-            return airplaneModeSectionDataList.count
+            return airplaneModeRowDataList[0].cellTitle.rawValue
         case 1:
-            return wifiSectionDataList.count
+            return wifiRowDataList[1].cellTitle.rawValue
         case 2:
-            return bluetoothSectionDataList.count
+            return bluetoothRowonDataList[2].cellTitle.rawValue
         case 3:
-            return cellularSectionDataList.count
+            return cellularRowDataList[3].cellTitle.rawValue
         case 4:
-            return hotSpotSectionDataList.count
+            return hotSpotRowDataList[4].cellTitle.rawValue
         case 5:
-            return cellularSectionDataList.count
+            return cellularRowDataList[5].cellTitle.rawValue
+        default:
+            return ""
+        }
+    }
+    
+    //5. Cell SubTitle
+    func detailCellSubtitle(forRowAt indexPath:IndexPath) -> String {
+        switch indexPath.row {
+        case 0:
+            return airplaneModeRowDataList[indexPath.row].cellSubtitle
+        case 1:
+            return wifiRowDataList[indexPath.row].cellSubtitle
+        case 2:
+            return bluetoothRowonDataList[indexPath.row].cellSubtitle
+        case 3:
+            return cellularRowDataList[indexPath.row].cellSubtitle
+        case 4:
+            return hotSpotRowDataList[indexPath.row].cellSubtitle
+        case 5:
+            return cellularRowDataList[indexPath.row].cellSubtitle
+        default:
+            return ""
+        }
+    }
+    
+    //6. Cell Type
+    func detailCellType(forRowAt indexPath:IndexPath) -> CellType {
+        switch indexPath.row {
+        case 0:
+            return airplaneModeRowDataList[indexPath.row].type
+        case 1:
+            return wifiRowDataList[indexPath.row].type
+        case 2:
+            return bluetoothRowonDataList[indexPath.row].type
+        case 3:
+            return cellularRowDataList[indexPath.row].type
+        case 4:
+            return hotSpotRowDataList[indexPath.row].type
+        case 5:
+            return cellularRowDataList[indexPath.row].type
+        default:
+            return .NoType
+        }
+    }
+    
+    //7. Number of Row in Section
+    func numberOfDetailRow(_ inSection:Int) -> Int {
+        switch inSection {
+        case 0:
+            return airplaneModeRowDataList.count
+        case 1:
+            return wifiRowDataList.count
+        case 2:
+            return bluetoothRowonDataList.count
+        case 3:
+            return cellularRowDataList.count
+        case 4:
+            return hotSpotRowDataList.count
+        case 5:
+            return cellularRowDataList.count
         default:
             return 0
         }
     }
     
-//    //4. Cell Title
-//    func detailCellTitle(forRowAt indexPath:IndexPath) -> String {
-//
-//        }
-//    }
-    
-//    //5. Cell SubTitle
-//    func detailCellSubtitle(forRowAt indexPath:IndexPath) -> String {
-//        return detailRowDataList[indexPath.row].cellSubtitle
-//    }
-//    
-//    //6. Cell Type
-//    func detailCellType(forRowAt indexPath:IndexPath) -> CellType {
-//        return detailRowDataList[indexPath.row].type
-//    }
-//    
-//    //5. Number of Row in Section
-//    func numberOfRow(_ inSection:Int) -> Int {
-//        return rowDataList.count
-//    }
-//    
 }
 
 
