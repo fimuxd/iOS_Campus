@@ -16,7 +16,6 @@ enum CellTitle:String {
     case Cellular = "셀룰러"
     case HotSpot = "개인용 핫스팟"
     case Carrier = "네트워크 사업자"
-    case NoTitle = ""
 }
 
 enum CellType:String {
@@ -45,21 +44,22 @@ class SettingCenter {
     
     var sectionDataList:[SectionData] = []          // 최초 Root Array 의미 (메인 셋팅 테이블뷰의 섹션)
     var rowDataList:[RowData] = []                  // 두번째 Array (메인 셋팅 테이블뷰의 셀/Row)
-    var detailDataList:[SectionData] = []           // 세번째 Array (디테일 셋팅 테이블뷰의 섹션)
+    var detailSectionDataList:[SectionData] = []    // 세번째 Array (디테일 셋팅 테이블뷰의 섹션)
+    var detailRowDataList:[DetailRowData] = []      // 네번째 Array (디테일 셋팅 테이블뷰의 셀/Row)
     
-    var airplaneModeSectionDataList:[SectionData] = []
-    var wifiSectionDataList:[SectionData] = []
-    var bluetoothSectionDataList:[SectionData] = []
-    var cellularSectionDataList:[SectionData] = []
-    var hotSpotSectionDataList:[SectionData] = []
-    var carrierSectionDataList:[SectionData] = []
-    
-    var airplaneModeRowDataList:[DetailRowData] = []
-    var wifiRowDataList:[DetailRowData] = []
-    var bluetoothRowonDataList:[DetailRowData] = []
-    var cellularRowDataList:[DetailRowData] = []
-    var hotSpotRowDataList:[DetailRowData] = []
-    var carrierRowDataList:[DetailRowData] = []
+//    var airplaneModeSectionDataList:[SectionData] = []
+//    var wifiSectionDataList:[SectionData] = []
+//    var bluetoothSectionDataList:[SectionData] = []
+//    var cellularSectionDataList:[SectionData] = []
+//    var hotSpotSectionDataList:[SectionData] = []
+//    var carrierSectionDataList:[SectionData] = []
+//    
+//    var airplaneModeRowDataList:[DetailRowData] = []
+//    var wifiRowDataList:[DetailRowData] = []
+//    var bluetoothRowonDataList:[DetailRowData] = []
+//    var cellularRowDataList:[DetailRowData] = []
+//    var hotSpotRowDataList:[DetailRowData] = []
+//    var carrierRowDataList:[DetailRowData] = []
     
     
     init() {
@@ -82,39 +82,40 @@ class SettingCenter {
                     
                     for dic in rowItem.detailData {
                         let detailItem = SectionData(withDictionary: dic as! [String:Any])
-                        self.detailDataList.append(detailItem)
+                        self.detailSectionDataList.append(detailItem)
                         
                         for dic in detailItem.rowData {
                             let detailRowItem = DetailRowData(withDictionary: dic as! [String:Any])
+                            self.detailRowDataList.append(detailRowItem)
                             
-                            switch detailRowItem.cellTitle.rawValue {
-                            case "에어플레인 모드":
-                                self.airplaneModeRowDataList.append(detailRowItem)
-                            case "Wi-Fi":
-                                self.wifiRowDataList.append(detailRowItem)
-                            case "Bluetooth":
-                                self.bluetoothRowonDataList.append(detailRowItem)
-                            case "셀룰러":
-                                self.cellularRowDataList.append(detailRowItem)
-                            case "개인용 핫스팟":
-                                self.hotSpotRowDataList.append(detailRowItem)
-                            case "네트워크 사업자":
-                                self.carrierRowDataList.append(detailRowItem)
-                            default:
-                                self.airplaneModeRowDataList.append(detailRowItem)
-                            }
+//                            switch detailRowItem.cellTitle.rawValue {
+//                            case "에어플레인 모드":
+//                                self.airplaneModeRowDataList.append(detailRowItem)
+//                            case "Wi-Fi":
+//                                self.wifiRowDataList.append(detailRowItem)
+//                            case "Bluetooth":
+//                                self.bluetoothRowonDataList.append(detailRowItem)
+//                            case "셀룰러":
+//                                self.cellularRowDataList.append(detailRowItem)
+//                            case "개인용 핫스팟":
+//                                self.hotSpotRowDataList.append(detailRowItem)
+//                            case "네트워크 사업자":
+//                                self.carrierRowDataList.append(detailRowItem)
+//                            default:
+//                                self.airplaneModeRowDataList.append(detailRowItem)
+//                            }
                         }
                         
                     }
                 }
             }
         }
-        airplaneModeSectionDataList.append(detailDataList[0])
-        wifiSectionDataList.append(detailDataList[1])
-        bluetoothSectionDataList.append(detailDataList[2])
-        cellularSectionDataList.append(detailDataList[3])
-        hotSpotSectionDataList.append(detailDataList[4])
-        carrierSectionDataList.append(detailDataList[5])
+//        airplaneModeSectionDataList.append(detailDataList[0])
+//        wifiSectionDataList.append(detailDataList[1])
+//        bluetoothSectionDataList.append(detailDataList[2])
+//        cellularSectionDataList.append(detailDataList[3])
+//        hotSpotSectionDataList.append(detailDataList[4])
+//        carrierSectionDataList.append(detailDataList[5])
     }
     
     
@@ -134,10 +135,10 @@ class SettingCenter {
         return sectionDataList[section].footerTitle.rawValue
     }
     
-//    //3. Number of Section
-//    func numberOfSection(in tableView:UITableView) -> Int {
-//        return sectionDataList.count
-//    }
+    //3. Number of Section
+    func numberOfSection() -> Int {
+        return sectionDataList.count
+    }
     
     //4. Cell Title
     func cellTitle(forRowAt indexPath:IndexPath) -> String {
@@ -163,50 +164,19 @@ class SettingCenter {
     //              Detail 부분 TableView 관련 함수             //
     /********************************************************/
     //MARK: WiFi, Bluetooth 등 DetailViewController 부분
-    
-    //1. Section Header Title
-    func detailHeaderTitle(forSectionAt section:Int) -> String {
-        switch section {
-        case 0:
-            return airplaneModeSectionDataList[section].headerTitle
-        case 1:
-            return wifiSectionDataList[section].headerTitle
-        case 2:
-            return bluetoothSectionDataList[section].headerTitle
-        case 3:
-            return cellularSectionDataList[section].headerTitle
-        case 4:
-            return hotSpotSectionDataList[section].headerTitle
-        case 5:
-            return cellularSectionDataList[section].headerTitle
-        default:
-            return ""
-        }
-        
-    }
-    
-    //2. Section Footer Title
-    func detailFooterTitle(forSectionAt section:Int) -> String {
-        switch section {
-        case 0:
-            return airplaneModeSectionDataList[section].footerTitle.rawValue
-        case 1:
-            return wifiSectionDataList[section].footerTitle.rawValue
-        case 2:
-            return bluetoothSectionDataList[section].footerTitle.rawValue
-        case 3:
-            return cellularSectionDataList[section].footerTitle.rawValue
-        case 4:
-            return hotSpotSectionDataList[section].footerTitle.rawValue
-        case 5:
-            return cellularSectionDataList[section].footerTitle.rawValue
-        default:
-            return ""
-        }
-    }
+//    
+//    //1. Section Header Title
+//    func detailHeaderTitle(forSectionAt section:Int) -> String {
+//            return detailSectionDataList[section].headerTitle
+//    }
+//    
+//    //2. Section Footer Title
+//    func detailFooterTitle(forSectionAt section:Int) -> String {
+//
+//    }
     
 //    //3. Number of Section
-//    func detailNumberOfSection(in tableView: UITableView) -> Int {
+//    func detailNumberOfSection(for) -> Int {
 //        
 //        switch tableView {
 //        case 0:
@@ -226,87 +196,22 @@ class SettingCenter {
 //        }
 //    }
     
-    //4. Cell Title
-    func detailCellTitle(forRowAt indexPath:IndexPath) -> String {
-        
-        switch indexPath.row {
-        case 0:
-            return airplaneModeRowDataList[0].cellTitle.rawValue
-        case 1:
-            return wifiRowDataList[1].cellTitle.rawValue
-        case 2:
-            return bluetoothRowonDataList[2].cellTitle.rawValue
-        case 3:
-            return cellularRowDataList[3].cellTitle.rawValue
-        case 4:
-            return hotSpotRowDataList[4].cellTitle.rawValue
-        case 5:
-            return cellularRowDataList[5].cellTitle.rawValue
-        default:
-            return ""
-        }
-    }
-    
-    //5. Cell SubTitle
-    func detailCellSubtitle(forRowAt indexPath:IndexPath) -> String {
-        switch indexPath.row {
-        case 0:
-            return airplaneModeRowDataList[indexPath.row].cellSubtitle
-        case 1:
-            return wifiRowDataList[indexPath.row].cellSubtitle
-        case 2:
-            return bluetoothRowonDataList[indexPath.row].cellSubtitle
-        case 3:
-            return cellularRowDataList[indexPath.row].cellSubtitle
-        case 4:
-            return hotSpotRowDataList[indexPath.row].cellSubtitle
-        case 5:
-            return cellularRowDataList[indexPath.row].cellSubtitle
-        default:
-            return ""
-        }
-    }
-    
-    //6. Cell Type
-    func detailCellType(forRowAt indexPath:IndexPath) -> CellType {
-        switch indexPath.row {
-        case 0:
-            return airplaneModeRowDataList[indexPath.row].type
-        case 1:
-            return wifiRowDataList[indexPath.row].type
-        case 2:
-            return bluetoothRowonDataList[indexPath.row].type
-        case 3:
-            return cellularRowDataList[indexPath.row].type
-        case 4:
-            return hotSpotRowDataList[indexPath.row].type
-        case 5:
-            return cellularRowDataList[indexPath.row].type
-        default:
-            return .NoType
-        }
-    }
-    
-    //7. Number of Row in Section
-    func numberOfDetailRow(_ inSection:Int) -> Int {
-        switch inSection {
-        case 0:
-            return airplaneModeRowDataList.count
-        case 1:
-            return wifiRowDataList.count
-        case 2:
-            return bluetoothRowonDataList.count
-        case 3:
-            return cellularRowDataList.count
-        case 4:
-            return hotSpotRowDataList.count
-        case 5:
-            return cellularRowDataList.count
-        default:
-            return 0
-        }
-    }
-    
+//    //4. Cell Title
+//    func detailCellTitle(forRowAt indexPath:IndexPath) -> String {
+//
+//    }
+//    
+//    //5. Cell SubTitle
+//    func detailCellSubtitle(forRowAt indexPath:IndexPath) -> String {
+//          }
+//    
+//    //6. Cell Type
+//    func detailCellType(forRowAt indexPath:IndexPath) -> CellType {
+//            }
+//    
+//    //7. Number of Row in Section
+//    func numberOfDetailRow(_ inSection:Int) -> Int {
+//        
 }
 
 
@@ -324,7 +229,6 @@ struct SectionData {
     init(withDictionary dic:[String:Any]) {
         self.headerTitle = dic["SectionHeaderTitle"] as? String ?? ""
         self.footerTitle = dic["SectionFooterTitle"] as? DetailSectionFooter ?? DetailSectionFooter(rawValue: "")!
-        
         self.rowData = dic["RowData"] as? [[String:Any]] ?? []
     }
 }
@@ -341,7 +245,7 @@ struct RowData {
     }
     
     init(withDictionary dict:[String:Any]) {
-        self.cellTitle = CellTitle(rawValue: dict["Title"] as! String) ?? CellTitle(rawValue: "")!
+        self.cellTitle = CellTitle(rawValue: dict["Title"] as! String)!
         self.cellSubtitle = dict["Subtitle"] as? String ?? ""
         //        self.type = dict["CellType"] as! CellType
         self.type = CellType(rawValue: dict["CellType"] as! String) ?? CellType(rawValue: "")!

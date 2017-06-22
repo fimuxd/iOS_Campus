@@ -76,9 +76,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="aGf-TV-Rm3" kind="show" identifier="toDetailVCSegue" id="hkc-L8-w60"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BasicCell" textLabel="Ej9-tA-md8" detailTextLabel="Meh-nW-oRk" style="IBUITableViewCellStyleValue1" id="fis-Pf-25v">
                                         <rect key="frame" x="0.0" y="143.5" width="375" height="44"/>
