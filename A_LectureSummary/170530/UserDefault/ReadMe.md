@@ -36,9 +36,9 @@
 - Swift Code
 
 	```swift
-	open class var standard: UserDefaults { get }//데이터 불러오기open func object(forKey defaultName: String) -> Any?open func string(forKey defaultName: String) -> String?open func array(forKey defaultName: String) -> [Any]?//데이터 저장하기open func set(_ value: Any?, forKey defaultName: String)//데이터 지우기open func removeObject(forKey defaultName: String)
+	open class var standard: UserDefaults { get }	//데이터 불러오기	open func object(forKey defaultName: String) -> Any?	open func string(forKey defaultName: String) -> String?	open func array(forKey defaultName: String) -> [Any]?	//데이터 저장하기	open func set(_ value: Any?, forKey defaultName: String)	//데이터 지우기	open func removeObject(forKey defaultName: String)
 	```
 
 - 한번 만들어진 파일은 지워지지 않는다. 지우려면 app 자체를 지워야 한다.
-- //데이터 지우기상의 removeObject method는 파일을 지우는 것이 아니라 key값 등 생성된 파일의 내용을 지우는 것이다. 파일자체는 사라지지 않는다. 
+- `//데이터 지우기` 상의 `removeObject` method는 파일을 지우는 것이 아니라 key값 등 생성된 파일의 내용을 지우는 것이다. 파일자체는 사라지지 않는다. 
 
