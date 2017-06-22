@@ -6,138 +6,10 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="Xgl-cV-0nE">
-            <objects>
-                <viewController id="GuR-Kv-ORM" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="8rb-Ki-fKE"/>
-                        <viewControllerLayoutGuide type="bottom" id="I6Z-Vr-cZM"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="zP8-u7-M0R">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iYO-0w-xmD">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ji2-Am-lhZ" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1684.5"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bpE-1Q-xrM">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="1684.5"/>
-                                                <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UMF Top1" translatesAutoresizingMaskIntoConstraints="NO" id="Kg4-Vj-M9E">
-                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="281.5"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" secondItem="Kg4-Vj-M9E" secondAttribute="height" multiplier="4:3" id="eMt-Hv-DE8"/>
-                                                        </constraints>
-                                                    </imageView>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NO7-Nt-7RQ" userLabel="Label Container">
-                                                        <rect key="frame" x="0.0" y="281.5" width="375" height="1122"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAl-gl-MS4">
-                                                                <rect key="frame" x="16" y="16.5" width="343" height="1090"/>
-                                                                <string key="text">LOST AND FOUND:
-
-The Lost and Found is located at the Information Booth located in “Live Stage”. If you find an item, please bring it to the Information Booth or turn it into a security officer or an Ultra Korea staff person. You may also inquire about any lost items at the Lost and Found or contact info@umfkorea.com
-
-RESTROOMS:
-
-Restrooms are located throughout the festival grounds. In particular, there are large-scale restrooms at the entrance of Live Stage. We also provide female-only restrooms, and special restrooms for Premium GA ticket holders in the Premium GA Lounge.
-
-WOMEN-ONLY SECTION:
-
-For the comfort of our female attendees, Women-only powder rooms where women can freshen up or touch up their makeup are located near the Underground Stage.
-
-T MONEY CHARGE STATIONS:
-
-Credit debit cards and cash are accepted for the various vendors. You can also pay for food and drinks with the T MONEY card. For your convenience, T MONEY charge stations are located throughout the festival.
-
-COATROOMS:
-
-Coatrooms are located at the GA entrance and premium GA entrance. T MONEY and BC cards are accepted.
-
-OFFICIAL MERCHANDISE STORE:
-
-To commemorate your amazing experiences and memories from Ultra Korea, various official merchandise will be for sale. The number of merchandise is limited. Cash/debit/credit/T MONEY cards are all accepted.
-
-KOREAN FOOD STREET:
-
-Recharge after your day/night of heavy dancing with our specially selected food vendors! You can taste various Korean delicacies and the most famous street food around.
-
-LIVE ART ACTIVATIONS:
-
-We invited 8 world famous graffiti artists to visually captivate the audience with incredible live-painting performances at various life-scale installations throughout the festival grounds.
-
-SMOKING AREA:
-
-Smoking is strictly prohibited throughout the festival except within the designated smoking areas.
-
-Please note: the exact locations of the above can be found via the site map.</string>
-                                                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="14"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                        </subviews>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <constraints>
-                                                            <constraint firstItem="wAl-gl-MS4" firstAttribute="top" secondItem="NO7-Nt-7RQ" secondAttribute="top" constant="16" id="Aen-Ja-ees"/>
-                                                            <constraint firstAttribute="height" secondItem="wAl-gl-MS4" secondAttribute="height" constant="32" id="I6J-kT-L39"/>
-                                                            <constraint firstItem="wAl-gl-MS4" firstAttribute="leading" secondItem="NO7-Nt-7RQ" secondAttribute="leading" constant="16" id="tvd-gN-irh"/>
-                                                            <constraint firstAttribute="trailing" secondItem="wAl-gl-MS4" secondAttribute="trailing" constant="16" id="y8Z-Nu-2la"/>
-                                                        </constraints>
-                                                    </view>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UMF Bot1" translatesAutoresizingMaskIntoConstraints="NO" id="nLe-pw-sAa">
-                                                        <rect key="frame" x="0.0" y="1403.5" width="375" height="281"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" secondItem="nLe-pw-sAa" secondAttribute="height" multiplier="4:3" id="TD1-Af-gSR"/>
-                                                        </constraints>
-                                                    </imageView>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstItem="bpE-1Q-xrM" firstAttribute="centerX" secondItem="Ji2-Am-lhZ" secondAttribute="centerX" id="B8S-Dm-zY8"/>
-                                            <constraint firstItem="bpE-1Q-xrM" firstAttribute="top" secondItem="Ji2-Am-lhZ" secondAttribute="top" id="ElX-tJ-Z93"/>
-                                            <constraint firstAttribute="height" secondItem="bpE-1Q-xrM" secondAttribute="height" id="Jb3-mm-zR5"/>
-                                            <constraint firstItem="bpE-1Q-xrM" firstAttribute="width" secondItem="Ji2-Am-lhZ" secondAttribute="width" id="UIq-QV-j0Y"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="Ji2-Am-lhZ" firstAttribute="leading" secondItem="iYO-0w-xmD" secondAttribute="leading" id="3Vr-k6-Kne"/>
-                                    <constraint firstAttribute="bottom" secondItem="Ji2-Am-lhZ" secondAttribute="bottom" id="WHj-WD-Xao"/>
-                                    <constraint firstAttribute="trailing" secondItem="Ji2-Am-lhZ" secondAttribute="trailing" id="cHK-SM-R8H"/>
-                                    <constraint firstItem="Ji2-Am-lhZ" firstAttribute="top" secondItem="iYO-0w-xmD" secondAttribute="top" id="xaU-Ul-D0h"/>
-                                </constraints>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="iYO-0w-xmD" firstAttribute="top" secondItem="8rb-Ki-fKE" secondAttribute="bottom" constant="-20" id="0sl-37-Ka6"/>
-                            <constraint firstItem="iYO-0w-xmD" firstAttribute="centerX" secondItem="zP8-u7-M0R" secondAttribute="centerX" id="3yH-h6-Son"/>
-                            <constraint firstItem="iYO-0w-xmD" firstAttribute="centerY" secondItem="zP8-u7-M0R" secondAttribute="centerY" id="TrN-kB-Tde"/>
-                            <constraint firstItem="iYO-0w-xmD" firstAttribute="leading" secondItem="zP8-u7-M0R" secondAttribute="leading" id="WeY-Ff-wLz"/>
-                            <constraint firstItem="iYO-0w-xmD" firstAttribute="width" secondItem="zP8-u7-M0R" secondAttribute="width" id="bJm-0x-gTv"/>
-                            <constraint firstItem="iYO-0w-xmD" firstAttribute="height" secondItem="zP8-u7-M0R" secondAttribute="height" id="bLe-Qg-XYH"/>
-                            <constraint firstItem="iYO-0w-xmD" firstAttribute="leading" secondItem="zP8-u7-M0R" secondAttribute="leadingMargin" constant="-20" id="gd8-s8-FLy"/>
-                            <constraint firstItem="iYO-0w-xmD" firstAttribute="top" secondItem="zP8-u7-M0R" secondAttribute="top" id="miR-Gw-Bzz"/>
-                            <constraint firstItem="Ji2-Am-lhZ" firstAttribute="width" secondItem="zP8-u7-M0R" secondAttribute="width" id="zIN-yt-jmS"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KRt-Z9-Wjg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="646" y="18"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -526,7 +398,7 @@ Please note: the exact locations of the above can be found via the site map.</st
             </objects>
             <point key="canvasLocation" x="5393" y="304"/>
         </scene>
-        <!--Setting View Controller-->
+        <!--Setting-->
         <scene sceneID="h5x-XB-7TY">
             <objects>
                 <viewController id="377-Ix-ZUe" customClass="SettingViewController" customModule="dache_" customModuleProvider="target" sceneMemberID="viewController">
@@ -542,7 +414,7 @@ Please note: the exact locations of the above can be found via the site map.</st
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="SettingDetailCell" textLabel="yIc-wi-8S8" style="IBUITableViewCellStyleDefault" id="6Pp-8O-949">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="SettingDetailCell" textLabel="yIc-wi-8S8" detailTextLabel="23W-Cj-COG" style="IBUITableViewCellStyleValue1" id="6Pp-8O-949">
                                         <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6Pp-8O-949" id="ALl-28-a6V">
@@ -550,7 +422,14 @@ Please note: the exact locations of the above can be found via the site map.</st
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yIc-wi-8S8">
-                                                    <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
+                                                    <rect key="frame" x="15" y="12" width="33.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="23W-Cj-COG">
+                                                    <rect key="frame" x="296" y="12" width="44" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -558,6 +437,10 @@ Please note: the exact locations of the above can be found via the site map.</st
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="a8O-cg-5ZX" kind="show" identifier="editInfoSegue" id="tAe-iw-NcZ"/>
+                                            <segue destination="ckh-Cp-3SO" kind="show" identifier="editPasswordSegue" trigger="accessoryAction" id="GWj-yd-UwU"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingBasicCell" textLabel="rW4-g9-g4t" detailTextLabel="laJ-ul-4w5" style="IBUITableViewCellStyleValue1" id="oQI-vm-cia">
                                         <rect key="frame" x="0.0" y="99.5" width="375" height="44"/>
@@ -630,13 +513,55 @@ Please note: the exact locations of the above can be found via the site map.</st
                             <constraint firstItem="OY5-jz-Qnw" firstAttribute="centerY" secondItem="Wux-fy-j23" secondAttribute="centerY" id="ynT-lt-rta"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Setting" id="Jj1-B7-CRe"/>
                     <connections>
                         <outlet property="tableView" destination="OY5-jz-Qnw" id="zVP-b1-szd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gHE-LN-pQo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6121" y="304"/>
+            <point key="canvasLocation" x="6120.8000000000002" y="303.59820089955025"/>
+        </scene>
+        <!--Change Password-->
+        <scene sceneID="T3i-uo-aCD">
+            <objects>
+                <viewController id="ckh-Cp-3SO" customClass="PasswordDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="M7Y-lf-eGz"/>
+                        <viewControllerLayoutGuide type="bottom" id="3sn-9a-av6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XPT-uC-SjT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Change Password" id="EUl-JI-dzn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iC8-M3-JLb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6974" y="694"/>
+        </scene>
+        <!--Edit Information-->
+        <scene sceneID="yK8-HH-Pfw">
+            <objects>
+                <viewController id="a8O-cg-5ZX" customClass="EditInfoDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OM1-37-hid"/>
+                        <viewControllerLayoutGuide type="bottom" id="ckQ-6M-YIp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ems-85-ZBQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Edit Information" id="z4k-pn-6N5"/>
+                    <connections>
+                        <outlet property="titleLabel" destination="z4k-pn-6N5" id="eBc-5U-bBS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wwa-Uj-aaI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6974" y="-26"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="WmP-DR-qMi">
@@ -676,8 +601,6 @@ Please note: the exact locations of the above can be found via the site map.</st
         </scene>
     </scenes>
     <resources>
-        <image name="UMF Bot1" width="900" height="595"/>
-        <image name="UMF Top1" width="1200" height="630"/>
         <image name="background" width="1070" height="1336"/>
         <image name="dacheLogo2" width="857" height="400"/>
     </resources>

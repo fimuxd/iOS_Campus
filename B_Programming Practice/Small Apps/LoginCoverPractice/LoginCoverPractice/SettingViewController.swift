@@ -79,6 +79,10 @@ class SettingViewController: UIViewController, UITableViewDataSource, UITableVie
         }
     }
     
+    //-----segue 설정
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+  
+    }
     
     
     
