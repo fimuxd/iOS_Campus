@@ -8,32 +8,87 @@
 
 import Foundation
 
-//Enum
-enum CellTitle:String {
-    case AirpainMode = "에어플레인 모드"
-    case WiFi = "Wi-Fi"
-    case Bluetooth = "Bluetooth"
-    case Cellular = "셀룰러"
-    case HotSpot = "개인용 핫스팟"
-    case Carrier = "네트워크 사업자"
-}
-
+//MARK: enum 영역
 enum CellType:String {
     case Basic = "BasicCell"
     case Detail = "DetailCell"
     case Custom = "CustomCell"
-    case NoType = ""
 }
 
-enum DetailSectionFooter:String {
-    case WiFi = "Wi-Fi를 켜면 위치 정확도가 향상됩니다."
-    case Bluetooth = "Bluetooth를 켜면 위치 정확도 및 주변 서비스가 향상됩니다."
-    case HotSpot = "iPhone의 인터넷 연결을 공유하려면 개인용 핫스팟을 켜십시오. 추가 요금이 부과될 수 있습니다. 사용자의 iCloud 계정으로 로그인된 다른 기기에서 수동으로 켜지 않아도 개인용 핫스팟을 사용할 수 있게 됩니다."
-    //case CellularOption = "이메일, 웹 브라우징, 푸시 알림 등을 포함하여 모든 데이터를 Wi-Fi만 사용하도록 제한하려면 셀룰러 데이터를 끄십시오."
-    case NoFooter = ""
+/*
+//MARK: struct 영역
+//-----TableView의 Section Datas
+struct SectionData {
+    let headerTitle:String
+    let footerTitle:String
+    let cellDataList:[Any]
+    
+    var dic:[String:Any] {
+        return ["SectionHeaderTitle":headerTitle,
+                "SectionFooterTitle":footerTitle,
+                "RowData":cellDataList]
+    }
+    
+    init(withDictionary dic:[String:Any]) {
+        self.headerTitle = dic["SectionHeaderTitle"] as? String ?? ""
+        self.footerTitle = dic["SectionFooterTitle"] as? String ?? ""
+        self.cellDataList = dic["RowData"] as? [[String:Any]] ?? []
+    }
+}
+
+//-----TableView의 Row(Cell) Datas
+struct RowData {
+    let cellTitle:String
+    let cellSubtitle:String
+    let type:CellType
+    let detailData:[Any]?
+    
+    var dic:[String:Any] {
+        return ["Title":cellTitle, "Subtitle":cellSubtitle, "CellType":type, "DetailData": detailData]
+    }
+    
+    init(withDictionary dic:[String:Any]) {
+        self.cellTitle = dic["Title"] as? String ?? ""
+        self.cellSubtitle = dic["Subtitle"] as? String ?? ""
+        self.type = CellType(rawValue: dic["CellType"] as! String) ?? .Basic
+        
+        if let tempDetailData = dic["DetailData"] as? [[String:Any]] {
+            if tempDetailData.count != 0 {
+                //Array에 값을 넣을 함수 입력
+            }else{
+                detailData = nil
+            }
+        }
+    }
 }
 
 
+//MARK: 함수영역 - from [[:]] to [:]
+//-----RowDataArray에서 RowData를 얻는 함수
+func convertAnyTo(row datas:[[String:Any]]) -> [RowData] {
+    var tempRowDataList:[RowData] = []
+    for tempRowDic in datas {
+        let tempRow = RowData(withDictionary: tempRowDic)
+        tempRowDataList.append(tempRow)
+    }
+    return tempRowDataList
+}
+
+//-----SectionDataArray에서 SectionData를 얻는 함수
+func convertAnyTo(section datas:[[String:Any]]) -> [SectionData] {
+    var tempSectionData:[SectionData] = []
+    for tempSectionDictionary in datas {
+        let tempSectionHeaderTitle = tempSectionDictionary["SectionHeaderTitle"] as! String
+        let tempSectionFooterTitle = tempSectionDictionary["SectionFooterTitle"] as! String
+        let tempCellData:SectionData = SectionData(withDictionary: tempSectionDictionary as! [String:Any])
+        tempSectionData.append(tempCellData)
+    }
+    return tempSectionData
+}
+
+*/
+
+//MARK: SettingCenter Class 영역
 class SettingCenter {
     
     /********************************************************/
@@ -87,35 +142,12 @@ class SettingCenter {
                         for dic in detailItem.rowData {
                             let detailRowItem = DetailRowData(withDictionary: dic as! [String:Any])
                             self.detailRowDataList.append(detailRowItem)
-                            
-//                            switch detailRowItem.cellTitle.rawValue {
-//                            case "에어플레인 모드":
-//                                self.airplaneModeRowDataList.append(detailRowItem)
-//                            case "Wi-Fi":
-//                                self.wifiRowDataList.append(detailRowItem)
-//                            case "Bluetooth":
-//                                self.bluetoothRowonDataList.append(detailRowItem)
-//                            case "셀룰러":
-//                                self.cellularRowDataList.append(detailRowItem)
-//                            case "개인용 핫스팟":
-//                                self.hotSpotRowDataList.append(detailRowItem)
-//                            case "네트워크 사업자":
-//                                self.carrierRowDataList.append(detailRowItem)
-//                            default:
-//                                self.airplaneModeRowDataList.append(detailRowItem)
-//                            }
                         }
                         
                     }
                 }
             }
         }
-//        airplaneModeSectionDataList.append(detailDataList[0])
-//        wifiSectionDataList.append(detailDataList[1])
-//        bluetoothSectionDataList.append(detailDataList[2])
-//        cellularSectionDataList.append(detailDataList[3])
-//        hotSpotSectionDataList.append(detailDataList[4])
-//        carrierSectionDataList.append(detailDataList[5])
     }
     
     
@@ -132,7 +164,7 @@ class SettingCenter {
     
     //2. Section Footer Title
     func footerTitle(forSectionAt section:Int) -> String {
-        return sectionDataList[section].footerTitle.rawValue
+        return sectionDataList[section].footerTitle
     }
     
     //3. Number of Section
@@ -142,7 +174,7 @@ class SettingCenter {
     
     //4. Cell Title
     func cellTitle(forRowAt indexPath:IndexPath) -> String {
-        return rowDataList[indexPath.row].cellTitle.rawValue
+        return rowDataList[indexPath.row].cellTitle
     }
     
     //5. Cell SubTitle
@@ -164,60 +196,63 @@ class SettingCenter {
     //              Detail 부분 TableView 관련 함수             //
     /********************************************************/
     //MARK: WiFi, Bluetooth 등 DetailViewController 부분
-//    
-//    //1. Section Header Title
-//    func detailHeaderTitle(forSectionAt section:Int) -> String {
-//            return detailSectionDataList[section].headerTitle
-//    }
-//    
-//    //2. Section Footer Title
-//    func detailFooterTitle(forSectionAt section:Int) -> String {
-//
-//    }
+
     
-//    //3. Number of Section
-//    func detailNumberOfSection(for) -> Int {
-//        
-//        switch tableView {
-//        case 0:
-//            return airplaneModeSectionDataList.count
-//        case 1:
-//            return wifiSectionDataList.count
-//        case 2:
-//            return bluetoothSectionDataList.count
-//        case 3:
-//            return cellularSectionDataList.count
-//        case 4:
-//            return hotSpotSectionDataList.count
-//        case 5:
-//            return cellularSectionDataList.count
-//        default:
-//            return 0
-//        }
-//    }
+// 처음에 만들었던 함수들 _ 중복이므로 필요 없음
+/*
+    //1. Section Header Title
+    func detailHeaderTitle(forSectionAt section:Int) -> String {
+            return detailSectionDataList[section].headerTitle
+    }
     
-//    //4. Cell Title
-//    func detailCellTitle(forRowAt indexPath:IndexPath) -> String {
-//
-//    }
-//    
-//    //5. Cell SubTitle
-//    func detailCellSubtitle(forRowAt indexPath:IndexPath) -> String {
-//          }
-//    
-//    //6. Cell Type
-//    func detailCellType(forRowAt indexPath:IndexPath) -> CellType {
-//            }
-//    
-//    //7. Number of Row in Section
-//    func numberOfDetailRow(_ inSection:Int) -> Int {
-//        
+    //2. Section Footer Title
+    func detailFooterTitle(forSectionAt section:Int) -> String {
+
+    }
+    
+    //3. Number of Section
+    func detailNumberOfSection(for) -> Int {
+        
+        switch tableView {
+        case 0:
+            return airplaneModeSectionDataList.count
+        case 1:
+            return wifiSectionDataList.count
+        case 2:
+            return bluetoothSectionDataList.count
+        case 3:
+            return cellularSectionDataList.count
+        case 4:
+            return hotSpotSectionDataList.count
+        case 5:
+            return cellularSectionDataList.count
+        default:
+            return 0
+        }
+    }
+    
+    //4. Cell Title
+    func detailCellTitle(forRowAt indexPath:IndexPath) -> String {
+
+    }
+    
+    //5. Cell SubTitle
+    func detailCellSubtitle(forRowAt indexPath:IndexPath) -> String {
+          }
+    
+    //6. Cell Type
+    func detailCellType(forRowAt indexPath:IndexPath) -> CellType {
+            }
+    
+    //7. Number of Row in Section
+    func numberOfDetailRow(_ inSection:Int) -> Int {
+*/
 }
 
 
 struct SectionData {
     let headerTitle:String
-    let footerTitle:DetailSectionFooter
+    let footerTitle:String
     let rowData:[Any]
     
     var dic:[String:Any] {
@@ -228,14 +263,14 @@ struct SectionData {
     
     init(withDictionary dic:[String:Any]) {
         self.headerTitle = dic["SectionHeaderTitle"] as? String ?? ""
-        self.footerTitle = dic["SectionFooterTitle"] as? DetailSectionFooter ?? DetailSectionFooter(rawValue: "")!
+        self.footerTitle = dic["SectionFooterTitle"] as? String ?? ""
         self.rowData = dic["RowData"] as? [[String:Any]] ?? []
     }
 }
 
 
 struct RowData {
-    let cellTitle:CellTitle
+    let cellTitle:String
     let cellSubtitle:String
     let type:CellType
     let detailData:[Any]
@@ -245,16 +280,15 @@ struct RowData {
     }
     
     init(withDictionary dict:[String:Any]) {
-        self.cellTitle = CellTitle(rawValue: dict["Title"] as! String)!
+        self.cellTitle = dict["Title"] as? String ?? ""
         self.cellSubtitle = dict["Subtitle"] as? String ?? ""
-        //        self.type = dict["CellType"] as! CellType
-        self.type = CellType(rawValue: dict["CellType"] as! String) ?? CellType(rawValue: "")!
+        self.type = CellType(rawValue: dict["CellType"] as! String) ?? .Basic
         self.detailData = dict["DetailData"] as? [[String:Any]] ?? []
     }
 }
 
 struct DetailRowData {
-    let cellTitle:CellTitle
+    let cellTitle:String
     let cellSubtitle:String
     let type:CellType
     
@@ -263,9 +297,9 @@ struct DetailRowData {
     }
     
     init(withDictionary dict:[String:Any]) {
-        self.cellTitle = CellTitle(rawValue: dict["Title"] as! String) ?? CellTitle(rawValue: "")!
+        self.cellTitle = dict["Title"] as? String ?? ""
         self.cellSubtitle = dict["Subtitle"] as? String ?? ""
-        self.type = CellType(rawValue: dict["CellType"] as! String) ?? CellType(rawValue: "")!
+        self.type = CellType(rawValue: dict["CellType"] as! String) ?? .Basic
     }
 }
 

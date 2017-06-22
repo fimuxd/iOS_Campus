@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    var rowTitle:String?
     var settingCenter:SettingCenter = SettingCenter.init()
     
     @IBOutlet weak var tableView: UITableView!
@@ -32,19 +33,19 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             cell.textLabel?.text = settingCenter.cellTitle(forRowAt: indexPath)
             cell.detailTextLabel?.text = settingCenter.cellSubtitle(forRowAt: indexPath)
             cell.detailTextLabel?.textColor = .gray
+            cell.selectionStyle = .none
             return cell
         case .Detail:
             let cell = tableView.dequeueReusableCell(withIdentifier: cellType.rawValue, for: indexPath)
             cell.detailTextLabel?.text = settingCenter.cellSubtitle(forRowAt: indexPath)
             cell.textLabel?.text = settingCenter.cellTitle(forRowAt: indexPath)
             cell.detailTextLabel?.textColor = .gray
+            cell.selectionStyle = .gray
             return cell
         case .Custom:
             let cell:CustomSwitchCell = tableView.dequeueReusableCell(withIdentifier: cellType.rawValue, for: indexPath) as! CustomSwitchCell
-            cell.titleLabel.text = settingCenter.cellTitle(forRowAt: indexPath)
-            return cell
-        case .NoType:
-            let cell = tableView.dequeueReusableCell(withIdentifier: cellType.rawValue, for: indexPath)
+            
+            cell.selectionStyle = .none
             return cell
         }
     
@@ -66,7 +67,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // Dispose of any resources that can be recreated.
     }
     
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender as! UITableViewCell
+        let nextViewController = segue.destination as! ViewController
+        nextViewController.rowTitle = cell.textLabel?.text
+    }
 
 }
 

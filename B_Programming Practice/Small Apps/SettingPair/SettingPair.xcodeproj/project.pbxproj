@@ -13,11 +13,8 @@
 		D83D946B1EFA163800B4066C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D83D946A1EFA163800B4066C /* Assets.xcassets */; };
 		D83D946E1EFA163800B4066C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D83D946C1EFA163800B4066C /* LaunchScreen.storyboard */; };
 		D83D94761EFA164C00B4066C /* SettingData.plist in Resources */ = {isa = PBXBuildFile; fileRef = D83D94751EFA164C00B4066C /* SettingData.plist */; };
-		D83D94781EFA339400B4066C /* Cellular.plist in Resources */ = {isa = PBXBuildFile; fileRef = D83D94771EFA339400B4066C /* Cellular.plist */; };
 		D83D947A1EFA380F00B4066C /* CustomSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83D94791EFA380F00B4066C /* CustomSwitchCell.swift */; };
 		D83D947C1EFA382F00B4066C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83D947B1EFA382F00B4066C /* DetailViewController.swift */; };
-		D83D947E1EFA384D00B4066C /* CellularViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83D947D1EFA384D00B4066C /* CellularViewController.swift */; };
-		D83D94801EFA386400B4066C /* CellularDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83D947F1EFA386400B4066C /* CellularDetailViewController.swift */; };
 		D83D94871EFA3DE900B4066C /* SettingCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83D94861EFA3DE900B4066C /* SettingCenter.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,11 +27,8 @@
 		D83D946D1EFA163800B4066C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D83D946F1EFA163800B4066C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D83D94751EFA164C00B4066C /* SettingData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SettingData.plist; sourceTree = "<group>"; };
-		D83D94771EFA339400B4066C /* Cellular.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Cellular.plist; sourceTree = "<group>"; };
 		D83D94791EFA380F00B4066C /* CustomSwitchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSwitchCell.swift; sourceTree = "<group>"; };
 		D83D947B1EFA382F00B4066C /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		D83D947D1EFA384D00B4066C /* CellularViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellularViewController.swift; sourceTree = "<group>"; };
-		D83D947F1EFA386400B4066C /* CellularDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellularDetailViewController.swift; sourceTree = "<group>"; };
 		D83D94861EFA3DE900B4066C /* SettingCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,8 +64,8 @@
 			children = (
 				D83D94811EFA3B9100B4066C /* Storyboards */,
 				D83D94821EFA3BA500B4066C /* ViewController */,
-				D83D94791EFA380F00B4066C /* CustomSwitchCell.swift */,
 				D83D94831EFA3BCC00B4066C /* DataCentre */,
+				D83D94791EFA380F00B4066C /* CustomSwitchCell.swift */,
 				D83D94631EFA163800B4066C /* AppDelegate.swift */,
 				D83D946A1EFA163800B4066C /* Assets.xcassets */,
 			);
@@ -92,8 +86,6 @@
 			children = (
 				D83D94651EFA163800B4066C /* ViewController.swift */,
 				D83D947B1EFA382F00B4066C /* DetailViewController.swift */,
-				D83D947D1EFA384D00B4066C /* CellularViewController.swift */,
-				D83D947F1EFA386400B4066C /* CellularDetailViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -103,7 +95,6 @@
 			children = (
 				D83D94861EFA3DE900B4066C /* SettingCenter.swift */,
 				D83D94751EFA164C00B4066C /* SettingData.plist */,
-				D83D94771EFA339400B4066C /* Cellular.plist */,
 				D83D946F1EFA163800B4066C /* Info.plist */,
 			);
 			name = DataCentre;
@@ -172,7 +163,6 @@
 				D83D946E1EFA163800B4066C /* LaunchScreen.storyboard in Resources */,
 				D83D946B1EFA163800B4066C /* Assets.xcassets in Resources */,
 				D83D94691EFA163800B4066C /* Main.storyboard in Resources */,
-				D83D94781EFA339400B4066C /* Cellular.plist in Resources */,
 				D83D94761EFA164C00B4066C /* SettingData.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,9 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D83D947A1EFA380F00B4066C /* CustomSwitchCell.swift in Sources */,
-				D83D947E1EFA384D00B4066C /* CellularViewController.swift in Sources */,
 				D83D94661EFA163800B4066C /* ViewController.swift in Sources */,
-				D83D94801EFA386400B4066C /* CellularDetailViewController.swift in Sources */,
 				D83D94641EFA163800B4066C /* AppDelegate.swift in Sources */,
 				D83D94871EFA3DE900B4066C /* SettingCenter.swift in Sources */,
 				D83D947C1EFA382F00B4066C /* DetailViewController.swift in Sources */,
