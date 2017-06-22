@@ -156,7 +156,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="switch" destination="5sI-sS-Llb" id="7Q6-cl-GIW"/>
+                        <outlet property="testSegCtrlOutlet" destination="0PH-O9-Na1" id="Mco-NF-Qib"/>
                         <outlet property="testSwitch" destination="5sI-sS-Llb" id="BCt-VS-tWR"/>
                     </connections>
                 </viewController>

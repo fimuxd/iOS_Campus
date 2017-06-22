@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.tellMeNoti(_:)), name: Notification.Name("TellMeBtn"), object: nil)
 
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.whichSegueNumber(_:)), name: Notification.Name("SegueNumber"), object: nil)
-    }
+    }   
     
     func callNoti(_ sender:Notification) {
         statusLabel.text = sender.object as? String
