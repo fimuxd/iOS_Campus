@@ -12,6 +12,7 @@
 		6A53DDA41EFCA83900B3315D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A53DDA21EFCA83900B3315D /* Main.storyboard */; };
 		6A53DDA61EFCA83900B3315D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A53DDA51EFCA83900B3315D /* Assets.xcassets */; };
 		6A53DDA91EFCA83900B3315D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A53DDA71EFCA83900B3315D /* LaunchScreen.storyboard */; };
+		6A53DDB11EFCDF9700B3315D /* SortedClosureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A53DDB01EFCDF9700B3315D /* SortedClosureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		6A53DDA51EFCA83900B3315D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A53DDA81EFCA83900B3315D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A53DDAA1EFCA83900B3315D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A53DDB01EFCDF9700B3315D /* SortedClosureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortedClosureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				6A53DD9E1EFCA83900B3315D /* AppDelegate.swift */,
 				6A53DDA01EFCA83900B3315D /* ViewController.swift */,
+				6A53DDB01EFCDF9700B3315D /* SortedClosureViewController.swift */,
 				6A53DDA21EFCA83900B3315D /* Main.storyboard */,
 				6A53DDA51EFCA83900B3315D /* Assets.xcassets */,
 				6A53DDA71EFCA83900B3315D /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			files = (
 				6A53DDA11EFCA83900B3315D /* ViewController.swift in Sources */,
 				6A53DD9F1EFCA83900B3315D /* AppDelegate.swift in Sources */,
+				6A53DDB11EFCDF9700B3315D /* SortedClosureViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +306,7 @@
 				6A53DDAF1EFCA83900B3315D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
