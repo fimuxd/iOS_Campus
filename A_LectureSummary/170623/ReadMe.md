@@ -122,7 +122,7 @@ func sorted(by areInIncreasingOrder: (Element, Element) -> Bool) -> [Element]
 	```swift
 	override func viewDidLoad() {	super.viewDidLoad()	
 		let names = ["Chris", "Alex", "Ewa", "Barry", "Daniella"]	//아래 예제 backward(_:_:)는 이전 버전의 함수를 클로저식으로 나타낸 것입니다.	let sorted = names.sorted(by:		{( s1: String, s2: String) -> Bool in			return s1 > s2		}	)
-			print(sorted) //[“Ewa”, "Daniella", "Chris", "Barry", "Alex"]}
+			print(sorted) //[“Ewa”, "Daniella", "Chris", "Barry", "Alex"]	}
 	```
 	
 	***
