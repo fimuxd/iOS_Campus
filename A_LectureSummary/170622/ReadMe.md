@@ -47,7 +47,20 @@ open func post(name aName: NSNotification.Name, object anObject: Any?, userInfo 
 open func removeObserver(_ observer: Any)
 ```
 
-## C. 예제
+## C. System Notification
+
+```swift
+//Observer
+func observerNoti(noti:Notification) {	NotificationCenter.default.addObserver(self,
+		selector: #selector(ViewController.ob(noti:)),
+		name: Notification.Name.UIKeyboardWillShow,object: nil)}
+func trakingPost(noti:Notification) {	//noti 내용}
+
+//Poster
+//키보드가 올라올 때 시스템에서 자동으로 Noti를 post 해준다.
+```
+
+## D. 예제
 
 - selecter: 함수를 등록하는 것
 - name: 관심있다고 한 것이 서로 맞는지 key값으로 매칭시켜주는 것
