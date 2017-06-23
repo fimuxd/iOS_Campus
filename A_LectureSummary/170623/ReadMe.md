@@ -113,110 +113,111 @@ func sorted(by areInIncreasingOrder: (Element, Element) -> Bool) -> [Element]
 - String 과 String도 ASCII Code에 의해 결국 숫자로 변환되며, 따라서 크기를 비교할 수 있다. A to Z, 대문자 to 소문자 갈 수록 값이 커진다.
 - Swift는 유니코드를 지원하기 때문에 한글(ㄱ~ㅎ)간 비교도 가능하다.
 
-#### 1) Inline Closure
-
-- 상단의 `func backward()...` ~ `let sorted...` 부분을 Closure 식으로 생각해보면
-
-***
-
-```swift
-override func viewDidLoad() {	super.viewDidLoad()	
-	let names = ["Chris", "Alex", "Ewa", "Barry", "Daniella"]	//아래 예제 backward(_:_:)는 이전 버전의 함수를 클로저식으로 나타낸 것입니다.	let sorted = names.sorted(by:		{( s1: String, s2: String) -> Bool in			return s1 > s2		}	)
-		print(sorted) //[“Ewa”, "Daniella", "Chris", "Barry", "Alex"]}
-```
-
-***
-
-- 결국, `sorted()` 의 parameter에 클로저식 문법을 쓴 것
-
-#### 2) 클로저 간소화
-
-- Swift는 알아서 단축시켜주는 것들이 많다. 클로저도 그렇다.
-	- 1. 타입유추를 해준다: ~내가 이거 넣으라고 했으니까 당연히 이 타입으로 넣었겠지~
-	- 2. `return` 삭제 가능: return 할 statement 가 한 줄일 때만 `in` 뒤에 바로 statement 입력 가능 ~어차피 한줄이면 이게 return이겠지~
-	- 3. parameter명 삭제 가능: default 값(raw Value) 같이 `$0`, `$1`, `$2`... 같이 표현할 수 있다. 단, parameter가 있을 때만.
-	- 4. 가장 마지막 parameter명은 삭제 가능
-
-- 따라서, 상단의 `sorted()` 를 간소화시켜보자
-
+	#### 1) Inline Closure
+	
+	- 상단의 `func backward()...` ~ `let sorted...` 부분을 Closure 식으로 생각해보면
+	
+	***
+	
 	```swift
-	//원본
-	let sorted = names.sorted(by:
-	        {(s1: String, s2: String) -> Bool in
-	            return s1 > s2
-	        }
-	    )
-	
-	//1. 타입유추 간소화
-	let sorted = names.sorted(by:
-			{s1, s2 in return s1 > s2
-			}
-	)
-	
-	//2. return 간소화
-	let sorted = names.sorted(by:
-			{s1, s2 in s1 > s2
-			}
-	)
-	
-	//3. parameter명 삭제
-	let sorted = names.sorted(by: {$0 > $1})
-	
-	//4. 여기서, > 는 이 자체로 함수다. 따라서,
-	let sorted = names.sorted(by: > )
-	
-	//5. trailing closure를 사용해보자. by:는 처음이자 하나이며 유일한 parameter이다.
-	let sorted = names.sotrted { $0 > $1 }
+	override func viewDidLoad() {	super.viewDidLoad()	
+		let names = ["Chris", "Alex", "Ewa", "Barry", "Daniella"]	//아래 예제 backward(_:_:)는 이전 버전의 함수를 클로저식으로 나타낸 것입니다.	let sorted = names.sorted(by:		{( s1: String, s2: String) -> Bool in			return s1 > s2		}	)
+			print(sorted) //[“Ewa”, "Daniella", "Chris", "Barry", "Alex"]}
 	```
-
-#### 3) 변수 할당
-
-- 클로저 자체를 변수로 할당해서 함수를 변수처럼 쓸 수 있다.
-
-	```swift
-	let ascending = {(s1:Int, s2:Int) -> Bool in s1 > s2}
-	let descending = {(s1:Int, s2:Int -> Bool) in s1 < s2}
 	
-	override func viewDidLoad() {
-		super.viewDidLoad()
+	***
 	
-		let list = [1,2,3,4,5,6]
+	- 결국, `sorted()` 의 parameter에 클로저식 문법을 쓴 것
+
+	#### 2) 클로저 간소화
 	
-		let newList = list.sorted(by:ascending) 
-		let newList2 = list.sorted(by:descending)
+	- Swift는 알아서 단축시켜주는 것들이 많다. 클로저도 그렇다.
+		- 1. 타입유추를 해준다: ~내가 이거 넣으라고 했으니까 당연히 이 타입으로 넣었겠지~
+		- 2. `return` 삭제 가능: return 할 statement 가 한 줄일 때만 `in` 뒤에 바로 statement 입력 가능 ~어차피 한줄이면 이게 return이겠지~
+		- 3. parameter명 삭제 가능: default 값(raw Value) 같이 `$0`, `$1`, `$2`... 같이 표현할 수 있다. 단, parameter가 있을 때만.
+		- 4. 가장 마지막 parameter명은 삭제 가능
+	
+	- 따라서, 상단의 `sorted()` 를 간소화시켜보자
+	
+		```swift
+		//원본
+		let sorted = names.sorted(by:
+		        {(s1: String, s2: String) -> Bool in
+		            return s1 > s2
+		        }
+		    )
 		
-		print(newList)	//[6,5,4,3,2,1]
-		print(newList2)	//[1,2,3,4,5,6]
-	}
+		//1. 타입유추 간소화
+		let sorted = names.sorted(by:
+				{s1, s2 in return s1 > s2
+				}
+		)
+		
+		//2. return 간소화
+		let sorted = names.sorted(by:
+				{s1, s2 in s1 > s2
+				}
+		)
+		
+		//3. parameter명 삭제
+		let sorted = names.sorted(by: {$0 > $1})
+		
+		//4. 여기서, > 는 이 자체로 함수다. 따라서,
+		let sorted = names.sorted(by: > )
+		
+		//5. trailing closure를 사용해보자. by:는 처음이자 하나이며 유일한 parameter이다.
+		let sorted = names.sotrted { $0 > $1 }
+		```
+
+	#### 3) 변수 할당
+	
+	- 클로저 자체를 변수로 할당해서 함수를 변수처럼 쓸 수 있다.
+	
+		```swift
+		let ascending = {(s1:Int, s2:Int) -> Bool in s1 > s2}
+		let descending = {(s1:Int, s2:Int -> Bool) in s1 < s2}
+		
+		override func viewDidLoad() {
+			super.viewDidLoad()
+		
+			let list = [1,2,3,4,5,6]
+		
+			let newList = list.sorted(by:ascending) 
+			let newList2 = list.sorted(by:descending)
+			
+			print(newList)	//[6,5,4,3,2,1]
+			print(newList2)	//[1,2,3,4,5,6]
+		}
+		```
+	
+		- 상단에서, `!ascending` 은 결국 `descending` 이 아닐까? 하는 질문 -> 아니다. `ascending` 의 타입은 `Bool` 이 아니라, `(Int, Int) -> Bool` 이다. 함수 자체인 것이다. 함수는 어떠한 return값을 저절로 내지 않는다. 
+
+	#### 4) 캡쳐
+	
+	***
+	
+	• 클로져 안의 모든 상수와 변수에 대한 **참조를 캡쳐** 해서 관리 한다.<p>• Swift는 캡쳐를 위한 모든 메모리를 관리한다.
+	
+	***
+	
+	- 참조를 캡쳐한다는 것은 reference를 캡쳐한다는 것이고, reference를 캡쳐한다는 것은 주소값을 캡쳐한다는 것이다.
+	
+	***
+	
+	```swift
+	func makeIncrementer(forIncrement amount: Int) -> () -> Int {	var runningTotal = 0	func incrementer() -> Int {		runningTotal += amount		return runningTotal	}	return incrementer}
+	
+	let incrementByTen = makeIncrementer(forIncrement: 10)           incrementByTen()		// returns a value of 10incrementByTen()		// returns a value of 20incrementByTen()		// returns a value of 30
 	```
-
-	- 상단에서, `!ascending` 은 결국 `descending` 이 아닐까? 하는 질문 -> 아니다. `ascending` 의 타입은 `Bool` 이 아니라, `(Int, Int) -> Bool` 이다. 함수 자체인 것이다. 함수는 어떠한 return값을 저절로 내지 않는다. 
-
+	
+	***
+	
+	- 여기서 `makeIncrementer()` 의 return type은 클로저다. `() -> Int` 이므로.
+	- 그래서 return 값이 `incrementer` 중첩함수인 것이다.
+	- 참조를 캡쳐하는 것은 중첩함수인 `incrementer` 다.
 
 > **Summary** : 클로저 문법은 생소한데다 생략법이 많아서 처음에는 이해부터가 힘든 것이 정상이다.<p>
 > 1. 일단, 문법을 외울 것<p>
 > 2. 클로저 문법이 적용된 것들을 사용해볼 것<p>
 > 3. 축약해볼 것<p>
 > 4. 직접 클로저를 만들어볼 것
-
-#### 4) 캡쳐
-
-***
-
-• 클로져 안의 모든 상수와 변수에 대한 **참조를 캡쳐** 해서 관리 한다.<p>• Swift는 캡쳐를 위한 모든 메모리를 관리한다.
-
-***
-
-- 참조를 캡쳐한다는 것은 reference를 캡쳐한다는 것이고, reference를 캡쳐한다는 것은 주소값을 캡쳐한다는 것이다.
-
-***
-
-```swift
-func makeIncrementer(forIncrement amount: Int) -> () -> Int {	var runningTotal = 0	func incrementer() -> Int {		runningTotal += amount		return runningTotal	}	return incrementer}
-
-let incrementByTen = makeIncrementer(forIncrement: 10)incrementByTen()		// returns a value of 10incrementByTen()		// returns a value of 20incrementByTen()		// returns a value of 30
-```
-
-***
-
-
