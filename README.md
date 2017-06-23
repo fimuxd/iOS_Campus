@@ -83,6 +83,7 @@
 	> | [Singleton]() | [15](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170616/0616.pdf) | - | [SettingPair](https://github.com/fimuxd/iOS_Campus/tree/master/B_Programming%20Practice/Small%20Apps/SettingPair) | 싱글톤 패턴 |
 	> | [Notification](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170622/ReadMe.md) | [16](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170619/0619.pdf) | [Practice](https://github.com/fimuxd/iOS_Campus/tree/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/NotificationPractice) | - | 노티피케이션 |
 	> | [Closure](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170623) | [17](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170623/0622.pdf) | [Practice](https://github.com/fimuxd/iOS_Campus/blob/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/ClosurePractice/ClosurePractice/ViewController.swift) | - | 클로저 |
+	> | [JSON](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170623/JSON.md) | - | - | - | JSON 타입 자습 |
 	
 	
 	
