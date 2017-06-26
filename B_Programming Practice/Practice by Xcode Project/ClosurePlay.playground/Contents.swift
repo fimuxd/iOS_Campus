@@ -99,7 +99,7 @@ gugudan(3)
 //map을 사용한다면,
 
 let gugudanMap = danList.map { (number:Int) -> Int in
-    return number*3
+    return number*7
 }
 
 print(gugudanMap)
