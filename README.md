@@ -85,7 +85,13 @@
 	> | [Closure](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170623) | [17](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170623/0622.pdf) | [Practice](https://github.com/fimuxd/iOS_Campus/blob/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/ClosurePractice/ClosurePractice/ViewController.swift) | - | 클로저 |
 	> | [JSON](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170623/JSON.md) | - | - | - | JSON 타입 자습 |
 	> | [(특강)Github을 이용한 협업](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170624/Untitled.md) | - | - | - | - |
-	
+
+- **8th Week** ; June 26 - 30
+	> | Lecture Summary | PPT | Programming Practice | Small Apps | Note |
+	> | :--- | :--- | :--- | :--- | :--- |
+	> | [Timer](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170626/ReadMe.md) | - | [Practice](https://github.com/fimuxd/iOS_Campus/blob/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/test/test/ViewController.swift) | - | 타이머, DatePicker |
+	> | [Closure2](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170626/Closure.md) | - | [Practice](https://github.com/fimuxd/iOS_Campus/blob/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/ClosurePlay.playground/Contents.swift) | - | map, filter, reduce |
+
 	
 	
 	
