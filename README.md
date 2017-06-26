@@ -90,7 +90,7 @@
 	> | Lecture Summary | PPT | Programming Practice | Small Apps | Note |
 	> | :--- | :--- | :--- | :--- | :--- |
 	> | [Timer](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170626/ReadMe.md) | - | [Practice](https://github.com/fimuxd/iOS_Campus/blob/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/test/test/ViewController.swift) | - | 타이머, DatePicker |
-	> | [Closure2](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170626/Closure.md) | - | [Practice](https://github.com/fimuxd/iOS_Campus/blob/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/ClosurePlay.playground/Contents.swift) | - | map, filter, reduce |
+	> | [Closure2](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170626/Closure.md) | - | [Practice](https://github.com/fimuxd/iOS_Campus/blob/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/ClosurePlay.playground/Contents.swift) | [18](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170626/0625.pdf) | map, filter, reduce |
 
 	
 	
