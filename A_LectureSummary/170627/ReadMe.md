@@ -40,7 +40,7 @@
 
 	```objectivec
 	//str1,2,3 가 각각의 인스턴스를 만들었다 (rc +3)
-	NSString *str1 = [[NSString alloc] init];NSString *str2 = [[NSString alloc] init];NSString *str3 = [[NSString alloc] init];	//str2에 또 다른 인스턴스를 만든다. 그럼 기존의 인스턴스와 연결이 끊어진다. (rc +1)str2 = [[NSString alloc] init];	/*str1,2,3 각각을 릴리즈한다. 
+	NSString *str1 = [[NSString alloc] init];	NSString *str2 = [[NSString alloc] init];	NSString *str3 = [[NSString alloc] init];	//str2에 또 다른 인스턴스를 만든다. 그럼 기존의 인스턴스와 연결이 끊어진다. (rc +1)	str2 = [[NSString alloc] init];	/*str1,2,3 각각을 릴리즈한다. 
 	그렇게 해도 str2의 첫번째 rc은 남아있다. 
 	이건 앱이 죽을 때 까지 사라지지 않는다. (rc -3: 최종 rc = 1)*/	[str1 release];	[str2 release];	[str3 release];
 	```
@@ -127,6 +127,20 @@
 > - **Q.**그렇다면 weak는 왜 사용하는 것일까?
 > - • 순환 참조를 막기위해> - • Autorelease pool을 대신해서 자동 해제가 필요한 경우> - • view의 strong 참조 때문에
 
+#### unowned keyword
+
+***
+
+• weak와 마찬가지로 Unowned가 참조하는 인스턴스를 강력하게 보류하지 않습니다.
+• unowned keyword를 프로퍼티나 변수 앞에 선언하여 표시해 줍니다.
+• unowned는 항상 값이 있다는 것을 의미합니다.
+
+***
+
+- 참조했던 인스턴스가 사라지더라도 nil이 되지 않는다. 대신에 crash가 난다. 
+- 옵셔널의 `!` 같은 느낌이다.
+- 참조했던 인스턴스 (owner) 가 더 오래살거나, owner와 같은 시기에 종료될 때 unowned를 쓰라고 권고되어있다.
+- *~아주 애틋한 놈이다~*
 
 ## C. Closure 캡쳐
 
