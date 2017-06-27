@@ -90,7 +90,8 @@
 	> | Lecture Summary | PPT | Programming Practice | Small Apps | Note |
 	> | :--- | :--- | :--- | :--- | :--- |
 	> | [Timer](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170626/ReadMe.md) | - | [Practice](https://github.com/fimuxd/iOS_Campus/blob/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/test/test/ViewController.swift) | - | 타이머, DatePicker |
-	> | [Closure2](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170626/Closure.md) | - | [Practice](https://github.com/fimuxd/iOS_Campus/blob/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/ClosurePlay.playground/Contents.swift) | [18](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170626/0625.pdf) | map, filter, reduce |
+	> | [Closure2](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170626/Closure.md) | [18](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170626/0625.pdf) | [Practice](https://github.com/fimuxd/iOS_Campus/blob/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/ClosurePlay.playground/Contents.swift) | - | map, filter, reduce |
+	> | [Auto Reference Counter](https://github.com/fimuxd/iOS_Campus/tree/master/A_LectureSummary/170627) | [18](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170626/0625.pdf) | - | - | 레퍼런스 카운트 (메모리관리개념) |
 
 	
 	
