@@ -68,9 +68,9 @@
 				506A55F41F00FE34000CA062 /* Person.swift */,
 				506A55F81F01012D000CA062 /* DataFile.swift */,
 				50EEB5831EFA068400BA7236 /* Main.storyboard */,
-				6ADCC78C1F011BC600AC5E83 /* FriendsData.plist */,
-				50EEB5861EFA068400BA7236 /* Assets.xcassets */,
 				50EEB5881EFA068400BA7236 /* LaunchScreen.storyboard */,
+				50EEB5861EFA068400BA7236 /* Assets.xcassets */,
+				6ADCC78C1F011BC600AC5E83 /* FriendsData.plist */,
 				50EEB58B1EFA068400BA7236 /* Info.plist */,
 			);
 			path = Closure;
