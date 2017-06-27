@@ -27,13 +27,13 @@
 	//NSString 타입의 str1을 할당한다 (rc +1)
 	NSString *str1 = [[NSString alloc] init]; 
 	
-	//str1을 받는 str2를 받는다. 오너쉽과 함께 (rc +1)NSString *str2 = [str1 retain];
+	//str1을 받는 str2를 받는다. 오너쉽과 함께 (rc +1)	NSString *str2 = [str1 retain];
 	
-	//str2를 받는 str3을 받지만 참조할 뿐 오너쉽이 없다NSString *str3 = str2;
+	//str2를 받는 str3을 받지만 참조할 뿐 오너쉽이 없다	NSString *str3 = str2;
 	
-	//str1을 릴리즈 (해제)한다. (rc -1) str2,3은 영향이 없다[str1 release];
+	//str1을 릴리즈 (해제)한다. (rc -1) str2,3은 영향이 없다	[str1 release];
 	
-	//str2를 릴리즈 한다. (rc -1: 총 rc = 0). str3은 오너쉽이 없었으므로 같이 사라진다. [str2 release];
+	//str2를 릴리즈 한다. (rc -1: 총 rc = 0). str3은 오너쉽이 없었으므로 같이 사라진다. 	[str2 release];
 	```
 
 - 잘못관리했을 때 발생하는 memory leak 사례
@@ -125,22 +125,24 @@
 - weak는 태생적으로 optional이다.
 
 > - **Q.**그렇다면 weak는 왜 사용하는 것일까?
-> - • 순환 참조를 막기위해> - • Autorelease pool을 대신해서 자동 해제가 필요한 경우> - • view의 strong 참조 때문에
+> - 순환 참조를 막기위해> - Autorelease pool을 대신해서 자동 해제가 필요한 경우> - view의 strong 참조 때문에
 
 #### unowned keyword
 
 ***
 
-• weak와 마찬가지로 Unowned가 참조하는 인스턴스를 강력하게 보류하지 않습니다.
-• unowned keyword를 프로퍼티나 변수 앞에 선언하여 표시해 줍니다.
+• weak와 마찬가지로 Unowned가 참조하는 인스턴스를 강력하게 보류하지 않습니다.<p>
+• unowned keyword를 프로퍼티나 변수 앞에 선언하여 표시해 줍니다.<p>
 • unowned는 항상 값이 있다는 것을 의미합니다.
 
 ***
 
 - 참조했던 인스턴스가 사라지더라도 nil이 되지 않는다. 대신에 crash가 난다. 
+- weak키워드는 reference가 끊겼을 때 nil로 할당되나, unowned는 nil로 할당되지 않고 crash가 난다.
 - 옵셔널의 `!` 같은 느낌이다.
 - 참조했던 인스턴스 (owner) 가 더 오래살거나, owner와 같은 시기에 종료될 때 unowned를 쓰라고 권고되어있다.
 - *~아주 애틋한 놈이다~*
+
 
 ## C. Closure 캡쳐
 
@@ -150,5 +152,14 @@
 
 ***
 
+- 클로저는 왜 캡쳐를 할까? -> 비동기 때문에
+	- 비동기: 같은 두명이 다른 유니버스에서 동기화 되지 않고 같은 자원을 쓰면서 운영하는거.(예. 밥먹으면서 음료수 마시기. 동기상태에서는 불가능하지만, 비동기상태에서는 가능하다)
 
+```swift
+func makeIncrementer(forIncrement amount: Int) -> () -> Int {	var runningTotal = 0	func incrementer() -> Int {		runningTotal += amount		return runningTotal	}	return incrementer}
+```
+
+```swift
+let incrementByTen = makeIncrementer(forIncrement: 10)incrementByTen() // returns a value of 10incrementByTen() // returns a value of 20incrementByTen() // returns a value of 30
+```
 
