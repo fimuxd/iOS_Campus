@@ -30,16 +30,19 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         if sender.selectedSegmentIndex == 0 {
         settingTable(selectedSegmentIndex: 0)
+            self.addBtnOutlet.isHidden = false
         }else if sender.selectedSegmentIndex == 1 {
             settingTable(selectedSegmentIndex: 1)
+            self.addBtnOutlet.isHidden = true
         }else{
             settingTable(selectedSegmentIndex: 2)
+            self.addBtnOutlet.isHidden = true
         }
         self.tableView.reloadData()
     }
     
     @IBAction func addBtn(_ sender: UIButton) {
-        var nextViewController:DetailViewController = self.storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+        let nextViewController:DetailViewController = self.storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
         
         nextViewController.saveOrEditBtnOutlet.setTitle("추가", for: .normal)
         self.navigationController?.pushViewController(nextViewController, animated: true)
@@ -64,7 +67,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        var nextViewController:DetailViewController = self.storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+        let nextViewController:DetailViewController = self.storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
         
         let name:String = filteredList[indexPath.row].name
         let age:String = String(filteredList[indexPath.row].age)
