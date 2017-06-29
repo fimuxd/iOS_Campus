@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5212E55E1E24AD8100B92E21 /* Baseball.png in Resources */ = {isa = PBXBuildFile; fileRef = 5212E5461E24AD8100B92E21 /* Baseball.png */; };
+		5212E55F1E24AD8100B92E21 /* Basketball.png in Resources */ = {isa = PBXBuildFile; fileRef = 5212E5471E24AD8100B92E21 /* Basketball.png */; };
+		5212E5601E24AD8100B92E21 /* Billiard.png in Resources */ = {isa = PBXBuildFile; fileRef = 5212E5481E24AD8100B92E21 /* Billiard.png */; };
+		5212E5611E24AD8100B92E21 /* cart1@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5212E5491E24AD8100B92E21 /* cart1@1x.png */; };
+		5212E5621E24AD8100B92E21 /* cart1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5212E54A1E24AD8100B92E21 /* cart1@2x.png */; };
+		5212E5631E24AD8100B92E21 /* cart1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5212E54B1E24AD8100B92E21 /* cart1@3x.png */; };
+		5212E5641E24AD8100B92E21 /* cart2@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5212E54C1E24AD8100B92E21 /* cart2@1x.png */; };
+		5212E5651E24AD8100B92E21 /* cart2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5212E54D1E24AD8100B92E21 /* cart2@2x.png */; };
+		5212E5661E24AD8100B92E21 /* cart2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5212E54E1E24AD8100B92E21 /* cart2@3x.png */; };
+		5212E5671E24AD8100B92E21 /* cartplus.png in Resources */ = {isa = PBXBuildFile; fileRef = 5212E54F1E24AD8100B92E21 /* cartplus.png */; };
+		5212E5681E24AD8100B92E21 /* Football.png in Resources */ = {isa = PBXBuildFile; fileRef = 5212E5501E24AD8100B92E21 /* Football.png */; };
+		5212E5691E24AD8100B92E21 /* Golf.png in Resources */ = {isa = PBXBuildFile; fileRef = 5212E5511E24AD8100B92E21 /* Golf.png */; };
+		5212E56A1E24AD8100B92E21 /* home2@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5212E5521E24AD8100B92E21 /* home2@1x.png */; };
+		5212E56B1E24AD8100B92E21 /* home2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5212E5531E24AD8100B92E21 /* home2@2x.png */; };
+		5212E56C1E24AD8100B92E21 /* home2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5212E5541E24AD8100B92E21 /* home2@3x.png */; };
+		5212E56D1E24AD8100B92E21 /* home@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5212E5551E24AD8100B92E21 /* home@1x.png */; };
+		5212E56E1E24AD8100B92E21 /* home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5212E5561E24AD8100B92E21 /* home@2x.png */; };
+		5212E56F1E24AD8100B92E21 /* home@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5212E5571E24AD8100B92E21 /* home@3x.png */; };
+		5212E5701E24AD8100B92E21 /* IceHockey.png in Resources */ = {isa = PBXBuildFile; fileRef = 5212E5581E24AD8100B92E21 /* IceHockey.png */; };
+		5212E5711E24AD8100B92E21 /* Rugby.png in Resources */ = {isa = PBXBuildFile; fileRef = 5212E5591E24AD8100B92E21 /* Rugby.png */; };
+		5212E5721E24AD8100B92E21 /* Shuttlecock.png in Resources */ = {isa = PBXBuildFile; fileRef = 5212E55A1E24AD8100B92E21 /* Shuttlecock.png */; };
+		5212E5731E24AD8100B92E21 /* TableTennis.png in Resources */ = {isa = PBXBuildFile; fileRef = 5212E55B1E24AD8100B92E21 /* TableTennis.png */; };
+		5212E5741E24AD8100B92E21 /* Tennis.png in Resources */ = {isa = PBXBuildFile; fileRef = 5212E55C1E24AD8100B92E21 /* Tennis.png */; };
+		5212E5751E24AD8100B92E21 /* Volleyball.png in Resources */ = {isa = PBXBuildFile; fileRef = 5212E55D1E24AD8100B92E21 /* Volleyball.png */; };
+		5212E6001E24D4DF00B92E21 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5212E5FE1E24D4DF00B92E21 /* Realm.framework */; };
+		5212E6011E24D4DF00B92E21 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5212E5FF1E24D4DF00B92E21 /* RealmSwift.framework */; };
+		5239ABDC1E23794B00B4C8C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5239ABDB1E23794B00B4C8C6 /* AppDelegate.swift */; };
+		5239ABE11E23794B00B4C8C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5239ABDF1E23794B00B4C8C6 /* Main.storyboard */; };
+		5239ABE31E23794B00B4C8C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5239ABE21E23794B00B4C8C6 /* Assets.xcassets */; };
+		5239ABE61E23794B00B4C8C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5239ABE41E23794B00B4C8C6 /* LaunchScreen.storyboard */; };
+		52D731501E266A7F00325B0B /* ProductTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D7314F1E266A7F00325B0B /* ProductTableViewController.swift */; };
+		52D731521E266AF900325B0B /* ShoppingCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D731511E266AF900325B0B /* ShoppingCartViewController.swift */; };
+		52D731541E266B9900325B0B /* CartItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D731531E266B9900325B0B /* CartItemList.swift */; };
+		52D731581E2688D600325B0B /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D731571E2688D600325B0B /* ProductTableViewCell.swift */; };
+		52D7315A1E268F1F00325B0B /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D731591E268F1F00325B0B /* Product.swift */; };
+		52D7315C1E272A3D00325B0B /* ShoppingCartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D7315B1E272A3D00325B0B /* ShoppingCartTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5212E5461E24AD8100B92E21 /* Baseball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Baseball.png; sourceTree = "<group>"; };
+		5212E5471E24AD8100B92E21 /* Basketball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Basketball.png; sourceTree = "<group>"; };
+		5212E5481E24AD8100B92E21 /* Billiard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Billiard.png; sourceTree = "<group>"; };
+		5212E5491E24AD8100B92E21 /* cart1@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cart1@1x.png"; sourceTree = "<group>"; };
+		5212E54A1E24AD8100B92E21 /* cart1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cart1@2x.png"; sourceTree = "<group>"; };
+		5212E54B1E24AD8100B92E21 /* cart1@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cart1@3x.png"; sourceTree = "<group>"; };
+		5212E54C1E24AD8100B92E21 /* cart2@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cart2@1x.png"; sourceTree = "<group>"; };
+		5212E54D1E24AD8100B92E21 /* cart2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cart2@2x.png"; sourceTree = "<group>"; };
+		5212E54E1E24AD8100B92E21 /* cart2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cart2@3x.png"; sourceTree = "<group>"; };
+		5212E54F1E24AD8100B92E21 /* cartplus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cartplus.png; sourceTree = "<group>"; };
+		5212E5501E24AD8100B92E21 /* Football.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Football.png; sourceTree = "<group>"; };
+		5212E5511E24AD8100B92E21 /* Golf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Golf.png; sourceTree = "<group>"; };
+		5212E5521E24AD8100B92E21 /* home2@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home2@1x.png"; sourceTree = "<group>"; };
+		5212E5531E24AD8100B92E21 /* home2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home2@2x.png"; sourceTree = "<group>"; };
+		5212E5541E24AD8100B92E21 /* home2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home2@3x.png"; sourceTree = "<group>"; };
+		5212E5551E24AD8100B92E21 /* home@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home@1x.png"; sourceTree = "<group>"; };
+		5212E5561E24AD8100B92E21 /* home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home@2x.png"; sourceTree = "<group>"; };
+		5212E5571E24AD8100B92E21 /* home@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home@3x.png"; sourceTree = "<group>"; };
+		5212E5581E24AD8100B92E21 /* IceHockey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IceHockey.png; sourceTree = "<group>"; };
+		5212E5591E24AD8100B92E21 /* Rugby.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rugby.png; sourceTree = "<group>"; };
+		5212E55A1E24AD8100B92E21 /* Shuttlecock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shuttlecock.png; sourceTree = "<group>"; };
+		5212E55B1E24AD8100B92E21 /* TableTennis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TableTennis.png; sourceTree = "<group>"; };
+		5212E55C1E24AD8100B92E21 /* Tennis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tennis.png; sourceTree = "<group>"; };
+		5212E55D1E24AD8100B92E21 /* Volleyball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Volleyball.png; sourceTree = "<group>"; };
+		5212E5FE1E24D4DF00B92E21 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		5212E5FF1E24D4DF00B92E21 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		5239ABD81E23794B00B4C8C6 /* RealmExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5239ABDB1E23794B00B4C8C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5239ABE01E23794B00B4C8C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5239ABE21E23794B00B4C8C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5239ABE51E23794B00B4C8C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5239ABE71E23794B00B4C8C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52D7314F1E266A7F00325B0B /* ProductTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductTableViewController.swift; sourceTree = "<group>"; };
+		52D731511E266AF900325B0B /* ShoppingCartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingCartViewController.swift; sourceTree = "<group>"; };
+		52D731531E266B9900325B0B /* CartItemList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartItemList.swift; sourceTree = "<group>"; };
+		52D731571E2688D600325B0B /* ProductTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		52D731591E268F1F00325B0B /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		52D7315B1E272A3D00325B0B /* ShoppingCartTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingCartTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5239ABD51E23794B00B4C8C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5212E6001E24D4DF00B92E21 /* Realm.framework in Frameworks */,
+				5212E6011E24D4DF00B92E21 /* RealmSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5212E5451E24AD8100B92E21 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				5212E5461E24AD8100B92E21 /* Baseball.png */,
+				5212E5471E24AD8100B92E21 /* Basketball.png */,
+				5212E5481E24AD8100B92E21 /* Billiard.png */,
+				5212E5491E24AD8100B92E21 /* cart1@1x.png */,
+				5212E54A1E24AD8100B92E21 /* cart1@2x.png */,
+				5212E54B1E24AD8100B92E21 /* cart1@3x.png */,
+				5212E54C1E24AD8100B92E21 /* cart2@1x.png */,
+				5212E54D1E24AD8100B92E21 /* cart2@2x.png */,
+				5212E54E1E24AD8100B92E21 /* cart2@3x.png */,
+				5212E54F1E24AD8100B92E21 /* cartplus.png */,
+				5212E5501E24AD8100B92E21 /* Football.png */,
+				5212E5511E24AD8100B92E21 /* Golf.png */,
+				5212E5521E24AD8100B92E21 /* home2@1x.png */,
+				5212E5531E24AD8100B92E21 /* home2@2x.png */,
+				5212E5541E24AD8100B92E21 /* home2@3x.png */,
+				5212E5551E24AD8100B92E21 /* home@1x.png */,
+				5212E5561E24AD8100B92E21 /* home@2x.png */,
+				5212E5571E24AD8100B92E21 /* home@3x.png */,
+				5212E5581E24AD8100B92E21 /* IceHockey.png */,
+				5212E5591E24AD8100B92E21 /* Rugby.png */,
+				5212E55A1E24AD8100B92E21 /* Shuttlecock.png */,
+				5212E55B1E24AD8100B92E21 /* TableTennis.png */,
+				5212E55C1E24AD8100B92E21 /* Tennis.png */,
+				5212E55D1E24AD8100B92E21 /* Volleyball.png */,
+			);
+			name = images;
+			path = RealmExample/images;
+			sourceTree = "<group>";
+		};
+		5212E5FD1E24D4DF00B92E21 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5212E5FE1E24D4DF00B92E21 /* Realm.framework */,
+				5212E5FF1E24D4DF00B92E21 /* RealmSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5239ABCF1E23794B00B4C8C6 = {
+			isa = PBXGroup;
+			children = (
+				5212E5451E24AD8100B92E21 /* images */,
+				5239ABDA1E23794B00B4C8C6 /* RealmExample */,
+				5239ABD91E23794B00B4C8C6 /* Products */,
+				5212E5FD1E24D4DF00B92E21 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5239ABD91E23794B00B4C8C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5239ABD81E23794B00B4C8C6 /* RealmExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5239ABDA1E23794B00B4C8C6 /* RealmExample */ = {
+			isa = PBXGroup;
+			children = (
+				5239ABDB1E23794B00B4C8C6 /* AppDelegate.swift */,
+				52D7314F1E266A7F00325B0B /* ProductTableViewController.swift */,
+				52D731571E2688D600325B0B /* ProductTableViewCell.swift */,
+				52D731511E266AF900325B0B /* ShoppingCartViewController.swift */,
+				52D7315B1E272A3D00325B0B /* ShoppingCartTableViewCell.swift */,
+				52D731531E266B9900325B0B /* CartItemList.swift */,
+				52D731591E268F1F00325B0B /* Product.swift */,
+				5239ABDF1E23794B00B4C8C6 /* Main.storyboard */,
+				5239ABE21E23794B00B4C8C6 /* Assets.xcassets */,
+				5239ABE41E23794B00B4C8C6 /* LaunchScreen.storyboard */,
+				5239ABE71E23794B00B4C8C6 /* Info.plist */,
+			);
+			path = RealmExample;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5239ABD71E23794B00B4C8C6 /* RealmExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5239ABEA1E23794B00B4C8C6 /* Build configuration list for PBXNativeTarget "RealmExample" */;
+			buildPhases = (
+				5239ABD41E23794B00B4C8C6 /* Sources */,
+				5239ABD51E23794B00B4C8C6 /* Frameworks */,
+				5239ABD61E23794B00B4C8C6 /* Resources */,
+				5212E5FC1E24D49800B92E21 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RealmExample;
+			productName = HW3_LeeBongWon;
+			productReference = 5239ABD81E23794B00B4C8C6 /* RealmExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5239ABD01E23794B00B4C8C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = giftbot;
+				TargetAttributes = {
+					5239ABD71E23794B00B4C8C6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2DHMJ6Z3L3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5239ABD31E23794B00B4C8C6 /* Build configuration list for PBXProject "RealmExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5239ABCF1E23794B00B4C8C6;
+			productRefGroup = 5239ABD91E23794B00B4C8C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5239ABD71E23794B00B4C8C6 /* RealmExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5239ABD61E23794B00B4C8C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5212E5601E24AD8100B92E21 /* Billiard.png in Resources */,
+				5212E5631E24AD8100B92E21 /* cart1@3x.png in Resources */,
+				5212E5641E24AD8100B92E21 /* cart2@1x.png in Resources */,
+				5212E56A1E24AD8100B92E21 /* home2@1x.png in Resources */,
+				5212E5751E24AD8100B92E21 /* Volleyball.png in Resources */,
+				5239ABE61E23794B00B4C8C6 /* LaunchScreen.storyboard in Resources */,
+				5212E56E1E24AD8100B92E21 /* home@2x.png in Resources */,
+				5212E55E1E24AD8100B92E21 /* Baseball.png in Resources */,
+				5239ABE31E23794B00B4C8C6 /* Assets.xcassets in Resources */,
+				5212E5651E24AD8100B92E21 /* cart2@2x.png in Resources */,
+				5212E5621E24AD8100B92E21 /* cart1@2x.png in Resources */,
+				5212E5701E24AD8100B92E21 /* IceHockey.png in Resources */,
+				5239ABE11E23794B00B4C8C6 /* Main.storyboard in Resources */,
+				5212E55F1E24AD8100B92E21 /* Basketball.png in Resources */,
+				5212E5681E24AD8100B92E21 /* Football.png in Resources */,
+				5212E5731E24AD8100B92E21 /* TableTennis.png in Resources */,
+				5212E56D1E24AD8100B92E21 /* home@1x.png in Resources */,
+				5212E56B1E24AD8100B92E21 /* home2@2x.png in Resources */,
+				5212E5661E24AD8100B92E21 /* cart2@3x.png in Resources */,
+				5212E5691E24AD8100B92E21 /* Golf.png in Resources */,
+				5212E5611E24AD8100B92E21 /* cart1@1x.png in Resources */,
+				5212E5721E24AD8100B92E21 /* Shuttlecock.png in Resources */,
+				5212E5711E24AD8100B92E21 /* Rugby.png in Resources */,
+				5212E5741E24AD8100B92E21 /* Tennis.png in Resources */,
+				5212E5671E24AD8100B92E21 /* cartplus.png in Resources */,
+				5212E56C1E24AD8100B92E21 /* home2@3x.png in Resources */,
+				5212E56F1E24AD8100B92E21 /* home@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5212E5FC1E24D49800B92E21 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5239ABD41E23794B00B4C8C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52D7315C1E272A3D00325B0B /* ShoppingCartTableViewCell.swift in Sources */,
+				52D731541E266B9900325B0B /* CartItemList.swift in Sources */,
+				52D731521E266AF900325B0B /* ShoppingCartViewController.swift in Sources */,
+				52D731581E2688D600325B0B /* ProductTableViewCell.swift in Sources */,
+				5239ABDC1E23794B00B4C8C6 /* AppDelegate.swift in Sources */,
+				52D731501E266A7F00325B0B /* ProductTableViewController.swift in Sources */,
+				52D7315A1E268F1F00325B0B /* Product.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5239ABDF1E23794B00B4C8C6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5239ABE01E23794B00B4C8C6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5239ABE41E23794B00B4C8C6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5239ABE51E23794B00B4C8C6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5239ABE81E23794B00B4C8C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5239ABE91E23794B00B4C8C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5239ABEB1E23794B00B4C8C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2DHMJ6Z3L3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/RealmExample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kr.giftbot.RealmExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5239ABEC1E23794B00B4C8C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2DHMJ6Z3L3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/RealmExample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kr.giftbot.RealmExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5239ABD31E23794B00B4C8C6 /* Build configuration list for PBXProject "RealmExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5239ABE81E23794B00B4C8C6 /* Debug */,
+				5239ABE91E23794B00B4C8C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5239ABEA1E23794B00B4C8C6 /* Build configuration list for PBXNativeTarget "RealmExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5239ABEB1E23794B00B4C8C6 /* Debug */,
+				5239ABEC1E23794B00B4C8C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5239ABD01E23794B00B4C8C6 /* Project object */;
+}

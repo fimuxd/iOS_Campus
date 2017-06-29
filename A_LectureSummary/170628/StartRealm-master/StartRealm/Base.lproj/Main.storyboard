@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="i5I-7x-gZ4">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--아무거나 앨범-->
+        <scene sceneID="RMa-vt-8cK">
+            <objects>
+                <tableViewController id="fmx-6J-0NB" customClass="AlbumTableViewController" customModule="StartRealm" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleAspectFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" id="Boc-Di-d7O">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <inset key="scrollIndicatorInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="3"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="ms6-Zo-9Ct">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <scopeButtonTitles>
+                                <string>Title</string>
+                            </scopeButtonTitles>
+                            <connections>
+                                <outlet property="delegate" destination="fmx-6J-0NB" id="lel-s7-Jyh"/>
+                            </connections>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AlbumCell" id="C9l-Lo-qvJ" customClass="AlbumTableViewCell" customModule="StartRealm" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="375" height="70"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="C9l-Lo-qvJ" id="fil-x4-5Fh">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="앨범" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpe-ru-RHQ">
+                                            <rect key="frame" x="93" y="23" width="35" height="24"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="kSd-zf-V9a">
+                                            <rect key="frame" x="8" y="-1" width="70" height="70"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="70" id="2Gn-d8-hcM"/>
+                                                <constraint firstAttribute="width" constant="70" id="LuP-6G-LjP"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="leadingMargin" secondItem="kSd-zf-V9a" secondAttribute="leading" id="2Tz-99-Kgu"/>
+                                        <constraint firstItem="mpe-ru-RHQ" firstAttribute="centerY" secondItem="fil-x4-5Fh" secondAttribute="centerY" id="aln-9v-EoP"/>
+                                        <constraint firstItem="mpe-ru-RHQ" firstAttribute="leading" secondItem="kSd-zf-V9a" secondAttribute="trailing" constant="15" id="ibA-Ra-VbF"/>
+                                        <constraint firstItem="kSd-zf-V9a" firstAttribute="centerY" secondItem="fil-x4-5Fh" secondAttribute="centerY" id="tpj-6J-twh"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="thumnailView" destination="kSd-zf-V9a" id="RQe-f9-dhP"/>
+                                    <outlet property="titleLabel" destination="mpe-ru-RHQ" id="sWH-oL-Djh"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="fmx-6J-0NB" id="FSq-Rp-eyz"/>
+                            <outlet property="delegate" destination="fmx-6J-0NB" id="G2f-fI-iaa"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="아무거나 앨범" id="e4b-7N-50x">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Q1G-fz-dGL">
+                            <connections>
+                                <action selector="addNewAlbum:" destination="fmx-6J-0NB" id="8WV-E8-gY8"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="Boc-Di-d7O" id="jfm-Y6-z1N"/>
+                        <segue destination="WK7-9A-p2o" kind="show" identifier="Photos" id="OTJ-b1-cRz"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sTh-Nj-Hxp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1820" y="47.226386806596707"/>
+        </scene>
+        <!--앨범-->
+        <scene sceneID="ats-CG-UKj">
+            <objects>
+                <collectionViewController id="WK7-9A-p2o" customClass="PhotoCollectionViewController" customModule="StartRealm" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" id="Fr1-M3-uBo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="ex5-tc-ODs">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="F53-oZ-PVU" customClass="PhotoCollectionViewCell" customModule="StartRealm" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cRI-AY-vZO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <gestureRecognizers/>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="cRI-AY-vZO" firstAttribute="centerX" secondItem="F53-oZ-PVU" secondAttribute="centerX" id="Pz2-m3-ysb"/>
+                                    <constraint firstItem="cRI-AY-vZO" firstAttribute="height" secondItem="F53-oZ-PVU" secondAttribute="height" id="YJd-s3-dLr"/>
+                                    <constraint firstItem="cRI-AY-vZO" firstAttribute="centerY" secondItem="F53-oZ-PVU" secondAttribute="centerY" id="b15-bU-glS"/>
+                                    <constraint firstItem="cRI-AY-vZO" firstAttribute="width" secondItem="F53-oZ-PVU" secondAttribute="width" id="eS8-eP-Ccs"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imageView" destination="cRI-AY-vZO" id="bdG-Em-yu0"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="WK7-9A-p2o" id="yoj-ea-4Bq"/>
+                            <outlet property="delegate" destination="WK7-9A-p2o" id="vvS-Mz-IAP"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="앨범" id="zfw-Hg-ciF">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="5ah-HG-5rF">
+                            <connections>
+                                <action selector="addImage:" destination="WK7-9A-p2o" id="YMO-XB-QNL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tr6-1Z-Mgu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2615" y="47"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="AK2-3H-b6A">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="i5I-7x-gZ4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pWb-gY-OaB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fmx-6J-0NB" kind="relationship" relationship="rootViewController" id="rxb-fQ-ZdP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WfE-r0-8RQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1085.5999999999999" y="48.125937031484263"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="placeholder" width="16" height="16"/>
+    </resources>
+</document>
