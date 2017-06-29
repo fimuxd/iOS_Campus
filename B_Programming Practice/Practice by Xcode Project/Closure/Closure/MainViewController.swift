@@ -39,6 +39,10 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     @IBAction func addBtn(_ sender: UIButton) {
+        var nextViewController:DetailViewController = self.storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+        
+        nextViewController.saveOrEditBtnOutlet.setTitle("추가", for: .normal)
+        self.navigationController?.pushViewController(nextViewController, animated: true)
     }
     
     
@@ -65,7 +69,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let name:String = filteredList[indexPath.row].name
         let age:String = String(filteredList[indexPath.row].age)
         let gender:String?
-        
+    
         if filteredList[indexPath.row].gender == Gender.Man {
             gender = "남성"
         }else{
@@ -75,9 +79,9 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         nextViewController.name = name
         nextViewController.age = age
         nextViewController.gender = gender!
+        nextViewController.rowForIndexPath = indexPath.row
         
-        nextViewController.saveBtnOutlet.isHidden = true
-
+        nextViewController.saveOrEditBtnOutlet.setTitle("수정", for: .normal)
     
         self.navigationController?.pushViewController(nextViewController, animated: true)
     }
