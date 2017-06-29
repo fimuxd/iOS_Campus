@@ -1,0 +1,12 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'CocoaPodsPractice' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for CocoaPodsPractice
+  pod 'Kingfisher' #, '~> 3.10' #~>표시는 3.10보다 크지만 3.10과 호환가능한 버전을 다운받으라는 의미
+
+
+end

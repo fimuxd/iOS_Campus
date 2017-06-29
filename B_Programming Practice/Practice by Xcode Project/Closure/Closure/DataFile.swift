@@ -10,7 +10,7 @@ import Foundation
 
 class DataFile {
 
-    var friendsList:[Person]?
-
+    static var sharedData:DataFile = DataFile()
+    var friendsList:[Person] = []
 
 }

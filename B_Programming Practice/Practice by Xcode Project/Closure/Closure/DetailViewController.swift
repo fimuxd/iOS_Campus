@@ -21,14 +21,20 @@ class DetailViewController: UIViewController, UITextFieldDelegate{
     @IBOutlet weak var genderPickerViewOutlet: UIPickerView!
     @IBOutlet var genderPickerView: [UIPickerView]!
     
+    var name:String?
+    var age:String?
+    var gender:String?
+    
     /******************************************/
     //            IBAction | Methods          //
     /******************************************/
     
     @IBAction func saveBtn(_ sender: UIButton) {
-        setConfirmAleart()
+        if saveBtnOutlet.titleLabel?.text == "저장" {
+            setConfirmAleart()
+        }
+        
     }
-    
     
     
     //----- "저장" 버튼을 눌렀을 때, Alert이 뜨도록 하는 method 입니다.
@@ -36,7 +42,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate{
     //-----   2) 그렇지 않을 땐, 값을 입력하라는 Alert
     func setConfirmAleart() {
         if !(nameTextField.text?.isEmpty)! && !(genderTextField.text?.isEmpty)! && !(ageTextField.text?.isEmpty)! {
-            let confirmAlert:UIAlertController = UIAlertController(title: "확인", message: "입력한 내용이 맞습니까? \n 이름: \(nameTextField.text!) \n 성별: \(ageTextField.text!) \n 나이: \(ageTextField.text!)", preferredStyle: .alert)
+            let confirmAlert:UIAlertController = UIAlertController(title: "확인", message: "입력한 내용이 맞습니까? \n 이름: \(nameTextField.text!) \n 성별: \(genderTextField.text!) \n 나이: \(ageTextField.text!)", preferredStyle: .alert)
             
             let okBtn:UIAlertAction = UIAlertAction(title: "네", style: .default, handler: {(alert:UIAlertAction) in
                 
@@ -44,6 +50,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate{
                 //                let viewController:UINavigationController = self.storyboard?.instantiateViewController(withIdentifier: "MainNavigationController") as! UINavigationController
                 //                self.present(viewController, animated: true, completion: nil)
                 
+                self.saveNewPerson()
                 self.navigationController?.popViewController(animated: true)
             })
             
@@ -64,7 +71,8 @@ class DetailViewController: UIViewController, UITextFieldDelegate{
     }
     
     
-    //각 텍스트 필드의 값들을 Person의 property에 입력하여, 각각의 Person 객체를 만듭니다.
+    //각 텍스트 필드의 값들을 Person의 property에 입력하여, 각각의 Person 객체를 만들고 DataFile(Singleton) 에 저장합니다.
+    
     func saveNewPerson () {
         
         let name:String = self.nameTextField.text!
@@ -78,36 +86,53 @@ class DetailViewController: UIViewController, UITextFieldDelegate{
             }
         }
         
-        var newPerson:Person = Person(name: name, gender: gender(self.genderTextField.text!), age: age)
+        let newPerson:Person = Person(name: name, gender: gender(self.genderTextField.text!), age: age)
         
+        DataFile.sharedData.friendsList.append(newPerson)
         
+        print(DataFile.sharedData.friendsList)
     }
+    
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        
+        self.saveBtnOutlet.isHidden = false
     }
     
     
-//    /******************************************/
-//    //         UIPickerView DataSource         //
-//    /******************************************/
-//    
-//    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-//        return 1
-//    }
-//    
-//    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-//        return 2
-//    }
-//    
+    
+    
+    
+    //    /******************************************/
+    //    //         UIPickerView DataSource         //
+    //    /******************************************/
+    //
+    //    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+    //        return 1
+    //    }
+    //
+    //    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+    //        return 2
+    //    }
+    //
     
     
     /******************************************/
     //                Life Cycle              //
     /******************************************/
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if name != nil && age != nil && gender != nil {
+            self.nameTextField.text = name
+            self.ageTextField.text = age
+            self.genderTextField.text = gender
+        }
+
         
     }
     
