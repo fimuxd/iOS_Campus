@@ -15,6 +15,7 @@
 		50EEB5851EFA068400BA7236 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50EEB5831EFA068400BA7236 /* Main.storyboard */; };
 		50EEB5871EFA068400BA7236 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50EEB5861EFA068400BA7236 /* Assets.xcassets */; };
 		50EEB58A1EFA068400BA7236 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50EEB5881EFA068400BA7236 /* LaunchScreen.storyboard */; };
+		6AE7EEB51F04FFBC0095BF96 /* FriendsList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6AE7EEB41F04FFBC0095BF96 /* FriendsList.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		50EEB5861EFA068400BA7236 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50EEB5891EFA068400BA7236 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50EEB58B1EFA068400BA7236 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AE7EEB41F04FFBC0095BF96 /* FriendsList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FriendsList.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				50EEB5881EFA068400BA7236 /* LaunchScreen.storyboard */,
 				50EEB5861EFA068400BA7236 /* Assets.xcassets */,
 				50EEB58B1EFA068400BA7236 /* Info.plist */,
+				6AE7EEB41F04FFBC0095BF96 /* FriendsList.plist */,
 			);
 			path = Closure;
 			sourceTree = "<group>";
@@ -134,6 +137,7 @@
 			files = (
 				50EEB58A1EFA068400BA7236 /* LaunchScreen.storyboard in Resources */,
 				50EEB5871EFA068400BA7236 /* Assets.xcassets in Resources */,
+				6AE7EEB51F04FFBC0095BF96 /* FriendsList.plist in Resources */,
 				50EEB5851EFA068400BA7236 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

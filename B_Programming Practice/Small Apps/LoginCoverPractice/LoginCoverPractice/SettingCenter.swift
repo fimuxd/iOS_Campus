@@ -15,6 +15,8 @@ enum SettingCellType:String {
 }
 
 
+
+
 //Setting Data 들을 관리하는 곳
 
 class SettingCenter {
