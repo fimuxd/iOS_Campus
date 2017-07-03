@@ -24,7 +24,7 @@ class DataCenter {
 //    }
     
     func insertItems(at items:[IndexPath]) {
-        let sortedItems = items.sorted(by: <)
+        let sortedItems = items.sorted(by: >)
         
         let duplicatedItems = sortedItems.map { (indexPath: IndexPath) -> String in
             
