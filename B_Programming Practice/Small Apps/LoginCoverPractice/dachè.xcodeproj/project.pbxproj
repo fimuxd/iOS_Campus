@@ -14,6 +14,7 @@
 		6A5FA24F1EDBB631002E5BAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A5FA24D1EDBB631002E5BAC /* LaunchScreen.storyboard */; };
 		6A7D3A281EF9FE1100AC598F /* EditInfoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7D3A271EF9FE1100AC598F /* EditInfoDetailViewController.swift */; };
 		6A7D3A2A1EFA018000AC598F /* PasswordDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7D3A291EFA018000AC598F /* PasswordDetailViewController.swift */; };
+		6A81DE7A1F0A5B4600654025 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A81DE791F0A5B4600654025 /* Realm.framework */; };
 		6AC8E0EB1EF8E7CF00EF065D /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC8E0EA1EF8E7CF00EF065D /* SettingViewController.swift */; };
 		6AC8E0ED1EF8E7DF00EF065D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC8E0EC1EF8E7DF00EF065D /* MainViewController.swift */; };
 		6AC8E0EF1EF8E9B900EF065D /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6AC8E0EE1EF8E9B900EF065D /* Settings.plist */; };
@@ -33,6 +34,7 @@
 		6A5FA2501EDBB631002E5BAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A7D3A271EF9FE1100AC598F /* EditInfoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditInfoDetailViewController.swift; sourceTree = "<group>"; };
 		6A7D3A291EFA018000AC598F /* PasswordDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordDetailViewController.swift; sourceTree = "<group>"; };
+		6A81DE791F0A5B4600654025 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		6AC8E0EA1EF8E7CF00EF065D /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		6AC8E0EC1EF8E7DF00EF065D /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		6AC8E0EE1EF8E9B900EF065D /* Settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A81DE7A1F0A5B4600654025 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +61,7 @@
 			children = (
 				6A5FA2431EDBB631002E5BAC /* dachè */,
 				6A5FA2421EDBB631002E5BAC /* Products */,
+				6A81DE781F0A5B4600654025 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +85,14 @@
 			);
 			name = "dachè";
 			path = LogInCoverPractice;
+			sourceTree = "<group>";
+		};
+		6A81DE781F0A5B4600654025 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A81DE791F0A5B4600654025 /* Realm.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		6AC8E0F81EF94D7800EF065D /* ViewControllers */ = {
@@ -134,6 +146,7 @@
 				6A5FA23D1EDBB631002E5BAC /* Sources */,
 				6A5FA23E1EDBB631002E5BAC /* Frameworks */,
 				6A5FA23F1EDBB631002E5BAC /* Resources */,
+				6A81DE7B1F0A5B5600654025 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -192,6 +205,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6A81DE7B1F0A5B5600654025 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6A5FA23D1EDBB631002E5BAC /* Sources */ = {
@@ -332,6 +362,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = NN7QXHC8A3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = LogInCoverPractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "iOSCampus.dache-";
@@ -347,6 +381,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = NN7QXHC8A3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = LogInCoverPractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "iOSCampus.dache-";
