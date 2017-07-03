@@ -12,6 +12,7 @@
 		6A1BB29D1F061327000684BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A1BB29B1F061327000684BC /* Main.storyboard */; };
 		6A1BB29F1F061327000684BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A1BB29E1F061327000684BC /* Assets.xcassets */; };
 		6A1BB2A21F061327000684BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A1BB2A01F061327000684BC /* LaunchScreen.storyboard */; };
+		6A1BB2AA1F061BE0000684BC /* MyAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1BB2A91F061BE0000684BC /* MyAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		6A1BB29E1F061327000684BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A1BB2A11F061327000684BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A1BB2A31F061327000684BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A1BB2A91F061BE0000684BC /* MyAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +57,11 @@
 			isa = PBXGroup;
 			children = (
 				6A1BB2971F061327000684BC /* AppDelegate.swift */,
-				6A1BB2991F061327000684BC /* ViewController.swift */,
-				6A1BB29B1F061327000684BC /* Main.storyboard */,
-				6A1BB29E1F061327000684BC /* Assets.xcassets */,
 				6A1BB2A01F061327000684BC /* LaunchScreen.storyboard */,
+				6A1BB29B1F061327000684BC /* Main.storyboard */,
+				6A1BB2991F061327000684BC /* ViewController.swift */,
+				6A1BB2A91F061BE0000684BC /* MyAnnotation.swift */,
+				6A1BB29E1F061327000684BC /* Assets.xcassets */,
 				6A1BB2A31F061327000684BC /* Info.plist */,
 			);
 			path = MapViewPractice;
@@ -139,6 +142,7 @@
 			files = (
 				6A1BB29A1F061327000684BC /* ViewController.swift in Sources */,
 				6A1BB2981F061327000684BC /* AppDelegate.swift in Sources */,
+				6A1BB2AA1F061BE0000684BC /* MyAnnotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
