@@ -20,4 +20,10 @@ class CustomCollectionViewCell: UICollectionViewCell {
     func set(image:String) {
         self.mainImage.image = UIImage.init(named: image)
     }
+    
+    override func awakeFromNib() {
+        let backgroundView = UIView()
+        backgroundView.backgroundColor = .orange
+        self.selectedBackgroundView = backgroundView
+    }
 }

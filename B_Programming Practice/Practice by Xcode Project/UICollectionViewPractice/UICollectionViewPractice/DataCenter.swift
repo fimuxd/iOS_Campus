@@ -13,5 +13,27 @@ class DataCenter {
     
     var friendsList = ["A", "B", "C", "D", "E", "F", "G", "H"]
     
-    var friendsImage = ["0", "1", "2", "3", "4", "5", "6", "7"]
+    // var friendsImage = ["0", "1", "2", "3", "4", "5", "6", "7"]
+    
+//    func insertItems(at items:[IndexPath]) {
+//        var duplicatedItems = items
+//        for index in 0...items.count-1 {
+//            friendsList[duplicatedItems[index].item]
+//        }
+//        
+//    }
+    
+    func insertItems(at items:[IndexPath]) {
+        let sortedItems = items.sorted(by: <)
+        
+        let duplicatedItems = sortedItems.map { (indexPath: IndexPath) -> String in
+            
+            friendsList[indexPath.item]
+        }
+        
+        friendsList += duplicatedItems
+        
+    }
+    
+    
 }
