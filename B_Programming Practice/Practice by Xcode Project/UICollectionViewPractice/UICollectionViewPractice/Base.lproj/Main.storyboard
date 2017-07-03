@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bVF-7P-AN0">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Custom Collection View Controller-->
+        <scene sceneID="sGM-9c-pOk">
+            <objects>
+                <collectionViewController id="bVF-7P-AN0" customClass="CustomCollectionViewController" customModule="UICollectionViewPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="sWa-jy-Kyb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3sd-1y-8fv">
+                            <size key="itemSize" width="100" height="100"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="mOZ-o5-Cz2" customClass="CustomCollectionViewCell" customModule="UICollectionViewPractice" customModuleProvider="target">
+                                <rect key="frame" x="10" y="10" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SkZ-Up-Gyw">
+                                            <rect key="frame" x="31.5" y="37.5" width="37.5" height="100"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Uuz-C1-G1I">
+                                            <rect key="frame" x="10" y="2.5" width="80" height="80"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="Uuz-C1-G1I" secondAttribute="height" multiplier="1:1" id="bRm-Xx-yj1"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="SkZ-Up-Gyw" firstAttribute="centerX" secondItem="mOZ-o5-Cz2" secondAttribute="centerX" id="OSU-Wl-MDr"/>
+                                    <constraint firstItem="SkZ-Up-Gyw" firstAttribute="centerY" secondItem="mOZ-o5-Cz2" secondAttribute="centerY" multiplier="3.5/2" id="SZR-71-8tp"/>
+                                    <constraint firstItem="Uuz-C1-G1I" firstAttribute="centerX" secondItem="mOZ-o5-Cz2" secondAttribute="centerX" id="gSf-8R-6Jo"/>
+                                    <constraint firstItem="Uuz-C1-G1I" firstAttribute="centerY" secondItem="mOZ-o5-Cz2" secondAttribute="centerY" multiplier="0.85" id="kyA-qh-sjJ"/>
+                                    <constraint firstItem="Uuz-C1-G1I" firstAttribute="width" secondItem="mOZ-o5-Cz2" secondAttribute="width" multiplier="4/5" id="s1p-xY-mxB"/>
+                                    <constraint firstItem="SkZ-Up-Gyw" firstAttribute="height" secondItem="mOZ-o5-Cz2" secondAttribute="height" id="zfJ-Ce-aRs"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="mainImage" destination="Uuz-C1-G1I" id="R8f-Of-ulj"/>
+                                    <outlet property="titleLabel" destination="SkZ-Up-Gyw" id="83x-FQ-wUW"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="bVF-7P-AN0" id="Fma-LY-H5q"/>
+                            <outlet property="delegate" destination="bVF-7P-AN0" id="9Lx-2W-db3"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AUg-Ig-nvm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-276" y="-72.413793103448285"/>
+        </scene>
+    </scenes>
+</document>
