@@ -19,3 +19,4 @@ struct Person {
     var gender:Gender
     var age:Int
 }
+
