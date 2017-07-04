@@ -1,0 +1,6 @@
+framework module Pods_UIImagePickerPractice {
+  umbrella header "Pods-UIImagePickerPractice-umbrella.h"
+
+  export *
+  module * { export * }
+}
