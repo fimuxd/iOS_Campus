@@ -119,3 +119,5 @@ fastlane/test_output
 A_LectureSummary/170628/4. Realm.pdf
 A_LectureSummary/170628/2. Dependency Manager.pdf
 A_LectureSummary/170628/3. Persistent.pdf
+*.mp3
+B_Programming Practice/Small Apps/MusicPlayer/MusicPlayer/Song.zip
