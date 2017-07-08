@@ -99,6 +99,16 @@
 	> | Lecture Summary | PPT | Programming Practice | Small Apps | Note |
 	> | :--- | :--- | :--- | :--- | :--- |
 	> | [UICollectionView](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170703/UICollectionView.md) | [21](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170703/0703.pdf) | [Practice](https://github.com/fimuxd/iOS_Campus/tree/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/UICollectionViewPractice) | - | 콜렉션뷰 |
+	> | - | - | [Practice](https://github.com/fimuxd/iOS_Campus/tree/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/UIImagePickerPractice) | - | 이미지피커(조교님 Tip) <p> Cocoapod 오픈소스를 응용한 예제 |
+	> | - | - | [Practice](https://github.com/fimuxd/iOS_Campus/tree/master/B_Programming%20Practice/Small%20Apps/MusicPlayer) | - | 콜렉션뷰를 응용한 음악플레이어(AVPlayer) |
+	> ###### Hackerthon(July 6,7) / 주제:반복 / App: OgulOgul / 숨겨진 MVP상
+
+- **10th Week** ; July 10 - 14
+	> | Lecture Summary | PPT | Programming Practice | Small Apps | Note |
+	> | :--- | :--- | :--- | :--- | :--- |
+	> 
+
+	
 	
 	
 ## Contact Me
