@@ -43,6 +43,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A42A78F1F120F6600B183E9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B94D5A151F0672FB006C3AA7 /* ListViewController.swift */,
+				B94D5A171F06743E006C3AA7 /* AddViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6A42A7901F120F7900B183E9 /* Datas */ = {
+			isa = PBXGroup;
+			children = (
+				B94D5A131F0662BA006C3AA7 /* DataCenter.swift */,
+				B94D5A0F1F065D49006C3AA7 /* Person.swift */,
+				B94D5A111F065E44006C3AA7 /* Person.plist */,
+			);
+			name = Datas;
+			sourceTree = "<group>";
+		};
 		B94D59F11F065D36006C3AA7 = {
 			isa = PBXGroup;
 			children = (
@@ -63,11 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				B94D59FD1F065D36006C3AA7 /* AppDelegate.swift */,
-				B94D5A151F0672FB006C3AA7 /* ListViewController.swift */,
-				B94D5A171F06743E006C3AA7 /* AddViewController.swift */,
-				B94D5A131F0662BA006C3AA7 /* DataCenter.swift */,
-				B94D5A0F1F065D49006C3AA7 /* Person.swift */,
-				B94D5A111F065E44006C3AA7 /* Person.plist */,
+				6A42A78F1F120F6600B183E9 /* ViewControllers */,
+				6A42A7901F120F7900B183E9 /* Datas */,
 				B94D5A011F065D36006C3AA7 /* Main.storyboard */,
 				B94D5A041F065D36006C3AA7 /* Assets.xcassets */,
 				B94D5A061F065D36006C3AA7 /* LaunchScreen.storyboard */,
@@ -320,6 +336,7 @@
 				B94D5A0E1F065D36006C3AA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
