@@ -93,13 +93,15 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    //UserDataArray에서 입력한 Email과 똑같은 Email을 가진 UserData를 뽑아내줘 (근데...제대로 작동안하는거 같아요..ㅠㅠ)
     func getUser(for inputEmail:String) -> User? {
         let getUserData = self.currentUserArray.filter { (user) -> Bool in
             user.userEmail == inputEmail
         }
-        return getUserData[0]
+            return getUserData[0] 
     }
     
+    //아이디랑 패스워드가 다를 때 뜨는 Alert
     func checkIDAndPasswordAlert() {
         let alert:UIAlertController = UIAlertController(title: "로그인 실패", message: "아이디 또는 비밀번호를 다시 확인하세요.", preferredStyle: .alert)
         let okBtn:UIAlertAction = UIAlertAction(title: "확인", style: .default) { (alert) in
@@ -111,6 +113,7 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
         self.present(alert, animated: true, completion: nil)
     }
     
+    //존재하지 않는 아이디를 입력했을 때 뜨는 Alert
     func invalidUserInfoAlert() {
         let alert:UIAlertController = UIAlertController(title: "로그인 실패", message: "등록되지 않은 아이디이거나, 아이디 또는 비밀번호를 잘못 입력하셨습니다.", preferredStyle: .alert)
         let okBtn:UIAlertAction = UIAlertAction(title: "확인", style: .default) { (alert) in
@@ -122,6 +125,7 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
         self.present(alert, animated: true, completion: nil)
     }
     
+    //빈칸이 있을 때 뜨는 Alert
     func checkBlankAlert() {
         let alert:UIAlertController = UIAlertController(title: "알림", message: "빈칸을 모두 채워주세요", preferredStyle: .alert)
         let okBtn:UIAlertAction = UIAlertAction(title: "확인", style: .default, handler: nil)
@@ -130,10 +134,12 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
         self.present(alert, animated: true, completion: nil)
     }
     
+    //TextField 수정이 끝났을 때, 키보드에 가려지지 않게 View를 올려줘
     func textFieldDidBeginEditing(_ textField: UITextField) {
         self.scrollView.setContentOffset(CGPoint(x: 0, y: 100), animated: true)
     }
     
+    //UserData를 가져오렴
     func getUserData() {
         self.currentUserArray = DataCenter.shared.dataArray
     }

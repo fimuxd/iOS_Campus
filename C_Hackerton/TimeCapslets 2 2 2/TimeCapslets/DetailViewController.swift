@@ -57,8 +57,11 @@ class DetailViewController: UIViewController, UITextViewDelegate {
         warningAlert()
     }
     
+    //ImagePicker 구현하고 싶었지만 시간 부족
     @IBAction func imageSaveBtnAction(_ sender: UIButton) {
     }
+    
+    
     //TextView의 Storyboard에는 없는 placeholder의 기능을 구현하기 위한 함수
     func textViewDidBeginEditing(_ textView: UITextView) {
         if contentTextField.textColor == UIColor.lightGray {
@@ -100,7 +103,7 @@ class DetailViewController: UIViewController, UITextViewDelegate {
         if !(self.contentTextField.text!.isEmpty) {
             let addedContent:String = contentTextField.text!
 
-            var memoList = UserDefaults.standard.array(forKey: "memoList") as? [[String:Any]] ?? []
+            var memoList = UserDefaults.standard.array(forKey: "memoList") as? [[String:Any]] ?? [[:]]
             
             let memo: [String:Any] = ["memoDate":count+1, "content":addedContent]
             
