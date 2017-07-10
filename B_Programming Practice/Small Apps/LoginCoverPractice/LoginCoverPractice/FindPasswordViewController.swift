@@ -1,14 +1,14 @@
 //
-//  PasswordDetailViewController.swift
+//  FindPasswordViewController.swift
 //  dachè
 //
-//  Created by Bo-Young PARK on 21/6/2017.
+//  Created by Bo-Young PARK on 10/7/2017.
 //  Copyright © 2017 Bo-Young PARK. All rights reserved.
 //
 
 import UIKit
 
-class PasswordDetailViewController: UIViewController {
+class FindPasswordViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

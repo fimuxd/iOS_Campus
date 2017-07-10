@@ -15,11 +15,32 @@ import Foundation
 import Foundation
 
 struct Authentification {
-    static let id = "ID"
-    static let email = "Email"
-    static let name = "Name"
-    static let nickname = "Nickname"
-    static let password = "Password"
-    static let authentificationBool = "Authentification"
+    //-----UserDatas.plist
+    static let id:String = "userData_identification"
+    static let name:String = "userData_name"
+    static let birthday:String = "userData_birthday"
+    static let gender:String = "userData_gender"
+    static let phoneNumber:String = "userData_phoneNumber"
+    static let email:String = "userData_email"
+    static let password:String = "userData_password"
+    
+    //-----plists
+    static let userDatasFileName:String = "UserDatas"
+    static let settingsFileName:String = "Settings"
+    static let fileType:String = "plist"
+    
+    //-----Storyboard ID
+    static let logInStoryboardID:String = "LogInStoryboard"
+    static let signUpStoryboardID:String = "SignUpStoryboard"
+    static let mainStoryboardID:String = "MainStoryboard"
+    static let mainSettingStoryboardID:String = "MainSettingStoryboard"
+    static let detailSettingStroyboardID:String = "DetailSettingStoryboard"
+    static let findPasswordStoryboardID:String = "FindPasswordStoryboard"
+    
+    //-----Segue ID
+    
+    
+
+    
 }
 

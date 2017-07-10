@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>userData_identification</key>
+		<integer>0</integer>
+		<key>userData_name</key>
+		<string>박보영</string>
+		<key>userData_birthday</key>
+		<date>1987-06-10T14:00:01Z</date>
+		<key>userData_gender</key>
+		<string>Female</string>
+		<key>userData_phoneNumber</key>
+		<string>010-3316-1609</string>
+		<key>userData_email</key>
+		<string>fimuxd@gmail.com</string>
+		<key>userData_password</key>
+		<string>1</string>
+	</dict>
+</array>
+</plist>
