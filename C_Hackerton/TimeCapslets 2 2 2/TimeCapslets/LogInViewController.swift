@@ -65,10 +65,7 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
         //만약 모든 TextField가 채워져있다면 실행해
         if !(self.inputEmailTextField.text?.isEmpty)! && !(self.inputPassWordTextField.text?.isEmpty)! {
             
-            //입력한 이메일이 UserData에 존재하는지 확인
-            if let userData = getUser(for: inputEmailTextField.text!) {
-                
-                //존재한다면,
+            if let userData:User = getUser(for: inputEmailTextField.text!) as? User {
                 switch userData.userPassword {
                     
                 case self.inputPassWordTextField.text!:
@@ -84,9 +81,6 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
                 default:
                     checkIDAndPasswordAlert()
                 }
-                
-            }else{
-                invalidUserInfoAlert()
             }
         }else{
             checkBlankAlert()
@@ -94,12 +88,25 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
     }
     
     //UserDataArray에서 입력한 Email과 똑같은 Email을 가진 UserData를 뽑아내줘 (근데...제대로 작동안하는거 같아요..ㅠㅠ)
-    func getUser(for inputEmail:String) -> User? {
-        let getUserData = self.currentUserArray.filter { (user) -> Bool in
+    //    func getUser(for inputEmail:String) -> User? {
+    //        let getUserData = self.currentUserArray.filter { (user) -> Bool in
+    //            user.userEmail == inputEmail
+    //        }
+    //            return getUserData[0]
+    //    }
+    
+    func getUser(for inputEmail:String) -> Any? {
+        let realUserData = self.currentUserArray.filter { (user) -> Bool in
             user.userEmail == inputEmail
         }
-            return getUserData[0] 
+        
+        if realUserData.count == 1 {
+            return realUserData[0]
+        }else{
+            return invalidUserInfoAlert()
+        }
     }
+    
     
     //아이디랑 패스워드가 다를 때 뜨는 Alert
     func checkIDAndPasswordAlert() {

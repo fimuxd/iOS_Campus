@@ -103,12 +103,12 @@ class DetailViewController: UIViewController, UITextViewDelegate {
         if !(self.contentTextField.text!.isEmpty) {
             let addedContent:String = contentTextField.text!
 
-            var memoList = UserDefaults.standard.array(forKey: "memoList") as? [[String:Any]] ?? [[:]]
+            var memoList = UserDefaults.standard.array(forKey: "\(self.userID!) memoList") as? [[String:Any]] ?? [[:]]
             
             let memo: [String:Any] = ["memoDate":count+1, "content":addedContent]
             
             memoList.append(memo)
-            UserDefaults.standard.set(memoList, forKey: "memoList")
+            UserDefaults.standard.set(memoList, forKey: "\(self.userID!) memoList")
             
             count += 1
         }

@@ -16,7 +16,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        memoList = UserDefaults.standard.array(forKey: "memoList") as? [[String:Any]] ?? [[:]]
+        memoList = UserDefaults.standard.array(forKey: "\(self.userID!) memoList") as? [[String:Any]] ?? [[:]]
         self.tableView.reloadData()
     }
     
@@ -43,7 +43,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         
         getUserData()
-        print(self.memoList)
+        
         
         self.tableView.reloadData()
         
@@ -78,24 +78,22 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         logOutConfirmAlert()
     }
     
-        func logOutConfirmAlert() {
-            let alert:UIAlertController = UIAlertController(title: "로그아웃", message: "정말 로그아웃 하시겠습니까?", preferredStyle: .alert)
-            let confirmBtn:UIAlertAction = UIAlertAction(title: "확인", style: .default) { (alert:UIAlertAction) in
-                
-                print(self.memoList)
-                self.memoList.removeAll()
-                
-                let navigationController:UINavigationController = self.storyboard?.instantiateViewController(withIdentifier: Authentification.idForNavagation) as! UINavigationController
-                self.present(navigationController, animated: true, completion: nil)
-            }
-    
-            let cancelBtn:UIAlertAction = UIAlertAction(title: "취소", style: .cancel, handler: nil)
-    
-            alert.addAction(confirmBtn)
-            alert.addAction(cancelBtn)
-    
-            self.present(alert, animated: true, completion: nil)
+    //로그아웃 함수
+    func logOutConfirmAlert() {
+        let alert:UIAlertController = UIAlertController(title: "로그아웃", message: "정말 로그아웃 하시겠습니까?", preferredStyle: .alert)
+        let confirmBtn:UIAlertAction = UIAlertAction(title: "확인", style: .default) { (alert:UIAlertAction) in
+            
+            let navigationController:UINavigationController = self.storyboard?.instantiateViewController(withIdentifier: Authentification.idForNavagation) as! UINavigationController
+            self.present(navigationController, animated: true, completion: nil)
         }
+        
+        let cancelBtn:UIAlertAction = UIAlertAction(title: "취소", style: .cancel, handler: nil)
+        
+        alert.addAction(confirmBtn)
+        alert.addAction(cancelBtn)
+        
+        self.present(alert, animated: true, completion: nil)
+    }
     
     //-----TableViewDataSource & Delegate
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
