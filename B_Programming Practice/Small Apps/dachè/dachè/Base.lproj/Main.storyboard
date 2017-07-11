@@ -13,7 +13,7 @@
         <!--Log In View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="LogInStoryboard" id="BYZ-38-t0r" customClass="LogInViewController" customModule="dache_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LogInStoryboard" id="BYZ-38-t0r" customClass="LogInViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -507,13 +507,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fq-Yd-fJJ">
-                                                    <rect key="frame" x="34.5" y="11" width="42" height="21"/>
+                                                    <rect key="frame" x="10.5" y="11" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yJm-nq-W8r">
-                                                    <rect key="frame" x="459" y="6" width="51" height="31"/>
+                                                    <rect key="frame" x="313" y="6" width="51" height="31"/>
                                                     <connections>
                                                         <action selector="settingSwitcher:" destination="Hih-df-OHX" eventType="valueChanged" id="2Ee-jg-hdm"/>
                                                     </connections>
