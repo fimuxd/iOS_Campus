@@ -106,7 +106,8 @@
 - **10th Week** ; July 10 - 14
 	> | Lecture Summary | PPT | Programming Practice | Small Apps | Note |
 	> | :--- | :--- | :--- | :--- | :--- |
-	> 
+	> | [Code Extension](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170711/ReadMe코드확장.md) | [22](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170711/0711.pdf) | - | - | 코드확장_subscript, extension, generic |
+	
 
 	
 	
