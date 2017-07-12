@@ -63,4 +63,32 @@ class UserDataCenter {
         self.saveToDoc()
     }
     
+    func modifyUserData(id:Int, keyOfDatas:String, to:String) {
+        var user = self.userDataArray[id]
+        
+        switch keyOfDatas {
+        case Authentification.phoneNumber:
+            user.phoneNumber = to
+        case Authentification.email:
+            user.email = to
+        case Authentification.password:
+            user.password = to
+        default:
+            print("존재하지 않는 key 값 또는 바꿀 수 없는 값")
+        }
+
+        self.userDataArray[id] = user
+        self.saveToDoc()
+    }
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }

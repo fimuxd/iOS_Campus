@@ -36,6 +36,7 @@ struct Authentification {
     static let mainSettingStoryboardID:String = "MainSettingStoryboard"
     static let detailSettingStroyboardID:String = "DetailSettingStoryboard"
     static let findPasswordStoryboardID:String = "FindPasswordStoryboard"
+    static let ResetPasswordStoryboardID:String = "ResetPasswordViewController"
     
     //-----Segue ID
     

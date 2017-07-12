@@ -33,7 +33,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var scrollView: UIScrollView!
     
     private var currentUserDatas:[User]!
-    internal var selectedGender:[String] = [""]
+    internal var selectedGender:[String] = ["Male"]
     
     private var dateFormatter:DateFormatter = DateFormatter()
     
@@ -62,7 +62,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func backButtonAction(_ sender: UIButton) {
-        self.navigationController?.popViewController(animated: true)
+       self.dismiss(animated: true, completion: nil)
     }
     
     //-----회원가입 요청시 실행 함수
@@ -70,7 +70,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         self.view.endEditing(true)
         
         // 1. 모든 TextField가 빈칸이 아니고, 동시에 Password와 Confirm Password의 String 이 같다면, UserDate add 해주겠니?
-        if !(self.inputEmailTextField.text?.isEmpty)! && !(self.inputNameTextField.text?.isEmpty)! && !(self.inputbirthdayTextField.text?.isEmpty)! && !(self.inputPhoneNumberTextField.text?.isEmpty)! && self.inputGenderSegmentedControlOutlet.isSelected && !(self.inputPasswordTextField.text?.isEmpty)! && !(self.inputConfirmPasswordTextField.text?.isEmpty)! && self.inputPasswordTextField.text! == self.inputConfirmPasswordTextField.text! {
+        if !(self.inputEmailTextField.text?.isEmpty)! && !(self.inputNameTextField.text?.isEmpty)! && !(self.inputbirthdayTextField.text?.isEmpty)! && !(self.inputPhoneNumberTextField.text?.isEmpty)! && self.selectedGender.count == 1 && !(self.inputPasswordTextField.text?.isEmpty)! && !(self.inputConfirmPasswordTextField.text?.isEmpty)! && self.inputPasswordTextField.text! == self.inputConfirmPasswordTextField.text! {
             
             UserDataCenter.shared.addUserData([Authentification.id:UserDataCenter.shared.userDataList.count,
                                                Authentification.email:self.inputEmailTextField.text!,
@@ -81,10 +81,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
                                                Authentification.gender:selectedGender[0]]
             )
             
-            // 2. 스스로를 UnwindSegue 하렴 (Main으로 가도록 함)
-            
-            let viewController:LogInViewController = self.storyboard!.instantiateViewController(withIdentifier: Authentification.logInStoryboardID) as! LogInViewController
-            self.navigationController?.popViewController(animated: true)
+            self.dismiss(animated: true, completion: nil)
             
         }else {
             // 3. if 내 값을 입력을 하지 않았을 때 SubLabel에 입력하라고 표시해

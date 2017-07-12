@@ -23,6 +23,7 @@
 		6A1F101D1F14760C00634FE2 /* UserDataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1F10131F14760C00634FE2 /* UserDataCenter.swift */; };
 		6A1F10201F14761400634FE2 /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6A1F101E1F14761400634FE2 /* Settings.plist */; };
 		6A1F10211F14761400634FE2 /* UserDatas.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6A1F101F1F14761400634FE2 /* UserDatas.plist */; };
+		6AFE2BDD1F160174006BD5D2 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFE2BDC1F160174006BD5D2 /* ResetPasswordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		6A1F10131F14760C00634FE2 /* UserDataCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDataCenter.swift; sourceTree = "<group>"; };
 		6A1F101E1F14761400634FE2 /* Settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
 		6A1F101F1F14761400634FE2 /* UserDatas.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UserDatas.plist; sourceTree = "<group>"; };
+		6AFE2BDC1F160174006BD5D2 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				6A1F10111F14760C00634FE2 /* SignUpViewController.swift */,
 				6A1F100C1F14760C00634FE2 /* LogInViewController.swift */,
 				6A1F100B1F14760C00634FE2 /* FindPasswordViewController.swift */,
+				6AFE2BDC1F160174006BD5D2 /* ResetPasswordViewController.swift */,
 				6A1F100D1F14760C00634FE2 /* MainViewController.swift */,
 				6A1F10101F14760C00634FE2 /* SettingViewController.swift */,
 			);
@@ -191,6 +194,7 @@
 				6A1F10151F14760C00634FE2 /* FindPasswordViewController.swift in Sources */,
 				6A1F101D1F14760C00634FE2 /* UserDataCenter.swift in Sources */,
 				6A1F10191F14760C00634FE2 /* SettingSwitchCell.swift in Sources */,
+				6AFE2BDD1F160174006BD5D2 /* ResetPasswordViewController.swift in Sources */,
 				6A1F0FF91F14757400634FE2 /* AppDelegate.swift in Sources */,
 				6A1F101B1F14760C00634FE2 /* SignUpViewController.swift in Sources */,
 				6A1F10171F14760C00634FE2 /* MainViewController.swift in Sources */,
@@ -362,6 +366,7 @@
 				6A1F10091F14757400634FE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
