@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aJv-YT-NVV">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="TwitterDynamicCellPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="82" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Y8V-e6-i8L">
+                                <rect key="frame" x="-0.5" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TwitCell" id="Jbc-fV-K6o" customClass="CustomDynamicTableViewCell" customModule="TwitterDynamicCellPractice" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="82"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jbc-fV-K6o" id="EtR-L4-hdI">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="81.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="VfS-SO-1RC"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="fgS-6l-L2f"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Y8V-e6-i8L" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="7XX-jp-gtS"/>
+                            <constraint firstItem="Y8V-e6-i8L" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Dhh-dz-hTJ"/>
+                            <constraint firstItem="Y8V-e6-i8L" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hta-HR-DPU"/>
+                            <constraint firstItem="Y8V-e6-i8L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xYU-1H-Ta2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hTc-M8-HbI">
+                        <nil key="title"/>
+                        <view key="titleView" contentMode="scaleToFill" id="r59-2c-zSI">
+                            <rect key="frame" x="112.5" y="5.5" width="150" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twitterLogo" translatesAutoresizingMaskIntoConstraints="NO" id="FeL-W0-mEw">
+                                    <rect key="frame" x="58" y="0.0" width="33" height="33"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="FeL-W0-mEw" secondAttribute="height" multiplier="1:1" id="xtm-r9-wzN"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="FeL-W0-mEw" firstAttribute="height" secondItem="r59-2c-zSI" secondAttribute="height" id="aD9-Hc-axR"/>
+                                <constraint firstItem="FeL-W0-mEw" firstAttribute="centerX" secondItem="r59-2c-zSI" secondAttribute="centerX" id="wwX-V8-irQ"/>
+                                <constraint firstItem="FeL-W0-mEw" firstAttribute="centerY" secondItem="r59-2c-zSI" secondAttribute="centerY" id="yfT-PG-i17"/>
+                            </constraints>
+                        </view>
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="3vW-hT-4dc">
+                            <color key="tintColor" red="0.29928946495056152" green="0.66455191373825073" blue="0.90592789649963379" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="Y8V-e6-i8L" id="b5S-ty-dsr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="138.98050974512745"/>
+        </scene>
+        <!--Detail Profile View Controller-->
+        <scene sceneID="OqF-bs-HWg">
+            <objects>
+                <viewController storyboardIdentifier="DetailProfileViewController" id="6xf-Cb-0bh" customClass="DetailProfileViewController" customModule="TwitterDynamicCellPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PNp-Zz-tr8"/>
+                        <viewControllerLayoutGuide type="bottom" id="vIU-BY-INy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rKs-69-Eop">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ht-mT-K6b">
+                                <rect key="frame" x="-18" y="-14" width="410" height="236"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lNH-NM-saF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1784.8" y="138.98050974512745"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="MTc-Hi-0g4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aJv-YT-NVV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Yk7-v3-3Fv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Ohv-vK-6Ca"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1GI-VD-cpk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="298" y="139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="twitterLogo" width="94" height="78"/>
+    </resources>
+    <color key="tintColor" red="0.29928946499999998" green="0.6645519137" blue="0.90592789650000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+</document>

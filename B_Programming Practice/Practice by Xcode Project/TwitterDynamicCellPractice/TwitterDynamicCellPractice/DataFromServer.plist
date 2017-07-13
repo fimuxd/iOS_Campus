@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>user_id</key>
+		<string>@jungyong</string>
+		<key>user_name</key>
+		<string>중용러</string>
+		<key>user_profile_img_url</key>
+		<string>0.jpg</string>
+		<key>body_text</key>
+		<string>작은 일도 무시하지 않고 최선을 다해야 한다. 작은 일에도 최선을 다하면 정성스럽게 된다. 정성스럽게 되면 겉에 배어 나오고 겉에 배어 나오면 겉으로 드러나고 겉으로 드러나면 이내 밝아지고 밝아지면 남을 감동시키고 남을 감동시키면 이내 변하게 되고 변하면 생육된다. 그러니 오직 세상에서 지극히 정성을 다하는 사람만이 나와 세상을 변하게 할 수 있는 것이다. (중용 23장) </string>
+		<key>img_url</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>user_id</key>
+		<string>@philippppp</string>
+		<key>user_name</key>
+		<string>필리피노</string>
+		<key>user_profile_img_url</key>
+		<string>1.jpg</string>
+		<key>body_text</key>
+		<string>필리핀 속담에 &quot;하고 싶은 일은 방법이 보이고, 하기 싫은 일은 핑계가 보인다&quot;는 말이 있습니다.</string>
+		<key>img_url</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>user_id</key>
+		<string>@turkey</string>
+		<key>user_name</key>
+		<string>터키러</string>
+		<key>user_profile_img_url</key>
+		<string>2.jpg</string>
+		<key>body_text</key>
+		<string>걱정을 해서 걱정이 없어지면 걱정이 없겠네</string>
+		<key>img_url</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>user_id</key>
+		<string>@nonono</string>
+		<key>user_name</key>
+		<string>슬퍼하지마</string>
+		<key>user_profile_img_url</key>
+		<string>3.jpg</string>
+		<key>body_text</key>
+		<string>나약한 마음, 게으른 심성, 부정적인 습관은 자신의 운명과 대인관계를 막는다. -세네카</string>
+		<key>img_url</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>user_id</key>
+		<string>@matzip</string>
+		<key>user_name</key>
+		<string>짱맛</string>
+		<key>user_profile_img_url</key>
+		<string>4.jpg</string>
+		<key>body_text</key>
+		<string>집 앞 순대국밥집. 순대국밥 (순댓국밥) 은 별로 맛이 그다지여서 가지는 않았는데, 이렇게 맛있고 푸짐한 수육국밥이 새로운 메뉴로 개발되어 나왔다고 해서 가봤어요.</string>
+		<key>img_url</key>
+		<string>sundae.jpg</string>
+	</dict>
+	<dict>
+		<key>user_id</key>
+		<string>@assist</string>
+		<key>user_name</key>
+		<string>조교놈</string>
+		<key>user_profile_img_url</key>
+		<string>5.jpg</string>
+		<key>body_text</key>
+		<string>검색창에 Dynamic Cell Height 라고 치시고 검색을 해보시면 나옵니다요.
+화이팅화이팅</string>
+		<key>img_url</key>
+		<string></string>
+	</dict>
+</array>
+</plist>
