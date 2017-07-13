@@ -32,6 +32,7 @@ class FindPasswordViewController: UIViewController,UITextFieldDelegate {
         checkValidUser()
     }
     
+    
     private func checkValidUser() {
         if !(self.inputEmailTextField.text?.isEmpty)! && !(self.inputNameTextField.text?.isEmpty)! && !(self.inputPhoneNumberTextField.text?.isEmpty)! {
             
@@ -45,6 +46,8 @@ class FindPasswordViewController: UIViewController,UITextFieldDelegate {
                 nextViewController.currentUserData = userData[0]
                 
                 present(nextViewController, animated: true, completion: nil)
+
+//                performSegue(withIdentifier: Authentification.ResetPasswordStoryboardID, sender: self.continueButtonOutlet)
                 
             }else if userData.count == 1 && (userData[0].name == inputNameTextField.text! || userData[0].phoneNumber == self.inputPhoneNumberTextField.text!) {
                 checkUserInfo()

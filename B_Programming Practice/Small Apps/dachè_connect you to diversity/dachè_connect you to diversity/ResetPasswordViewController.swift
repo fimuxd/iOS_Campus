@@ -39,8 +39,7 @@ class ResetPasswordViewController: UIViewController, UITextFieldDelegate {
                 
                 UserDataCenter.shared.modifyUserData(id: (self.currentUserData?.id)!, keyOfDatas: Authentification.password, to: self.inputPasswordTextField.text!)
                 
-                let nextViewController:LogInViewController = self.storyboard?.instantiateViewController(withIdentifier: Authentification.logInStoryboardID) as! LogInViewController
-                present(nextViewController, animated: true, completion: nil)
+                self.navigationController?.dismiss(animated: true, completion: nil)
                 
             }else{
                 checkPasswordAlert()

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A174AE01F179637000E9814 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A174ADF1F179637000E9814 /* ChatViewController.swift */; };
+		6A174AE21F17963E000E9814 /* ChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A174AE11F17963E000E9814 /* ChannelViewController.swift */; };
 		6A1F0FF91F14757400634FE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1F0FF81F14757400634FE2 /* AppDelegate.swift */; };
 		6A1F0FFE1F14757400634FE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A1F0FFC1F14757400634FE2 /* Main.storyboard */; };
 		6A1F10001F14757400634FE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A1F0FFF1F14757400634FE2 /* Assets.xcassets */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A174ADF1F179637000E9814 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		6A174AE11F17963E000E9814 /* ChannelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelViewController.swift; sourceTree = "<group>"; };
 		6A1F0FF51F14757400634FE2 /* dachè_connect you to diversity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dachè_connect you to diversity.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A1F0FF81F14757400634FE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A1F0FFD1F14757400634FE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -81,7 +85,6 @@
 				6A1F0FF81F14757400634FE2 /* AppDelegate.swift */,
 				6A1F10221F14762900634FE2 /* ViewControllers */,
 				6A1F10231F14763D00634FE2 /* Datas */,
-				6A1F100F1F14760C00634FE2 /* SettingSwitchCell.swift */,
 				6A1F0FFC1F14757400634FE2 /* Main.storyboard */,
 				6A1F0FFF1F14757400634FE2 /* Assets.xcassets */,
 				6A1F10011F14757400634FE2 /* LaunchScreen.storyboard */,
@@ -98,7 +101,10 @@
 				6A1F100B1F14760C00634FE2 /* FindPasswordViewController.swift */,
 				6AFE2BDC1F160174006BD5D2 /* ResetPasswordViewController.swift */,
 				6A1F100D1F14760C00634FE2 /* MainViewController.swift */,
+				6A174ADF1F179637000E9814 /* ChatViewController.swift */,
+				6A174AE11F17963E000E9814 /* ChannelViewController.swift */,
 				6A1F10101F14760C00634FE2 /* SettingViewController.swift */,
+				6A1F100F1F14760C00634FE2 /* SettingSwitchCell.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -200,8 +206,10 @@
 				6A1F10171F14760C00634FE2 /* MainViewController.swift in Sources */,
 				6A1F101A1F14760C00634FE2 /* SettingViewController.swift in Sources */,
 				6A1F10161F14760C00634FE2 /* LogInViewController.swift in Sources */,
+				6A174AE01F179637000E9814 /* ChatViewController.swift in Sources */,
 				6A1F10181F14760C00634FE2 /* SettingCenter.swift in Sources */,
 				6A1F10141F14760C00634FE2 /* Constants.swift in Sources */,
+				6A174AE21F17963E000E9814 /* ChannelViewController.swift in Sources */,
 				6A1F101C1F14760C00634FE2 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

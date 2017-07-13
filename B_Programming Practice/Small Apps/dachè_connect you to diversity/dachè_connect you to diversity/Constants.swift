@@ -39,9 +39,13 @@ struct Authentification {
     static let ResetPasswordStoryboardID:String = "ResetPasswordViewController"
     
     //-----Segue ID
+    static let toFindPasswordStoryboardSegue:String = "ToFindPassword"
+    static let toResetPasswordStoryboardSegue:String = "ToResetPassword"
+    static let toSignUpStoryboardSegue:String = "ToSignUp"
+    static let toMainTapBarSegue:String = "ToMainTapBar"
     
-    
-
-    
+    //-----UserDefault Key
+    static let currentUserEmail:String = "CurrentUserEmail"
+ 
 }
 

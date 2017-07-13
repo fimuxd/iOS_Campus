@@ -16,25 +16,20 @@ class MainViewController: UIViewController {
     //******************************************//
     //                  IBOutlet                //
     //******************************************//
-    @IBOutlet weak var menuButtonOutlet: UIButton!
-    
-    
-    
-    var currentUser:User?
-    
+
     
     //******************************************//
     //              IBAction/함수영역              //
     //******************************************//
-    @IBAction func menuButtonAction(_ sender: UIButton) {
-    }
+    
+    
     
     //******************************************//
     //                 LiftCycle                //
     //******************************************//
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
 
     override func didReceiveMemoryWarning() {

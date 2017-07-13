@@ -49,19 +49,8 @@ class LogInViewController: UIViewController, UITextFieldDelegate, UIScrollViewDe
     
     //---새로운 유저 생성창 이동 Button
     @IBAction func createUserButtonAction(_ sender: UIButton) {
-        let nextViewController:SignUpViewController = storyboard?.instantiateViewController(withIdentifier: Authentification.signUpStoryboardID) as! SignUpViewController
-        
-        present(nextViewController, animated: true, completion: nil)
+        performSegue(withIdentifier: Authentification.toSignUpStoryboardSegue, sender: sender)
     }
-    
-    //---비밀번호 찾기 이동 Button
-    @IBAction func findPasswordButtonAction(_ sender: UIButton) {
-//        let nextViewController:FindPasswordViewController = storyboard?.instantiateViewController(withIdentifier: Authentification.findPasswordStoryboardID) as! FindPasswordViewController
-//        
-//        self.navigationController?.show(nextViewController, sender: sender)
-    }
-    
-    
     
     private func checkBlankAlert() {
         
@@ -69,9 +58,11 @@ class LogInViewController: UIViewController, UITextFieldDelegate, UIScrollViewDe
             
             if let realUserData = checkValidUser(for: self.inputIDTextField.text!) as? User {
                 if realUserData.password == self.inputPasswordTextField.text! {
-                    let nextViewController:MainViewController = self.storyboard?.instantiateViewController(withIdentifier: Authentification.mainStoryboardID) as! MainViewController
-                    self.present(nextViewController, animated: true, completion: nil)
-                    print(realUserData)
+                    
+                    UserDefaults.standard.set(self.inputIDTextField.text!, forKey: Authentification.currentUserEmail)
+                    
+                    performSegue(withIdentifier: Authentification.toMainTapBarSegue, sender: self.logInButtonOutlet)
+                    
                 }else{
                     invalidUserInfoAlert()
                 }
@@ -128,7 +119,7 @@ class LogInViewController: UIViewController, UITextFieldDelegate, UIScrollViewDe
         getUserDatas()
         print("viewWillAppear에서: \(self.currentUserDatas!)")
     }
-     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
