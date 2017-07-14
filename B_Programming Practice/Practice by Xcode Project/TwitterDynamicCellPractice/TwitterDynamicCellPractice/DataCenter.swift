@@ -46,6 +46,11 @@ class DataCenter {
         let newTwit:Twit = Twit(with: dic)
         self.rawArray.insert(newTwit, at: 0)
     }
+    
+    func removeTwit (at index:Int) {
+        self.rawArray.remove(at: index) //TO DO: 데이터 문제 해결할 것
+    }
+    
 }
 
 

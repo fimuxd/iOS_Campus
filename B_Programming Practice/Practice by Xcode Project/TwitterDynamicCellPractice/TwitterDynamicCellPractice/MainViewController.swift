@@ -105,10 +105,13 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         return UITableViewAutomaticDimension
     }
     
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == UITableViewCellEditingStyle.delete {
-            DataCenter.shared.dataArray.remove(at: indexPath.row) //TO DO: get only 라서 수정이 안됨. 해결할 것
-            
+            DataCenter.shared.removeTwit(at: indexPath.row)
         }
     }
     
