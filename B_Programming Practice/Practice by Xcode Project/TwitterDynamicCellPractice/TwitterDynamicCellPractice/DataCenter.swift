@@ -42,7 +42,10 @@ class DataCenter {
         
     }
     
-    
+    func addTwit (_ dic:[String:String]) {
+        let newTwit:Twit = Twit(with: dic)
+        self.rawArray.insert(newTwit, at: 0)
+    }
 }
 
 

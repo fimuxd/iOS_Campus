@@ -61,7 +61,6 @@
                             </label>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Hs-7Y-mDc">
                                 <rect key="frame" x="54" y="157" width="156" height="87.5"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="9Hs-7Y-mDc" secondAttribute="height" multiplier="16:9" id="aAG-QK-RWR"/>
                                 </constraints>

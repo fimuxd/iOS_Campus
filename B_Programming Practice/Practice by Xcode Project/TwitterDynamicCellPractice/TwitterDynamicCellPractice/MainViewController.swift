@@ -8,16 +8,74 @@
 
 import UIKit
 
-class MainViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class MainViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextViewDelegate {
 
     //******************************************//
     //                  IBOutlet                //
     //******************************************//
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var popUpView: UIView!
+    @IBOutlet weak var newTwitTextField: UITextView!
+    @IBOutlet weak var textCountLabel: UILabel!
+    
+    @IBOutlet weak var popUpViewY: NSLayoutConstraint!
+    @IBOutlet weak var subBackgroundView: UIView!
     
     //******************************************//
     //              IBAction/함수영역              //
     //******************************************//
+    
+    @IBAction func addTwitButtonAction(_ sender: UIButton) {
+        self.subBackgroundView.isHidden = false
+        self.popUpViewY.constant = -100
+        UIView.animate(withDuration: 0.3, animations: {self.view.layoutIfNeeded()})
+        self.newTwitTextField.text = "What's happening?"
+        self.newTwitTextField.textColor = .gray
+        self.textCountLabel.text = ""
+    }
+    
+    @IBAction func dismissPopUpViewButtonAction(_ sender: UIButton) {
+        self.subBackgroundView.isHidden = true
+        self.newTwitTextField.resignFirstResponder()
+        self.popUpViewY.constant = -353
+        UIView.animate(withDuration: 0.3, animations: {self.view.layoutIfNeeded()})
+    }
+    
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        self.newTwitTextField.text = ""
+        self.textCountLabel.text = "140/140"
+    }
+    
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        let currentCharacterCount = textView.text.characters.count ?? 0
+        
+        if(range.length + range.location > currentCharacterCount) {
+            return false
+        }
+        let newLength = currentCharacterCount + text.characters.count - range.length
+        self.textCountLabel.text = "\(newLength)/140"
+        return newLength < 140
+    }
+    
+    @IBAction func updateTwitButtonAction(_ sender: UIButton) {
+        DataCenter.shared.addTwit(["user_name":"Bo-Young Park",
+                                   "user_id":"@fimuxd",
+                                   "user_profile_img_url":"",
+                                   "body_text":self.newTwitTextField.text!,
+                                   "img_url":""])
+        
+        self.subBackgroundView.isHidden = true
+        self.newTwitTextField.resignFirstResponder()
+        self.popUpViewY.constant = -353
+        UIView.animate(withDuration: 0.3, animations: {self.view.layoutIfNeeded()})
+        
+        self.tableView.reloadData()
+    }
+    
+    @IBAction func refreshButtonAction(_ sender: UIButton) {
+        
+        self.tableView.reloadData()
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return DataCenter.shared.dataArray.count
@@ -47,13 +105,24 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         return UITableViewAutomaticDimension
     }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == UITableViewCellEditingStyle.delete {
+            DataCenter.shared.dataArray.remove(at: indexPath.row) //TO DO: get only 라서 수정이 안됨. 해결할 것
+            
+        }
+    }
+    
     //******************************************//
     //                 LiftCycle                //
     //******************************************//
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-    
+        
+        self.subBackgroundView.isHidden = true
+        self.newTwitTextField.layer.cornerRadius = 15
+
+        
     }
     
     

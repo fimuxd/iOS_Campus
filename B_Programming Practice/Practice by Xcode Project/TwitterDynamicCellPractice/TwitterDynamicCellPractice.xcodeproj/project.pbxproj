@@ -27,7 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6AFE2C021F1705F0006BD5D2 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		6AFE2C021F1705F0006BD5D2 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		6AFE2C061F170728006BD5D2 /* CustomDynamicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDynamicTableViewCell.swift; sourceTree = "<group>"; };
 		6AFE2C071F170728006BD5D2 /* CustomDynamicTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomDynamicTableViewCell.xib; sourceTree = "<group>"; };
 		6AFE2C0A1F17345B006BD5D2 /* DetailProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailProfileViewController.swift; sourceTree = "<group>"; };
