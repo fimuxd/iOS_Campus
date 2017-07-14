@@ -107,6 +107,7 @@
 	> | Lecture Summary | PPT | Programming Practice | Small Apps | Note |
 	> | :--- | :--- | :--- | :--- | :--- |
 	> | [Code Extension](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170711/ReadMe코드확장.md) | [22](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170711/0711.pdf) | - | - | 코드확장_subscript, extension, generic |
+	> | [Thread](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170713/Thread.md) | [23](https://github.com/fimuxd/iOS_Campus/blob/master/A_LectureSummary/170713/0713.pdf) | [Practice](https://github.com/fimuxd/iOS_Campus/tree/master/B_Programming%20Practice/Practice%20by%20Xcode%20Project/Thread(GCD)%20Practice) | - | 쓰레드 | 
 	
 
 	
