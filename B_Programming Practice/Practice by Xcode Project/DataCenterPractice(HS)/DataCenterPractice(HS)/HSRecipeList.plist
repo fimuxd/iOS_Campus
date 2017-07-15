@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>recipeID</key>
+		<integer>0</integer>
+		<key>name</key>
+		<string>돼지고기 숙주볶음</string>
+		<key>time</key>
+		<integer>5</integer>
+		<key>cost</key>
+		<integer>2000</integer>
+		<key>drink</key>
+		<string>0</string>
+		<key>ingrediants</key>
+		<string>돼지고기, 후추, 소금, 마늘, 피망, 대파, 굴소스, 고추, 콩나물</string>
+		<key>detail</key>
+		<string>01. 돼지고기는 마트에서 잡채용으로 구입한다. 소금과 후추 마늘 참기름으로 밑간을 한다.
+02. 숙주는 적당양 준비하시고 깨끗이 씻어서 준비해둔다.
+03. 미리 밑간해둔 돼지고기를 센불에서 빠르게 볶아낸다.
+04. 고기가 바싹 익으면 양파와 표고버섯을 넣는다. 피망이든 대파든 냉장고속 자투리 야채있음 사용한다.
+05. 간은 굴소스로 한다. 배효소대신 매실액이나 설탕 물엿등으로 대체 가능하다.
+06. 숙주나물의 아삭한 식감을 느끼기위해 요리 맨 마지막과정에서 숙주와 양배추를 넣어주고 빠르게 볶아낸다.
+07. 청,홍고추를 넣는다.
+008. 콩나물은 덜 익히면 비린맛이 나기 쉬운데 숙주는 생으로도 먹기도 하니까 살짝만 볶아준다.
+        </string>
+		<key>shortDescription</key>
+		<string>숙주와 돼지고기의 운명적인 만남</string>
+	</dict>
+	<dict>
+		<key>recipeID</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>카프레제</string>
+		<key>time</key>
+		<integer>10</integer>
+		<key>cost</key>
+		<integer>10000</integer>
+		<key>drink</key>
+		<string>2</string>
+		<key>ingrediants</key>
+		<string>모짜렐라 치즈, 토마토, 바질잎, 블랙 올리브</string>
+		<key>detail</key>
+		<string>01. 모짜렐라 치즈를 토마토와 같은 모양으로 통썰기 해준다.
+02. 토마토도 통썰기한다. 이 때 끓는 물에 데쳐서 껍질을 제거하면 더욱 부드럽다.
+03. 바질잎을 6장 정도 뜯어 바질 페스토를 만든다. 많은 양을 할 땐 믹서에 곱게 갈아주는 것이 더욱 좋다.
+04. 바질 페스토 완성.
+05. 블랙 올리브도 있으면 올리고, 먹기 좋게 자른다.
+06. 완성접시에 토마토와 치즈, 블랙 올리브, 발사믹 소스를 곁들여 준다.
+        </string>
+		<key>shortDescription</key>
+		<string>치즈와 토마토는 운명</string>
+	</dict>
+	<dict>
+		<key>recipeID</key>
+		<integer>2</integer>
+		<key>name</key>
+		<string>방울양배추 볶음</string>
+		<key>time</key>
+		<integer>20</integer>
+		<key>cost</key>
+		<integer>5000</integer>
+		<key>drink</key>
+		<string>1</string>
+		<key>ingrediants</key>
+		<string>소금, 브로콜리, 버터, 포도씨유, 마늘, 방울양배추, 게맛살, 두반장, 굴소스</string>
+		<key>detail</key>
+		<string>01. 끓는 물에 소금을 넣고 브로콜리를 살짝 데쳐준다.
+02. 브로콜리는 물기를 잘 빼준다
+03. 마늘은 편으로 썬다.
+04. 중불에서 달군 펜에 버터와 포도씨유를 넣고 녹인다.
+05. 펜에 마늘 칩을 넣고 볶는다.
+06. 방울양배추와 데친 브로콜리, 게맛살을 넣고 볶는다.
+07. 마요네즈, 두반장, 굴소스를 섞은 소스를 넣고 센불에 볶는다. </string>
+		<key>shortDescription</key>
+		<string>간단한 고퀄 안주!</string>
+	</dict>
+	<dict>
+		<key>recipeID</key>
+		<integer>3</integer>
+		<key>name</key>
+		<string>포크 테린</string>
+		<key>time</key>
+		<integer>21</integer>
+		<key>cost</key>
+		<real>10001</real>
+		<key>drink</key>
+		<string>1</string>
+		<key>ingrediants</key>
+		<string>아스파라거스, 시금치, 토마토, 오리엔탈 발사믹 소스</string>
+		<key>detail</key>
+		<string>01. 아스파라거스와 살짝 데친 시금치를 말고 껍질 벗긴 토마토를 만다
+02. 다시 바깥쪽에 시금치를 깔고 살짝 끓는 물에 데친 패널로 싸서 먹기좋은 크기로 자른다
+03. 옆에 속을 판 토마토에 아라꿀라를 꽂아 장식한다
+04. 오리엔탈 발사믹 소스를 살짝 끼얹는다. </string>
+		<key>shortDescription</key>
+		<string>돼지고기와 야채를 한방에</string>
+	</dict>
+	<dict>
+		<key>recipeID</key>
+		<integer>4</integer>
+		<key>name</key>
+		<string>시금치 필로파이</string>
+		<key>time</key>
+		<integer>21</integer>
+		<key>cost</key>
+		<integer>10001</integer>
+		<key>drink</key>
+		<string>1</string>
+		<key>ingrediants</key>
+		<string>닭가슴살, 시금치, 소금, 버터, 피자치즈, 파마산치즈, 필로시트</string>
+		<key>detail</key>
+		<string>01. 시금치는 다듬어 씻어 끓는물에 소금을 약간 넣고 데쳐 찬물로 헹구고 물기를 꼭 짠 후 곱게 다진다.
+02. 닭가슴살은 곱게 다진다.
+03. 프라이팬에 버터를 넣어 녹인 뒤 마늘을 볶다가 향이나면 닭가슴살을 넣어 같이 볶는다.
+04. 닭가슴살이 거의 익었으면 1의 다진 시금치를 넣어 같이 볶은 후 소금, 후춧가루를 넣어 간한다.
+05. 4를 접시에 담아 식힌 후 피지치즈와 파마산 치즈가루를 뿌려 섞는다.
+06. 버터를 중탕으로 녹여 필로시트에 고루 펴 바른후 필로시트를 올리고 떠 버터를 바른다.
+같음 방법으로 4장을 겹친다.
+07. 6의 필로시트를 4cm의 넓이로 길게 자른다.
+08. 필로시트에 5를 한 숟가락씩 떠서 올린 후 삼각형 모양으로 모빌 접듯이 만다.
+09. 180도로 예열한 오븐에 넣어 겉면이 바삭해 지도록 8분간 굽는다.</string>
+		<key>shortDescription</key>
+		<string>파이 좋아하세요?</string>
+	</dict>
+	<dict>
+		<key>recipeID</key>
+		<integer>5</integer>
+		<key>name</key>
+		<string>오이 오르되브르</string>
+		<key>time</key>
+		<integer>20</integer>
+		<key>cost</key>
+		<integer>5000</integer>
+		<key>drink</key>
+		<string>2</string>
+		<key>ingrediants</key>
+		<string>큐브참치, 오이, 맛살, 다진양파, 다진마늘, 방울토마토, 마요네즈, 소금, 후추</string>
+		<key>detail</key>
+		<string>01. 오이는 굵은소금으로 문질러 씻고 4등분해주세요. 계량스푼 작은거로 오이의 2/3가량 파내 주세요.
+02. 볼에 크리미, 다진양파, 다진마늘, 마요네즈, 소금, 후추, 으깬 큐브참치를 넣고 잘 섞어주세요.
+03. 속을 판 오이속에 재료를 채워주면 완성입니다. </string>
+		<key>shortDescription</key>
+		<string>오이의 상큼함을 느껴보자!</string>
+	</dict>
+	<dict>
+		<key>recipeID</key>
+		<integer>6</integer>
+		<key>name</key>
+		<string>수박 오이샐러드</string>
+		<key>time</key>
+		<integer>21</integer>
+		<key>cost</key>
+		<real>10001</real>
+		<key>drink</key>
+		<string>2</string>
+		<key>ingrediants</key>
+		<string>청오이,수박, 페타치즈, 드레싱(올리브 오일 2큰술, 레몬즙 1개 분량, 머스터드 ⅓작은술, 소금·통후추 간 것 약간씩)</string>
+		<key>detail</key>
+		<string>01.오이는 껍질째 소금으로 문질러 씻어 길이를 반으로 자른 뒤 필러로 얇게 깎는다.
+02. 수박은 사방 2.5cm 크기로 깍둑썰기하고 씨는 뺀다.
+03. 드레싱을 만든 뒤 그릇에 수박과 오이를 어우러지게 담고 페타치즈를 부숴 올린 후 고루 뿌린다.</string>
+		<key>shortDescription</key>
+		<string>여름밤, 상큼하게 소주 한잔!</string>
+	</dict>
+	<dict>
+		<key>recipeID</key>
+		<integer>7</integer>
+		<key>name</key>
+		<string>단호박 카프레제</string>
+		<key>time</key>
+		<integer>21</integer>
+		<key>cost</key>
+		<real>10001</real>
+		<key>drink</key>
+		<string>1</string>
+		<key>ingrediants</key>
+		<string>단호박, 모짜렐라 치즈, 바질잎, 올리브유, 발사믹식초, 다진양파, 설탕, 소금, 후추</string>
+		<key>detail</key>
+		<string>01. 단호박과 치즈를 같은 크기로 깍뚝 썬다.
+02. 단호박을 삶는다
+03. 바질을 손으로 잘게 뜯어서 소스와 함께 버무린다.
+04. 단호박과 치즈, 소스를 한 데 버무린다. </string>
+		<key>shortDescription</key>
+		<string>달콤한 단호박에 상큼한 치즈!</string>
+	</dict>
+	<dict>
+		<key>recipeID</key>
+		<integer>8</integer>
+		<key>name</key>
+		<string>의외로 맛있는 피망</string>
+		<key>time</key>
+		<integer>5</integer>
+		<key>cost</key>
+		<integer>5000</integer>
+		<key>drink</key>
+		<string>1</string>
+		<key>ingrediants</key>
+		<string>피망, 양파</string>
+		<key>detail</key>
+		<string>01. 피망은 반으로 갈라 씨를 제거한 후, 찬물에 담가둔다.
+02. 양파는 껍질을 벗기고 잘게 다진다. </string>
+		<key>shortDescription</key>
+		<string>맥주와 피망의 의외의 만남</string>
+	</dict>
+	<dict>
+		<key>recipeID</key>
+		<integer>9</integer>
+		<key>name</key>
+		<string>견과류</string>
+		<key>time</key>
+		<integer>5</integer>
+		<key>cost</key>
+		<real>5000</real>
+		<key>drink</key>
+		<string>1</string>
+		<key>ingrediants</key>
+		<string>설탕, 물, 각종 견과류</string>
+		<key>detail</key>
+		<string>01. 팬에 설탕과 물을 넣고, 중불에서 캐러멜 색이 날 때까지 젖지 않고 그대로 끓인다.
+02. 색이 점점 캐러멜 색으로 변해가면, 여기에 견과류를 넣어준다.
+03. 견과류에 캐러멜 코팅이 고루 입혀 지도록 섞어 준다.
+04. 어느 정도 섞이면, 불을 끄고, 유산지나 베이킹 시트 위에 올려 식혀 준다.</string>
+		<key>shortDescription</key>
+		<string>Back To The BASIC</string>
+	</dict>
+	<dict>
+		<key>recipeID</key>
+		<integer>10</integer>
+		<key>name</key>
+		<string>불막창 떡볶음</string>
+		<key>time</key>
+		<integer>15</integer>
+		<key>cost</key>
+		<integer>5000</integer>
+		<key>drink</key>
+		<string>0</string>
+		<key>ingrediants</key>
+		<string>청정원 안주야 불막창, 떡볶아떡, 깻잎</string>
+		<key>detail</key>
+		<string>01.깻잎은 얇게 썰어 찬물에 깨끗하게 씻은 후 물기를 빼 놓는다.
+02.불막창은 전자레인지에 살짝 해동한다.
+03. 팬에 불막창과 떡을 넣어 볶는다.
+04. 맛있게 잘 볶아졌으면 접시에 깻잎을 깔고 위에 올려낸다.</string>
+		<key>shortDescription</key>
+		<string>신선한 깻잎과 함께라면 맛이 두배~</string>
+	</dict>
+	<dict>
+		<key>recipeID</key>
+		<integer>11</integer>
+		<key>name</key>
+		<string>세발나물 달걀말이</string>
+		<key>time</key>
+		<integer>5</integer>
+		<key>cost</key>
+		<integer>5000</integer>
+		<key>drink</key>
+		<string>1</string>
+		<key>ingrediants</key>
+		<string>달걀, 물, 세발나물, 소금</string>
+		<key>detail</key>
+		<string>01.계란은 잘 풀어 소금 넣고 살짝 간하고 세발나물 잘게 썰어넣고 잘 섞는다.
+02.달걀말이 팬에 오일을 둘러 카친타올로 닦은 후 약불에서 달걀말이를 한다.
+03.불을 끄고 식혀 준 다음 먹기 좋게 자른다.</string>
+		<key>shortDescription</key>
+		<string>계란말이는 언제 어디서나 어울리는 안주의 제왕</string>
+	</dict>
+	<dict>
+		<key>recipeID</key>
+		<integer>12</integer>
+		<key>name</key>
+		<string>양송이 치즈구이</string>
+		<key>time</key>
+		<integer>10</integer>
+		<key>cost</key>
+		<integer>10000</integer>
+		<key>drink</key>
+		<string>1</string>
+		<key>ingrediants</key>
+		<string>양송이버섯, 다진 노란색 파프리카, 다진 냉이, 소금, 피자치즈, 다진 빨간색 파프리카, 버터, 후춧가루</string>
+		<key>detail</key>
+		<string>01. 양송이버섯 기둥을 잘라내고 껍질을 손으로 벗겨내준다.
+02. 파프리카와 냉이는 작게 다져준다.
+03. 두꺼운 프라이팬에 버터 한조각을 넣고 양송이버섯의 기둥이 위쪽으로 오게 올려두고 3~4분 정도 익혀준다.
+04. 버섯 위에 파프리카와 냉이를 올리고 소금과 후춧가루를 뿌려준다.
+05. 마지막으로 피자치즈를 올려준다.
+06. 뚜껑을 덮고 약한 불에서 3~4분 정도 피자치즈가 잘 녹을 때까지 익혀준다. </string>
+		<key>shortDescription</key>
+		<string>10분만에 느끼는 서유럽 감성안주</string>
+	</dict>
+	<dict>
+		<key>recipeID</key>
+		<integer>13</integer>
+		<key>name</key>
+		<string>바질 토마토 부르스케타</string>
+		<key>time</key>
+		<integer>10</integer>
+		<key>cost</key>
+		<real>7000</real>
+		<key>drink</key>
+		<string>1</string>
+		<key>ingrediants</key>
+		<string>썰어진 바게트 빵 , 방울토마토, 양파, 블랙 올리브, 올리브오일, 소금, 바질페스토, 후추, 그라노파다노 치즈</string>
+		<key>detail</key>
+		<string>01. 프라이팬에 버터를 발라 바게트 빵을 노릇노릇하게 앞뒤를 10분 정도 구워준다.
+02. 바게트 빵을 굽는 동안에, 블랙 올리브와 양파와 방울토마토를 먹기 좋게 잘게 썰어준다.
+03. 잘게 썰은 토마토와 양파, 올리브오일 1T과 소금 1/2꼬집, 후추도 아주 살짝만 넣고 섞는다.
+04. 양면이 노릇노릇하게 구워진 바게트 빵 위에 바질 페스토를 발라준다.
+05. 아까 만들어놓은 토마토소스와 잘라놓은 블랙 올리브를 올려준다. 마무리로 치즈를 강판에 갈아서 부르스케타 위에 뿌려준다. </string>
+		<key>shortDescription</key>
+		<string>10분만 들이면 바게트는 우리 생각보다 맛있어진다.</string>
+	</dict>
+	<dict>
+		<key>recipeID</key>
+		<integer>14</integer>
+		<key>name</key>
+		<string>갈릭버터 새우구이</string>
+		<key>time</key>
+		<integer>21</integer>
+		<key>cost</key>
+		<integer>9000</integer>
+		<key>drink</key>
+		<string>1</string>
+		<key>ingrediants</key>
+		<string>새우, 페페론치노, 마늘, 굵은 소금, 화이트와인, 레몬즙, 버터, 다진 마늘, 설탕, 소금, 후추, 파슬리 가루</string>
+		<key>detail</key>
+		<string>01. 새우는 머리와 다리, 껍질을 까준다. 그리고 등에 있는 내장을 칼집을 내서 또는 이쑤시개 등을 이용해 제거하고, 깨끗하게 한 번 씻어준다! 배 쪽에 있는 힘줄도 대충 앞 두 마디 정도만 제거한다.
+02. 갈릭버터 재료들은 모두 섞어 준비한다.
+03. 중불로 예열한 팬에 올리브오일을 한바퀴 충분히 두른 뒤에 슬라이스한 마늘, 다진 페페론치노를 넣고 약 10초 정도만 볶아준다.
+04. 손질한 새우, 굵은 소금을 넣고 뒤집어 잘 익도록 뒤집어가며 구워준다. 계속 중불을 유지한다. 새우를 한번 뒤집고 나서는 화이트와인과 레몬즙을 빙 골고루 둘러 넣어 잡내는 날리고 풍미는 더해준다.
+05. 새우에 붉은 빛이 돌기 시작하면 미리 섞어 만들어 둔 갈릭버터를 넣어준다. 이제 약불로 버터를 녹여가며 숟가락 등을 이용해 녹은 소스를 퍼서 새우에 끼얹어준다. 새우에 갈릭버터가 잘 베도록 볶듯이 구워준다. 새우가 앞 뒤 모두 노릇노릇, 마늘이 바삭하게 구워지면 완성.
+06. 요리가 끝나면 원하는 치즈를 위에 갈아준다. 파슬리, 레몬즙을 살짝 한번 더 뿌리고 그라나파다노치즈, 파마산치즈 갈아서 뿌리고 파슬리 약간 뿌려준다.</string>
+		<key>shortDescription</key>
+		<string>외골격인 녀석들은 뭘 해도 맛있다.</string>
+	</dict>
+	<dict>
+		<key>recipeID</key>
+		<integer>15</integer>
+		<key>name</key>
+		<string>매콤달콤 깐풍만두</string>
+		<key>time</key>
+		<integer>21</integer>
+		<key>cost</key>
+		<integer>5000</integer>
+		<key>drink</key>
+		<string>1</string>
+		<key>ingrediants</key>
+		<string>냉동만드, 파프리카, 양파, 파, 청양고추, 다진마늘, 굴소스, 간장, 올리고당, 식초 , 후추, 참기름, 깨</string>
+		<key>detail</key>
+		<string>01. 파프리카와 양파는 정사각형으로 썰어준다. 청양고추와 파도 다져준다.
+02. 깐풍소스를 준비한다. 굴소스1, 간장2, 올리고당2, 식초1T, 후추약간, 참기름, 깨를 넣고 잘 섞는다.
+03. 만두는 해동을 한 후 기름을 넉넉하게 두르고 튀기듯이 구워준다.
+04. 잘 구워진 만두는 한쪽으로 빼두고 다진마늘과 파를 먼저 볶아서 파기름을 내준다.
+05. 썰어 둔 야채를 넣고 볶아준다.
+06. 양파가 투명해질 때쯤 깐풍소스를 넣는다. 물을 살짝 첨가해서 졸여준다. 전분물을 넣으면 더 걸죽하게 만들 수 있다.
+07. 만두를 뒹굴뒹굴 한 후 살짝 더 졸여주면 완성.</string>
+		<key>shortDescription</key>
+		<string>만원 한장으로 느끼는 차이니즈 레스토랑의 감성</string>
+	</dict>
+	<dict>
+		<key>recipeID</key>
+		<integer>16</integer>
+		<key>name</key>
+		<string>오징어 허니버터구이</string>
+		<key>time</key>
+		<integer>21</integer>
+		<key>cost</key>
+		<real>12000</real>
+		<key>drink</key>
+		<string>1</string>
+		<key>ingrediants</key>
+		<string>오징어, 마늘소금, 바질가루, 꿀, 후추, 화이트와인</string>
+		<key>detail</key>
+		<string>01. 오징어는 일단 깨끗이 씻고 손질한 후에 물기를 빼준다. 나머지 물기는 키친타올로 닦아 준다.
+02. 달궈진 팬에 올리브유를 두르고 오징어를 일차로 구워준다. 여기에 소금, 후추, 바질가루를 넣고 간과 향을 넣어 준다.
+03. 화이트와인을 조금 넣어서 해산물에서 나는 비린맛을 제거해준다.
+04. 그리고 버터 한큰술과 꿀을 넣어서 구워 준다.</string>
+		<key>shortDescription</key>
+		<string>마른오징어에 깡소주는 이제 그만~</string>
+	</dict>
+	<dict>
+		<key>recipeID</key>
+		<integer>17</integer>
+		<key>name</key>
+		<string>치즈감자전</string>
+		<key>time</key>
+		<integer>21</integer>
+		<key>cost</key>
+		<real>5000</real>
+		<key>drink</key>
+		<string>1</string>
+		<key>ingrediants</key>
+		<string>감자, 피자치즈, 후추, 소금, 케첩</string>
+		<key>detail</key>
+		<string>01. 감자는 최대한 얇게 채 썬다.
+02. 볼에 채 썬 감자, 피자치즈를 넣고 소금, 후추로 간을 해 섞는다.
+03. 예열된 팬에 기름을 두르고 감자 채를 올린다.
+04. 앞뒤가 노릇해지게 구워 완성한다. </string>
+		<key>shortDescription</key>
+		<string>백년전이나 지금이나 감자는 허기진 자의 베프</string>
+	</dict>
+	<dict>
+		<key>recipeID</key>
+		<integer>18</integer>
+		<key>name</key>
+		<string>파래바지락전</string>
+		<key>time</key>
+		<integer>15</integer>
+		<key>cost</key>
+		<integer>6500</integer>
+		<key>drink</key>
+		<string>1</string>
+		<key>ingrediants</key>
+		<string>파래, 부침가루, 참기름, 홍고추, 바지락살, 소금, 통깨</string>
+		<key>detail</key>
+		<string>01. 파래는 굵은소금으로 씻어서 물기를 빼주고, 바지락살도 굵은소금으로 씻어 준 다음에 물기를 뺀다.
+02. 물기를 빼고 소금간을 한다.
+03. 부침가루를 넣고 물을 조금씩 넣어가면서 농도를 맞춘다. 물은 반컵부터 시작해서 잘 섞어 주면서 조금씩 조금씩 농도를 맞춰 가면서 넣어 준다.
+04. 참기름 한두방울과 통깨를 넣어서 잘 섞어 준다.
+05. 파래바지락전 위에 올려진 홍고추, 반죽도 준비한다.
+06. 팬에 기름을 두르고 달군후에 약불로 옮겨서는 하나씩 먹기 좋은 크기로 떠서 부쳐준다. 팬을 달굴때에는 센불에서 달군다. 본격적으로 전을 부칠때에는 약불로 옮겨서 부쳐 준다.
+07. 기름은 조금만 두르고 약불에서 바삭바삭하게 부쳐주면 된다.
+08. 바지락살과 파래는 금방 익기 때문에 바로바로 뒤집어서 노릇해지면 꺼낸다.</string>
+		<key>shortDescription</key>
+		<string>꼭 추석에만 전 먹으라는 법은 없으니까</string>
+	</dict>
+	<dict>
+		<key>recipeID</key>
+		<integer>19</integer>
+		<key>name</key>
+		<string>삼겹살수육</string>
+		<key>time</key>
+		<integer>21</integer>
+		<key>cost</key>
+		<real>12000</real>
+		<key>drink</key>
+		<string>1</string>
+		<key>ingrediants</key>
+		<string>삼겹살, 통후추, 통마늘, 청주</string>
+		<key>detail</key>
+		<string>01.잡내를 잡아 주기 위해서 통마늘과 통후추를 넣어준다.
+02. 삼겹살을 넣어주고 물에 넉넉하게 잠길정도로 넣어 주고 강불에서 삶아 준다.
+03. 여기에 청주를 넣어 준다. 통마늘과 통후추, 그리고 청주를 넣으면 색도 깔끔하게 나오면서 잡내도 사라진다.
+04. 강불에서 30분정도 팔팔 삶아준다.
+05. 다 삶아진 수육을 꺼내준다.
+06. 먹기 좋은 크기로 썰어서 완성 접시에 올려 놓아준다. </string>
+		<key>shortDescription</key>
+		<string>삼겹살은 어떻게 먹어도 맛있다.</string>
+	</dict>
+	<dict>
+		<key>recipeID</key>
+		<integer>20</integer>
+		<key>name</key>
+		<string>스파게티면 튀김</string>
+		<key>time</key>
+		<integer>21</integer>
+		<key>cost</key>
+		<real>3500</real>
+		<key>drink</key>
+		<string>1</string>
+		<key>ingrediants</key>
+		<string>스파게티면, 식용류, 설탕, 맛소금, 계피가루</string>
+		<key>detail</key>
+		<string>01. 맛소금, 설탕, 계피가루를 넣어 잘 섞어 양념을 만들어준다.
+02. 스파게티면은 반으로 잘라 준다.
+03. 식용유를 팬에 넣어 예열해준뒤 스파게티면을 식용유에 넣어 1~2분정도 튀겨준다.
+04. 튀긴 스파게티면을 건져내어 준비해둔 양념에 버무려준다.
+05. 컵에 담아내어 완성.  </string>
+		<key>shortDescription</key>
+		<string>파스타를 해먹기 너무 귀찮은 그대를 위하여</string>
+	</dict>
+	<dict>
+		<key>recipeID</key>
+		<integer>21</integer>
+		<key>name</key>
+		<string>연근조림 만드는 법</string>
+		<key>time</key>
+		<integer>21</integer>
+		<key>cost</key>
+		<real>2500</real>
+		<key>drink</key>
+		<string>0</string>
+		<key>ingrediants</key>
+		<string>연근 120g, 간장 17ml
+            식초1/2큰술(7ml), 양념(간장2큰술(30ml), 물엿 1큰술(10g), 설탕 1큰술(10g), 식용유 1/2큰술(7ml)), 참기름 1/2작은술(2ml), 통깨 1/2작은술(2g)</string>
+		<key>detail</key>
+		<string>01.연근 껍질은 벗기고 0.5cm 두께로 썬다. 냄비에 물 1컵(200ml), 식초, 연근을 넣고 연근이 반쯤 익을 때까지 데친다. 체에 밭쳐 물기를 뺀다.(연근을 식촛물에 데처내어 아린맛을 없애고 조리는 시간을 줄일 수 있다.)
+02.냄비에 물 1컵(200ml)과 양념 재료, 연근을 넣고 조린다.
+03.국물이 거의 없어질 때까지 조린 뒤 불을 끄고 참기름과 통깨를 넣고 버무린다.</string>
+		<key>shortDescription</key>
+		<string>칼로리가 낮고 철분과 비타민 C가 풍부하여 다이어트에 좋습니다.</string>
+	</dict>
+	<dict>
+		<key>recipeID</key>
+		<integer>22</integer>
+		<key>name</key>
+		<string>우엉간장조림</string>
+		<key>time</key>
+		<integer>10</integer>
+		<key>cost</key>
+		<integer>10000</integer>
+		<key>drink</key>
+		<string>2</string>
+		<key>ingrediants</key>
+		<string>우엉 3뿌리, 식초 1큰술, 참기름 1큰술, 검은깨 약간.물(조림 양념) 3컵, 간장 6큰술, 설탕 4큰술, 청주 1큰술, 물엿 2큰술.조림 양념 (물 3컵)</string>
+		<key>detail</key>
+		<string>01.우엉은 껍질을 벗겨 3mm 가량 두께로 썹니다.
+02.물에 식초를 타 우엉을 주물러 씻은 후 맑은 물로 헹굽니다.
+03.냄비에 물을 끓여 우엉을 넣고 2분 정도 데친 후 찬물에 건져 물기를 뺍니다.
+04.냄비에 우엉, 물, 간장, 설탕, 청주를 넣고 센 불에서 끓인 후 끓기 시작하면 중 불에서 조립니다.
+05.우엉에 갈색이 돌면 물엿을 넣고 약 불에서 은근히 조립니다.
+06.우엉에 윤기가 나면 참기름과 검은 깨를 뿌립니다.</string>
+		<key>shortDescription</key>
+		<string>물에 식초를 타 우엉을 주물러 씻으면 우엉의 아린 맛을 없앨 수 있습니다.</string>
+	</dict>
+	<dict>
+		<key>recipeID</key>
+		<integer>23</integer>
+		<key>name</key>
+		<string>냉이 무침</string>
+		<key>time</key>
+		<integer>15</integer>
+		<key>cost</key>
+		<integer>8000</integer>
+		<key>drink</key>
+		<string>1</string>
+		<key>ingrediants</key>
+		<string>냉이 10줌(400g)양념(고추장
+            2큰술(30g), 된장 1큰술(15g), 참기름 1큰술(15ml), 대파(다진 파)1큰술(10g), 깨소금 1/2큰술(5g), 마늘(다진 마늘) 1/2큰술(5g))</string>
+		<key>detail</key>
+		<string>01.냉이는 시든 잎을 떼어낸다. 칼로 잔뿌리를 긁어내고 물에 담아 살살 흔들어 여러 번 씻는다. 크기가 큰 것은 뿌리 부분에 칼집을 넣어 2등분 한다.
+02.끓는 소금물에 냉이를 넣고 데친다. 찬물에 헹궈 물기를 꼭 짠다.
+03.볼에 양념 재료를 넣고 골고루 섞은 후 냉이를 넣고 조물조물 무친다.</string>
+		<key>shortDescription</key>
+		<string>냉이는 식이섬유가 많아 다이어트에 효과적입니다.</string>
+	</dict>
+	<dict>
+		<key>recipeID</key>
+		<integer>24</integer>
+		<key>name</key>
+		<string>아귀찜</string>
+		<key>time</key>
+		<integer>21</integer>
+		<key>cost</key>
+		<real>40000</real>
+		<key>drink</key>
+		<string>1</string>
+		<key>ingrediants</key>
+		<string>아귀1마리(01.2kg),콩나물 6줌(300g)
+        미더덕150g, 미나리 1과 1/2줌(80g), 대파15cm(30g), 양념(마늘(다진 마늘) 2큰술(20g), 생강즙 1/2큰술(7ml), 고춧가루8큰술(40g), 간장 1큰술(15ml), 청주 2큰술(30ml), 소금1/2큰술(5g), 간장(국간장) 1과 1/2큰술(22ml)), 녹말물 1큰술(녹말가루 1큰술+물 1큰술), 멸치국물1/2컵(100ml), 깨 1/2큰술(5g), 된장 1큰술(15g)
+        
+    </string>
+		<key>detail</key>
+		<string>01.아귀는 주둥이를 제거하고 배쪽을 갈라서 흐르는 물에 깨끗이 씻은 후 사방 6~7cm 크기로 썬다.
+02.냄비에 아귀가 잠길만큼의 물과 된장을 넣고 팔팔 끓으면 아귀를 넣고 살짝 데친다. 체에 밭쳐 물기를 뺀다.(시간적 여유가 있다면 체에 밭쳐 하루 동안 아귀를 말려서 조리하면 익을 때 살이 풀어지지 않고 쫄깃한 육질이 된다.)
+03.미나리는 잎을 제거해 6cm 길이로 썰고, 대파는 어슷 썬다. 볼에 양념 재료를 넣고 골고루 섞는다.
+04.미더덕은 소금물에 흔들어 씻은 후 체에 밭쳐 물기를 뺀다. 콩나물은 깨끗이 씻어 체에 밭쳐 물기를 뺀다.
+05.깊은 팬을 달궈 아귀, 멸치국물, 양념재료를 넣어 볶는다.
+06.콩나물을 넣고 뚜껑을 닫아 콩나물의 숨이 죽을 때까지 끓인다.
+07.뚜껑을 열고 미더덕을 넣고 섞어가며 양념이 잘 어우러지도록 볶는다.
+08.국물이 자작하게 남으면 미나리, 대파를 넣고 볶다가 녹말물을 넣어 끓여 걸쭉하게 만든다. 불을 끄고 참기름, 깨를 넣고 골고루 버무린다.</string>
+		<key>shortDescription</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>recipeID</key>
+		<integer>25</integer>
+		<key>name</key>
+		<string>감자 조림</string>
+		<key>time</key>
+		<integer>21</integer>
+		<key>cost</key>
+		<integer>12000</integer>
+		<key>drink</key>
+		<string>1</string>
+		<key>ingrediants</key>
+		<string> 감자 1개(200g)
+        당근 1/6개(30g), 양파 1/10개(20g), 깨 1/2작은술(2g), 양념 재료(간장1과 1/2큰술(22ml), 물엿 1/2큰술(7ml), 마늘(다진 마늘) 1작은술(3g), 식용유 1/2큰술(7ml), 물 1/4컵(50ml))
+        
+    </string>
+		<key>detail</key>
+		<string>01.감자, 당근은 사방 1.5cm, 양파는 1.5x1.5cm 크기로 썬다. 감자는 찬물에 담가 전분기를 제거한 후 체에 밭쳐 물기를 뺀다.
+02.볼에 양념 재료를 골고루 섞는다.
+03.냄비에 식용유를 두르고 감자를 넣어 가장자리가 투명해질 때까지 볶는다. 02의 양념을 넣어 끓어오르면 뚜껑을 덮고 익힌다. 감자가 반쯤 익으면 당근, 양파를 넣고 조리다가 국물이 약간 남았을 때 뚜껑을 열고 저어가며 약한 불에서 조린다.
+04.국물이 없을 때까지 조려지면 불을 끄고 깨를 뿌린다.</string>
+		<key>shortDescription</key>
+		<string>감자는 필수 아미노산 함유가 우수한 식품으로 다이어트 중 영양소 결핍에 대해 걱정을 덜 수 있는 음식입니다.</string>
+	</dict>
+	<dict>
+		<key>recipeID</key>
+		<integer>26</integer>
+		<key>name</key>
+		<string>매생이 국</string>
+		<key>time</key>
+		<integer>21</integer>
+		<key>cost</key>
+		<integer>12000</integer>
+		<key>drink</key>
+		<string>2</string>
+		<key>ingrediants</key>
+		<string>매생이 400g, 굴 100g, 물 1.6L, 국간장 2큰술, 다진 마늘 1큰술, 참기름 2작은술</string>
+		<key>detail</key>
+		<string>01.매생이는 물에 서너 번 헹궈 고운 체에 밭쳐 물기를 뺀다.
+02.굴에 소금을 넣고 으깨지지 않도록 살살 주무른 후 물로 서너 번 헹궈 체에 받쳐 둔다.
+03.두꺼운 냄비에 참기름을 두르고, 굴과 다진 마늘을 넣고 볶는다.
+04.굴의 향이 우러나면 매생이를 넣고 물을 부어 살짝 끓인 다음 국간장으로 간을 한다.</string>
+		<key>shortDescription</key>
+		<string>칼슘과 철분이 풍부해 골다공증이나 성장기 어린이의 발육촉진에 효능이 있다.</string>
+	</dict>
+	<dict>
+		<key>recipeID</key>
+		<integer>27</integer>
+		<key>name</key>
+		<string>봄동 겉절이</string>
+		<key>time</key>
+		<integer>21</integer>
+		<key>cost</key>
+		<real>10001</real>
+		<key>drink</key>
+		<string>2</string>
+		<key>ingrediants</key>
+		<string> 봄동200g
+        소금(굵은소금) 2와 1/2큰술(25g), 홍고추1개(10g), 양념(피시소스2큰술(30ml), 고춧가루2큰술(10g), 사과즙 1큰술(15ml), 마늘(다진 마늘) 1작은술(3g), 물엿1/2큰술(5g), 설탕 2/3큰술(7g), 참기름 2/3큰술(7ml), 통깨 1/2큰술(5g))</string>
+		<key>detail</key>
+		<string>01.봄동은 잎을 한 장씩 떼어낸 후 흐르는 물에 깨끗이 씻는다. 잎이 큰 것은 2~4등분 하고 소금을 골고루 뿌려 15~20분 절이고 물에 헹구고 체에 밭쳐 물기를 뺀다.
+02.홍고추는 씨를 제거한 후 다진다.
+03.볼에 양념 재료를 넣고 골고루 섞는다. (피시소스 대신에 멸치액젓이나 까나리 액젓을 넣어도 좋다. 사과즙을 넣으면 감칠맛이 더해진다.)
+04.봄동에 양념을 넣고 골고루 무치고 홍고추를 넣고 섞는다.</string>
+		<key>shortDescription</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>recipeID</key>
+		<integer>28</integer>
+		<key>name</key>
+		<string>참치 김치찌개</string>
+		<key>time</key>
+		<integer>21</integer>
+		<key>cost</key>
+		<real>18000</real>
+		<key>drink</key>
+		<string>1</string>
+		<key>ingrediants</key>
+		<string> 참치캔 1캔(100g), 배추김치(잘 익은 것) 3컵(450g)양파1/5개(40g), 두부100g, 마늘(다진 마늘) 1큰술(10g), 대파10cm(20g), 청양고추 1개(10g), 멸치국물 3컵(600ml), 김치국물 1/4컵(50ml), 식용유 1큰술(15ml), 고춧가루2/3큰술(7g), 설탕2/3큰술(7g), 후춧가루(후춧가루 약간)</string>
+		<key>detail</key>
+		<string>01.양파는 채 썰고 청양고추, 대파는 어슷 썬다. 두부는 한입크기로 썬다. 김치는 한입크기로 썰고 참치는 체에 밭쳐 기름기를 뺀다. 달군 팬에 식용유를 두르고 김치, 마늘을 넣고 충분히 볶는다.
+02.멸치국물와 김치국물을 넣고 끓인다.
+03.김치가 푹 무를 때까지 끓인 후 참치를 넣고 끓인다.
+04.두부, 양파를 넣고 더 끓인다.
+05.대파, 청양고추, 고춧가루, 설탕, 후춧가루를 넣고 좀 더 끓인다.(김치의 신맛에 따라 설탕양을 가감한다.)</string>
+		<key>shortDescription</key>
+		<string>김치의 신맛이 강할 때는 설탕을 약간 넣으면 신맛이 줄어들면서 찌개의 맛이 더 좋아진다.</string>
+	</dict>
+	<dict>
+		<key>recipeID</key>
+		<integer>29</integer>
+		<key>name</key>
+		<string>부대 찌개</string>
+		<key>time</key>
+		<integer>21</integer>
+		<key>cost</key>
+		<integer>20000</integer>
+		<key>drink</key>
+		<string>1</string>
+		<key>ingrediants</key>
+		<string> 햄(통조림햄) 150g, 돼지고기(다진 돼지고기) 150g, 소시지100g 양파1/4개(50g), 마카로니(삶은 것) 1/3컵(30g), 콩 통조림 3큰술(30g), 김치 1컵(150g), 청주1큰술(15ml), 떡국떡 1/2컵(50g), 대파15cm(30g), 육수 재료(다시마10×10cm(5g), 국물용멸치 20마리(20g), 물 4컵(800ml)), 양념 재료(고춧가루 3큰술(15g), 고추장 1작은술(5g), 간장(재래간장) 1큰술(15ml), 마늘(다진 마늘) 1큰술(10g))
+    </string>
+		<key>detail</key>
+		<string>01.냄비에 육수 재료를 넣고 한소끔 끓여 멸치 육수 3컵(600ml)을 만든다.
+02.볼에 양념 재료를 넣고 골고루 섞는다.
+03.통조림 햄은 0.5cm 두깨로 썰고 소시지는 어슷 썬다. 다진 돼지고기는 청주 1큰술과 후춧가루 약간에 버무려 재운다.
+04.대파는 어슷 썰고 양파는 채 썬다. 배추김치는 2cm 폭으로 썬다.
+05.냄비에 햄, 소시지, 다진 돼지고기, 김치, 떡국떡, 양파, 대파, 삶은 마카로니, 통조림 콩을 넣는다.(떡국떡은 물에 담가 두었다가 넣는다.)
+06.양념과 육수를 넣고 끓인다.(간이 부족하면 소금으로 간한다.)</string>
+		<key>shortDescription</key>
+		<string>기호에 따라 당면이나 라면, 치즈를 추가하여 넣어주어도 좋다</string>
+	</dict>
+	<dict>
+		<key>recipeID</key>
+		<integer>30</integer>
+		<key>name</key>
+		<string>샤브 샤브</string>
+		<key>time</key>
+		<integer>21</integer>
+		<key>cost</key>
+		<real>50000</real>
+		<key>drink</key>
+		<string>1</string>
+		<key>ingrediants</key>
+		<string>물 2L, 다시마(손바닥 크기) 1장, 새우 껍질 100g, 통마늘 3쪽, 통생강 1/2개, 손질된 홍합 20개, 대파 1줄기, 정종 100mL.샤브용 등심 300g, 청경채 3줄기, 새송이버섯 2개, 느타리버섯 10개, 대파 100g, 양파(손가락 크기) 100g, 숙주 50g, 조랭이떡 100g, 육수 800mL.</string>
+		<key>detail</key>
+		<string>01.큰 냄비에 모든 육수 재료를 넣고 끓으면 약한 불로 조절하여 30분 정도 더 끓이면서 거품을 제거한다.
+02.(샤부샤부 만들기) 새송이버섯은 4등분하여 자르고, 청경채는 흐르는 물에 씻어서 준비한다.
+03.전골 냄비에 육수를 붓고 끓으면 채소와 조랭이 떡을 넣고 끓인다.
+04.채소가 익으면 고기를 넣어 샤부샤부하여 채소와 함께 먹는다.(취향대로 다데기의 양을 조절하고, 전골 요리에 맞는 소스 중 선택하여 먹으면 된다.)</string>
+		<key>shortDescription</key>
+		<string>요리와 어울리는 소스는 칠리 소스, 땅콩 소스입니다.</string>
+	</dict>
+</array>
+</plist>
