@@ -129,10 +129,10 @@
 				6A6DACF41F19E715001676AD /* AppDelegate.swift */,
 				6A6DAD061F19E733001676AD /* MainViewController.swift */,
 				6A6DAD0A1F19E793001676AD /* CustomTableViewCell.swift */,
+				6A6DAD081F19E73B001676AD /* DetailViewController.swift */,
 				6A6DAD4E1F19E7F8001676AD /* DataCenter.swift */,
 				6A6DAD501F19E809001676AD /* Reciept.swift */,
 				6A6DACF81F19E715001676AD /* Main.storyboard */,
-				6A6DAD081F19E73B001676AD /* DetailViewController.swift */,
 				6A6DACFB1F19E715001676AD /* Assets.xcassets */,
 				6A6DACFD1F19E715001676AD /* LaunchScreen.storyboard */,
 				6A6DAD0E1F19E7DB001676AD /* HSImages */,
@@ -454,6 +454,7 @@
 				6A6DAD051F19E715001676AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

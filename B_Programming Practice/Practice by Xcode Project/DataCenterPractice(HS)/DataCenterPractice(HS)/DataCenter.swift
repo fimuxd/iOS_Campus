@@ -42,10 +42,10 @@ class DataCenter {
 }
 
 
-enum Drink:Int {
-    case beer
-    case wine
-    case soju
+enum Drink:String {
+    case beer = "0"
+    case wine = "1"
+    case soju = "2"
 }
 
 

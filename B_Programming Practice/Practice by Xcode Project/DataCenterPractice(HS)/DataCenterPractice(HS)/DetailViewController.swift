@@ -9,27 +9,50 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-
+    //******************************************//
+    //            IBOutlet | 전역변수              //
+    //******************************************//
+    
+    @IBOutlet weak var mainImageViewOutlet: UIImageView!
+    
+    @IBOutlet weak var recipeNameTextLabel: UILabel!
+    @IBOutlet weak var recipeShortDescriptionTextLabel: UILabel!
+    @IBOutlet weak var cookTimeTextLabel: UILabel!
+    @IBOutlet weak var cookCostTextLabel: UILabel!
+    
+    @IBOutlet weak var ingrediantsTextLabel: UILabel!
+    @IBOutlet weak var recipeTextLebel: UILabel!
+    
+    var currentRecipe:Recipe?
+    
+    //******************************************//
+    //            IBAction | 함수영역              //
+    //******************************************//
+    
+    
+    //******************************************//
+    //                 LiftCycle                //
+    //******************************************//
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        if let realRecipeData:Recipe = currentRecipe {
+            self.mainImageViewOutlet.image = UIImage(named: "\(realRecipeData.recipeID).jpg")
+            self.recipeNameTextLabel.text = realRecipeData.name
+            self.recipeShortDescriptionTextLabel.text = realRecipeData.shortDescriptiion
+            self.cookTimeTextLabel.text = "\(realRecipeData.time)분"
+            self.cookCostTextLabel.text = "\(realRecipeData.cost)원"
+            self.ingrediantsTextLabel.text = realRecipeData.ingrediants
+            self.recipeTextLebel.text = realRecipeData.detail
+        }
+        
+        
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        
     }
-    */
-
+    
 }

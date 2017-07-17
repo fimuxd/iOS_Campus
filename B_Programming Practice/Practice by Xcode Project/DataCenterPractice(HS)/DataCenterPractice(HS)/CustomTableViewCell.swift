@@ -20,29 +20,29 @@ class CustomTableViewCell: UITableViewCell {
     @IBOutlet weak var recipeShortDescriptionLabel: UILabel!
     @IBOutlet weak var drinkStickerImageView: UIImageView!
     
-    var indexPath:Int?
+//    var indexPath:Int?
     
     
     //******************************************//
     //            IBAction | 함수영역              //
     //******************************************//
     
-    
-    
-    
-    
-    
+
     //******************************************//
     //                 LiftCycle                //
     //******************************************//
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        self.mainRecipeImageView.image = UIImage(named: "\(indexPath!).jpg")
-        self.cookTimeLabel.text = "\(DataCenter.shared.recipeList[indexPath!].time)"
-        self.recipeNameLabel.text = DataCenter.shared.recipeList[indexPath!].name
-        self.recipeShortDescriptionLabel.text = DataCenter.shared.recipeList[indexPath!].shortDescriptiion
-        self.drinkStickerImageView.image 
+        self.layoutIfNeeded()
+        self.mainRecipeImageView.layer.cornerRadius = 30
+        self.mainRecipeImageView.clipsToBounds = true
+        
+//        self.mainRecipeImageView.image = UIImage(named: "\(indexPath!).jpg")
+//        self.cookTimeLabel.text = "\(DataCenter.shared.recipeList[indexPath!].time)"
+//        self.recipeNameLabel.text = DataCenter.shared.recipeList[indexPath!].name
+//        self.recipeShortDescriptionLabel.text = DataCenter.shared.recipeList[indexPath!].shortDescriptiion
+//        self.drinkStickerImageView.image = UIImage(named: "\(DataCenter.shared.recipeList[indexPath!].drink.rawValue)")
         
     }
 

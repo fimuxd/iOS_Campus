@@ -9,7 +9,7 @@
 import Foundation
 
 struct Recipe {
-    let recipeID:Int
+    var recipeID:Int
     let name:String
     let time:Int
     let cost:Int
@@ -36,7 +36,7 @@ struct Recipe {
         self.name = dictionary[Authentification.plist_Name] as! String
         self.time = dictionary[Authentification.plist_Time] as! Int
         self.cost = dictionary[Authentification.plist_Cost] as! Int
-        self.drink = Drink(rawValue: dictionary[Authentification.plist_Drink] as! Int)!
+        self.drink = Drink(rawValue: dictionary[Authentification.plist_Drink] as! String)!
         self.ingrediants = dictionary[Authentification.plist_Ingrediants] as! String
         self.detail = dictionary[Authentification.plist_Detail] as! String
         self.shortDescriptiion = dictionary[Authentification.plist_ShortDecription] as! String
