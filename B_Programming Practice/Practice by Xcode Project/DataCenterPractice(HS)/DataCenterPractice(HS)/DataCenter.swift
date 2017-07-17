@@ -31,7 +31,18 @@ class DataCenter {
             parseRecipe(loadedArray)
         }
     }
+
     
+    // 별도의 parse 함수를 만들지 않고 바로
+//    private func loadFromBundle() {
+//        if let bundlePath:String = Bundle.main.path(forResource: Authentification.plistName, ofType: Authentification.fileType) {
+//            let loadedArray = NSArray.init(contentsOfFile: bundlePath) as! [[String:Any]]
+//            
+//            self.recipeArray = loadedArray.map({ (dictionary:[String:Any]) -> Recipe in
+//                return Recipe.init(with: dictionary)
+//            })
+//        }
+//    }
     
     private func parseRecipe(_ array:[[String:Any]]) {
         self.recipeArray = array.map({ (dictionary:[String:Any]) -> Recipe in
