@@ -54,6 +54,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let nextViewController:DetailViewController = self.storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
         let selectedRecipe = DataCenter.shared.recipeList[indexPath.row]
+        
         nextViewController.currentRecipe = selectedRecipe
         
         self.navigationController?.pushViewController(nextViewController, animated: true)

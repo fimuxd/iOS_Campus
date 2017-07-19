@@ -132,7 +132,7 @@
                                 <rect key="frame" x="0.0" y="275" width="375" height="392"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7aC-Rw-VGd" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="252.5"/>
+                                        <rect key="frame" x="0.0" y="-60" width="375" height="252.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ad5-S4-2XK">
                                                 <rect key="frame" x="20" y="20" width="335" height="212.5"/>
@@ -227,7 +227,7 @@
                                     <constraint firstItem="7aC-Rw-VGd" firstAttribute="leading" secondItem="lvp-dh-tGt" secondAttribute="leading" id="AKf-DE-U2g"/>
                                     <constraint firstAttribute="bottom" secondItem="7aC-Rw-VGd" secondAttribute="bottom" id="bdV-KJ-fbf"/>
                                     <constraint firstItem="7aC-Rw-VGd" firstAttribute="width" secondItem="lvp-dh-tGt" secondAttribute="width" id="eaW-Y3-Kso"/>
-                                    <constraint firstItem="7aC-Rw-VGd" firstAttribute="top" secondItem="lvp-dh-tGt" secondAttribute="top" id="fw6-IM-mRV"/>
+                                    <constraint firstItem="7aC-Rw-VGd" firstAttribute="top" secondItem="lvp-dh-tGt" secondAttribute="top" constant="-60" id="fw6-IM-mRV"/>
                                 </constraints>
                             </scrollView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qNk-Tn-RkN">
