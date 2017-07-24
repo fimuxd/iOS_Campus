@@ -153,7 +153,7 @@ class SignUpViewController:UIViewController {
         
         stackView.anchor(top: photoButton.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, bottom: nil, topConstant: 40, leftConstant: 40, rightConstant: 40, bottomConstant: 0, width: 0, height: 200, centerX: nil, centerY: nil)
         
-//        photoButton.layer.cornerRadius = view.frame.width/4/2
+        photoButton.layer.cornerRadius = view.frame.width/4/2
         
         
     }

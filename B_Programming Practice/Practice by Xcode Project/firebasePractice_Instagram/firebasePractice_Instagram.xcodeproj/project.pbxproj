@@ -10,7 +10,7 @@
 		6A9328431F25BE860018C949 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9328421F25BE860018C949 /* SignUpViewController.swift */; };
 		6A9328451F25D1950018C949 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9328441F25D1950018C949 /* Extension.swift */; };
 		6A9328471F25E38E0018C949 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9328461F25E38E0018C949 /* LogInViewController.swift */; };
-		6A9328491F25FF330018C949 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A9328481F25FF330018C949 /* Launch Screen.storyboard */; };
+		6A93284B1F261D490018C949 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A93284A1F261D490018C949 /* Launch Screen.storyboard */; };
 		6AD1E8CB1F25BCD8009100A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD1E8CA1F25BCD8009100A3 /* AppDelegate.swift */; };
 		6AD1E8D21F25BCD9009100A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AD1E8D11F25BCD9009100A3 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -19,7 +19,7 @@
 		6A9328421F25BE860018C949 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		6A9328441F25D1950018C949 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		6A9328461F25E38E0018C949 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
-		6A9328481F25FF330018C949 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		6A93284A1F261D490018C949 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		6AD1E8C71F25BCD8009100A3 /* firebasePractice_Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firebasePractice_Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AD1E8CA1F25BCD8009100A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AD1E8D11F25BCD9009100A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 				6A9328441F25D1950018C949 /* Extension.swift */,
 				6AD1E8D11F25BCD9009100A3 /* Assets.xcassets */,
 				6AD1E8D61F25BCD9009100A3 /* Info.plist */,
-				6A9328481F25FF330018C949 /* Launch Screen.storyboard */,
+				6A93284A1F261D490018C949 /* Launch Screen.storyboard */,
 			);
 			path = firebasePractice_Instagram;
 			sourceTree = "<group>";
@@ -127,7 +127,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A9328491F25FF330018C949 /* Launch Screen.storyboard in Resources */,
+				6A93284B1F261D490018C949 /* Launch Screen.storyboard in Resources */,
 				6AD1E8D21F25BCD9009100A3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

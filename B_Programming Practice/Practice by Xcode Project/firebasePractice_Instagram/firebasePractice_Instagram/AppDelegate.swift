@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //2. 루트 VC를 만든다.
         //        let rootVC = UIViewController()
         //        rootVC.view.backgroundColor = UIColor.blue
-        let rootVC = SignUpViewController()
+        let rootVC = LogInViewController()
         rootVC.view.backgroundColor = .white
         
         window?.rootViewController = rootVC
