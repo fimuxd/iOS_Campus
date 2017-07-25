@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import FirebaseStorage
 
-class SignUpViewController:UIViewController {
+class SignUpViewController:UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     /********************************************/
     //                  전역변수                   //
@@ -30,14 +33,14 @@ class SignUpViewController:UIViewController {
     let photoButton:UIButton = {
         let button = UIButton()
         button.backgroundColor = UIColor.rgbColor(230, 230, 230, 0.5)
-//        button.setTitle("+", for: .normal)
+        //        button.setTitle("+", for: .normal)
         //        button.setTitleColor(UIColor.init(red: 1, green: 0, blue: 0.502, alpha: 1), for: .normal)
-//        button.setTitleColor(UIColor.rgbColor(230, 230, 230, 1), for: .normal)
-//        button.titleLabel?.font = UIFont(name: (button.titleLabel?.font.fontName)!, size: 100)
+        //        button.setTitleColor(UIColor.rgbColor(230, 230, 230, 1), for: .normal)
+        //        button.titleLabel?.font = UIFont(name: (button.titleLabel?.font.fontName)!, size: 100)
         button.setImage(#imageLiteral(resourceName: "add_profile"), for: .normal)
         
-//        button.layer.borderWidth = 1
-//        button.layer.borderColor = UIColor.rgbColor(230, 230, 230, 1).cgColor
+        //        button.layer.borderWidth = 1
+        //        button.layer.borderColor = UIColor.rgbColor(230, 230, 230, 1).cgColor
         
         //버튼의 액션 추가
         button.addTarget(self, action: #selector(photoActionHandle), for: .touchUpInside)
@@ -57,8 +60,8 @@ class SignUpViewController:UIViewController {
         textField.layer.cornerRadius = 10
         textField.backgroundColor = UIColor.rgbColor(230, 230, 230, 0.3)
         textField.font = UIFont(name: (textField.font?.fontName)!, size: 13.5)
-        
         //        textField.borderStyle = .roundedRect
+        textField.addTarget(self, action: #selector(handleTextInputChange), for: .editingChanged)
         
         return textField
     }()
@@ -73,6 +76,7 @@ class SignUpViewController:UIViewController {
         textField.layer.cornerRadius = 10
         textField.backgroundColor = UIColor.rgbColor(230, 230, 230, 0.3)
         textField.font = UIFont(name: (textField.font?.fontName)!, size: 13.5)
+        textField.addTarget(self, action: #selector(handleTextInputChange), for: .editingChanged)
         
         return textField
     }()
@@ -87,14 +91,18 @@ class SignUpViewController:UIViewController {
         textField.layer.cornerRadius = 10
         textField.backgroundColor = UIColor.rgbColor(230, 230, 230, 0.3)
         textField.font = UIFont(name: (textField.font?.fontName)!, size: 13.5)
+        textField.addTarget(self, action: #selector(handleTextInputChange), for: .editingChanged)
+        textField.isSecureTextEntry = true
         
         return textField
     }()
     
     let signUpButton:UIButton = {
         let button = UIButton(type: .system)
-        button.backgroundColor = UIColor.rgbColor(84, 149, 233, 1)
-        button.setTitle("Login", for: .normal)
+        //        button.backgroundColor = UIColor.rgbColor(84, 149, 233, 1)
+        button.isEnabled = false
+        button.backgroundColor = UIColor.rgbColor(230, 230, 230, 0.8)
+        button.setTitle("SignUp", for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
         button.layer.cornerRadius = 10
@@ -122,10 +130,78 @@ class SignUpViewController:UIViewController {
     //버튼의 액션 함수
     func photoActionHandle() {
         print("action PhotoButton")
+        
+        let picker = UIImagePickerController()
+        picker.delegate = self
+        picker.allowsEditing = true // 기본 이미지가 너무 커서 이미지를 crop 하고 싶을 때
+        
+        self.present(picker, animated: true, completion: nil)
+        
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        // 선택을 했을 때 들어오는 정보 확인
+        print("info://", info) // ["UIImagePickerControllerMediaType": public.image,
+        //  "UIImagePickerControllerReferenceURL": assets-library://asset/asset.JPG?id=106E99A1-4F6A-45A2-B320-B0AD4A8E8473&ext=JPG,
+        //  "UIImagePickerControllerOriginalImage": <UIImage: 0x6080002905e0> size {4288, 2848} orientation 0 scale 1.000000]
+        
+        
+        guard let image = info["UIImagePickerControllerEditedImage"] as? UIImage else {return}
+        
+        image.withRenderingMode(.alwaysOriginal)
+        photoButton.setImage(image, for: .normal)
+        photoButton.clipsToBounds = true
+        self.dismiss(animated: true, completion: nil)
     }
     
     func signUpActionHandle() {
         print("action SignUpButton")
+        
+        //        guard let email = emailTextField.text else {return}
+        
+        Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
+            
+            if let error = error {
+                print("error://",error)
+                return
+            }
+            
+            guard let userName = self.userNameTextField.text else {return}
+            
+            //success
+            guard let uid = user?.uid else {return}
+            
+            guard let image = self.photoButton.imageView?.image else {return}
+            guard let uploadData = UIImageJPEGRepresentation(image, 0.3) else {return}
+            
+            let uuid = UUID().uuidString //코드가 실행될 때마다 계속 새롭게 생성되는 숫자
+            
+            Storage.storage().reference().child("ProfileImage").child(uuid).putData(uploadData, metadata: nil, completion: { (metaData, error) in
+                
+                if let error = error {
+                    print("error://", error)
+                    return
+                }
+                
+                print("metaData://", metaData)
+                
+                guard let urlStr = metaData?.downloadURL()?.absoluteString else {return}
+                print(urlStr)
+                
+                Database.database().reference().child(uid).updateChildValues(["email":self.emailTextField.text!, "userName":self.userNameTextField.text!, "password":self.passwordTextField.text!, "profileImage":urlStr], withCompletionBlock: { (error, ref) in
+                    print("database error://", error)
+                    print("database reference://", ref)
+                })
+                
+            })
+            
+            
+            //
+            //            print("userData://",user)
+            //            print("error://",error)
+            
+        }
+        
     }
     
     
@@ -149,7 +225,7 @@ class SignUpViewController:UIViewController {
         
         headerBackgroundImageView.anchor(top: nil, left: nil, right: nil, bottom: nil, topConstant: 0, leftConstant: 0, rightConstant: 0, bottomConstant: 0, width: view.frame.width, height: view.frame.height, centerX: view.centerXAnchor, centerY: view.centerYAnchor)
         
-        photoButton.anchor(top: view.topAnchor, left: nil, right: nil, bottom: nil, topConstant: 80, leftConstant: 0, rightConstant: 0, bottomConstant: 0, width: view.frame.width/4, height: view.frame.width/4, centerX: view.centerXAnchor, centerY: nil)
+        photoButton.anchor(top: view.topAnchor, left: nil, right: nil, bottom: nil, topConstant: 100, leftConstant: 0, rightConstant: 0, bottomConstant: 0, width: view.frame.width/4, height: view.frame.width/4, centerX: view.centerXAnchor, centerY: nil)
         
         stackView.anchor(top: photoButton.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, bottom: nil, topConstant: 40, leftConstant: 40, rightConstant: 40, bottomConstant: 0, width: 0, height: 200, centerX: nil, centerY: nil)
         
@@ -158,10 +234,33 @@ class SignUpViewController:UIViewController {
         
     }
     
+    func handleTextInputChange() {
+        let isFormValid  = emailTextField.text?.characters.count ?? 0 > 0 && userNameTextField.text?.characters.count ?? 0 > 0 && passwordTextField.text?.characters.count ?? 0 > 0
+        
+        if isFormValid {
+            signUpButton.isEnabled = true
+            signUpButton.backgroundColor = UIColor.rgbColor(84, 149, 233, 1)
+        }else{
+            signUpButton.isEnabled = false
+            signUpButton.backgroundColor = UIColor.rgbColor(230, 230, 230, 1)
+        }
+        
+    }
+    
+    
+    
+    
     
     /********************************************/
     //                LifeCycle                 //
     /********************************************/
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        self.navigationController?.navigationBar.isHidden = false
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

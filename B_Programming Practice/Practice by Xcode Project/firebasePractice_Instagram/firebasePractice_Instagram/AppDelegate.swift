@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -24,11 +25,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //2. 루트 VC를 만든다.
         //        let rootVC = UIViewController()
         //        rootVC.view.backgroundColor = UIColor.blue
-        let rootVC = LogInViewController()
-        rootVC.view.backgroundColor = .white
+//        let rootVC = LogInViewController()
+//        rootVC.view.backgroundColor = .white
+//        
+//        window?.rootViewController = rootVC
+//        window?.makeKeyAndVisible() //makeKeyAndVisible: 윈도우에 루트뷰를 설정한다음에 다시 리셋시키는 기능을 한다.
+     
         
-        window?.rootViewController = rootVC
-        window?.makeKeyAndVisible() //makeKeyAndVisible: 윈도우에 루트뷰를 설정한다음에 다시 리셋시키는 기능을 한다.
+//        //네비게이션 추가
+//        let rootNavi = UINavigationController(rootViewController: LogInViewController())
+//        
+//        window?.rootViewController = rootNavi
+//        window?.makeKeyAndVisible()
+
+        //mainTabBar설치
+        window?.rootViewController = MainTabBarViewController()
+        window?.makeKeyAndVisible()
+        
+        //Google Firebase 설치
+        FirebaseApp.configure()
         
         return true
     }
