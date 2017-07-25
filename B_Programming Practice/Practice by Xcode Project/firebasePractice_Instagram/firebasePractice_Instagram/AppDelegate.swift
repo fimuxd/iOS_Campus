@@ -41,6 +41,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //mainTabBar설치
         window?.rootViewController = MainTabBarViewController()
         window?.makeKeyAndVisible()
+        window?.tintColor = .black
+        
         
         //Google Firebase 설치
         FirebaseApp.configure()

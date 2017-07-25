@@ -25,7 +25,6 @@ class MainTabBarViewController: UITabBarController {
         viewController1.tabBarItem.selectedImage = #imageLiteral(resourceName: "home_selected")
         viewController1.tabBarItem.title = "Home"
         
-        
         let viewController2 = UIViewController()
         viewController2.view.backgroundColor = .blue
         viewController2.tabBarItem.image = #imageLiteral(resourceName: "search_unselected")

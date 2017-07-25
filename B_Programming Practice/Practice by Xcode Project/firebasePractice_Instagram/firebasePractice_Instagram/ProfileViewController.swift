@@ -51,7 +51,7 @@ class ProfileViewController: UICollectionViewController, UICollectionViewDelegat
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
     
-        cell.backgroundColor = .red
+        cell.backgroundColor = .gray
     
         return cell
     }
@@ -65,7 +65,7 @@ class ProfileViewController: UICollectionViewController, UICollectionViewDelegat
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return CGSize(width: self.view.frame.width, height: 200)
+        return CGSize(width: self.view.frame.width, height: 220)
     }
 
     
