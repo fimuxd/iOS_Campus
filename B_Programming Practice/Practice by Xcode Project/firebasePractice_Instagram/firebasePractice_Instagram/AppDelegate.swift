@@ -19,6 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //지금부터 저희는 모든 UI를 다 코드로 쓸겁니다.
         
+        //Google Firebase 설치
+        FirebaseApp.configure()
+        
         //1. 윈도우를 만드는데, 스크린에서 frame을 가져온다.
         window = UIWindow(frame: UIScreen.main.bounds)
         
@@ -44,8 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.tintColor = .black
         
         
-        //Google Firebase 설치
-        FirebaseApp.configure()
+        
         
         return true
     }

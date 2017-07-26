@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class MainTabBarViewController: UITabBarController {
     /********************************************/
@@ -44,12 +46,20 @@ class MainTabBarViewController: UITabBarController {
         let layout = UICollectionViewFlowLayout()
         
         let viewController5 = ProfileViewController(collectionViewLayout: layout)
+        let vc5Navi = UINavigationController(rootViewController: viewController5)
+        
         viewController5.view.backgroundColor = .black
         viewController5.tabBarItem.image = #imageLiteral(resourceName: "profile_unselected")
         viewController5.tabBarItem.selectedImage = #imageLiteral(resourceName: "profile_selected")
         viewController5.tabBarItem.title = "Profile"
         
-        viewControllers = [viewController1, viewController2, viewController3, viewController4, viewController5]
+        viewControllers = [viewController1, viewController2, viewController3, viewController4, vc5Navi]
+    }
+    
+    func showLogInVC() {
+        let loginVC:LogInViewController = LogInViewController()
+        let navigation:UINavigationController = UINavigationController(rootViewController: loginVC)
+        self.present(navigation, animated: true, completion: nil)
     }
     
     
@@ -58,15 +68,30 @@ class MainTabBarViewController: UITabBarController {
     /********************************************/
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        //autoLogin
+        //>진행
+        //>로그인 화면 present
+        
+        //currentUser라는 애는 로그인을 하면 캐쉬로 남아있다. 폰이 꺼져도 로그아웃 하지 않는 이상 남아있다.
+        //보통은 이 방식 보다는 토큰을 이용한다. 토큰을 기기에 가지고 있다가 서버가 토큰이 유효한지 아닌지 확인해서 처리한다.
+        if !DataCenter.sharedData.requestIsLogin(){
+            DispatchQueue.main.async {
+                self.showLogInVC()
+            }
+        }
+        
+        
         setSubViewController()
-    
+        
+        
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
     }
-
-
+    
+    
 }

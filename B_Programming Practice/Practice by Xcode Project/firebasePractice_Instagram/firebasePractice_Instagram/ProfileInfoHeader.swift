@@ -12,17 +12,51 @@ class ProfileInfoHeader: UICollectionViewCell {
     /********************************************/
     //                  전역변수                   //
     /********************************************/
-
+    
+    var user:User?{
+        didSet{
+            profileTextLabel.text = user?.userName
+            
+            if let urlStr = user?.userProfileImgUrl,
+                let url = URL(string: urlStr) {
+                
+                URLSession.shared.dataTask(with: url) { (data, response, error) in
+                    
+                    let response = response as? HTTPURLResponse
+//                    response.statusCode
+//                    guard let error = error else {return}
+                    guard let realData = data else {return}
+                    
+                    DispatchQueue.main.async {
+                        self.photoButton.setImage(UIImage(data: realData), for: .normal)
+                    }
+                    
+                    
+                }.resume()
+            }
+            
+            //            profileImageView.image = ??
+        }
+    }
+    
+    
+    
+    
+    
+    //-----Data
+    //PhotoButton 부분
     let photoButton:UIButton = {
         let button = UIButton()
-        button.clipsToBounds = true
+//        button.clipsToBounds = true
         button.setImage(#imageLiteral(resourceName: "plus_photo"), for: .normal)
-        button.isEnabled = false
+//        button.isEnabled = false
+        button.isUserInteractionEnabled = false
         button.translatesAutoresizingMaskIntoConstraints = false //얘를 false 시켜야만 autolayout(하기 viewDidLoad에 적용한 anchor들)이 적용된다.
         
         return button
     }()
     
+    //PostLabel 부분
     let postCountLabel:UILabel = {
         let postCountLabel:UILabel = UILabel()
         postCountLabel.text = "691"
@@ -39,6 +73,7 @@ class ProfileInfoHeader: UICollectionViewCell {
         return postTitleLabel
     }()
     
+    //FollowER 부분
     let followersCountLabel:UILabel = {
         let followersCountLabel:UILabel = UILabel()
         followersCountLabel.text = "168"
@@ -56,6 +91,7 @@ class ProfileInfoHeader: UICollectionViewCell {
         return followersTitleLabel
     }()
     
+    //FollowING 부분
     let followingCountLabel:UILabel = {
         let followingCountLabel:UILabel = UILabel()
         followingCountLabel.text = "106"
@@ -73,13 +109,14 @@ class ProfileInfoHeader: UICollectionViewCell {
         return followingTitleLabel
     }()
     
+    //EditButton 부분
     let editProfileButton:UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Edit Profile", for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
         button.setTitleColor(.black, for: .normal)
         //버튼의 액션 추가
-        button.addTarget(self, action: #selector(editActionHandle), for: .touchUpInside)
+        button.addTarget(self, action: #selector(ProfileViewController.editActionHandle), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false //얘를 false 시켜야만 autolayout(하기 viewDidLoad에 적용한 anchor들)이 적용된다.
         button.backgroundColor = .white
         button.layer.borderColor = UIColor.gray.cgColor
@@ -87,23 +124,24 @@ class ProfileInfoHeader: UICollectionViewCell {
         button.layer.cornerRadius = 10
         
         return button
-
+        
     }()
     
-    let profileTextLable:UILabel = {
-        let profileTextLable:UILabel = UILabel()
-        profileTextLable.text = "fimuxd\nLife is a game. Play it :)"
-        profileTextLable.font = UIFont(name: profileTextLable.font.fontName, size: 15)
-        profileTextLable.numberOfLines = 0
+    //ProfileTextLabel부분
+    let profileTextLabel:UILabel = {
+        let profileTextLabel:UILabel = UILabel()
+        profileTextLabel.text = "fimuxd\nLife is a game. Play it :)"
+        profileTextLabel.font = UIFont(name: profileTextLabel.font.fontName, size: 15)
+        profileTextLabel.numberOfLines = 0
         
-        return profileTextLable
+        return profileTextLabel
     }()
     
     let gridTypeButton:UIButton = {
         let gridTypeButton:UIButton = UIButton(type: .system)
         gridTypeButton.setImage(#imageLiteral(resourceName: "grid"), for: .normal)
         
-        gridTypeButton.addTarget(self, action: #selector(gridActionHandle), for: .touchUpInside)
+        gridTypeButton.addTarget(self, action: #selector(ProfileViewController.gridActionHandle), for: .touchUpInside)
         gridTypeButton.translatesAutoresizingMaskIntoConstraints = false
         
         return gridTypeButton
@@ -113,7 +151,7 @@ class ProfileInfoHeader: UICollectionViewCell {
         let listTypeButton:UIButton = UIButton(type: .system)
         listTypeButton.setImage(#imageLiteral(resourceName: "list"), for: .normal)
         
-        listTypeButton.addTarget(self, action: #selector(listActionHandle), for: .touchUpInside)
+        listTypeButton.addTarget(self, action: #selector(ProfileViewController.listActionHandle), for: .touchUpInside)
         listTypeButton.translatesAutoresizingMaskIntoConstraints = false
         
         return listTypeButton
@@ -123,7 +161,7 @@ class ProfileInfoHeader: UICollectionViewCell {
         let ribbonButton:UIButton = UIButton(type: .system)
         ribbonButton.setImage(#imageLiteral(resourceName: "ribbon"), for: .normal)
         
-        ribbonButton.addTarget(self, action: #selector(ribbonActionHandle), for: .touchUpInside)
+        ribbonButton.addTarget(self, action: #selector(ProfileViewController.ribbonActionHandle), for: .touchUpInside)
         ribbonButton.translatesAutoresizingMaskIntoConstraints = false
         
         return ribbonButton
@@ -135,7 +173,7 @@ class ProfileInfoHeader: UICollectionViewCell {
         stackView.axis = .vertical
         stackView.distribution = .fillEqually
         stackView.alignment = .center
-//        stackView.spacing = 1
+        //        stackView.spacing = 1
         
         return stackView
     }()
@@ -145,17 +183,17 @@ class ProfileInfoHeader: UICollectionViewCell {
         stackView.axis = .vertical
         stackView.distribution = .fillEqually
         stackView.alignment = .center
-//        stackView.spacing = 1
+        //        stackView.spacing = 1
         
         return stackView
     }()
-
+    
     let followingLabelStackView:UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
         stackView.distribution = .fillEqually
         stackView.alignment = .center
-//        stackView.spacing = 1
+        //        stackView.spacing = 1
         
         return stackView
     }()
@@ -175,7 +213,7 @@ class ProfileInfoHeader: UICollectionViewCell {
         let stackView = UIStackView()
         stackView.axis = .vertical
         stackView.distribution = .fillEqually
-        stackView.spacing = 5
+        stackView.spacing = 8
         
         return stackView
     }()
@@ -203,8 +241,8 @@ class ProfileInfoHeader: UICollectionViewCell {
     
     let grayColorView:UIView = {
         let grayColorView:UIView = UIView()
-        grayColorView.backgroundColor = .gray
-       
+        grayColorView.backgroundColor = UIColor.rgbColor(230, 230, 230, 1)
+        
         return grayColorView
     }()
     
@@ -212,45 +250,21 @@ class ProfileInfoHeader: UICollectionViewCell {
     //                  method                   //
     /********************************************/
     
-    func editActionHandle() {
-        
-    }
-    
-    func gridActionHandle() {
-        
-        print("버튼눌림")
-        gridTypeButton.alpha = 1
-        listTypeButton.alpha = 0.2
-        ribbonButton.alpha = 0.2
-        
-    }
-    
-    func listActionHandle() {
-    listTypeButton.alpha = 1
-        gridTypeButton.alpha = 0.2
-        ribbonButton.alpha = 0.2
-    }
-    
-    func ribbonActionHandle() {
-        listTypeButton.alpha = 1
-        gridTypeButton.alpha = 0.2
-        ribbonButton.alpha = 0.2
-    }
-    
-    
     fileprivate func setUpSubViewsLayout() {
-
+        
         photoButton.anchor(top: nil, left: nil, right: nil, bottom: nil, topConstant: 0, leftConstant: 0, rightConstant: 0, bottomConstant: 0, width: totalStackView.frame.height, height: totalStackView.frame.height, centerX: nil, centerY: nil)
         
         labelsAndEditStackView.anchor(top: nil, left: nil, right: nil, bottom: nil, topConstant: 0, leftConstant: 0, rightConstant: 0, bottomConstant: 0, width: frame.width-55-(frame.height-55)/2, height: 0, centerX: nil, centerY: nil)
         
         totalStackView.anchor(top: self.topAnchor, left: self.leftAnchor, right: self.rightAnchor, bottom: nil, topConstant: 30, leftConstant: 20, rightConstant: 20, bottomConstant: 0, width: 0, height: (frame.height-55)/2, centerX: centerXAnchor, centerY: nil)
         
-        profileTextLable.anchor(top: totalStackView.bottomAnchor, left: self.leftAnchor, right: self.rightAnchor, bottom: nil, topConstant: 2, leftConstant: 20, rightConstant: 20, bottomConstant: 0, width: 0, height: (frame.height-20)/4, centerX: centerXAnchor, centerY: nil)
+        profileTextLabel.anchor(top: totalStackView.bottomAnchor, left: self.leftAnchor, right: self.rightAnchor, bottom: nil, topConstant: 5, leftConstant: 20, rightConstant: 20, bottomConstant: 0, width: 0, height: (frame.height-20)/4, centerX: centerXAnchor, centerY: nil)
         
         grayColorView.anchor(top: nil, left: nil, right: nil, bottom: buttonsStackView.topAnchor, topConstant: 0, leftConstant: 0, rightConstant: 0, bottomConstant: 0, width: frame.width, height: 1, centerX: nil, centerY: nil)
         
-        buttonsStackView.anchor(top: nil, left: nil, right: nil, bottom: self.bottomAnchor, topConstant: 0, leftConstant: 0, rightConstant: 0, bottomConstant: 0, width: frame.width, height: 50, centerX: nil, centerY: nil)
+        buttonsStackView.anchor(top: nil, left: nil, right: nil, bottom: self.bottomAnchor, topConstant: 0, leftConstant: 0, rightConstant: 0, bottomConstant: 0, width: frame.width, height: 40, centerX: nil, centerY: nil)
+        
+        photoButton.layer.cornerRadius = (frame.height-55)/2/2
         
     }
     
@@ -271,16 +285,20 @@ class ProfileInfoHeader: UICollectionViewCell {
         
         totalStackView.addArrangedSubViews([photoButton, labelsAndEditStackView])
         
+        
+        listTypeButton.alpha = 0.2
+        ribbonButton.alpha = 0.2
         buttonsStackView.addArrangedSubViews([gridTypeButton, listTypeButton, ribbonButton])
         
         addSubview(totalStackView)
-        addSubview(profileTextLable)
+        addSubview(profileTextLabel)
         addSubview(grayColorView)
         addSubview(buttonsStackView)
         
+        photoButton.clipsToBounds = true
+        
         setUpSubViewsLayout()
-        
-        
+
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -288,3 +306,35 @@ class ProfileInfoHeader: UICollectionViewCell {
     }
     
 }
+
+extension ProfileViewController {
+    
+    //ProfileInfoHeader 부분 버튼 함수
+    func editActionHandle() {
+        print("edit 버튼눌림")
+    }
+    
+    func gridActionHandle() {
+        print("grid 버튼눌림")
+        profileInfoHeader.gridTypeButton.alpha = 1
+        profileInfoHeader.listTypeButton.alpha = 0.2
+        profileInfoHeader.ribbonButton.alpha = 0.2
+    }
+    
+    func listActionHandle() {
+        print("list 버튼눌림")
+        profileInfoHeader.listTypeButton.alpha = 1
+        profileInfoHeader.gridTypeButton.alpha = 0.2
+        profileInfoHeader.ribbonButton.alpha = 0.2
+    }
+    
+    func ribbonActionHandle() {
+        print("ribbon 버튼눌림")
+        profileInfoHeader.listTypeButton.alpha = 1
+        profileInfoHeader.gridTypeButton.alpha = 0.2
+        profileInfoHeader.ribbonButton.alpha = 0.2
+    }
+    
+    
+}
+

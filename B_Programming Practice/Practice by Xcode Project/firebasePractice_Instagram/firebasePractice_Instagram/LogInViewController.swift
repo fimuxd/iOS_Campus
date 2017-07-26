@@ -134,6 +134,10 @@ class LogInViewController:UIViewController {
             
             //success
             print("userID", user?.uid)
+            self.navigationController?.dismiss(animated: true, completion: nil)
+            
+            //mainPage이동
+            UIApplication.shared.keyWindow?.rootViewController = MainTabBarViewController()
         }
     }
     

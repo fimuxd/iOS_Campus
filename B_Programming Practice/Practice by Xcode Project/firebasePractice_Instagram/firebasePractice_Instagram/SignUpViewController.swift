@@ -188,9 +188,20 @@ class SignUpViewController:UIViewController, UIImagePickerControllerDelegate, UI
                 guard let urlStr = metaData?.downloadURL()?.absoluteString else {return}
                 print(urlStr)
                 
-                Database.database().reference().child(uid).updateChildValues(["email":self.emailTextField.text!, "userName":self.userNameTextField.text!, "password":self.passwordTextField.text!, "profileImage":urlStr], withCompletionBlock: { (error, ref) in
+                Database.database().reference().child(uid).updateChildValues(["email":self.emailTextField.text!, "userName":self.userNameTextField.text!, "profileImage":urlStr], withCompletionBlock: { (error, ref) in
                     print("database error://", error)
                     print("database reference://", ref)
+                    
+                    
+                    //DataCenter로 옮겨서 주석처리함
+                    //                    guard let uid = Auth.auth().currentUser?.uid else {return}
+                    //                    Database.database().reference().child(uid).child("UserInfo").observeSingleEvent(of: .value, with: { (snapShot) in
+                    //                        let dic = snapShot.value as? [String:Any]
+                    //                        print(dic)
+                    //                    })
+                    
+                    //mainPage이동
+                    self.navigationController?.popViewController(animated: true)
                 })
                 
             })
@@ -199,6 +210,8 @@ class SignUpViewController:UIViewController, UIImagePickerControllerDelegate, UI
             //
             //            print("userData://",user)
             //            print("error://",error)
+            
+            
             
         }
         
