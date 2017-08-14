@@ -1,4 +1,4 @@
-# Bo-Young PARK  
+# Bo-Young PARK  <img src = "http://cdn.www.fastcampus.co.kr/wp-content/uploads/2016/01/fastcampus_logo_345x76.png" width = 180 align = right>
 
 ## Contents
 
