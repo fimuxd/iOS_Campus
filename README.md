@@ -118,7 +118,7 @@
 	
 ## Contact Me
 - 📱 +82 10.3316.1609
-- 📧 fimuxd@gmail.com
+- 📧 iosdeveloperkr@gmail.com
 
 
 ***
