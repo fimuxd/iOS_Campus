@@ -9,7 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    /***********************************************/
+    //MARK:-          PROPERTIES                   //
+    /***********************************************/
+    
     @IBOutlet var displayLabel: UILabel!
     
     // 내부적으로 돌아가는 변수들 설정
@@ -20,6 +24,10 @@ class ViewController: UIViewController {
     // 외부 디스플레이에 보이는 변수 설정 (실제 계산과 디스플레이를 분리)
     var displayNumber:String = "0"
     
+    
+    /***********************************************/
+    //MARK:-           FUNCTIONS                   //
+    /***********************************************/
     
     // 170516_func + switch 함수이용해서 display에 0이 있을 때는 입력한 숫자만 표시, 그렇지 않을 땐 입력한 숫자를 앞 숫자에 붙이는 함수 만들기
     //git Test
@@ -49,7 +57,10 @@ class ViewController: UIViewController {
         displayNumber = "0"
     }
     
-////////////////////////View Life Cycle////////////////////////
+    
+    /***********************************************/
+    //MARK:-          LIFECYCLES                   //
+    /***********************************************/
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,7 +72,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-////////////////////////View Action////////////////////////
+
     
     @IBAction func ClickBtn(_ sender: UIButton) {
         print("GT")

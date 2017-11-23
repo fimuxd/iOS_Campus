@@ -113,4 +113,8 @@ let factorialNumber = factorialFive.reduce(1) {(num1, num2) -> Int in
     num1*num2
 }
 
+let sumNumber = factorialFive.reduce(0) { (num1, num2) -> Int in
+    (num1+num2)
+}
 print(factorialNumber)
+print(sumNumber)

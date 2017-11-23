@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>user_email</key>
+		<string>fimuxd@gmail.com</string>
+		<key>user_password</key>
+		<string>1</string>
+		<key>user_id</key>
+		<integer>0</integer>
+		<key>user_capsuleData</key>
+		<array>
+			<dict>
+				<key>capsule_memo</key>
+				<string>메모 없음</string>
+				<key>capsule_img</key>
+				<string>이미지 없음</string>
+				<key>capsule_date</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>
