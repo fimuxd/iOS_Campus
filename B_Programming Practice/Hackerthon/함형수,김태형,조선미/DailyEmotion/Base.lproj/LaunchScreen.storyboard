@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sam-ferrara-270946" translatesAutoresizingMaskIntoConstraints="NO" id="ywF-Q8-Qrb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GAMGI" translatesAutoresizingMaskIntoConstraints="NO" id="3NX-xd-jaO">
+                                <rect key="frame" x="75.5" y="189.5" width="225" height="155"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3NX-xd-jaO" firstAttribute="centerX" secondItem="ywF-Q8-Qrb" secondAttribute="centerX" id="77W-R5-qsh"/>
+                            <constraint firstItem="3NX-xd-jaO" firstAttribute="width" secondItem="ywF-Q8-Qrb" secondAttribute="width" multiplier="0.6" id="McW-jV-Izh"/>
+                            <constraint firstItem="ywF-Q8-Qrb" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="RBB-G5-ayQ"/>
+                            <constraint firstItem="3NX-xd-jaO" firstAttribute="centerY" secondItem="ywF-Q8-Qrb" secondAttribute="centerY" multiplier="0.8" id="TiJ-o2-Djl"/>
+                            <constraint firstItem="ywF-Q8-Qrb" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="lUu-Ma-ghw"/>
+                            <constraint firstItem="ywF-Q8-Qrb" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="oOT-at-Flt"/>
+                            <constraint firstItem="ywF-Q8-Qrb" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" id="wEt-nH-Lfg"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="GAMGI" width="374" height="155"/>
+        <image name="sam-ferrara-270946" width="750" height="1334"/>
+    </resources>
+</document>

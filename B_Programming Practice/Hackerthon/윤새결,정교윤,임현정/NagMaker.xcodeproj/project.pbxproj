@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D8194411F0E26A500A76409 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8194401F0E26A500A76409 /* AppDelegate.swift */; };
+		1D8194431F0E26A500A76409 /* MainNagMakerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8194421F0E26A500A76409 /* MainNagMakerController.swift */; };
+		1D8194481F0E26A500A76409 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D8194471F0E26A500A76409 /* Assets.xcassets */; };
+		1D81944B1F0E26A500A76409 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D8194491F0E26A500A76409 /* LaunchScreen.storyboard */; };
+		1D8194551F0E26F600A76409 /* NagData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D8194541F0E26F600A76409 /* NagData.plist */; };
+		1D8194591F0E298100A76409 /* DataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8194581F0E298100A76409 /* DataCenter.swift */; };
+		1D81945B1F0E2F5400A76409 /* NagData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D81945A1F0E2F5400A76409 /* NagData.swift */; };
+		1D8194621F0E55C200A76409 /* MainNagMaker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D8194611F0E55C200A76409 /* MainNagMaker.storyboard */; };
+		1D8194641F0E57DC00A76409 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8194631F0E57DC00A76409 /* CustomCollectionViewCell.swift */; };
+		1D8194681F0E693600A76409 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8194671F0E693600A76409 /* DetailTableViewController.swift */; };
+		1D81948A1F0E9B5E00A76409 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8194861F0E9B5E00A76409 /* TimerViewController.swift */; };
+		1D81948B1F0E9B5E00A76409 /* TimerStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D8194871F0E9B5E00A76409 /* TimerStoryBoard.storyboard */; };
+		1D81948C1F0E9B5E00A76409 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D8194881F0E9B5E00A76409 /* pause.png */; };
+		1D81948D1F0E9B5E00A76409 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D8194891F0E9B5E00A76409 /* play.png */; };
+		53DD8BC91F0EBCF500C6CC3B /* 001-fashion.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DD8BBC1F0EBCF500C6CC3B /* 001-fashion.png */; };
+		53DD8BCA1F0EBCF500C6CC3B /* 002-multimedia-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DD8BBD1F0EBCF500C6CC3B /* 002-multimedia-1.png */; };
+		53DD8BCB1F0EBCF500C6CC3B /* 003-multimedia.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DD8BBE1F0EBCF500C6CC3B /* 003-multimedia.png */; };
+		53DD8BCC1F0EBCF500C6CC3B /* 004-marketing.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DD8BBF1F0EBCF500C6CC3B /* 004-marketing.png */; };
+		53DD8BCD1F0EBCF500C6CC3B /* 005-technology.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DD8BC01F0EBCF500C6CC3B /* 005-technology.png */; };
+		53DD8BCE1F0EBCF500C6CC3B /* 006-shelves.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DD8BC11F0EBCF500C6CC3B /* 006-shelves.png */; };
+		53DD8BCF1F0EBCF500C6CC3B /* 007-table.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DD8BC21F0EBCF500C6CC3B /* 007-table.png */; };
+		53DD8BD01F0EBCF500C6CC3B /* 008-desk.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DD8BC31F0EBCF500C6CC3B /* 008-desk.png */; };
+		53DD8BD11F0EBCF500C6CC3B /* 009-bathroom.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DD8BC41F0EBCF500C6CC3B /* 009-bathroom.png */; };
+		53DD8BD21F0EBCF500C6CC3B /* 010-sofa.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DD8BC51F0EBCF500C6CC3B /* 010-sofa.png */; };
+		53DD8BD31F0EBCF500C6CC3B /* 011-armchair.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DD8BC61F0EBCF500C6CC3B /* 011-armchair.png */; };
+		53DD8BD41F0EBCF500C6CC3B /* 012-computer.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DD8BC71F0EBCF500C6CC3B /* 012-computer.png */; };
+		53DD8BD51F0EBCF500C6CC3B /* 013-rest.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DD8BC81F0EBCF500C6CC3B /* 013-rest.png */; };
+		53DD8BD71F0ECBAA00C6CC3B /* openingimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DD8BD61F0ECBAA00C6CC3B /* openingimage.png */; };
+		53DD8BDB1F0ECC9000C6CC3B /* Add.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53DD8BD81F0ECC9000C6CC3B /* Add.storyboard */; };
+		53DD8BDC1F0ECC9000C6CC3B /* AddAndEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DD8BD91F0ECC9000C6CC3B /* AddAndEditViewController.swift */; };
+		53DD8BDD1F0ECC9000C6CC3B /* CustomPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DD8BDA1F0ECC9000C6CC3B /* CustomPickerView.swift */; };
+		DA2F5CC9DF024844302BFA08 /* Pods_NagMaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2591B151659E0B91EC952EBD /* Pods_NagMaker.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D81943D1F0E26A500A76409 /* NagMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NagMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D8194401F0E26A500A76409 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1D8194421F0E26A500A76409 /* MainNagMakerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNagMakerController.swift; sourceTree = "<group>"; };
+		1D8194471F0E26A500A76409 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1D81944A1F0E26A500A76409 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1D81944C1F0E26A500A76409 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D8194541F0E26F600A76409 /* NagData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NagData.plist; sourceTree = "<group>"; };
+		1D8194581F0E298100A76409 /* DataCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCenter.swift; sourceTree = "<group>"; };
+		1D81945A1F0E2F5400A76409 /* NagData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NagData.swift; sourceTree = "<group>"; };
+		1D8194611F0E55C200A76409 /* MainNagMaker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainNagMaker.storyboard; sourceTree = "<group>"; };
+		1D8194631F0E57DC00A76409 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		1D8194671F0E693600A76409 /* DetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
+		1D8194861F0E9B5E00A76409 /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		1D8194871F0E9B5E00A76409 /* TimerStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TimerStoryBoard.storyboard; sourceTree = "<group>"; };
+		1D8194881F0E9B5E00A76409 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pause.png; path = ../pause.png; sourceTree = "<group>"; };
+		1D8194891F0E9B5E00A76409 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = play.png; path = ../play.png; sourceTree = "<group>"; };
+		2591B151659E0B91EC952EBD /* Pods_NagMaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NagMaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DE8F55DB1C5336D9267125F /* Pods-NagMaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NagMaker.release.xcconfig"; path = "Pods/Target Support Files/Pods-NagMaker/Pods-NagMaker.release.xcconfig"; sourceTree = "<group>"; };
+		33A653D2F1C0D6B621A12231 /* Pods-NagMaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NagMaker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NagMaker/Pods-NagMaker.debug.xcconfig"; sourceTree = "<group>"; };
+		53DD8BBC1F0EBCF500C6CC3B /* 001-fashion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "001-fashion.png"; sourceTree = "<group>"; };
+		53DD8BBD1F0EBCF500C6CC3B /* 002-multimedia-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "002-multimedia-1.png"; sourceTree = "<group>"; };
+		53DD8BBE1F0EBCF500C6CC3B /* 003-multimedia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "003-multimedia.png"; sourceTree = "<group>"; };
+		53DD8BBF1F0EBCF500C6CC3B /* 004-marketing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "004-marketing.png"; sourceTree = "<group>"; };
+		53DD8BC01F0EBCF500C6CC3B /* 005-technology.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "005-technology.png"; sourceTree = "<group>"; };
+		53DD8BC11F0EBCF500C6CC3B /* 006-shelves.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "006-shelves.png"; sourceTree = "<group>"; };
+		53DD8BC21F0EBCF500C6CC3B /* 007-table.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "007-table.png"; sourceTree = "<group>"; };
+		53DD8BC31F0EBCF500C6CC3B /* 008-desk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "008-desk.png"; sourceTree = "<group>"; };
+		53DD8BC41F0EBCF500C6CC3B /* 009-bathroom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "009-bathroom.png"; sourceTree = "<group>"; };
+		53DD8BC51F0EBCF500C6CC3B /* 010-sofa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "010-sofa.png"; sourceTree = "<group>"; };
+		53DD8BC61F0EBCF500C6CC3B /* 011-armchair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "011-armchair.png"; sourceTree = "<group>"; };
+		53DD8BC71F0EBCF500C6CC3B /* 012-computer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "012-computer.png"; sourceTree = "<group>"; };
+		53DD8BC81F0EBCF500C6CC3B /* 013-rest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "013-rest.png"; sourceTree = "<group>"; };
+		53DD8BD61F0ECBAA00C6CC3B /* openingimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = openingimage.png; sourceTree = "<group>"; };
+		53DD8BD81F0ECC9000C6CC3B /* Add.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Add.storyboard; sourceTree = "<group>"; };
+		53DD8BD91F0ECC9000C6CC3B /* AddAndEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAndEditViewController.swift; sourceTree = "<group>"; };
+		53DD8BDA1F0ECC9000C6CC3B /* CustomPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPickerView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D81943A1F0E26A500A76409 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA2F5CC9DF024844302BFA08 /* Pods_NagMaker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D8194341F0E26A500A76409 = {
+			isa = PBXGroup;
+			children = (
+				1D81943F1F0E26A500A76409 /* NagMaker */,
+				1D81943E1F0E26A500A76409 /* Products */,
+				D73183E9C1FA4BAFDF954799 /* Pods */,
+				E5BA163AE5930770F5385578 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1D81943E1F0E26A500A76409 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D81943D1F0E26A500A76409 /* NagMaker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1D81943F1F0E26A500A76409 /* NagMaker */ = {
+			isa = PBXGroup;
+			children = (
+				1D8194401F0E26A500A76409 /* AppDelegate.swift */,
+				1D8194421F0E26A500A76409 /* MainNagMakerController.swift */,
+				1D8194671F0E693600A76409 /* DetailTableViewController.swift */,
+				1D8194631F0E57DC00A76409 /* CustomCollectionViewCell.swift */,
+				1D8194471F0E26A500A76409 /* Assets.xcassets */,
+				1D8194491F0E26A500A76409 /* LaunchScreen.storyboard */,
+				1D81945A1F0E2F5400A76409 /* NagData.swift */,
+				1D8194581F0E298100A76409 /* DataCenter.swift */,
+				1D81944C1F0E26A500A76409 /* Info.plist */,
+				1D8194541F0E26F600A76409 /* NagData.plist */,
+				1D8194611F0E55C200A76409 /* MainNagMaker.storyboard */,
+				53DD8BDE1F0ECC9700C6CC3B /* add */,
+				1D81948E1F0E9B6500A76409 /* Timer */,
+				53DD8BBB1F0EBCF500C6CC3B /* png */,
+			);
+			path = NagMaker;
+			sourceTree = "<group>";
+		};
+		1D81948E1F0E9B6500A76409 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				1D8194861F0E9B5E00A76409 /* TimerViewController.swift */,
+				1D8194871F0E9B5E00A76409 /* TimerStoryBoard.storyboard */,
+			);
+			name = Timer;
+			sourceTree = "<group>";
+		};
+		53DD8BBB1F0EBCF500C6CC3B /* png */ = {
+			isa = PBXGroup;
+			children = (
+				53DD8BD61F0ECBAA00C6CC3B /* openingimage.png */,
+				1D8194881F0E9B5E00A76409 /* pause.png */,
+				1D8194891F0E9B5E00A76409 /* play.png */,
+				53DD8BBC1F0EBCF500C6CC3B /* 001-fashion.png */,
+				53DD8BBD1F0EBCF500C6CC3B /* 002-multimedia-1.png */,
+				53DD8BBE1F0EBCF500C6CC3B /* 003-multimedia.png */,
+				53DD8BBF1F0EBCF500C6CC3B /* 004-marketing.png */,
+				53DD8BC01F0EBCF500C6CC3B /* 005-technology.png */,
+				53DD8BC11F0EBCF500C6CC3B /* 006-shelves.png */,
+				53DD8BC21F0EBCF500C6CC3B /* 007-table.png */,
+				53DD8BC31F0EBCF500C6CC3B /* 008-desk.png */,
+				53DD8BC41F0EBCF500C6CC3B /* 009-bathroom.png */,
+				53DD8BC51F0EBCF500C6CC3B /* 010-sofa.png */,
+				53DD8BC61F0EBCF500C6CC3B /* 011-armchair.png */,
+				53DD8BC71F0EBCF500C6CC3B /* 012-computer.png */,
+				53DD8BC81F0EBCF500C6CC3B /* 013-rest.png */,
+			);
+			path = png;
+			sourceTree = "<group>";
+		};
+		53DD8BDE1F0ECC9700C6CC3B /* add */ = {
+			isa = PBXGroup;
+			children = (
+				53DD8BD81F0ECC9000C6CC3B /* Add.storyboard */,
+				53DD8BD91F0ECC9000C6CC3B /* AddAndEditViewController.swift */,
+				53DD8BDA1F0ECC9000C6CC3B /* CustomPickerView.swift */,
+			);
+			name = add;
+			sourceTree = "<group>";
+		};
+		D73183E9C1FA4BAFDF954799 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				33A653D2F1C0D6B621A12231 /* Pods-NagMaker.debug.xcconfig */,
+				2DE8F55DB1C5336D9267125F /* Pods-NagMaker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E5BA163AE5930770F5385578 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2591B151659E0B91EC952EBD /* Pods_NagMaker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D81943C1F0E26A500A76409 /* NagMaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D81944F1F0E26A500A76409 /* Build configuration list for PBXNativeTarget "NagMaker" */;
+			buildPhases = (
+				7A33418B4326DDA7B9982D94 /* [CP] Check Pods Manifest.lock */,
+				1D8194391F0E26A500A76409 /* Sources */,
+				1D81943A1F0E26A500A76409 /* Frameworks */,
+				1D81943B1F0E26A500A76409 /* Resources */,
+				2CE415B7AB225ECE6D876308 /* [CP] Embed Pods Frameworks */,
+				68B95F3A7BC05983DB7C24BE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NagMaker;
+			productName = NagMaker;
+			productReference = 1D81943D1F0E26A500A76409 /* NagMaker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1D8194351F0E26A500A76409 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = HyunJung;
+				TargetAttributes = {
+					1D81943C1F0E26A500A76409 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = MXCW8YX472;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1D8194381F0E26A500A76409 /* Build configuration list for PBXProject "NagMaker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1D8194341F0E26A500A76409;
+			productRefGroup = 1D81943E1F0E26A500A76409 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D81943C1F0E26A500A76409 /* NagMaker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D81943B1F0E26A500A76409 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D8194621F0E55C200A76409 /* MainNagMaker.storyboard in Resources */,
+				1D81948B1F0E9B5E00A76409 /* TimerStoryBoard.storyboard in Resources */,
+				53DD8BCE1F0EBCF500C6CC3B /* 006-shelves.png in Resources */,
+				53DD8BC91F0EBCF500C6CC3B /* 001-fashion.png in Resources */,
+				1D81948D1F0E9B5E00A76409 /* play.png in Resources */,
+				1D81948C1F0E9B5E00A76409 /* pause.png in Resources */,
+				53DD8BD51F0EBCF500C6CC3B /* 013-rest.png in Resources */,
+				1D81944B1F0E26A500A76409 /* LaunchScreen.storyboard in Resources */,
+				53DD8BD01F0EBCF500C6CC3B /* 008-desk.png in Resources */,
+				53DD8BD11F0EBCF500C6CC3B /* 009-bathroom.png in Resources */,
+				53DD8BD71F0ECBAA00C6CC3B /* openingimage.png in Resources */,
+				53DD8BDB1F0ECC9000C6CC3B /* Add.storyboard in Resources */,
+				53DD8BCA1F0EBCF500C6CC3B /* 002-multimedia-1.png in Resources */,
+				53DD8BCC1F0EBCF500C6CC3B /* 004-marketing.png in Resources */,
+				53DD8BCB1F0EBCF500C6CC3B /* 003-multimedia.png in Resources */,
+				1D8194481F0E26A500A76409 /* Assets.xcassets in Resources */,
+				53DD8BD41F0EBCF500C6CC3B /* 012-computer.png in Resources */,
+				53DD8BD21F0EBCF500C6CC3B /* 010-sofa.png in Resources */,
+				53DD8BCF1F0EBCF500C6CC3B /* 007-table.png in Resources */,
+				1D8194551F0E26F600A76409 /* NagData.plist in Resources */,
+				53DD8BD31F0EBCF500C6CC3B /* 011-armchair.png in Resources */,
+				53DD8BCD1F0EBCF500C6CC3B /* 005-technology.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CE415B7AB225ECE6D876308 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NagMaker/Pods-NagMaker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68B95F3A7BC05983DB7C24BE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NagMaker/Pods-NagMaker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A33418B4326DDA7B9982D94 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D8194391F0E26A500A76409 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D8194681F0E693600A76409 /* DetailTableViewController.swift in Sources */,
+				1D81945B1F0E2F5400A76409 /* NagData.swift in Sources */,
+				53DD8BDC1F0ECC9000C6CC3B /* AddAndEditViewController.swift in Sources */,
+				1D8194641F0E57DC00A76409 /* CustomCollectionViewCell.swift in Sources */,
+				1D81948A1F0E9B5E00A76409 /* TimerViewController.swift in Sources */,
+				1D8194591F0E298100A76409 /* DataCenter.swift in Sources */,
+				53DD8BDD1F0ECC9000C6CC3B /* CustomPickerView.swift in Sources */,
+				1D8194431F0E26A500A76409 /* MainNagMakerController.swift in Sources */,
+				1D8194411F0E26A500A76409 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1D8194491F0E26A500A76409 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D81944A1F0E26A500A76409 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D81944D1F0E26A500A76409 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1D81944E1F0E26A500A76409 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1D8194501F0E26A500A76409 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33A653D2F1C0D6B621A12231 /* Pods-NagMaker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MXCW8YX472;
+				INFOPLIST_FILE = NagMaker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyunjung.NagMaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1D8194511F0E26A500A76409 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DE8F55DB1C5336D9267125F /* Pods-NagMaker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MXCW8YX472;
+				INFOPLIST_FILE = NagMaker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyunjung.NagMaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D8194381F0E26A500A76409 /* Build configuration list for PBXProject "NagMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D81944D1F0E26A500A76409 /* Debug */,
+				1D81944E1F0E26A500A76409 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D81944F1F0E26A500A76409 /* Build configuration list for PBXNativeTarget "NagMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D8194501F0E26A500A76409 /* Debug */,
+				1D8194511F0E26A500A76409 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1D8194351F0E26A500A76409 /* Project object */;
+}

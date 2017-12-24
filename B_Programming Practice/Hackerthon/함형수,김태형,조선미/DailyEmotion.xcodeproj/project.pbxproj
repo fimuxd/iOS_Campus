@@ -1,0 +1,399 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		37121A6D1F0EA3EE00CC9336 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37121A641F0EA3EE00CC9336 /* LaunchScreen.storyboard */; };
+		37121A6E1F0EA3EE00CC9336 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37121A661F0EA3EE00CC9336 /* Main.storyboard */; };
+		37121A6F1F0EA3EE00CC9336 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37121A681F0EA3EE00CC9336 /* Assets.xcassets */; };
+		37121A701F0EA3EE00CC9336 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37121A691F0EA3EE00CC9336 /* SignUpViewController.swift */; };
+		37121A711F0EA3EE00CC9336 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37121A6A1F0EA3EE00CC9336 /* LogInViewController.swift */; };
+		37121A731F0EA3EE00CC9336 /* DataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37121A6C1F0EA3EE00CC9336 /* DataCenter.swift */; };
+		37121A771F0EA56E00CC9336 /* Users.plist in Resources */ = {isa = PBXBuildFile; fileRef = 37121A761F0EA56E00CC9336 /* Users.plist */; };
+		37121A791F0EA68900CC9336 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37121A781F0EA68900CC9336 /* ViewController.swift */; };
+		37121A7D1F0EABB700CC9336 /* SevenDayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37121A7C1F0EABB700CC9336 /* SevenDayTableViewCell.swift */; };
+		37121A7F1F0EAEE100CC9336 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37121A7E1F0EAEE100CC9336 /* Users.swift */; };
+		37121A831F0EB03000CC9336 /* mainCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37121A821F0EB03000CC9336 /* mainCustomCell.swift */; };
+		37121A851F0EC04500CC9336 /* FriendEmotionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37121A841F0EC04500CC9336 /* FriendEmotionVC.swift */; };
+		37121A871F0EC6F000CC9336 /* DiarySaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37121A861F0EC6F000CC9336 /* DiarySaveViewController.swift */; };
+		371769671F112AF600B0C7AE /* LogOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371769661F112AF600B0C7AE /* LogOutViewController.swift */; };
+		D825EEE21F0E20630086D79E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D825EEE11F0E20630086D79E /* AppDelegate.swift */; };
+		D825EEE71F0E20630086D79E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D825EEE51F0E20630086D79E /* Main.storyboard */; };
+		D825EEEC1F0E20630086D79E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D825EEEA1F0E20630086D79E /* LaunchScreen.storyboard */; };
+		D825EF021F0E5B8F0086D79E /* NotiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D825EF011F0E5B8F0086D79E /* NotiTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		37121A651F0EA3EE00CC9336 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		37121A671F0EA3EE00CC9336 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		37121A681F0EA3EE00CC9336 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		37121A691F0EA3EE00CC9336 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		37121A6A1F0EA3EE00CC9336 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		37121A6C1F0EA3EE00CC9336 /* DataCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCenter.swift; sourceTree = "<group>"; };
+		37121A761F0EA56E00CC9336 /* Users.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Users.plist; sourceTree = "<group>"; };
+		37121A781F0EA68900CC9336 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		37121A7C1F0EABB700CC9336 /* SevenDayTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SevenDayTableViewCell.swift; sourceTree = "<group>"; };
+		37121A7E1F0EAEE100CC9336 /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		37121A821F0EB03000CC9336 /* mainCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainCustomCell.swift; sourceTree = "<group>"; };
+		37121A841F0EC04500CC9336 /* FriendEmotionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendEmotionVC.swift; sourceTree = "<group>"; };
+		37121A861F0EC6F000CC9336 /* DiarySaveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiarySaveViewController.swift; sourceTree = "<group>"; };
+		371769661F112AF600B0C7AE /* LogOutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogOutViewController.swift; sourceTree = "<group>"; };
+		D825EEDE1F0E20620086D79E /* DailyEmotion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyEmotion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D825EEE11F0E20630086D79E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D825EEE61F0E20630086D79E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D825EEEB1F0E20630086D79E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D825EEED1F0E20630086D79E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D825EF011F0E5B8F0086D79E /* NotiTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotiTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D825EEDB1F0E20620086D79E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		37121A631F0EA3EE00CC9336 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				37121A641F0EA3EE00CC9336 /* LaunchScreen.storyboard */,
+				37121A661F0EA3EE00CC9336 /* Main.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		371769641F10F89400B0C7AE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				37121A6C1F0EA3EE00CC9336 /* DataCenter.swift */,
+				37121A761F0EA56E00CC9336 /* Users.plist */,
+				37121A7E1F0EAEE100CC9336 /* Users.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		371769651F10F89E00B0C7AE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D825EF011F0E5B8F0086D79E /* NotiTableViewCell.swift */,
+				37121A781F0EA68900CC9336 /* ViewController.swift */,
+				37121A861F0EC6F000CC9336 /* DiarySaveViewController.swift */,
+				37121A7C1F0EABB700CC9336 /* SevenDayTableViewCell.swift */,
+				37121A821F0EB03000CC9336 /* mainCustomCell.swift */,
+				37121A691F0EA3EE00CC9336 /* SignUpViewController.swift */,
+				37121A6A1F0EA3EE00CC9336 /* LogInViewController.swift */,
+				37121A841F0EC04500CC9336 /* FriendEmotionVC.swift */,
+				371769661F112AF600B0C7AE /* LogOutViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D825EED51F0E20620086D79E = {
+			isa = PBXGroup;
+			children = (
+				D825EEE01F0E20620086D79E /* DailyEmotion */,
+				D825EEDF1F0E20620086D79E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D825EEDF1F0E20620086D79E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D825EEDE1F0E20620086D79E /* DailyEmotion.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D825EEE01F0E20620086D79E /* DailyEmotion */ = {
+			isa = PBXGroup;
+			children = (
+				D825EEE51F0E20630086D79E /* Main.storyboard */,
+				371769651F10F89E00B0C7AE /* ViewControllers */,
+				371769641F10F89400B0C7AE /* Data */,
+				37121A631F0EA3EE00CC9336 /* Base.lproj */,
+				37121A681F0EA3EE00CC9336 /* Assets.xcassets */,
+				D825EEE11F0E20630086D79E /* AppDelegate.swift */,
+				D825EEEA1F0E20630086D79E /* LaunchScreen.storyboard */,
+				D825EEED1F0E20630086D79E /* Info.plist */,
+			);
+			path = DailyEmotion;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D825EEDD1F0E20620086D79E /* DailyEmotion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D825EEF01F0E20630086D79E /* Build configuration list for PBXNativeTarget "DailyEmotion" */;
+			buildPhases = (
+				D825EEDA1F0E20620086D79E /* Sources */,
+				D825EEDB1F0E20620086D79E /* Frameworks */,
+				D825EEDC1F0E20620086D79E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DailyEmotion;
+			productName = DailyEmotion;
+			productReference = D825EEDE1F0E20620086D79E /* DailyEmotion.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D825EED61F0E20620086D79E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = joe;
+				TargetAttributes = {
+					D825EEDD1F0E20620086D79E = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D825EED91F0E20620086D79E /* Build configuration list for PBXProject "DailyEmotion" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D825EED51F0E20620086D79E;
+			productRefGroup = D825EEDF1F0E20620086D79E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D825EEDD1F0E20620086D79E /* DailyEmotion */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D825EEDC1F0E20620086D79E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37121A6D1F0EA3EE00CC9336 /* LaunchScreen.storyboard in Resources */,
+				37121A771F0EA56E00CC9336 /* Users.plist in Resources */,
+				D825EEEC1F0E20630086D79E /* LaunchScreen.storyboard in Resources */,
+				D825EEE71F0E20630086D79E /* Main.storyboard in Resources */,
+				37121A6E1F0EA3EE00CC9336 /* Main.storyboard in Resources */,
+				37121A6F1F0EA3EE00CC9336 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D825EEDA1F0E20620086D79E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37121A731F0EA3EE00CC9336 /* DataCenter.swift in Sources */,
+				37121A871F0EC6F000CC9336 /* DiarySaveViewController.swift in Sources */,
+				37121A701F0EA3EE00CC9336 /* SignUpViewController.swift in Sources */,
+				37121A791F0EA68900CC9336 /* ViewController.swift in Sources */,
+				37121A851F0EC04500CC9336 /* FriendEmotionVC.swift in Sources */,
+				37121A711F0EA3EE00CC9336 /* LogInViewController.swift in Sources */,
+				371769671F112AF600B0C7AE /* LogOutViewController.swift in Sources */,
+				37121A7D1F0EABB700CC9336 /* SevenDayTableViewCell.swift in Sources */,
+				D825EEE21F0E20630086D79E /* AppDelegate.swift in Sources */,
+				D825EF021F0E5B8F0086D79E /* NotiTableViewCell.swift in Sources */,
+				37121A7F1F0EAEE100CC9336 /* Users.swift in Sources */,
+				37121A831F0EB03000CC9336 /* mainCustomCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		37121A641F0EA3EE00CC9336 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37121A651F0EA3EE00CC9336 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		37121A661F0EA3EE00CC9336 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37121A671F0EA3EE00CC9336 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D825EEE51F0E20630086D79E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D825EEE61F0E20630086D79E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D825EEEA1F0E20630086D79E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D825EEEB1F0E20630086D79E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D825EEEE1F0E20630086D79E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D825EEEF1F0E20630086D79E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D825EEF11F0E20630086D79E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DailyEmotion/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kr.xoul.DailyEmotion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D825EEF21F0E20630086D79E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DailyEmotion/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kr.xoul.DailyEmotion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D825EED91F0E20620086D79E /* Build configuration list for PBXProject "DailyEmotion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D825EEEE1F0E20630086D79E /* Debug */,
+				D825EEEF1F0E20630086D79E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D825EEF01F0E20630086D79E /* Build configuration list for PBXNativeTarget "DailyEmotion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D825EEF11F0E20630086D79E /* Debug */,
+				D825EEF21F0E20630086D79E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D825EED61F0E20620086D79E /* Project object */;
+}

@@ -1,0 +1,734 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09EE058D6BCC3225898A13C7441B024C /* AnimationLayerCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0763FD2AAA88F12EF0AA62EBBD9655 /* AnimationLayerCreator.swift */; };
+		0AFC3A7D301575F8FAC6B92906D8A3C7 /* BusyNavigationBarOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA89342C795C07DF501F5710D248E4CE /* BusyNavigationBarOptions.swift */; };
+		12EC3631125D38F1C6FB5933445AEC9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		2B16D9318D37BFCAA1D868863A9D89FF /* UIView+Shake-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CDD624BE709488F14E375BC6FC9C6D /* UIView+Shake-dummy.m */; };
+		2FAC062878681B4A5AE9A52096C88AFF /* UIView+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D3FE0D3F6D9D552A7C8EE22D980737 /* UIView+Shake.m */; };
+		44D1CBE8C7AF4212E76135EE26064BCB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		4566214E980D274232354EE58A254F7D /* Pods-NagMaker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 583486E416BD207C05C562955DAAE1A4 /* Pods-NagMaker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48718DD6765E6703E7A5F29517E4E453 /* UIView+Shake.h in Headers */ = {isa = PBXBuildFile; fileRef = EFB18E3D7A7CE650EF4BD74AC9BE2B6C /* UIView+Shake.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67A4BBFC2566155B4AD71AA7A38A85C9 /* BusyNavigationBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A58A321B0C955DF049A4F129A2E716D5 /* BusyNavigationBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74590D3C3D6D634B7ADE91620DB1ADD4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		7E8C1DEEF52C3AAE6215642489F075B1 /* BusyNavigationBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FBDB4EA7EDC3DDC2B919CE5A3B5A6B45 /* BusyNavigationBar-dummy.m */; };
+		81A1686DAF0D2802F8038F24A027FC46 /* UINavigationBar+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672989AAD9CE66A9072BABE36CF4DFEC /* UINavigationBar+Animation.swift */; };
+		B72AC78FEC7306FBC78CA70C1CA6E0EF /* Pods-NagMaker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 194384E54716B0867A83471F48A3D594 /* Pods-NagMaker-dummy.m */; };
+		ED3B639AF0ED477E96760B4F8F9D2FB1 /* UIView+Shake-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 808E558C59E2D6CCF4E9D0592382A74A /* UIView+Shake-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C65B3BD11990EB0231FB88DB3F73C29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1D208A9BA59668C7EBE3595974D7CE5;
+			remoteInfo = "UIView+Shake";
+		};
+		A4AC6A9FACFF7E294A13315C9A570FB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9582CCC8797B40EB2877B15DE274249C;
+			remoteInfo = BusyNavigationBar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16F2C83AE1BFF55CBB5A3DED0AFDC258 /* BusyNavigationBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BusyNavigationBar.framework; path = BusyNavigationBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		194384E54716B0867A83471F48A3D594 /* Pods-NagMaker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NagMaker-dummy.m"; sourceTree = "<group>"; };
+		20540AEDB7B8DF5B5CBCB435429D2206 /* UIView+Shake.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "UIView+Shake.modulemap"; sourceTree = "<group>"; };
+		27EB476B129398BEC067C348E8048CBD /* Pods-NagMaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NagMaker.debug.xcconfig"; sourceTree = "<group>"; };
+		32A7414E06ABED620CC1F144C4C983A5 /* Pods-NagMaker-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NagMaker-frameworks.sh"; sourceTree = "<group>"; };
+		35C336E809B0C992DCB5D80DDB394A4E /* UIView_Shake.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UIView_Shake.framework; path = "UIView+Shake.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41CDD624BE709488F14E375BC6FC9C6D /* UIView+Shake-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+Shake-dummy.m"; sourceTree = "<group>"; };
+		456ECBE179735157C27A5287C2CE8DE0 /* Pods-NagMaker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NagMaker.modulemap"; sourceTree = "<group>"; };
+		49DD9D6CEC13F6F7FF8BB39B4D8D282D /* UIView+Shake.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIView+Shake.xcconfig"; sourceTree = "<group>"; };
+		4E45880E8C3A2D9E87038F297316F6DD /* Pods-NagMaker-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NagMaker-resources.sh"; sourceTree = "<group>"; };
+		528EAEBC1078D6FDE1D92B5EDA0628A4 /* BusyNavigationBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = BusyNavigationBar.modulemap; sourceTree = "<group>"; };
+		583486E416BD207C05C562955DAAE1A4 /* Pods-NagMaker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NagMaker-umbrella.h"; sourceTree = "<group>"; };
+		59E339D3B1FFA974E1557A9294A54CEB /* Pods_NagMaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NagMaker.framework; path = "Pods-NagMaker.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		636982A2E58D07F13C6188DFE558C8E2 /* BusyNavigationBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BusyNavigationBar-prefix.pch"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		672989AAD9CE66A9072BABE36CF4DFEC /* UINavigationBar+Animation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINavigationBar+Animation.swift"; path = "BusyNavigationBar/BusyNavigationBar/UINavigationBar+Animation.swift"; sourceTree = "<group>"; };
+		6F56CD10579FB43C0DFED8BA1A3C1C51 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		808E558C59E2D6CCF4E9D0592382A74A /* UIView+Shake-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+Shake-umbrella.h"; sourceTree = "<group>"; };
+		887BF0EF51F9DBE4137A9CB4F2A0C503 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91D3FE0D3F6D9D552A7C8EE22D980737 /* UIView+Shake.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+Shake.m"; path = "Source/UIView+Shake.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		951F671945631C5BE6BDCDAC031A9518 /* Pods-NagMaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NagMaker.release.xcconfig"; sourceTree = "<group>"; };
+		952E02603114800BFCBAE73B818A626B /* Pods-NagMaker-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NagMaker-acknowledgements.plist"; sourceTree = "<group>"; };
+		A58A321B0C955DF049A4F129A2E716D5 /* BusyNavigationBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BusyNavigationBar-umbrella.h"; sourceTree = "<group>"; };
+		AB0763FD2AAA88F12EF0AA62EBBD9655 /* AnimationLayerCreator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationLayerCreator.swift; path = BusyNavigationBar/BusyNavigationBar/AnimationLayerCreator.swift; sourceTree = "<group>"; };
+		DFC020FA2EC0BFFD37EC1D554BBF75EF /* UIView+Shake-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+Shake-prefix.pch"; sourceTree = "<group>"; };
+		E4BCBA8C6E967830F73DF06DF3B9DDD1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA89342C795C07DF501F5710D248E4CE /* BusyNavigationBarOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BusyNavigationBarOptions.swift; path = BusyNavigationBar/BusyNavigationBar/BusyNavigationBarOptions.swift; sourceTree = "<group>"; };
+		EAD5E00B10A4CC8B406AA6F17929C203 /* BusyNavigationBar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BusyNavigationBar.xcconfig; sourceTree = "<group>"; };
+		EFB18E3D7A7CE650EF4BD74AC9BE2B6C /* UIView+Shake.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Shake.h"; path = "Source/UIView+Shake.h"; sourceTree = "<group>"; };
+		F88F4EC791CD5DAEFD406D36B57F494F /* Pods-NagMaker-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NagMaker-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FBDB4EA7EDC3DDC2B919CE5A3B5A6B45 /* BusyNavigationBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BusyNavigationBar-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A28B687698EB34077D680360A3FB83A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12EC3631125D38F1C6FB5933445AEC9D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44665822A922CC0E6EE7F9B2D8E9031E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44D1CBE8C7AF4212E76135EE26064BCB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBCB2AF4FB9C7DE7C9B47D0237CA2E5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74590D3C3D6D634B7ADE91620DB1ADD4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FD83F5CCA8229ED2B2F32D7F8126908 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				528EAEBC1078D6FDE1D92B5EDA0628A4 /* BusyNavigationBar.modulemap */,
+				EAD5E00B10A4CC8B406AA6F17929C203 /* BusyNavigationBar.xcconfig */,
+				FBDB4EA7EDC3DDC2B919CE5A3B5A6B45 /* BusyNavigationBar-dummy.m */,
+				636982A2E58D07F13C6188DFE558C8E2 /* BusyNavigationBar-prefix.pch */,
+				A58A321B0C955DF049A4F129A2E716D5 /* BusyNavigationBar-umbrella.h */,
+				887BF0EF51F9DBE4137A9CB4F2A0C503 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BusyNavigationBar";
+			sourceTree = "<group>";
+		};
+		6A21936B6B838CB233DDA1060BBF7D2E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4D931179E9A4EF4AC620C46322A428C /* Pods-NagMaker */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				F073C1B26C8F7297E834D5A2C926C60F /* Pods */,
+				D0FCC57FADA2C89813898E177D001CA7 /* Products */,
+				6A21936B6B838CB233DDA1060BBF7D2E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9CBFEF3090D33E109CD0AA5E9406F07B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E4BCBA8C6E967830F73DF06DF3B9DDD1 /* Info.plist */,
+				20540AEDB7B8DF5B5CBCB435429D2206 /* UIView+Shake.modulemap */,
+				49DD9D6CEC13F6F7FF8BB39B4D8D282D /* UIView+Shake.xcconfig */,
+				41CDD624BE709488F14E375BC6FC9C6D /* UIView+Shake-dummy.m */,
+				DFC020FA2EC0BFFD37EC1D554BBF75EF /* UIView+Shake-prefix.pch */,
+				808E558C59E2D6CCF4E9D0592382A74A /* UIView+Shake-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UIView+Shake";
+			sourceTree = "<group>";
+		};
+		A4D931179E9A4EF4AC620C46322A428C /* Pods-NagMaker */ = {
+			isa = PBXGroup;
+			children = (
+				6F56CD10579FB43C0DFED8BA1A3C1C51 /* Info.plist */,
+				456ECBE179735157C27A5287C2CE8DE0 /* Pods-NagMaker.modulemap */,
+				F88F4EC791CD5DAEFD406D36B57F494F /* Pods-NagMaker-acknowledgements.markdown */,
+				952E02603114800BFCBAE73B818A626B /* Pods-NagMaker-acknowledgements.plist */,
+				194384E54716B0867A83471F48A3D594 /* Pods-NagMaker-dummy.m */,
+				32A7414E06ABED620CC1F144C4C983A5 /* Pods-NagMaker-frameworks.sh */,
+				4E45880E8C3A2D9E87038F297316F6DD /* Pods-NagMaker-resources.sh */,
+				583486E416BD207C05C562955DAAE1A4 /* Pods-NagMaker-umbrella.h */,
+				27EB476B129398BEC067C348E8048CBD /* Pods-NagMaker.debug.xcconfig */,
+				951F671945631C5BE6BDCDAC031A9518 /* Pods-NagMaker.release.xcconfig */,
+			);
+			name = "Pods-NagMaker";
+			path = "Target Support Files/Pods-NagMaker";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C915D27030E230A4835D8111F65A8905 /* BusyNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				AB0763FD2AAA88F12EF0AA62EBBD9655 /* AnimationLayerCreator.swift */,
+				EA89342C795C07DF501F5710D248E4CE /* BusyNavigationBarOptions.swift */,
+				672989AAD9CE66A9072BABE36CF4DFEC /* UINavigationBar+Animation.swift */,
+				3FD83F5CCA8229ED2B2F32D7F8126908 /* Support Files */,
+			);
+			name = BusyNavigationBar;
+			path = BusyNavigationBar;
+			sourceTree = "<group>";
+		};
+		D0FCC57FADA2C89813898E177D001CA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16F2C83AE1BFF55CBB5A3DED0AFDC258 /* BusyNavigationBar.framework */,
+				59E339D3B1FFA974E1557A9294A54CEB /* Pods_NagMaker.framework */,
+				35C336E809B0C992DCB5D80DDB394A4E /* UIView_Shake.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DB321108BAF1094F694233C82957143D /* UIView+Shake */ = {
+			isa = PBXGroup;
+			children = (
+				EFB18E3D7A7CE650EF4BD74AC9BE2B6C /* UIView+Shake.h */,
+				91D3FE0D3F6D9D552A7C8EE22D980737 /* UIView+Shake.m */,
+				9CBFEF3090D33E109CD0AA5E9406F07B /* Support Files */,
+			);
+			name = "UIView+Shake";
+			path = "UIView+Shake";
+			sourceTree = "<group>";
+		};
+		F073C1B26C8F7297E834D5A2C926C60F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C915D27030E230A4835D8111F65A8905 /* BusyNavigationBar */,
+				DB321108BAF1094F694233C82957143D /* UIView+Shake */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		63AA379277A67F785FAEFD8EFF798341 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67A4BBFC2566155B4AD71AA7A38A85C9 /* BusyNavigationBar-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4DAF5B841071BE780A624346A1264AA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED3B639AF0ED477E96760B4F8F9D2FB1 /* UIView+Shake-umbrella.h in Headers */,
+				48718DD6765E6703E7A5F29517E4E453 /* UIView+Shake.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6FE8F673A98F464FE07D87B24CC3C2F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4566214E980D274232354EE58A254F7D /* Pods-NagMaker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7E9706C77DA7D55653A751E0BF23A765 /* Pods-NagMaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30AE0860A3B28E26F35E5586DEE17AB4 /* Build configuration list for PBXNativeTarget "Pods-NagMaker" */;
+			buildPhases = (
+				5E0DC5C4C2A6B3F01C456FE735212D90 /* Sources */,
+				EBCB2AF4FB9C7DE7C9B47D0237CA2E5E /* Frameworks */,
+				D6FE8F673A98F464FE07D87B24CC3C2F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9D03E43C444729EC0FDABBF784398CF /* PBXTargetDependency */,
+				85C9419DED24676DEC7B4A6F59B4F5B4 /* PBXTargetDependency */,
+			);
+			name = "Pods-NagMaker";
+			productName = "Pods-NagMaker";
+			productReference = 59E339D3B1FFA974E1557A9294A54CEB /* Pods_NagMaker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9582CCC8797B40EB2877B15DE274249C /* BusyNavigationBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7972CA118A7AC635378F38A28F1B65AD /* Build configuration list for PBXNativeTarget "BusyNavigationBar" */;
+			buildPhases = (
+				AF0A22C4750CDBE000789F1279E9E708 /* Sources */,
+				1A28B687698EB34077D680360A3FB83A /* Frameworks */,
+				63AA379277A67F785FAEFD8EFF798341 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BusyNavigationBar;
+			productName = BusyNavigationBar;
+			productReference = 16F2C83AE1BFF55CBB5A3DED0AFDC258 /* BusyNavigationBar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E1D208A9BA59668C7EBE3595974D7CE5 /* UIView+Shake */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F367597BB830FE0BC0F69D7A71E21A42 /* Build configuration list for PBXNativeTarget "UIView+Shake" */;
+			buildPhases = (
+				C2C08CF07AAAEFB145E13B5C7411771C /* Sources */,
+				44665822A922CC0E6EE7F9B2D8E9031E /* Frameworks */,
+				C4DAF5B841071BE780A624346A1264AA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UIView+Shake";
+			productName = "UIView+Shake";
+			productReference = 35C336E809B0C992DCB5D80DDB394A4E /* UIView_Shake.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = D0FCC57FADA2C89813898E177D001CA7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9582CCC8797B40EB2877B15DE274249C /* BusyNavigationBar */,
+				7E9706C77DA7D55653A751E0BF23A765 /* Pods-NagMaker */,
+				E1D208A9BA59668C7EBE3595974D7CE5 /* UIView+Shake */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E0DC5C4C2A6B3F01C456FE735212D90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B72AC78FEC7306FBC78CA70C1CA6E0EF /* Pods-NagMaker-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF0A22C4750CDBE000789F1279E9E708 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09EE058D6BCC3225898A13C7441B024C /* AnimationLayerCreator.swift in Sources */,
+				7E8C1DEEF52C3AAE6215642489F075B1 /* BusyNavigationBar-dummy.m in Sources */,
+				0AFC3A7D301575F8FAC6B92906D8A3C7 /* BusyNavigationBarOptions.swift in Sources */,
+				81A1686DAF0D2802F8038F24A027FC46 /* UINavigationBar+Animation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2C08CF07AAAEFB145E13B5C7411771C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B16D9318D37BFCAA1D868863A9D89FF /* UIView+Shake-dummy.m in Sources */,
+				2FAC062878681B4A5AE9A52096C88AFF /* UIView+Shake.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		85C9419DED24676DEC7B4A6F59B4F5B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "UIView+Shake";
+			target = E1D208A9BA59668C7EBE3595974D7CE5 /* UIView+Shake */;
+			targetProxy = 4C65B3BD11990EB0231FB88DB3F73C29 /* PBXContainerItemProxy */;
+		};
+		F9D03E43C444729EC0FDABBF784398CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BusyNavigationBar;
+			target = 9582CCC8797B40EB2877B15DE274249C /* BusyNavigationBar */;
+			targetProxy = A4AC6A9FACFF7E294A13315C9A570FB6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10E2268D3066E75BBBB5DD744A4F0CD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 951F671945631C5BE6BDCDAC031A9518 /* Pods-NagMaker.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NagMaker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NagMaker/Pods-NagMaker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NagMaker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		163D87BE96A63549B0EACF1CC31A2E90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		707B86CFB21B645E37109F39754D4051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		98AF7A9E1E158D59293D0AB4DCD1B56C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAD5E00B10A4CC8B406AA6F17929C203 /* BusyNavigationBar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BusyNavigationBar/BusyNavigationBar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BusyNavigationBar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BusyNavigationBar/BusyNavigationBar.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = BusyNavigationBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B2B2D62EEF89C4979D4C33BE309F2D03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49DD9D6CEC13F6F7FF8BB39B4D8D282D /* UIView+Shake.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UIView+Shake/UIView+Shake-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIView+Shake/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIView+Shake/UIView+Shake.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = UIView_Shake;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BB5C93CB1B1766B09C984078BED4F727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27EB476B129398BEC067C348E8048CBD /* Pods-NagMaker.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NagMaker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NagMaker/Pods-NagMaker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NagMaker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F343144965A205405641CB4752620981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49DD9D6CEC13F6F7FF8BB39B4D8D282D /* UIView+Shake.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UIView+Shake/UIView+Shake-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIView+Shake/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIView+Shake/UIView+Shake.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = UIView_Shake;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F62EA9C4BDF644E3EB783E21E1B97850 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAD5E00B10A4CC8B406AA6F17929C203 /* BusyNavigationBar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BusyNavigationBar/BusyNavigationBar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BusyNavigationBar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BusyNavigationBar/BusyNavigationBar.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = BusyNavigationBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				163D87BE96A63549B0EACF1CC31A2E90 /* Debug */,
+				707B86CFB21B645E37109F39754D4051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30AE0860A3B28E26F35E5586DEE17AB4 /* Build configuration list for PBXNativeTarget "Pods-NagMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB5C93CB1B1766B09C984078BED4F727 /* Debug */,
+				10E2268D3066E75BBBB5DD744A4F0CD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7972CA118A7AC635378F38A28F1B65AD /* Build configuration list for PBXNativeTarget "BusyNavigationBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F62EA9C4BDF644E3EB783E21E1B97850 /* Debug */,
+				98AF7A9E1E158D59293D0AB4DCD1B56C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F367597BB830FE0BC0F69D7A71E21A42 /* Build configuration list for PBXNativeTarget "UIView+Shake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F343144965A205405641CB4752620981 /* Debug */,
+				B2B2D62EEF89C4979D4C33BE309F2D03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

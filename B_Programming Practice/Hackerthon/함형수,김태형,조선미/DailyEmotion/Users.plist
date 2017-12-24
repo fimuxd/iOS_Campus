@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>user_number</key>
+		<integer>0</integer>
+		<key>user_id</key>
+		<string>hhyoungsu@gmail.com</string>
+		<key>user_password</key>
+		<string>1234</string>
+		<key>user_data</key>
+		<array>
+			<dict>
+				<key>cellType</key>
+				<string>0</string>
+				<key>date</key>
+				<string>2017 7월 6일</string>
+				<key>emotion</key>
+				<string>joy</string>
+				<key>comment</key>
+				<string>오늘은 너무 신난다 ~~~~</string>
+				<key>property1</key>
+				<string>any comment</string>
+			</dict>
+			<dict>
+				<key>cellType</key>
+				<string>0</string>
+				<key>date</key>
+				<string>2017 7월 6일</string>
+				<key>emotion</key>
+				<string>joy</string>
+				<key>comment</key>
+				<string>오늘은 너무 신난다 ~~~~</string>
+				<key>property1</key>
+				<string>any comment</string>
+			</dict>
+		</array>
+		<key>friend_data</key>
+		<array>
+			<dict>
+				<key>user_number</key>
+				<integer>888</integer>
+				<key>user_id</key>
+				<string>nauta212@gmail.com</string>
+				<key>user_password</key>
+				<string>12345</string>
+				<key>user_data</key>
+				<array>
+					<dict>
+						<key>cellType</key>
+						<string>0</string>
+						<key>date</key>
+						<string>2017 7월 777일</string>
+						<key>emotion</key>
+						<string>sad</string>
+						<key>comment</key>
+						<string>두근두근두근두근!!</string>
+						<key>property1</key>
+						<string>anyany comment</string>
+					</dict>
+				</array>
+				<key>friend_data</key>
+				<array/>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

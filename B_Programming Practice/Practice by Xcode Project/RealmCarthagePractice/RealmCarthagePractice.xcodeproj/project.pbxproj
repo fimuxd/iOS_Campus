@@ -1,0 +1,367 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B94F55F51F04E576001CF682 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B94F55F41F04E576001CF682 /* Realm.framework */; };
+		B94F55F71F04E582001CF682 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B94F55F61F04E582001CF682 /* RealmSwift.framework */; };
+		B99324261F049FCC000D00F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99324251F049FCC000D00F9 /* AppDelegate.swift */; };
+		B993242B1F049FCC000D00F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B99324291F049FCC000D00F9 /* Main.storyboard */; };
+		B993242D1F049FCC000D00F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B993242C1F049FCC000D00F9 /* Assets.xcassets */; };
+		B99324301F049FCC000D00F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B993242E1F049FCC000D00F9 /* LaunchScreen.storyboard */; };
+		B9BBE74F1F05EE8E00770046 /* ContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BBE74E1F05EE8E00770046 /* ContactTableViewController.swift */; };
+		B9DA82541F07DEF1003C635F /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DA82531F07DEF1003C635F /* ContactModel.swift */; };
+		B9DA82561F084162003C635F /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DA82551F084162003C635F /* AddViewController.swift */; };
+		B9EB4F531F08CEB0004185B8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EB4F521F08CEB0004185B8 /* DetailViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B94F55F41F04E576001CF682 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		B94F55F61F04E582001CF682 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		B99324221F049FCC000D00F9 /* RealmCarthagePractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmCarthagePractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B99324251F049FCC000D00F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B993242A1F049FCC000D00F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B993242C1F049FCC000D00F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B993242F1F049FCC000D00F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B99324311F049FCC000D00F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9BBE74E1F05EE8E00770046 /* ContactTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewController.swift; sourceTree = "<group>"; };
+		B9DA82531F07DEF1003C635F /* ContactModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
+		B9DA82551F084162003C635F /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		B9EB4F521F08CEB0004185B8 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B993241F1F049FCC000D00F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B94F55F71F04E582001CF682 /* RealmSwift.framework in Frameworks */,
+				B94F55F51F04E576001CF682 /* Realm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B94F55F31F04E576001CF682 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B94F55F61F04E582001CF682 /* RealmSwift.framework */,
+				B94F55F41F04E576001CF682 /* Realm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B99324191F049FCC000D00F9 = {
+			isa = PBXGroup;
+			children = (
+				B99324241F049FCC000D00F9 /* RealmCarthagePractice */,
+				B99324231F049FCC000D00F9 /* Products */,
+				B94F55F31F04E576001CF682 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B99324231F049FCC000D00F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B99324221F049FCC000D00F9 /* RealmCarthagePractice.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B99324241F049FCC000D00F9 /* RealmCarthagePractice */ = {
+			isa = PBXGroup;
+			children = (
+				B99324251F049FCC000D00F9 /* AppDelegate.swift */,
+				B99324291F049FCC000D00F9 /* Main.storyboard */,
+				B9BBE74E1F05EE8E00770046 /* ContactTableViewController.swift */,
+				B9DA82551F084162003C635F /* AddViewController.swift */,
+				B9EB4F521F08CEB0004185B8 /* DetailViewController.swift */,
+				B9DA82531F07DEF1003C635F /* ContactModel.swift */,
+				B993242C1F049FCC000D00F9 /* Assets.xcassets */,
+				B993242E1F049FCC000D00F9 /* LaunchScreen.storyboard */,
+				B99324311F049FCC000D00F9 /* Info.plist */,
+			);
+			path = RealmCarthagePractice;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B99324211F049FCC000D00F9 /* RealmCarthagePractice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B99324341F049FCC000D00F9 /* Build configuration list for PBXNativeTarget "RealmCarthagePractice" */;
+			buildPhases = (
+				B993241E1F049FCC000D00F9 /* Sources */,
+				B993241F1F049FCC000D00F9 /* Frameworks */,
+				B99324201F049FCC000D00F9 /* Resources */,
+				B94F55F81F04E587001CF682 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RealmCarthagePractice;
+			productName = RealmCarthagePractice;
+			productReference = B99324221F049FCC000D00F9 /* RealmCarthagePractice.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B993241A1F049FCC000D00F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Jongchan Park";
+				TargetAttributes = {
+					B99324211F049FCC000D00F9 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 8KDMCH8V2F;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B993241D1F049FCC000D00F9 /* Build configuration list for PBXProject "RealmCarthagePractice" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B99324191F049FCC000D00F9;
+			productRefGroup = B99324231F049FCC000D00F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B99324211F049FCC000D00F9 /* RealmCarthagePractice */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B99324201F049FCC000D00F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B99324301F049FCC000D00F9 /* LaunchScreen.storyboard in Resources */,
+				B993242D1F049FCC000D00F9 /* Assets.xcassets in Resources */,
+				B993242B1F049FCC000D00F9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B94F55F81F04E587001CF682 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B993241E1F049FCC000D00F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9BBE74F1F05EE8E00770046 /* ContactTableViewController.swift in Sources */,
+				B99324261F049FCC000D00F9 /* AppDelegate.swift in Sources */,
+				B9EB4F531F08CEB0004185B8 /* DetailViewController.swift in Sources */,
+				B9DA82561F084162003C635F /* AddViewController.swift in Sources */,
+				B9DA82541F07DEF1003C635F /* ContactModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B99324291F049FCC000D00F9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B993242A1F049FCC000D00F9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B993242E1F049FCC000D00F9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B993242F1F049FCC000D00F9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B99324321F049FCC000D00F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B99324331F049FCC000D00F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B99324351F049FCC000D00F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8KDMCH8V2F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = RealmCarthagePractice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jongchanpark.developed.RealmCarthagePractice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B99324361F049FCC000D00F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8KDMCH8V2F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = RealmCarthagePractice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jongchanpark.developed.RealmCarthagePractice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B993241D1F049FCC000D00F9 /* Build configuration list for PBXProject "RealmCarthagePractice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B99324321F049FCC000D00F9 /* Debug */,
+				B99324331F049FCC000D00F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B99324341F049FCC000D00F9 /* Build configuration list for PBXNativeTarget "RealmCarthagePractice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B99324351F049FCC000D00F9 /* Debug */,
+				B99324361F049FCC000D00F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B993241A1F049FCC000D00F9 /* Project object */;
+}

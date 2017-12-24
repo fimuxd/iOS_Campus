@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>content</key>
+		<string>초짜 프로그래머 팀장 무서운줄 모른다.</string>
+		<key>speaker</key>
+		<string>지나가는 팀장님</string>
+		<key>imgUrl</key>
+		<string>0.jpg</string>
+	</dict>
+	<dict>
+		<key>content</key>
+		<string>발없는 오픈소스 천리간다.</string>
+		<key>speaker</key>
+		<string>어느 오픈소스 개발자</string>
+		<key>imgUrl</key>
+		<string>1.jpg</string>
+	</dict>
+	<dict>
+		<key>content</key>
+		<string>한줄 코드라도 서로 거들면 낫다.</string>
+		<key>speaker</key>
+		<string>모 해커톤 어느 팀의 팀장</string>
+		<key>imgUrl</key>
+		<string>2.jpg</string>
+	</dict>
+	<dict>
+		<key>content</key>
+		<string>가는 디자인 좋아야 오는 프로그램 좋다.</string>
+		<key>speaker</key>
+		<string>디자이너에게 화가 난 모 개발자</string>
+		<key>imgUrl</key>
+		<string>3.jpg</string>
+	</dict>
+	<dict>
+		<key>content</key>
+		<string>두개의 버그는 한번에 잡을수없다.</string>
+		<key>speaker</key>
+		<string>2개 버그 잡다가 20개 버그가 나타난 모 개발자</string>
+		<key>imgUrl</key>
+		<string>4.jpg</string>
+	</dict>
+	<dict>
+		<key>content</key>
+		<string>슬슬하는 코딩으로 땀에 옷 젖는지 모른다.</string>
+		<key>speaker</key>
+		<string>작년 여름에 코딩하다 기절한 모 개발자</string>
+		<key>imgUrl</key>
+		<string>5.jpg</string>
+	</dict>
+	<dict>
+		<key>content</key>
+		<string>오류를 넘으면 또 오류가 있다.</string>
+		<key>speaker</key>
+		<string>프로젝트 32번째 엎은 모 개발자</string>
+		<key>imgUrl</key>
+		<string>6.jpg</string>
+	</dict>
+	<dict>
+		<key>content</key>
+		<string>배열도 꽤어야 보배</string>
+		<key>speaker</key>
+		<string>모든 숫자의 시작은 &quot;0&quot;이라고 믿는 모 개발자</string>
+		<key>imgUrl</key>
+		<string>7.jpg</string>
+	</dict>
+	<dict>
+		<key>content</key>
+		<string>무오류는 금이다.</string>
+		<key>speaker</key>
+		<string>Xcode가 오류를 알려주지 않는다며 화가 난 모 개발자</string>
+		<key>imgUrl</key>
+		<string>8.jpg</string>
+	</dict>
+	<dict>
+		<key>content</key>
+		<string>팀장 한마디에 천줄코드 안써도 된다.</string>
+		<key>speaker</key>
+		<string>만년 대리 모 개발자</string>
+		<key>imgUrl</key>
+		<string>9.jpg</string>
+	</dict>
+</array>
+</plist>

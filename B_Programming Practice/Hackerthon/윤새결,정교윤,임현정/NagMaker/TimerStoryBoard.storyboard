@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xCS-zt-06s">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Timer View Controller-->
+        <scene sceneID="FXO-QQ-xDx">
+            <objects>
+                <viewController id="xCS-zt-06s" customClass="TimerViewController" customModule="NagMaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CDp-6e-RKn"/>
+                        <viewControllerLayoutGuide type="bottom" id="fhj-p7-Fo1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4I5-BF-vs9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jdc-b1-EY2">
+                                <rect key="frame" x="0.0" y="113.5" width="375" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ZDb-Wy-U7V"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <font key="NSFont" size="35" name="D2CodingBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DeadLine" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JaO-YV-dU4">
+                                <rect key="frame" x="0.0" y="214" width="375" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="czq-jA-fR1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4QZ-cs-FdP">
+                                <rect key="frame" x="56.5" y="293.5" width="262.5" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="UgY-3X-Rs3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osh-cE-kMG">
+                                <rect key="frame" x="132" y="500.5" width="112.5" height="67"/>
+                                <state key="normal" image="pause.png"/>
+                                <connections>
+                                    <action selector="touchedTimerButton:" destination="xCS-zt-06s" eventType="touchUpInside" id="7va-KI-r2F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugr-Ye-P8v">
+                                <rect key="frame" x="313" y="75" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="aot-D3-Lvi" kind="show" id="KyT-dx-lNH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Jdc-b1-EY2" firstAttribute="centerY" secondItem="4I5-BF-vs9" secondAttribute="centerY" multiplier="0.4" id="2EF-mC-EoT"/>
+                            <constraint firstItem="JaO-YV-dU4" firstAttribute="height" secondItem="Jdc-b1-EY2" secondAttribute="height" id="44e-Pi-Oea"/>
+                            <constraint firstItem="osh-cE-kMG" firstAttribute="width" secondItem="4I5-BF-vs9" secondAttribute="width" multiplier="0.3" id="Arh-wq-hoW"/>
+                            <constraint firstItem="4QZ-cs-FdP" firstAttribute="centerY" secondItem="4I5-BF-vs9" secondAttribute="centerY" id="Cq6-36-tLU"/>
+                            <constraint firstItem="Jdc-b1-EY2" firstAttribute="centerX" secondItem="4I5-BF-vs9" secondAttribute="centerX" id="HE2-KV-Dbv"/>
+                            <constraint firstItem="osh-cE-kMG" firstAttribute="centerX" secondItem="4I5-BF-vs9" secondAttribute="centerX" id="Iaa-bB-hSG"/>
+                            <constraint firstItem="4QZ-cs-FdP" firstAttribute="width" secondItem="JaO-YV-dU4" secondAttribute="width" multiplier="0.7" id="XwC-HU-VRZ"/>
+                            <constraint firstItem="JaO-YV-dU4" firstAttribute="width" secondItem="4I5-BF-vs9" secondAttribute="width" id="aUh-F1-FLF"/>
+                            <constraint firstItem="Jdc-b1-EY2" firstAttribute="width" secondItem="4I5-BF-vs9" secondAttribute="width" id="f40-cw-Pc4"/>
+                            <constraint firstItem="4QZ-cs-FdP" firstAttribute="centerX" secondItem="4I5-BF-vs9" secondAttribute="centerX" id="fIn-D4-WEc"/>
+                            <constraint firstItem="osh-cE-kMG" firstAttribute="centerY" secondItem="4I5-BF-vs9" secondAttribute="centerY" multiplier="1.6" id="ldJ-Z1-l06"/>
+                            <constraint firstItem="osh-cE-kMG" firstAttribute="height" secondItem="4I5-BF-vs9" secondAttribute="height" multiplier="0.1" id="nWo-j1-TfZ"/>
+                            <constraint firstItem="JaO-YV-dU4" firstAttribute="centerY" secondItem="4I5-BF-vs9" secondAttribute="centerY" multiplier="0.7" constant="0.29999999999999999" id="rX7-xW-cRz"/>
+                            <constraint firstItem="JaO-YV-dU4" firstAttribute="centerX" secondItem="4I5-BF-vs9" secondAttribute="centerX" id="uwz-4z-tYU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nagTitleLable" destination="Jdc-b1-EY2" id="zRC-e6-dau"/>
+                        <outlet property="timerLabel" destination="4QZ-cs-FdP" id="wYM-Df-ruy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5HQ-0A-GKc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-266" y="11"/>
+        </scene>
+        <!--Add-->
+        <scene sceneID="UVH-Lk-qAt">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Add" id="aot-D3-Lvi" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MuA-hw-1T0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="297" y="10"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pause.png" width="64" height="64"/>
+    </resources>
+</document>

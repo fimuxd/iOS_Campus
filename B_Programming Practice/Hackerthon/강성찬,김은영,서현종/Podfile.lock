@@ -1,0 +1,21 @@
+PODS:
+  - Koloda (4.1):
+    - pop (~> 1.0)
+  - pop (1.0.10)
+  - SwiftPhotoGallery (3.1.0)
+  - TLPhotoPicker (1.1.3)
+
+DEPENDENCIES:
+  - Koloda (~> 4.1)
+  - SwiftPhotoGallery (~> 3.1)
+  - TLPhotoPicker (~> 1.1)
+
+SPEC CHECKSUMS:
+  Koloda: 6c4fa3ce9a68776a8ef973311e53fdda432799a8
+  pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
+  SwiftPhotoGallery: 85ff48f685dafc5e84639bee5c74ddb4f0f221d3
+  TLPhotoPicker: 2673a9ea289dafe75910eb21700a7fdad5dbb53f
+
+PODFILE CHECKSUM: 60e1cec9ffa0cde71226cb926c5449add43f85d3
+
+COCOAPODS: 1.2.1

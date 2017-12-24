@@ -1,0 +1,15 @@
+PODS:
+  - BusyNavigationBar (2.0.0)
+  - UIView+Shake (1.3.0)
+
+DEPENDENCIES:
+  - BusyNavigationBar (~> 2.0)
+  - UIView+Shake (~> 1.3)
+
+SPEC CHECKSUMS:
+  BusyNavigationBar: b73fd434b95f6198809dcf048b0245ad89ec1b37
+  UIView+Shake: 3ccbf966d40a76ea2cdbdd48d8219d322d5df5f5
+
+PODFILE CHECKSUM: e6d4c902e3f314483c3ddadaa3ca46350c16cf7b
+
+COCOAPODS: 1.2.1

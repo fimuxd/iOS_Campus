@@ -1,0 +1,6 @@
+framework module BusyNavigationBar {
+  umbrella header "BusyNavigationBar-umbrella.h"
+
+  export *
+  module * { export * }
+}
