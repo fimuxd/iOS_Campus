@@ -10,12 +10,6 @@
 
 > **iOS Dev.Std.** | *May 8, 2017 ~ Current*
 
-- **Travellover** | *38 cities of  15 countries*
-- **3 yrs in UAE** | *Trading(Abu Dhabi) & Consulate General(Dubai)*
-- **8 mths in Hong Kong** | *Android POS Proj.*
-- **Pursue Diversity | Anarchist | Equalityist | Liberal** 
-
-
 ## iOS School
 
 - **1st Week** ; May 8 - 12
