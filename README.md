@@ -1,4 +1,4 @@
-# Bo-Young PARK   <img src = "https://cdn-images-1.medium.com/fit/c/72/72/2*EyzivijioaGvKtIBN3ruQw.png" width = 180 align = right>
+# Bo-Young PARK   <img src = "https://miro.medium.com/fit/c/262/262/2*EyzivijioaGvKtIBN3ruQw.png" width = 180 align = right>
 
 ## Contents
 
